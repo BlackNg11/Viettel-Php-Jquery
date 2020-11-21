@@ -1,0 +1,73 @@
+.wifi__info {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 15rem;
+	
+
+	@include respond(smaill-phone) {
+		padding: 0rem;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&--left {
+		flex: 0 0 40%;
+		margin-top: -35rem;
+
+		@include respond(phone) {
+			// margin-top: -12rem;
+			// margin-right: 3rem;
+			// margin-left: 3rem;
+			// flex: 0 0 30%;
+			margin-top: 0;
+		}
+
+		@include respond(smaill-phone) {
+			// margin-top: 10rem;
+			// margin-right: 3rem;
+			// margin-left: 3rem;
+			// flex: 0 0 30%;
+			margin-top: 0;
+		}
+	}
+
+	&--right {
+		flex: 1;
+
+		@include respond(phone) {
+			// margin-top: -12rem;
+			// margin-right: 3rem;
+			// margin-left: 3rem;
+			// flex: 0 0 30%;
+			flex: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+
+	&--text {
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 1.5rem;
+		margin-top: 1.5rem;
+		color: $color-text;
+
+		@include respond(smaill-phone) {
+			padding: 0rem;
+		}
+
+	}
+
+
+
+	// &--img {
+	// 	height: 35rem;
+	// 	width: 45rem;
+	// }
+
+}
+
+
