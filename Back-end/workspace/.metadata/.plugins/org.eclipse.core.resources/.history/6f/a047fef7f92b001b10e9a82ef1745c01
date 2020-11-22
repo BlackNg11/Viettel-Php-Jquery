@@ -1,0 +1,5 @@
+package com.tqphuc.utils;
+
+public class HttpUtil {
+	
+}

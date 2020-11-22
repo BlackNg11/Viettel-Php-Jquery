@@ -1,0 +1,23 @@
+package com.tqphuc.dao.impl;
+
+import java.util.List;
+
+import com.tqphuc.dao.ISimDAO;
+import com.tqphuc.mapper.SimMapper;
+import com.tqphuc.model.SimModel;
+
+public class SimDAO extends AbstractDAO<SimModel> implements ISimDAO {
+
+	@Override
+	public List<SimModel> findAll() {
+		String sql = "SELECT * FROM sim";
+		return query(sql, new SimMapper());
+	}
+
+	@Override
+	public Long save(SimModel simModel) {
+		String sql = "INSERT INTO sim (sotb, sothuong, sodep) SET sotb (?,?,?) WHERE id = ?";
+		return insert(sql, simModel.getSoTb(), simModel.getSoThuong(), simModel.getSoDep());
+	}
+	
+}

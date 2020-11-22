@@ -1,0 +1,7 @@
+package com.tqphuc.mapper;
+
+import com.tqphuc.model.SimModel;
+
+public class NewMapper implements RowMapper<SimModel>{
+
+}

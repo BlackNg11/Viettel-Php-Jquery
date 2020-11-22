@@ -1,0 +1,24 @@
+package com.tqphuc.service.impl;
+
+import java.util.List;
+
+import com.tqphuc.dao.ISimDAO;
+import com.tqphuc.dao.impl.SimDAO;
+import com.tqphuc.model.SimModel;
+import com.tqphuc.service.ISimService;
+
+public class SimService implements ISimService{
+
+	private ISimDAO simDao;
+	
+	public SimService() {
+		simDao = new SimDAO();
+	}
+	
+	@Override
+	public List<SimModel> findAll() {
+		// TODO Auto-generated method stub
+		return simDao.findAll();
+	}
+
+}

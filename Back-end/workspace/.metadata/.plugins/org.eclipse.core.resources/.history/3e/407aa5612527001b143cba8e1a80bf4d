@@ -1,0 +1,10 @@
+package com.tqphuc.dao;
+
+import java.util.List;
+
+import com.tqphuc.model.SimModel;
+
+public interface ISimDAO {
+	List<SimModel> findAll();
+	
+}
