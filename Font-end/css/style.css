@@ -102,7 +102,6 @@ body {
   font-weight: 700;
   display: inline-block;
   color: ghostwhite;
-  -webkit-background-clip: text;
   letter-spacing: .2rem;
   transition: all .2s; }
   @media only screen and (max-width: 56.25em) {
@@ -1191,6 +1190,313 @@ body {
     grid-column: 6 / span 1;
     grid-row: 15 / span 1; }
 
+.phoneT-detail-table {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(10, 3.5vw);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: .5rem;
+  column-gap: 1px;
+  row-gap: 1px; }
+  .phoneT-detail-table--item {
+    box-shadow: 0 0 0 2px #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .phoneT-detail-table-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    background-image: linear-gradient(to right, #224869, #46875C);
+    color: white; }
+  .phoneT-detail-table-2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    background: #46875C;
+    color: white; }
+  .phoneT-detail-table-3 {
+    grid-column: 3 / -1;
+    grid-row: 1 / span 1;
+    background: #46875C;
+    color: white; }
+  .phoneT-detail-table-4 {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    background: #46875C;
+    color: white; }
+  .phoneT-detail-table-5 {
+    grid-column: 4 /span 1;
+    grid-row: 2 / span 1;
+    background: #46875C;
+    color: white; }
+  .phoneT-detail-table-6 {
+    grid-column: 5 /span 1;
+    grid-row: 2 / span 1;
+    background: #46875C;
+    color: white; }
+  .phoneT-detail-table-7 {
+    grid-column: 6 /span 1;
+    grid-row: 2 / span 1;
+    background: #46875C;
+    color: white; }
+  .phoneT-detail-table-8 {
+    grid-column: 7 /span 1;
+    grid-row: 2 / span 1;
+    background: #46875C;
+    color: white; }
+  .phoneT-detail-table-9 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1; }
+  .phoneT-detail-table-10 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1; }
+  .phoneT-detail-table-11 {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1; }
+  .phoneT-detail-table-12 {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1; }
+  .phoneT-detail-table-13 {
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1; }
+  .phoneT-detail-table-14 {
+    grid-column: 1 / span 1;
+    grid-row: 8 / span 1; }
+  .phoneT-detail-table-15 {
+    grid-column: 1 / span 1;
+    grid-row: 9 / span 1; }
+  .phoneT-detail-table-16 {
+    grid-column: 1 / span 1;
+    grid-row: 10 / span 1; }
+  .phoneT-detail-table-17 {
+    grid-column: 1 / span 1;
+    grid-row: 11 / span 1; }
+  .phoneT-detail-table-18 {
+    grid-column: 1 / span 1;
+    grid-row: 12 / span 1; }
+  .phoneT-detail-table-19 {
+    grid-column: 1 / span 1;
+    grid-row: 13 / span 1; }
+  .phoneT-detail-table-20 {
+    grid-column: 1 / span 1;
+    grid-row: 14 / span 1; }
+  .phoneT-detail-table-21 {
+    grid-column: 1 / span 1;
+    grid-row: 15 / span 1; }
+  .phoneT-detail-table-22 {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1; }
+  .phoneT-detail-table-23 {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1; }
+  .phoneT-detail-table-24 {
+    grid-column: 2 / span 1;
+    grid-row: 5 / span 1; }
+  .phoneT-detail-table-25 {
+    grid-column: 2 / span 1;
+    grid-row: 6 / span 1; }
+  .phoneT-detail-table-26 {
+    grid-column: 2 / span 1;
+    grid-row: 7 / span 1; }
+  .phoneT-detail-table-27 {
+    grid-column: 2 / span 1;
+    grid-row: 8 / span 1; }
+  .phoneT-detail-table-28 {
+    grid-column: 2 / span 1;
+    grid-row: 9 / span 1; }
+  .phoneT-detail-table-29 {
+    grid-column: 2 / span 1;
+    grid-row: 10 / span 1; }
+  .phoneT-detail-table-30 {
+    grid-column: 2 / span 1;
+    grid-row: 11 / span 1; }
+  .phoneT-detail-table-31 {
+    grid-column: 2 / span 1;
+    grid-row: 12 / span 1; }
+  .phoneT-detail-table-32 {
+    grid-column: 2 / span 1;
+    grid-row: 13 / span 1; }
+  .phoneT-detail-table-33 {
+    grid-column: 2 / span 1;
+    grid-row: 14 / span 1; }
+  .phoneT-detail-table-34 {
+    grid-column: 2 / span 1;
+    grid-row: 15 / span 1; }
+  .phoneT-detail-table-35 {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1; }
+  .phoneT-detail-table-36 {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1; }
+  .phoneT-detail-table-37 {
+    grid-column: 3 / span 1;
+    grid-row: 5 / span 1; }
+  .phoneT-detail-table-38 {
+    grid-column: 3 / span 1;
+    grid-row: 6 / span 5; }
+  .phoneT-detail-table-39 {
+    grid-column: 3 / span 1;
+    grid-row: 12 / span 2; }
+  .phoneT-detail-table-40 {
+    grid-column: 3 / span 1;
+    grid-row: 14 / span 1; }
+  .phoneT-detail-table-41 {
+    grid-column: 3 / span 1;
+    grid-row: 15 / span 1; }
+  .phoneT-detail-table-42 {
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1; }
+  .phoneT-detail-table-43 {
+    grid-column: 4 / span 1;
+    grid-row: 4 / span 1; }
+  .phoneT-detail-table-44 {
+    grid-column: 4 / span 1;
+    grid-row: 5 / span 1; }
+  .phoneT-detail-table-45 {
+    grid-column: 4 / span 1;
+    grid-row: 6 / span 1; }
+  .phoneT-detail-table-46 {
+    grid-column: 4 / span 1;
+    grid-row: 7 / span 1; }
+  .phoneT-detail-table-47 {
+    grid-column: 4 / span 1;
+    grid-row: 8 / span 1; }
+  .phoneT-detail-table-48 {
+    grid-column: 4 / span 1;
+    grid-row: 9 / span 1; }
+  .phoneT-detail-table-49 {
+    grid-column: 4 / span 1;
+    grid-row: 10 / span 1; }
+  .phoneT-detail-table-50 {
+    grid-column: 4 / span 1;
+    grid-row: 11 / span 1; }
+  .phoneT-detail-table-51 {
+    grid-column: 4 / span 1;
+    grid-row: 12 / span 1; }
+  .phoneT-detail-table-52 {
+    grid-column: 4 / span 1;
+    grid-row: 13 / span 1; }
+  .phoneT-detail-table-53 {
+    grid-column: 4 / span 1;
+    grid-row: 14 / span 1; }
+  .phoneT-detail-table-54 {
+    grid-column: 4 / span 1;
+    grid-row: 15 / span 1; }
+  .phoneT-detail-table-55 {
+    grid-column: 5 / span 1;
+    grid-row: 3 / span 1; }
+  .phoneT-detail-table-56 {
+    grid-column: 5 / span 1;
+    grid-row: 4 / span 1; }
+  .phoneT-detail-table-57 {
+    grid-column: 5 / span 1;
+    grid-row: 5 / span 1; }
+  .phoneT-detail-table-58 {
+    grid-column: 5 / span 1;
+    grid-row: 6 / span 1; }
+  .phoneT-detail-table-59 {
+    grid-column: 5 / span 1;
+    grid-row: 7 / span 1; }
+  .phoneT-detail-table-60 {
+    grid-column: 5 / span 1;
+    grid-row: 8 / span 1; }
+  .phoneT-detail-table-61 {
+    grid-column: 5 / span 1;
+    grid-row: 9 / span 1; }
+  .phoneT-detail-table-62 {
+    grid-column: 5 / span 1;
+    grid-row: 10 / span 1; }
+  .phoneT-detail-table-63 {
+    grid-column: 5 / span 1;
+    grid-row: 11 / span 1; }
+  .phoneT-detail-table-64 {
+    grid-column: 5 / span 1;
+    grid-row: 12 / span 1;
+    display: flex;
+    flex-direction: column; }
+  .phoneT-detail-table-65 {
+    grid-column: 5 / span 1;
+    grid-row: 13 / span 1;
+    display: flex;
+    flex-direction: column; }
+  .phoneT-detail-table-66 {
+    grid-column: 5 / span 1;
+    grid-row: 14 / span 1;
+    display: flex;
+    flex-direction: column; }
+  .phoneT-detail-table-67 {
+    grid-column: 5 / span 1;
+    grid-row: 15 / span 1;
+    display: flex;
+    flex-direction: column; }
+  .phoneT-detail-table-68 {
+    grid-column: 6 / span 1;
+    grid-row: 3 / span 1; }
+  .phoneT-detail-table-69 {
+    grid-column: 6 / span 1;
+    grid-row: 4 / span 1; }
+  .phoneT-detail-table-70 {
+    grid-column: 6 / span 1;
+    grid-row: 5 / span 1; }
+  .phoneT-detail-table-71 {
+    grid-column: 6 / span 1;
+    grid-row: 6 / span 1; }
+  .phoneT-detail-table-72 {
+    grid-column: 6 / span 1;
+    grid-row: 7 / span 1; }
+  .phoneT-detail-table-73 {
+    grid-column: 6 / span 1;
+    grid-row: 8 / span 1; }
+  .phoneT-detail-table-74 {
+    grid-column: 6 / span 1;
+    grid-row: 9 / span 1; }
+  .phoneT-detail-table-75 {
+    grid-column: 6 / span 1;
+    grid-row: 10 / span 1; }
+  .phoneT-detail-table-76 {
+    grid-column: 6 / span 1;
+    grid-row: 11 / span 1; }
+  .phoneT-detail-table-77 {
+    grid-column: 6 / span 1;
+    grid-row: 12 / span 1; }
+  .phoneT-detail-table-78 {
+    grid-column: 6 / span 1;
+    grid-row: 13 / span 1; }
+  .phoneT-detail-table-79 {
+    grid-column: 6 / span 1;
+    grid-row: 14 / span 1; }
+  .phoneT-detail-table-80 {
+    grid-column: 6 / span 1;
+    grid-row: 15 / span 1; }
+
+.promotion {
+  margin: 3rem 0rem;
+  font-size: 2.5rem;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .promotion__lists {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+
+.promotion-phone {
+  margin: 5rem 0rem;
+  font-size: 2rem;
+  color: red;
+  display: flex; }
+  .promotion-phone__lists {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+
 .header {
   height: 10vh;
   background-color: #14AFB4;
@@ -1405,6 +1711,36 @@ body {
   top: 0;
   transform: rotate(-135deg); }
 
+.navigation-pc {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #324B4C; }
+  .navigation-pc-lists {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .navigation-pc-lists--item:link, .navigation-pc-lists--item:visited {
+      font-size: 1.7rem;
+      font-weight: 700;
+      line-height: 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      list-style: none;
+      transition: .25s ease; }
+      @media only screen and (max-width: 37.5em) {
+        .navigation-pc-lists--item:link, .navigation-pc-lists--item:visited {
+          font-size: 2.8rem;
+          line-height: 2.5rem; } }
+      @media only screen and (max-width: 25em) {
+        .navigation-pc-lists--item:link, .navigation-pc-lists--item:visited {
+          font-size: 2.8rem;
+          line-height: 2.5rem; } }
+    .navigation-pc-lists--item:hover {
+      color: #14AFB4; }
+
 .footer {
   background-color: #14AFB4;
   padding: 3rem;
@@ -1509,9 +1845,9 @@ body {
   align-items: center;
   background-color: #324B4C; }
   .wifi-for-lists {
-    width: 50%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center; }
     @media only screen and (max-width: 37.5em) {
       .wifi-for-lists {
@@ -1682,7 +2018,7 @@ body {
   .phone-for-lists {
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center; }
     @media only screen and (max-width: 37.5em) {
       .phone-for-lists {

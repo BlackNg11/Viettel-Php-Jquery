@@ -79,9 +79,9 @@ body {
     font-weight: 700;
     display: inline-block;
     //background-image: linear-gradient(to right, $color-secondary-light-2, $color-secondary-dark-2);
-    color: ghostwhite;
-    -webkit-background-clip: text;
     //color: transparent;
+    //-webkit-background-clip: text; 
+    color: ghostwhite;
     letter-spacing: .2rem;
     transition: all .2s;
 
