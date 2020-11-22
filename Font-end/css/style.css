@@ -101,9 +101,8 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #29A09C, #FF9900);
+  color: ghostwhite;
   -webkit-background-clip: text;
-  color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
   @media only screen and (max-width: 56.25em) {
@@ -173,6 +172,9 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 15rem; }
+  .wifi__info--heading {
+    font-size: 5rem;
+    max-width: 35rem; }
   @media only screen and (max-width: 25em) {
     .wifi__info {
       padding: 0rem;

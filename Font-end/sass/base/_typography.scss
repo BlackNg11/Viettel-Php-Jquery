@@ -78,9 +78,10 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-secondary-light-2, $color-secondary-dark-2);
+    //background-image: linear-gradient(to right, $color-secondary-light-2, $color-secondary-dark-2);
+    color: ghostwhite;
     -webkit-background-clip: text;
-    color: transparent;
+    //color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
 
