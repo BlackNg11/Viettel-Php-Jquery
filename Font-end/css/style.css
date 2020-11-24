@@ -33,7 +33,7 @@ html {
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 45%; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26em) {
     html {
       font-size: 45%; } }
   @media only screen and (min-width: 112.5em) {
@@ -128,7 +128,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .footer-heading {
       font-size: 3.8rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26em) {
     .footer-heading {
       font-size: 3.8rem; } }
 
@@ -166,26 +166,38 @@ body {
   opacity: 0;
   visibility: hidden; }
 
+.display-none {
+  display: none; }
+
 .wifi__info {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 15rem; }
-  .wifi__info--heading {
-    font-size: 5rem;
-    max-width: 35rem; }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26em) {
     .wifi__info {
+      height: 100%;
       padding: 0rem;
       flex-direction: column;
       justify-content: space-between; } }
+  .wifi__info--heading {
+    font-size: 5rem;
+    max-width: 35rem; }
+    @media only screen and (max-width: 37.5em) {
+      .wifi__info--heading {
+        font-size: 4rem;
+        max-width: 40rem;
+        margin-top: -35rem; } }
+    @media only screen and (max-width: 26em) {
+      .wifi__info--heading {
+        margin-top: 0; } }
   .wifi__info--left {
     flex: 0 0 40%;
     margin-top: -35rem; }
     @media only screen and (max-width: 37.5em) {
       .wifi__info--left {
         margin-top: 0; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .wifi__info--left {
         margin-top: 0; } }
   .wifi__info--right {
@@ -202,7 +214,7 @@ body {
     line-height: 1.5rem;
     margin-top: 1.5rem;
     color: #162A23; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .wifi__info--text {
         padding: 0rem; } }
 
@@ -220,6 +232,9 @@ body {
     position: absolute;
     transition: all 2s;
     margin-left: 8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .viettel-infomation__deep__change {
+        flex-direction: column; } }
     .viettel-infomation__deep__change--1 {
       z-index: 1111;
       opacity: 0;
@@ -241,7 +256,27 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0 5rem;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+    @media only screen and (max-width: 56.25em) {
+      .viettel-infomation__deep--left {
+        width: 35rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .viettel-infomation__deep--left {
+        height: 50vh;
+        width: 50rem;
+        transform: translate(10%, 10%);
+        padding: 0 5rem; } }
+    @media only screen and (max-width: 26em) {
+      .viettel-infomation__deep--left {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-20%, -48%);
+        height: 35vh;
+        width: 40rem;
+        padding: 0;
+        margin-right: 0rem; } }
     .viettel-infomation__deep--left h3 {
       font-size: 2.2rem;
       font-weight: 1.5rem;
@@ -252,9 +287,33 @@ body {
       font-size: 1.6rem;
       font-weight: .8rem;
       color: black; }
+      @media only screen and (max-width: 37.5em) {
+        .viettel-infomation__deep--left p {
+          font-size: 2rem;
+          font-weight: .8rem; } }
   .viettel-infomation__deep--right-img {
     height: 45vh;
     width: 50rem; }
+    @media only screen and (max-width: 26em) {
+      .viettel-infomation__deep--right-img {
+        height: 35vh;
+        width: 40rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .viettel-infomation__deep--right {
+      width: 35rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .viettel-infomation__deep--right {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-45%, 80%);
+      width: 55rem; } }
+  @media only screen and (max-width: 26em) {
+    .viettel-infomation__deep--right {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-28%, 68%); } }
 
 .active {
   opacity: 1;
@@ -270,7 +329,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26em) {
     .wifi-detail__info {
       flex-direction: column;
       justify-content: center;
@@ -288,7 +347,7 @@ body {
         width: 35rem;
         height: 35rem;
         transform: translateY(-4rem); } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .wifi-detail__info--right-img {
         width: 30rem;
         height: 30rem;
@@ -326,7 +385,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .phone-detail__info {
       flex-direction: column; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26em) {
     .phone-detail__info {
       flex-direction: column; } }
   .phone-detail__info--left {
@@ -336,7 +395,7 @@ body {
         margin-right: 0;
         margin-bottom: 4rem;
         width: 100%; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .phone-detail__info--left {
         margin-right: 0;
         margin-bottom: 4rem;
@@ -348,7 +407,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .phone-detail__info--right {
         transform: translateX(0rem); } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .phone-detail__info--right {
         transform: translateX(0rem); } }
   .phone-detail__info--list {
@@ -397,14 +456,14 @@ body {
       font-size: 5rem;
       font-weight: 700;
       color: black; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26em) {
         .gallary__info--text {
           font-size: 3rem; } }
     .gallary__info--textsmail {
       font-size: 3rem;
       font-weight: 400;
       color: black; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26em) {
         .gallary__info--textsmail {
           font-size: 2rem; } }
   .gallary:hover .gallary__info {
@@ -461,7 +520,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
       font-size: 2.7rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26em) {
     .btn, .btn:link, .btn:visited {
       font-size: 2.7rem; } }
 
@@ -586,7 +645,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .card__side {
         width: 290%; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .card__side {
         width: 290%; } }
     .card__side--back {
@@ -599,12 +658,6 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
-
-@keyframes roateImg {
-  from {
-    transform: rotateY(-180deg); }
-  to {
-    transform: rotateY(0); } }
 
 .card-wifi {
   /*TEST*/
@@ -630,7 +683,7 @@ body {
       .card-wifi-heading {
         font-size: 6rem;
         line-height: 5rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .card-wifi-heading {
         font-size: 6rem;
         line-height: 5rem; } }
@@ -668,7 +721,7 @@ body {
       .card-wifi-heading span {
         font-size: 3.5rem;
         line-height: 3.7rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .card-wifi-heading span {
         font-size: 3.5rem;
         line-height: 3.7rem; } }
@@ -698,7 +751,7 @@ body {
       .card-wifi-bottom-percent {
         font-size: 3rem;
         line-height: 3rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .card-wifi-bottom-percent {
         font-size: 3rem;
         line-height: 3rem; } }
@@ -712,7 +765,7 @@ body {
         font-size: 4.5rem;
         line-height: 3rem;
         margin-top: 2rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .card-wifi-bottom__sale--price {
         font-size: 4.5rem;
         line-height: 3rem;
@@ -728,7 +781,7 @@ body {
       .card-wifi-bottom__sale--discount {
         font-size: 2.5rem;
         line-height: 2.4rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .card-wifi-bottom__sale--discount {
         font-size: 2.5rem;
         line-height: 2.4rem; } }
@@ -748,8 +801,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .card-wifi-bottom--text {
         font-size: 2.5rem;
-        line-height: 3.5rem; } }
-    @media only screen and (max-width: 25em) {
+        line-height: 3.5rem;
+        max-width: 30rem; } }
+    @media only screen and (max-width: 26em) {
       .card-wifi-bottom--text {
         font-size: 2.5rem;
         line-height: 3.5rem; } }
@@ -776,14 +830,14 @@ body {
       font-size: 5rem;
       font-weight: 700;
       color: black; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26em) {
         .gallary__info--text {
           font-size: 3rem; } }
     .gallary__info--textsmail {
       font-size: 3rem;
       font-weight: 400;
       color: black; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26em) {
         .gallary__info--textsmail {
           font-size: 2rem; } }
   .gallary:hover .gallary__info {
@@ -834,7 +888,13 @@ body {
   transform: translateY(-13rem); }
   @media only screen and (max-width: 37.5em) {
     .form {
-      transform: translateY(0rem); } }
+      transform: translate(15%, -15%); } }
+  @media only screen and (max-width: 26em) {
+    .form {
+      transform: translate(0%, -25%); } }
+  @media only screen and (max-width: 37.5em) {
+    .form-btn {
+      font-size: 2rem; } }
   .form__group {
     display: flex;
     flex-direction: column;
@@ -863,8 +923,9 @@ body {
     transition: all .3s; }
     @media only screen and (max-width: 37.5em) {
       .form__input {
-        font-size: 2.1rem; } }
-    @media only screen and (max-width: 25em) {
+        font-size: 2.1rem;
+        padding: 1.5rem 1.3rem; } }
+    @media only screen and (max-width: 26em) {
       .form__input {
         font-size: 2rem; } }
     .form__input:focus {
@@ -897,7 +958,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .form__label {
         font-size: 2.5rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .form__label {
         font-size: 2.5rem; } }
   .form-ui {
@@ -908,9 +969,266 @@ body {
   .form__group {
     margin-bottom: 2.5rem; }
 
+.form-register {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #fafafa;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .form-register {
+      padding: 2.5rem; } }
+  .form-register__big-circle {
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #1cd4af, #159b80);
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-40%, 38%); }
+    @media only screen and (max-width: 37.5em) {
+      .form-register__big-circle {
+        bottom: 75%;
+        transform: scale(0.9) translate(-40%, 30%);
+        right: 50%; } }
+    @media only screen and (max-width: 26em) {
+      .form-register__big-circle {
+        display: none; } }
+    .form-register__big-circle:after {
+      content: "";
+      position: absolute;
+      width: 36rem;
+      height: 36rem;
+      background-color: #fafafa;
+      border-radius: 50%;
+      top: calc(50% - 18rem);
+      left: calc(50% - 18rem); }
+  .form-register--square {
+    position: absolute;
+    height: 40rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(181%, 11%);
+    opacity: 0.2; }
+    @media only screen and (max-width: 37.5em) {
+      .form-register--square {
+        transform: translate(140%, 43%);
+        height: 350px; } }
+
+.form-2 {
+  width: 100%;
+  max-width: 82rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  @media only screen and (max-width: 37.5em) {
+    .form-2 {
+      grid-template-columns: 1fr; } }
+  .form-2__contact-form {
+    background-color: #1abc9c;
+    position: relative; }
+    .form-2__contact-form:before {
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      background-color: #1abc9c;
+      transform: rotate(45deg);
+      top: 50px;
+      left: -13px; }
+      @media only screen and (max-width: 37.5em) {
+        .form-2__contact-form:before {
+          top: -13px;
+          left: initial;
+          right: 70px; } }
+    .form-2__contact-form form {
+      padding: 3.6rem 3.5rem;
+      z-index: 10;
+      overflow: hidden;
+      position: relative; }
+    .form-2__contact-form--input-container {
+      position: relative;
+      margin: 1.6rem 0; }
+      .form-2__contact-form--input-container span {
+        position: absolute;
+        top: 0;
+        left: 25px;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        padding: 0 0.64rem;
+        color: transparent;
+        pointer-events: none;
+        z-index: 500; }
+        .form-2__contact-form--input-container span:before, .form-2__contact-form--input-container span:after {
+          content: "";
+          position: absolute;
+          width: 10%;
+          opacity: 0;
+          transition: 0.3s;
+          height: 5px;
+          background-color: #1abc9c;
+          top: 50%;
+          transform: translateY(-50%); }
+        .form-2__contact-form--input-container span:before {
+          left: 50%; }
+        .form-2__contact-form--input-container span:after {
+          right: 50%; }
+    .form-2__contact-form--input {
+      width: 100%;
+      outline: none;
+      border: 2px solid #fafafa;
+      background: none;
+      padding: 1.5rem 1.9rem;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.5rem;
+      letter-spacing: 0.5px;
+      border-radius: 25px;
+      transition: 0.3s; }
+      .form-2__contact-form--input-1 {
+        color: black; }
+    .form-2__contact-form--title {
+      color: #FFF;
+      font-weight: 500;
+      font-size: 3.8rem;
+      line-height: 1;
+      margin-bottom: 1.1rem; }
+    .form-2__contact-form--textarea .form-2__contact-form--input {
+      padding: 1.2rem 1.9rem;
+      min-height: 150px;
+      border-radius: 22px;
+      resize: none;
+      overflow-y: auto; }
+    .form-2__contact-form--input-container label {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      padding: 0 0.6rem;
+      color: #fafafa;
+      font-size: 1.4rem;
+      font-weight: 700;
+      pointer-events: none;
+      z-index: 1000;
+      transition: 0.5s; }
+    .form-2__contact-form--input-containe .form-2__contact-form--textarea label {
+      top: 1.6rem;
+      transform: translateY(0); }
+    .form-2__contact-form--btn {
+      padding: 1rem 2.1rem;
+      background-color: #fff;
+      border: 2px solid #fafafa;
+      font-size: 1.5rem;
+      color: #1abc9c;
+      line-height: 1;
+      border-radius: 25px;
+      outline: none;
+      cursor: pointer;
+      transition: 0.3s;
+      margin: 0; }
+      .form-2__contact-form--btn:hover {
+        background-color: transparent;
+        color: #fff; }
+  .form-2__circle {
+    border-radius: 50%;
+    background: linear-gradient(135deg, transparent 20%, #149279);
+    position: absolute; }
+    .form-2__circle--one {
+      width: 130px;
+      height: 130px;
+      top: 130px;
+      right: -40px; }
+    .form-2__circle--two {
+      width: 80px;
+      height: 80px;
+      top: 10px;
+      right: 30px; }
+  .form-2__contact-info {
+    padding: 3.7rem 3.5rem;
+    position: relative; }
+    .form-2__contact-info__title {
+      color: #1abc9c; }
+    .form-2__contact-info__title {
+      font-weight: 500;
+      font-size: 3.8rem;
+      line-height: 1;
+      margin-bottom: 1.1rem; }
+    .form-2__contact-info__text {
+      color: #333;
+      margin: 2.4rem 0 3.6rem 0;
+      font-size: 1.8rem; }
+      @media only screen and (max-width: 37.5em) {
+        .form-2__contact-info__text {
+          font-size: 2rem;
+          margin: 1rem 0 1.5rem 0; } }
+    .form-2__contact-info__information {
+      display: flex;
+      color: #555;
+      margin: 1.1rem 0;
+      align-items: center;
+      font-size: 1.5rem; }
+    .form-2__contact-info__icon {
+      width: 28px;
+      margin-right: 1.1rem; }
+    .form-2__contact-info__social-media {
+      padding: 3.6rem 0 0 0; }
+      .form-2__contact-info__social-media p {
+        color: #333; }
+    .form-2__contact-info__social-icons {
+      display: flex;
+      margin-top: 0.8rem; }
+      .form-2__contact-info__social-icons a {
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        background: linear-gradient(45deg, #1abc9c, #149279);
+        color: #fff;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 0.8rem;
+        transition: 0.3s; }
+      .form-2__contact-info__social-icons:hover {
+        transform: scale(1.05); }
+    .form-2__contact-info:before {
+      content: "";
+      position: absolute;
+      width: 110px;
+      height: 100px;
+      border: 22px solid #1abc9c;
+      border-radius: 50%;
+      bottom: -77px;
+      right: 50px;
+      opacity: 0.3; }
+      @media only screen and (max-width: 37.5em) {
+        .form-2__contact-info:before {
+          bottom: initial;
+          top: -75px;
+          right: 65px;
+          transform: scale(0.95); } }
+
+.form-2__contact-form--input-container.focus label {
+  top: 0 !important;
+  transform: translateY(-50%) !important;
+  left: 25px !important;
+  font-size: 1.3rem !important; }
+
+.form-2__contact-form--input-container.focus span:before,
+.form-2__contact-form--input-container.focus span:after {
+  width: 50% !important;
+  opacity: 1 !important; }
+
 .phone-detail-table {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(15, 3.5vw);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   color: black;
@@ -919,6 +1237,15 @@ body {
   padding: .5rem;
   column-gap: 1px;
   row-gap: 1px; }
+  @media only screen and (max-width: 37.5em) {
+    .phone-detail-table {
+      grid-template-rows: repeat(15, 5vw); } }
+  @media only screen and (max-width: 26em) {
+    .phone-detail-table {
+      grid-template-rows: repeat(15, 20vw);
+      grid-template-columns: repeat(5, 7.8vh);
+      font-size: 1.8rem;
+      line-height: 2rem; } }
   .phone-detail-table--item {
     box-shadow: 0 0 0 2px #eee;
     display: flex;
@@ -935,8 +1262,11 @@ body {
     grid-row: 1 / span 2;
     background: #46875C;
     color: white; }
+    @media only screen and (max-width: 26em) {
+      .phone-detail-table-2 p {
+        max-width: 7rem; } }
   .phone-detail-table-3 {
-    grid-column: 3 / -1;
+    grid-column: 3 / span 3;
     grid-row: 1 / span 1;
     background: #46875C;
     color: white; }
@@ -945,11 +1275,17 @@ body {
     grid-row: 2 / span 1;
     background: #46875C;
     color: white; }
+    @media only screen and (max-width: 26em) {
+      .phone-detail-table-4 p {
+        max-width: 7rem; } }
   .phone-detail-table-5 {
     grid-column: 4 /span 1;
     grid-row: 2 / span 1;
     background: #46875C;
     color: white; }
+    @media only screen and (max-width: 26em) {
+      .phone-detail-table-5 p {
+        max-width: 7rem; } }
   .phone-detail-table-6 {
     grid-column: 5 /span 1;
     grid-row: 2 / span 1;
@@ -1201,6 +1537,15 @@ body {
   padding: .5rem;
   column-gap: 1px;
   row-gap: 1px; }
+  @media only screen and (max-width: 37.5em) {
+    .phoneT-detail-table {
+      grid-template-rows: repeat(10, 5vw); } }
+  @media only screen and (max-width: 26em) {
+    .phoneT-detail-table {
+      grid-template-rows: repeat(10, 13vw);
+      grid-template-columns: repeat(7, 12.5vh);
+      font-size: 1.8rem;
+      line-height: 2rem; } }
   .phoneT-detail-table--item {
     box-shadow: 0 0 0 2px #eee;
     display: flex;
@@ -1217,6 +1562,9 @@ body {
     grid-row: 1 / span 2;
     background: #46875C;
     color: white; }
+    @media only screen and (max-width: 26em) {
+      .phoneT-detail-table-2 p {
+        max-width: 7rem; } }
   .phoneT-detail-table-3 {
     grid-column: 3 / -1;
     grid-row: 1 / span 1;
@@ -1227,11 +1575,17 @@ body {
     grid-row: 2 / span 1;
     background: #46875C;
     color: white; }
+    @media only screen and (max-width: 26em) {
+      .phoneT-detail-table-4 p {
+        max-width: 7rem; } }
   .phoneT-detail-table-5 {
     grid-column: 4 /span 1;
     grid-row: 2 / span 1;
     background: #46875C;
     color: white; }
+    @media only screen and (max-width: 26em) {
+      .phoneT-detail-table-5 p {
+        max-width: 7rem; } }
   .phoneT-detail-table-6 {
     grid-column: 5 /span 1;
     grid-row: 2 / span 1;
@@ -1388,6 +1742,9 @@ body {
   .phoneT-detail-table-55 {
     grid-column: 5 / span 1;
     grid-row: 3 / span 1; }
+    @media only screen and (max-width: 26em) {
+      .phoneT-detail-table-55 p {
+        max-width: 7rem; } }
   .phoneT-detail-table-56 {
     grid-column: 5 / span 1;
     grid-row: 4 / span 1; }
@@ -1483,8 +1840,9 @@ body {
     list-style: none;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center; }
+    justify-content: space-between;
+    align-items: center;
+    max-width: 104rem; }
 
 .promotion-phone {
   margin: 5rem 0rem;
@@ -1559,6 +1917,9 @@ body {
       @media only screen and (max-width: 37.5em) {
         .header__contact-phone:link, .header__contact-phone:visited {
           font-size: 3rem; } }
+      @media only screen and (max-width: 26em) {
+        .header__contact-phone:link, .header__contact-phone:visited {
+          font-size: 2.3rem; } }
 
 .navigation__checkbox {
   display: none; }
@@ -1583,7 +1944,7 @@ body {
     .navigation__button {
       top: 8rem;
       right: 4rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26em) {
     .navigation__button {
       top: 8rem;
       right: 4rem; } }
@@ -1608,7 +1969,7 @@ body {
     .navigation__background {
       top: 9rem;
       right: 5rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26em) {
     .navigation__background {
       top: 9rem;
       right: 5rem;
@@ -1648,7 +2009,7 @@ body {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
   transition: all .4s; }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26em) {
     .navigation__link:link, .navigation__link:visited {
       font-size: 3.5rem; } }
   .navigation__link:link span, .navigation__link:visited span {
@@ -1685,12 +2046,12 @@ body {
     transition: all .2s; }
   .navigation__icon::before {
     top: -.8rem; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .navigation__icon::before {
         top: -2.6rem; } }
   .navigation__icon::after {
     top: .8rem; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .navigation__icon::after {
         top: -1.5rem; } }
 
@@ -1717,6 +2078,9 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #324B4C; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation-pc {
+      display: none; } }
   .navigation-pc-lists {
     width: 100%;
     display: flex;
@@ -1734,7 +2098,7 @@ body {
         .navigation-pc-lists--item:link, .navigation-pc-lists--item:visited {
           font-size: 2.8rem;
           line-height: 2.5rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26em) {
         .navigation-pc-lists--item:link, .navigation-pc-lists--item:visited {
           font-size: 2.8rem;
           line-height: 2.5rem; } }
@@ -1760,7 +2124,7 @@ body {
         font-size: 3rem;
         line-height: 3rem;
         margin-bottom: 4rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .footer__text {
         font-size: 3rem;
         line-height: 3rem;
@@ -1773,13 +2137,13 @@ body {
     @media only screen and (max-width: 37.5em) {
       .footer__info {
         flex-direction: column; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .footer__info {
         flex-direction: column; } }
     @media only screen and (max-width: 37.5em) {
       .footer__info__group:not(:last-child) {
         margin-bottom: 3rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .footer__info__group:not(:last-child) {
         margin-bottom: 3rem; } }
   .footer-bot--1 {
@@ -1794,21 +2158,27 @@ body {
     margin-right: 3rem; }
 
 .wifi {
-  height: 90vh;
+  height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(50, 75, 76, 0.85), rgba(149, 176, 177, 0.85)), url(../img/Picture/7.jpg);
   background-size: cover;
   background-position: center; }
   @media only screen and (max-width: 37.5em) {
     .wifi {
       height: 100vh; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26em) {
     .wifi {
-      height: 85vh; } }
+      height: 100vh; } }
 
 .viettel-infomation {
   padding: 5rem 5rem 8rem 5rem;
   margin-bottom: 10rem;
   text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .viettel-infomation {
+      padding: 5rem 5rem 68rem 5rem; } }
+  @media only screen and (max-width: 26em) {
+    .viettel-infomation {
+      padding: 5rem 5rem 45rem 5rem; } }
   .viettel-infomation--h1 {
     font-size: 3.5rem;
     font-weight: 700;
@@ -1864,7 +2234,7 @@ body {
         .wifi-for-lists--item:link, .wifi-for-lists--item:visited {
           font-size: 2.8rem;
           line-height: 2.5rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26em) {
         .wifi-for-lists--item:link, .wifi-for-lists--item:visited {
           font-size: 2.8rem;
           line-height: 2.5rem; } }
@@ -1875,22 +2245,17 @@ body {
   width: 114rem;
   margin: 0 auto;
   margin-bottom: 5rem; }
-  @media only screen and (max-width: 75em) {
-    .wifi-contact {
-      width: 107rem !important; } }
   @media only screen and (max-width: 56.25em) {
     .wifi-contact {
-      width: 75rem !important; } }
-  @media only screen and (max-width: 37.5em) {
-    .wifi-contact {
-      width: 50rem !important; } }
-  @media only screen and (max-width: 25em) {
-    .wifi-contact {
-      width: 40rem !important; } }
+      width: 100vw;
+      margin: 0; } }
   .wifi-contact--head {
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .wifi-contact--head {
+        font-size: 5rem !important; } }
   .wifi-contact--wifi, .wifi-contact--tele, .wifi-contact--sport {
     color: #14AFB4;
     font-size: 4rem;
@@ -1906,7 +2271,7 @@ body {
       .wifi-contact--wifi, .wifi-contact--tele, .wifi-contact--sport {
         font-size: 3rem;
         margin: 3rem 0rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .wifi-contact--wifi, .wifi-contact--tele, .wifi-contact--sport {
         font-size: 3rem;
         margin: 3rem 0rem; } }
@@ -1917,7 +2282,7 @@ body {
       .wifi-contact__hotline {
         font-size: 4rem;
         line-height: 4rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .wifi-contact__hotline {
         font-size: 4rem;
         line-height: 4rem; } }
@@ -1931,7 +2296,7 @@ body {
         .wifi-contact__hotline--red {
           font-size: 4rem;
           line-height: 5rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26em) {
         .wifi-contact__hotline--red {
           font-size: 4rem;
           line-height: 5rem; } }
@@ -1945,7 +2310,7 @@ body {
       .wifi-contact__setting {
         font-size: 2.5rem;
         line-height: 3.5rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .wifi-contact__setting {
         font-size: 2.5rem;
         line-height: 3.5rem; } }
@@ -1962,7 +2327,7 @@ body {
         .wifi-contact__img--size {
           width: 40rem;
           height: 35rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26em) {
         .wifi-contact__img--size {
           width: 40rem;
           height: 35rem; } }
@@ -1974,7 +2339,7 @@ body {
           font-size: 2rem;
           line-height: 1.5rem;
           margin-top: 2rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26em) {
         .wifi-contact__img--status-img {
           font-size: 2rem;
           line-height: 1.5rem;
@@ -1986,7 +2351,7 @@ body {
       .wifi-contact--infomation {
         font-size: 4rem;
         line-height: 5rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .wifi-contact--infomation {
         font-size: 4rem;
         line-height: 4rem; } }
@@ -1997,7 +2362,7 @@ body {
         .wifi-contact--infomation--heading {
           font-size: 4rem;
           line-height: 5rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26em) {
         .wifi-contact--infomation--heading {
           font-size: 4rem;
           line-height: 5rem; } }
@@ -2035,7 +2400,7 @@ body {
         .phone-for-lists--item:link, .phone-for-lists--item:visited {
           font-size: 2.8rem;
           line-height: 2.5rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26em) {
         .phone-for-lists--item:link, .phone-for-lists--item:visited {
           font-size: 2.8rem;
           line-height: 2.5rem; } }
@@ -2046,18 +2411,14 @@ body {
   width: 114rem;
   margin: 0 auto;
   margin-bottom: 5rem; }
-  @media only screen and (max-width: 75em) {
-    .phone-contact {
-      width: 107rem !important; } }
   @media only screen and (max-width: 56.25em) {
     .phone-contact {
-      width: 75rem !important; } }
-  @media only screen and (max-width: 37.5em) {
-    .phone-contact {
-      width: 50rem !important; } }
-  @media only screen and (max-width: 25em) {
-    .phone-contact {
-      width: 40rem !important; } }
+      width: 100%; } }
+  .phone-contact--btn {
+    margin: 3rem 0;
+    text-align: center; }
+    .phone-contact--btn--1 {
+      font-size: 3rem !important; }
   .phone-contact--head {
     display: flex;
     justify-content: center;
@@ -2077,7 +2438,7 @@ body {
       .phone-contact--phone, .phone-contact--tele, .phone-contact--sport {
         font-size: 3rem;
         margin: 3rem 0rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .phone-contact--phone, .phone-contact--tele, .phone-contact--sport {
         font-size: 3rem;
         margin: 3rem 0rem; } }
@@ -2088,7 +2449,7 @@ body {
       .phone-contact__hotline {
         font-size: 4rem;
         line-height: 4rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .phone-contact__hotline {
         font-size: 4rem;
         line-height: 4rem; } }
@@ -2102,54 +2463,10 @@ body {
         .phone-contact__hotline--red {
           font-size: 4rem;
           line-height: 5rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26em) {
         .phone-contact__hotline--red {
           font-size: 4rem;
           line-height: 5rem; } }
-  .phone-contact__setting {
-    font-size: 1.6rem;
-    margin-top: 1.5rem;
-    margin-bottom: 4rem; }
-    .phone-contact__setting--list {
-      list-style: none; }
-    @media only screen and (max-width: 37.5em) {
-      .phone-contact__setting {
-        font-size: 2.5rem;
-        line-height: 3.5rem; } }
-    @media only screen and (max-width: 25em) {
-      .phone-contact__setting {
-        font-size: 2.5rem;
-        line-height: 3.5rem; } }
-  .phone-contact__img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 4rem; }
-    .phone-contact__img--size {
-      width: 60rem;
-      height: 42rem; }
-      @media only screen and (max-width: 37.5em) {
-        .phone-contact__img--size {
-          width: 40rem;
-          height: 35rem; } }
-      @media only screen and (max-width: 25em) {
-        .phone-contact__img--size {
-          width: 40rem;
-          height: 35rem; } }
-    .phone-contact__img--status-img {
-      font-size: 1rem;
-      line-height: .5rem; }
-      @media only screen and (max-width: 37.5em) {
-        .phone-contact__img--status-img {
-          font-size: 2rem;
-          line-height: 1.5rem;
-          margin-top: 2rem; } }
-      @media only screen and (max-width: 25em) {
-        .phone-contact__img--status-img {
-          font-size: 2rem;
-          line-height: 1.5rem;
-          margin-top: 2rem; } }
   .phone-contact--infomation {
     font-size: 1.6rem;
     line-height: 2rem; }
@@ -2157,23 +2474,41 @@ body {
       .phone-contact--infomation {
         font-size: 4rem;
         line-height: 5rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 26em) {
       .phone-contact--infomation {
         font-size: 4rem;
         line-height: 4rem; } }
     .phone-contact--infomation--heading {
-      font-size: 2rem;
-      line-height: 2.5rem; }
+      font-size: 4rem;
+      line-height: 2.5rem;
+      margin-bottom: 2.5rem; }
       @media only screen and (max-width: 37.5em) {
         .phone-contact--infomation--heading {
           font-size: 4rem;
           line-height: 5rem; } }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 26em) {
         .phone-contact--infomation--heading {
           font-size: 4rem;
           line-height: 5rem; } }
+    .phone-contact--infomation--title {
+      font-size: 2.5rem; }
+    .phone-contact--infomation--img {
+      width: 100%;
+      height: 45vh; }
+      @media only screen and (max-width: 37.5em) {
+        .phone-contact--infomation--img {
+          height: 65vh; } }
+      .phone-contact--infomation--img--2 {
+        height: 85vh; }
     .phone-contact--infomation--text {
+      font-size: 1.7rem;
       margin: 2rem 0rem; }
+      @media only screen and (max-width: 37.5em) {
+        .phone-contact--infomation--text {
+          font-size: 2.5rem; } }
+      @media only screen and (max-width: 26em) {
+        .phone-contact--infomation--text {
+          font-size: 3rem; } }
     .phone-contact--infomation--list {
       list-style: none; }
 

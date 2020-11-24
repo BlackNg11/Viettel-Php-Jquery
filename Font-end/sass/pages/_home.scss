@@ -1,5 +1,5 @@
 .wifi {
-	height: 90vh;
+	height: 100vh;
 	background-image: linear-gradient(
         to right bottom,
         rgba($color-secondary-light, 0.85),
@@ -13,7 +13,7 @@
     }
 
     @include respond(smaill-phone) {
-        height: 85vh;
+        height: 100vh;
     }
 }
 
@@ -21,6 +21,14 @@
     padding: 5rem 5rem 8rem 5rem ;
     margin-bottom: 10rem;
     text-align: center;
+
+    @include respond(phone) {
+        padding: 5rem 5rem 68rem 5rem ;
+    }
+
+    @include respond(smaill-phone) {
+        padding: 5rem 5rem 45rem 5rem ;
+    }
 
     &--h1 {
         font-size: 3.5rem;

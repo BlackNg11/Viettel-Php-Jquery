@@ -1,6 +1,6 @@
 .phone-detail-table {
 	display: grid;
-	grid-template-columns: repeat(7, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(15, 3.5vw);
     // justify-items: center;
     // align-items: center;
@@ -11,6 +11,18 @@
     padding: .5rem;
     column-gap: 1px;
     row-gap: 1px;
+
+    @include respond(phone) {
+        grid-template-rows: repeat(15, 5vw);
+    }
+
+     @include respond(smaill-phone) {
+        grid-template-rows: repeat(15, 20vw);
+        grid-template-columns: repeat(5, 7.8vh);
+        font-size: 1.8rem;
+        line-height: 2rem;
+
+    }
 
     &--item, {
     	box-shadow: 0 0 0 2px $color-grey-light-2;
@@ -32,10 +44,19 @@
     	grid-row: 1 / span 2;
     	background: #46875C;
     	color: white;
+
+        & p {
+            @include respond(smaill-phone) {
+            max-width: 7rem;
+            }
+        }
+        
+        
+
     }
 
     &-3 {
-    	grid-column: 3 / -1;
+    	grid-column: 3 / span 3;
     	grid-row: 1 / span 1;
     	background: #46875C;
     	color: white;
@@ -46,6 +67,12 @@
     	grid-row: 2 / span 1;
     	background: #46875C;
     	color: white;
+
+        & p {
+            @include respond(smaill-phone) {
+            max-width: 7rem;
+            }
+        }
     }
 
     &-5 {
@@ -53,6 +80,12 @@
     	grid-row: 2 / span 1;
     	background: #46875C;
     	color: white;
+
+        & p {
+            @include respond(smaill-phone) {
+            max-width: 7rem;
+            }
+        }
     }
 
     &-6 {
@@ -511,6 +544,18 @@
     column-gap: 1px;
     row-gap: 1px;
 
+    @include respond(phone) {
+        grid-template-rows: repeat(10, 5vw);
+    }
+
+     @include respond(smaill-phone) {
+        grid-template-rows: repeat(10, 13vw);
+        grid-template-columns: repeat(7, 12.5vh);
+        font-size: 1.8rem;
+        line-height: 2rem;
+
+    }
+
     &--item, {
         box-shadow: 0 0 0 2px $color-grey-light-2;
         display: flex;
@@ -531,6 +576,12 @@
         grid-row: 1 / span 2;
         background: #46875C;
         color: white;
+
+        & p {
+            @include respond(smaill-phone) {
+            max-width: 7rem;
+            }
+        }
     }
 
     &-3 {
@@ -545,6 +596,12 @@
         grid-row: 2 / span 1;
         background: #46875C;
         color: white;
+
+        & p {
+            @include respond(smaill-phone) {
+            max-width: 7rem;
+            }
+        }
     }
 
     &-5 {
@@ -552,6 +609,12 @@
         grid-row: 2 / span 1;
         background: #46875C;
         color: white;
+
+        & p {
+            @include respond(smaill-phone) {
+            max-width: 7rem;
+            }
+        }
     }
 
     &-6 {
@@ -808,6 +871,12 @@
     &-55 {
         grid-column: 5 / span 1;
         grid-row: 3 / span 1;
+
+        & p {
+            @include respond(smaill-phone) {
+                max-width: 7rem;
+            }
+        }
     }
 
     &-56 {

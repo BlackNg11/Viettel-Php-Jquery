@@ -7,27 +7,28 @@
 	box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 	transform: translateY(-13rem);
 
-	@include respond(phone) {
-		
+	@include respond(phone) {		
 		// transform: translateX(0rem) translateY(-5rem);
 		// width: 80%;
 		// height: 50%;
 		// padding: 0rem ;
-		 transform: translateY(0rem);
-		// transform: translateX(5rem);
+		 transform: translate(15%,-15%);
+		
 	}
 
-	@include respond(smail-phone) {
-
+	@include respond(smaill-phone) {
 		// transform: translateX(-3rem) translateY(5rem);
-		width: 60%;
-		height: 60%;
-		padding: 0rem;
-		transform: translateY(0rem);
-		transform: translateX(5rem)
+		// width: 60%;
+		// height: 60%;
+		transform: translate(0%,-25%);
 	}
 
 	
+	&-btn {
+		@include respond(phone) {
+			font-size: 2rem;
+		}
+	}	
 	
 	&__group {
 		display: flex;
@@ -64,6 +65,7 @@
 
         @include respond(phone) {
 			font-size: 2.1rem;
+			padding: 1.5rem 1.3rem;
 		}
 
         @include respond(smaill-phone) {
