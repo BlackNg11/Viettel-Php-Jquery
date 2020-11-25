@@ -88,6 +88,8 @@ if (elementRemove2) {
 
 let btnClickToScroll1 = document.querySelector('#scrollTo1');
 let btnClickToScroll2 = document.querySelector('#scrollTo2');
+let btnClickToScroll3 = document.querySelectorAll('.btn-scroll--1');
+console.log(btnClickToScroll3);
 // window.addEventListener('scroll', () => {
 // 	console.log(window.pageYOffset);
 // })
@@ -95,18 +97,30 @@ let btnClickToScroll2 = document.querySelector('#scrollTo2');
 if (btnClickToScroll1) {
 	btnClickToScroll1.addEventListener("click", (e) => {
 		e.preventDefault();
-		window.scrollTo({top: 2250, behavior: 'smooth'});
+		window.scrollTo({top: 2150, behavior: 'smooth'});
 
 	})
 }
 
-if (btnClickToScroll2) {
-	btnClickToScroll2.addEventListener("click", (e) => {
-		e.preventDefault();
-		window.scrollTo({top: 1950, behavior: 'smooth'});
+if (btnClickToScroll3) {
+	btnClickToScroll3.map(index => {
+		index.addEventListener("click", (e) => {
+			e.preventDefault();
+			// window.scrollTo({top: 1900, behavior: 'smooth'});
 
+		})
 	})
 }
+
+// if (btnClickToScroll3) {
+// 	btnClickToScroll2.addEventListener("click", (e) => {
+// 		e.preventDefault();
+// 		window.scrollTo({top: 1950, behavior: 'smooth'});
+
+// 	})
+// }
+
+
 
 //Scroll For Phone
 

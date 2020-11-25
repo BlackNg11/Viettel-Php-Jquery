@@ -199,7 +199,7 @@ body {
         margin-top: 0; } }
     @media only screen and (max-width: 26em) {
       .wifi__info--left {
-        margin-top: 0; } }
+        margin-top: 8rem; } }
   .wifi__info--right {
     flex: 1; }
     @media only screen and (max-width: 37.5em) {
@@ -932,6 +932,8 @@ body {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
       border-bottom: 3px solid #14AFB4; }
+      .form__input:focus::-webkit-input-placeholder {
+        opacity: 0; }
     .form__input:focus:invalid {
       border-bottom: 3px solid red; }
     .form__input::-webkit-input-placeholder {
@@ -1932,7 +1934,7 @@ body {
   top: 3rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 50000;
+  z-index: 50000000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
@@ -2162,12 +2164,15 @@ body {
   background-image: linear-gradient(to right bottom, rgba(50, 75, 76, 0.85), rgba(149, 176, 177, 0.85)), url(../img/Picture/7.jpg);
   background-size: cover;
   background-position: center; }
+  @media only screen and (max-width: 56.25em) {
+    .wifi {
+      height: 80vh; } }
   @media only screen and (max-width: 37.5em) {
     .wifi {
-      height: 100vh; } }
+      height: 85vh; } }
   @media only screen and (max-width: 26em) {
     .wifi {
-      height: 100vh; } }
+      height: 105vh; } }
 
 .viettel-infomation {
   padding: 5rem 5rem 8rem 5rem;
@@ -2178,7 +2183,7 @@ body {
       padding: 5rem 5rem 68rem 5rem; } }
   @media only screen and (max-width: 26em) {
     .viettel-infomation {
-      padding: 5rem 5rem 45rem 5rem; } }
+      padding: 5rem 5rem 50rem 5rem; } }
   .viettel-infomation--h1 {
     font-size: 3.5rem;
     font-weight: 700;
@@ -2252,7 +2257,8 @@ body {
   .wifi-contact--head {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin: 2rem 0rem; }
     @media only screen and (max-width: 37.5em) {
       .wifi-contact--head {
         font-size: 5rem !important; } }
@@ -2514,3 +2520,13 @@ body {
 
 .active-navigation {
   color: #14AFB4 !important; }
+
+.error {
+  padding: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .error--heading {
+    font-size: 3rem;
+    line-height: 10rem;
+    color: #14AFB4; }

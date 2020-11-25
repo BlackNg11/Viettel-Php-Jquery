@@ -76,6 +76,10 @@
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
             border-bottom: 3px solid $color-primary;
+
+            &::-webkit-input-placeholder {
+            	opacity: 0;
+        	}
         }
 
         &:focus:invalid {
@@ -84,6 +88,7 @@
 
         &::-webkit-input-placeholder {
             color: $color-grey-dark-2;
+
         }
 
         &--select {
