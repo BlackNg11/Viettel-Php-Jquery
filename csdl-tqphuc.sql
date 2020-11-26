@@ -10,8 +10,8 @@ modifiedby varchar(255) null
 
 create table user (
 id bigint not null primary key auto_increment,
-username varchar (150) not null,
-password varchar (150) not null,
+username varchar (150) null,
+password varchar (150) null,
 fullname varchar (150) null,
 status int not null,
 roleid bigint not null,
