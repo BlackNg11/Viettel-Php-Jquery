@@ -15,6 +15,11 @@
 		transition: all 2s;
 		margin-left: 8rem;
 
+		@include respond(phone) {
+			flex-direction: column;
+		}
+
+
 		&--1 {
 			z-index: 1111;
 			opacity: 0;
@@ -44,8 +49,32 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		padding: 0 5rem;
 		box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+		
+		@include respond(tab-port) {
+			width: 35rem;
+		}
 
+		@include respond(phone) {
+			height: 50vh;
+			width: 50rem;
+			transform: translate(10%,10%);
+			padding: 0 5rem;
+		}
+
+		@include respond(smaill-phone) {
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-20%,-48%);
+			  height: 35vh;
+			  width: 40rem;
+			  padding: 0;
+			  margin-right: 0rem;
+		}
+
+		
 
 		& h3 {
 			font-size: 2.2rem;
@@ -59,6 +88,11 @@
 			font-size: 1.6rem;
 			font-weight: .8rem;
 			color: black;
+
+			@include respond(phone) {
+			  	font-size: 2rem;
+				font-weight: .8rem;
+			}
 		}
 	}
 
@@ -67,7 +101,36 @@
 		&-img {
 			height: 45vh;
 			width: 50rem;
+			
+
+			@include respond(smaill-phone) {
+				height: 35vh;
+				width: 40rem;		
+			}
+			
 		}
+
+		@include respond(tab-port) {
+			width: 35rem;
+		}
+
+		@include respond(phone) {
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-45%,80%);
+			  width: 55rem;
+		}
+
+		@include respond(smaill-phone) {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-28%,68%);
+			
+		}
+
+
 	}
 }
 

@@ -1,8 +1,0 @@
-package com.tqphuc.dao.impl;
-
-import com.tqphuc.dao.GenericDAO;
-
-public class AbstractDAO implements GenericDAO{
-
-	
-}

@@ -1,7 +1,0 @@
-package com.tqphuc.service.impl;
-
-import com.tqphuc.service.ISimService;
-
-public class SimService implements ISimService{
-
-}

@@ -4,17 +4,36 @@
 	align-items: center;
 	padding: 15rem;
 
-	&--heading {
-		font-size: 5rem;
-		max-width: 35rem;
-	}
-	
-
 	@include respond(smaill-phone) {
+		height: 100%;
 		padding: 0rem;
 		flex-direction: column;
 		justify-content: space-between;
 	}
+
+	&--heading {
+		font-size: 5rem;
+		max-width: 35rem;
+
+		@include respond(phone) {
+			font-size: 4rem;
+			max-width: 40rem;
+			margin-top: -35rem;
+		}
+
+		@include respond(smaill-phone) {
+			// margin-top: 10rem;
+			// margin-right: 3rem;
+			// margin-left: 3rem;
+			// flex: 0 0 30%;
+			margin-top: 0;
+		}
+
+		
+	}
+	
+
+	
 
 	&--left {
 		flex: 0 0 40%;
@@ -33,7 +52,7 @@
 			// margin-right: 3rem;
 			// margin-left: 3rem;
 			// flex: 0 0 30%;
-			margin-top: 0;
+			margin-top: 8rem;
 		}
 	}
 

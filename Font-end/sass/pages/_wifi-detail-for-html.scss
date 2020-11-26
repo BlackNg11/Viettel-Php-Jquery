@@ -56,26 +56,33 @@
 	margin: 0 auto;
 	margin-bottom: 5rem;
 
-	@include respond(tab-land) {
-       width: 107rem !important;
-     }
+	// @include respond(tab-land) {
+ //       width: 107rem !important;
+ //    }
 
-	 @include respond(tab-port) {
-       width: 75rem !important;
+	@include respond(tab-port) {
+       width: 100vw;
+       margin: 0;
     }
+
 
     @include respond(phone) {
-       width: 50rem !important;
+       
     }
 
-    @include respond(smaill-phone) {
-       width: 40rem !important;
-    }
+
+
 
     &--head {
     	display: flex;
     	justify-content: center;
     	align-items: center;
+    	margin: 2rem 0rem;
+
+    	@include respond(phone) {
+			font-size: 5rem !important;
+
+		}
     }
 
     
@@ -222,7 +229,7 @@
 			}
 
 		@include respond(smaill-phone) {
-			font-size: 4rem;
+			font-size: 2.5rem;
 			line-height: 4rem;
 		}
 
@@ -231,12 +238,12 @@
 			line-height: 2.5rem;
 
 			@include respond(phone) {
-				font-size: 4rem;
+				font-size: 3rem;
 				line-height: 5rem;
 			}
 
 			@include respond(smaill-phone) {
-				font-size: 4rem;
+				font-size: 3rem;
 				line-height: 5rem;
 			}
 		}

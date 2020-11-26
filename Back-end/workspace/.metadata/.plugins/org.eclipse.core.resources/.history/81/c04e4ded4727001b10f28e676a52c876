@@ -1,5 +1,0 @@
-package com.tqphuc.dao;
-
-public interface GenericDAO {
-
-}
