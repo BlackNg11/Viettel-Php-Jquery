@@ -1,8 +1,0 @@
-package com.tqphuc.dao;
-
-import com.tqphuc.mapper.RowMapper;
-
-public interface GenericDAO<T> {
-	<T> List<T> query(String sql, RowMapper<T> rowMapper, Object... parameter);
-	
-}
