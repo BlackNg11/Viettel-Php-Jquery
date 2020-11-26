@@ -1,10 +1,20 @@
-		<section class="navigation-pc">
-			<ul class="navigation-pc-lists">
-				<a href="#" class="navigation-pc-lists--item active-navigation"><li>Trang Chủ</li></a>
-				<a href="wifi-cho-ho-gia-dinh.html" class="navigation-pc-lists--item"><li>Internet-Truyền Hình</li></a>
-				<a href="dich-vu-tra-sau-viettel.html" class="navigation-pc-lists--item "><li>Dịch Vụ Di Động</li></a>
-				<a href="404.html" class="navigation-pc-lists--item"><li>Mua Sim</li></a>
-				<a href="404.html" class="navigation-pc-lists--item"><li>Mua Điện Thoại</li></a>
-				<a href="404.html" class="navigation-pc-lists--item"><li>Tin Khuyến Mãi</li></a>
+	<div class="navigation">
+		<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+		<label for="navi-toggle" class="navigation__button">
+			<span class="navigation__icon">&nbsp;</span>
+		</label>
+
+		<div class="navigation__background">&nbsp;</div>
+
+		<nav class="navigation__nav">
+			<ul class="navigation__list">
+				<li class="navigation__item"><a href="index.php" class="navigation__link"><span>01</span>Trang Chủ</a></li>
+				<li class="navigation__item"><a href="wifi-cho-ho-gia-dinh.php" class="navigation__link"><span>02</span>Internet + Truyền Hình</a></li>
+				<li class="navigation__item"><a href="dich-vu-tra-sau-viettel.php" class="navigation__link"><span>03</span>Dịch Vụ Di Động</a></li>
+				<li class="navigation__item"><a href="404.php" class="navigation__link"><span>04</span>Mua Sim</a></li>
+				<li class="navigation__item"><a href="404.php" class="navigation__link"><span>05</span>Mua Điện Thoại</a></li>
+				<li class="navigation__item"><a href="404.php" class="navigation__link"><span>06</span>Tin Khuyến Mãi</a></li>
 			</ul>
-		</section>
+		</nav>
+	</div>

@@ -3,7 +3,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Chi tiết dịch vụ wifi Viettel Rạch Giá-Kiên Giang">
-	<meta name="keywords" content="Lắp đặt mạng wifi viettel mãi internet viettel 2020 trọn gói chỉ từ 210k,tặng kèm modem wifi đời mới 4 cổng Holine tư vấn 038.362.7790">
+	<meta name="keywords" content="Viettel Kiên Giang, Viettel Telecom,my viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
 	<meta name="og"> 
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="img/v-logo.png" rel="shortcut icon" type="image/x-icon" />
@@ -22,7 +22,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Lắp đặt mạng wifi Viettel 2020</title>
+	<title>Viettel:Hỗ Trợ Khách Hàng Lắp Đặt Wifi Cho Phòng Net Nhanh Chóng Trong 24h</title>
 </head>
 <body>
 	<!-- Load Facebook SDK for JavaScript -->
@@ -51,64 +51,22 @@
 		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
 		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
 	</div>
-	<div class="navigation">
-		<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-		<label for="navi-toggle" class="navigation__button">
-			<span class="navigation__icon">&nbsp;</span>
-		</label>
-
-		<div class="navigation__background">&nbsp;</div>
-
-
-		<nav class="navigation__nav">
-			<ul class="navigation__list">
-				<li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Trang Chủ</a></li>
-				<li class="navigation__item"><a href="wifi-cho-ho-gia-dinh.html" class="navigation__link"><span>02</span>Internet + Truyền Hình</a></li>
-				<li class="navigation__item"><a href="dich-vu-tra-sau-viettel.html" class="navigation__link"><span>03</span>Dịch Vụ Di Động</a></li>
-				<li class="navigation__item"><a href="404.html" class="navigation__link"><span>04</span>Mua Sim</a></li>
-				<li class="navigation__item"><a href="404.html" class="navigation__link"><span>05</span>Mua Điện Thoại</a></li>
-				<li class="navigation__item"><a href="404.html" class="navigation__link"><span>06</span>Tin Khuyến Mãi</a></li>
-			</ul>
-		</nav>
-	</div>
-	<header class="header">
-		<div class="header__logo">
-			<div class="header__logo--alone">
-				<a href="index.html"><img src=img/v-logo.png alt="Viettel-logo-1" class="header__logo--big"></a>
-			</div>
-			<div class="header__logo__group">
-				<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="header__logo__group--small">	
-				<p class="header__logo__group--text">Hãy Nói Theo Cách Của Bạn</p>
-			</div>
-		</div>
-		<div class="header__contact">
-			<div class="header__contact__line header__contact__line--1">
-				<svg class="header__contact-icon">
-					<use xlink:href="img/sprite.svg#icon-phone1"></use>
-				</svg>
-				<a href="tel:0383627790" class="header__contact-phone">0383.61.71.61</a>
-			</div>	
-			<div class="header__contact__line header__contact__line--2">
-				<svg class="header__contact-icon">
-					<use xlink:href="img/sprite.svg#icon-phone1"></use>
-				</svg>
-				<a href="tel:0383627790" class="header__contact-phone">1800.8098</a>
-			</div>		
-		</div>
-	</header>
+<?php
+	include "view/navigation.php";
+	include "view/header.php";
+?>
 	<main class="main-wifi">
 		<section class="wifi-for">
 			<ul class="wifi-for-lists">
-				<a href="index.html" class="wifi-for-lists--item"><li>Trang Chủ</li></a>
-				<a href="wifi-cho-ho-gia-dinh.html" class="wifi-for-lists--item"><li>Hộ Gia Đình</li></a>
-				<a href="wifi-cho-phong-net.html" class="wifi-for-lists--item "><li>Quán Net</li></a>
-				<a href="#" class="wifi-for-lists--item active-navigation"><li>Doanh Nghiệp</li></a>
-				<!-- <a href="" class="wifi-for-lists--item"><li>Truyền Hình</li></a> -->
+				<a href="index.php" class="wifi-for-lists--item"><li>Trang Chủ</li></a>
+				<a href="wifi-cho-ho-gia-dinh.php" class="wifi-for-lists--item"><li>Hộ Gia Đình</li></a>
+				<a href="#" class="wifi-for-lists--item active-navigation"><li>Quán Net</li></a>
+				<a href="wifi-cho-doanh-nghiep.php" class="wifi-for-lists--item"><li>Doanh Nghiệp</li></a>
+				<!-- <a href="truyen-hinh-viettel.php" class="wifi-for-lists--item"><li>Truyền Hình</li></a> -->
 			</ul>
 		</section>
 		<section class="wifi-contact">
-			<h1 class="heading-secondary wifi-contact--head">Bảng giá dịch vụ wifi Viettel doanh nghiệp</h1>
+			<h1 class="heading-secondary wifi-contact--head">Bảng giá dịch vụ wifi Viettel cho phòng Net</h1>
 			<div class="wifi-contact__hotline">
 				<a href="#" class="wifi-contact__hotline--blue">Hotline: <span class="wifi-contact__hotline--red">0383.61.71.61</span></a>
 				<p class="wifi-contact__hotline--red">Để thuận tiện và tốt nhất cho quý khách,quý khách vui lòng liên hệ qua message FB góc trái để hỗ trợ tốt nhất ạ</p>
@@ -130,7 +88,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho 8-12 người sử dụng wifi</p>					
+							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 8-12 máy tinh</p>					
 						</div>
 						<a href="#" class="btn card-wifi-bottom--btn">Đăng Ký</a>
 					</div>
@@ -139,7 +97,6 @@
 							SUPERNET4
 							<span>100 MBPS</span>
 						</h2>
-						<span class="card-wifi--best">Phổ Biến Nhất</span>
 						<div class="card-wifi-bottom">
 							<div class="card-wifi-bottom-prices">
 								<!-- <p class="card-wifi-bottom-percent">-26%</p> -->
@@ -148,7 +105,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho 12-20 người sử dụng wifi</p>					
+							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 12-15 máy tính</p>					
 						</div>
 						<a href="#" class="btn card-wifi-bottom--btn">Đăng Ký</a>
 					</div>
@@ -157,6 +114,7 @@
 							SUPERNET5
 							<span>200 MBPS</span>
 						</h2>
+						<span class="card-wifi--best">Phổ Biến Nhất</span>
 						<div class="card-wifi-bottom">
 							<div class="card-wifi-bottom-prices">
 								<!-- <p class="card-wifi-bottom-percent">-26%</p> -->
@@ -165,7 +123,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho 20-40 người sử dụng wifi</p>					
+							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 15-20 máy tính</p>					
 						</div>
 						<a href="#" class="btn card-wifi-bottom--btn">Đăng Ký</a>
 					</div>
@@ -182,9 +140,9 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho công ty từ 30 máy tính</p>					
+							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 30-40 máy tính</p>					
 						</div>
-						<a href="index.html" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="index.php" class="btn card-wifi-bottom--btn">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi" >
 						<h2 class="card-wifi-heading card-wifi-heading--2">
@@ -199,10 +157,10 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho công ty từ 30 máy tính với mạng truy cập nước ngoài tốt nhất</p>
+							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 30-40 máy tính với mạng truy cập nước ngoài tốt nhất</p>
 							
 						</div>
-						<a href="index.html" class="btn card-wifi-bottom--btn">Đăng Ký</a>	
+						<a href="index.php" class="btn card-wifi-bottom--btn">Đăng Ký</a>	
 					</div>
 					<div class="item card-wifi" >
 						<h2 class="card-wifi-heading">
@@ -217,10 +175,10 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho công ty từ 30-60 máy tính</p>
+							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 40-60 máy tính</p>
 
 						</div>
-						<a href="index.html" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="index.php" class="btn card-wifi-bottom--btn">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi">
 						<h2 class="card-wifi-heading card-wifi-heading--2">
@@ -235,12 +193,12 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho công ty từ 30-60 máy tính với mạng truy cập nước ngoài tốt nhất</p>		
+							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 40-60 máy tính với mạng truy cập nước ngoài tốt nhất</p>		
 						</div>
-						<a href="index.html" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="index.php" class="btn card-wifi-bottom--btn">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi">
-						<h2 class="card-wifi-heading card-wifi-heading">
+						<h2 class="card-wifi-heading">
 							FAST 100
 							<span>100 Mbps/2 Mbps</span>
 						</h2>
@@ -252,9 +210,9 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho công ty từ 100 máy tính trở lên</p>		
+							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 60-100 máy tính </p>		
 						</div>
-						<a href="index.html" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="index.php" class="btn card-wifi-bottom--btn">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi">
 						<h2 class="card-wifi-heading card-wifi-heading--2">
@@ -269,9 +227,9 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho công ty 100 máy tính trở lên với mạng truy cập nước ngoài tốt nhất</p>		
+							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 60-100 máy tính với mạng truy cập nước ngoài tốt nhất</p>		
 						</div>
-						<a href="index.html" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="index.php" class="btn card-wifi-bottom--btn">Đăng Ký</a>
 					</div>
 				</div>
 			</div>
@@ -294,9 +252,11 @@
 					</li>
 				</ul>	
 			</div>
+
 	
 			<div class="wifi-contact__setting">
-				<p>Gói cước Fast 80 không chỉ phù hợp với khách hàng là doanh nghiệp sử dụng từ 30 tới 60 máy tính mà còn phù hợp với các cá nhân có nhu cầu sử dụng Internetcao, phát Wifi qua smartphonephục vụ cho công việc, học tập, kinh doanh. Cũng như khách hàng sử dụng nhiều thiết bị như máy tính, laptop, smartphone, máy tính bảng như các hộ gia đình nhiều thành viên cần sử dụng hay như các quán Net, Game Online.</p>
+				<p>Để quán Game, quán Net của bạn là sự lựa chọn lý tưởng của các gamer hay các bạn sinh viên có nhu cầu học tập thì đường truyền cáp quang của bạn phải thực sự đáp ứng được nhu cầu của họ bằng sự hài lòng nhất, mạng không bị lag, không giật, tốc độ ổn định, mượt mà nếu không thì họ khó có thể quay lại quán của bạn một lần nữa đấy. Viettel cung cấp dịch vụ lắp mạng cáp quang Viettel cho quán game, quán net tốc độ cao với mức giá ưu đãi như sau:</p>
+				<p>Tùy vào quy mô, số lượng máy của quán mà bạn lựa chọn cho mình gói cước phù hợp nhé. Các gói Fast60, Fast60+ phù hợp với các tiệm Net có quy mô 10-15 máy tính để đạt tốc độ cao nhất, gói Fast80, Fast80+ phù hợp với quy mô 15-20 máy tính trở lên. Khi đăng kí lắp đặt và sử dụng một trong các gói cước trên, khách hàng sẽ có thêm các ưu đãi như sau:</p>
 			</div>
 			<div class="wifi-contact__img">
 				<img src="img/khuyen-mai-cap-quang-viettel.jpg" alt="Chi Tiết Cáp Quang" class="wifi-contact__img--size">
@@ -313,7 +273,7 @@
 					<li>✓ Miễn phí 100% phí lắp đặt mạng cáp quang Viettel khi khách hàng trả trước từ 3 tháng cước phí trở lên, tặng từ 1-3 tháng sử dụng internet miễn phí khi đăng ký trả trước từ 6 tháng trở lên.</li>
 				</ul>
 				<p class="wifi-contact--infomation--text">Dịch vụ lắp đặt mạng wifi Viettel hiện đại cùng phong cách làm việc chuyên nghiệp sẽ mang đến sự hài lòng tuyệt đối cho khách hàng. Liên hệ tới số hotline 038.362.7790 hoặc 1800 8168 để được tư vấn miễn phí về dịch vụ cũng như để được nhận những ưu đãi lớn nhất.</p>
-			</div>
+			</div>		
 		</section>
 		<section class="form-register">
 			<span class="form-register__big-circle"></span>
@@ -404,7 +364,7 @@
 		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
 		<div class="footer__info">
 			<div class="footer__info__group footer__info--1">
-				<a class="footer-heading" href="index.html">Đăng Kí Dịch Vụ</a>
+				<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
 			</div>
 			<div class="footer__info__group footer__info--2">
 				<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
@@ -471,7 +431,6 @@
     			}
     		}
     	})
-
     	const inputs = document.querySelectorAll(".form-2__contact-form--input");
 
     	function focusFunc() {

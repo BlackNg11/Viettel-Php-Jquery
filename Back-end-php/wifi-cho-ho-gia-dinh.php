@@ -51,58 +51,17 @@
 		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
 		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
 	</div>
-	<div class="navigation">
-		<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-		<label for="navi-toggle" class="navigation__button">
-			<span class="navigation__icon">&nbsp;</span>
-		</label>
-
-		<div class="navigation__background">&nbsp;</div>
-
-		<nav class="navigation__nav">
-			<ul class="navigation__list">
-				<li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Trang Chủ</a></li>
-				<li class="navigation__item"><a href="wifi-cho-ho-gia-dinh.html" class="navigation__link"><span>02</span>Internet + Truyền Hình</a></li>
-				<li class="navigation__item"><a href="dich-vu-tra-sau-viettel.html" class="navigation__link"><span>03</span>Dịch Vụ Di Động</a></li>
-				<li class="navigation__item"><a href="404.html" class="navigation__link"><span>04</span>Mua Sim</a></li>
-				<li class="navigation__item"><a href="404.html" class="navigation__link"><span>05</span>Mua Điện Thoại</a></li>
-				<li class="navigation__item"><a href="404.html" class="navigation__link"><span>06</span>Tin Khuyến Mãi</a></li>
-			</ul>
-		</nav>
-	</div>
-	<header class="header">
-		<div class="header__logo">
-			<div class="header__logo--alone">
-				<a href="index.html"><img src=img/v-logo.png alt="Viettel-logo-1" class="header__logo--big"></a>
-			</div>
-			<div class="header__logo__group">
-				<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="header__logo__group--small">	
-				<p class="header__logo__group--text">Hãy Nói Theo Cách Của Bạn</p>
-			</div>
-		</div>
-		<div class="header__contact">
-			<div class="header__contact__line header__contact__line--1">
-				<svg class="header__contact-icon">
-					<use xlink:href="img/sprite.svg#icon-phone1"></use>
-				</svg>
-				<a href="tel:0383627790" class="header__contact-phone">0383.61.71.61</a>
-			</div>	
-			<div class="header__contact__line header__contact__line--2">
-				<svg class="header__contact-icon">
-					<use xlink:href="img/sprite.svg#icon-phone1"></use>
-				</svg>
-				<a href="tel:0383627790" class="header__contact-phone">1800.8098</a>
-			</div>		
-		</div>
-	</header>
+<?php
+	include "view/navigation.php";
+	include "view/header.php";
+?>
 	<main class="main-wifi">
 		<section class="wifi-for">
 			<ul class="wifi-for-lists">
-				<a href="index.html" class="wifi-for-lists--item"><li>Trang Chủ</li></a>
+				<a href="index.php" class="wifi-for-lists--item"><li>Trang Chủ</li></a>
 				<a href="#" class="wifi-for-lists--item active-navigation"><li>Hộ Gia Đình</li></a>
-				<a href="wifi-cho-phong-net.html" class="wifi-for-lists--item"><li>Quán Net</li></a>
-				<a href="wifi-cho-doanh-nghiep.html" class="wifi-for-lists--item"><li>Doanh Nghiệp</li></a>
+				<a href="wifi-cho-phong-net.php" class="wifi-for-lists--item"><li>Quán Net</li></a>
+				<a href="wifi-cho-doanh-nghiep.php" class="wifi-for-lists--item"><li>Doanh Nghiệp</li></a>
 				<!-- <a href="" class="wifi-for-lists--item"><li>Truyền Hình</li></a> -->
 			</ul>
 		</section>
@@ -646,7 +605,7 @@
 		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
 		<div class="footer__info">
 			<div class="footer__info__group footer__info--1">
-				<a class="footer-heading" href="index.html">Đăng Kí Dịch Vụ</a>
+				<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
 			</div>
 			<div class="footer__info__group footer__info--2">
 				<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>

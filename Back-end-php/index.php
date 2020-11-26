@@ -29,11 +29,21 @@
 </head>
 
 
-<?php 
-	include 
- ?>
-	<main>
-
+<?php
+	include "view/navigation.php";
+	include "view/header.php";
+?>
+	<main>		
+		<section class="navigation-pc">
+			<ul class="navigation-pc-lists">
+				<a href="#" class="navigation-pc-lists--item active-navigation"><li>Trang Chủ</li></a>
+				<a href="wifi-cho-ho-gia-dinh.php" class="navigation-pc-lists--item"><li>Internet-Truyền Hình</li></a>
+				<a href="dich-vu-tra-sau-viettel.php" class="navigation-pc-lists--item "><li>Dịch Vụ Di Động</li></a>
+				<a href="404.php" class="navigation-pc-lists--item"><li>Mua Sim</li></a>
+				<a href="404.php" class="navigation-pc-lists--item"><li>Mua Điện Thoại</li></a>
+				<a href="404.php" class="navigation-pc-lists--item"><li>Tin Khuyến Mãi</li></a>
+			</ul>
+		</section>
 		<section class="wifi">		
 			<div class="wifi__info">
 				<div class="wifi__info--left">
@@ -110,7 +120,7 @@
 			</div>
 		</section>
 		<section class="wifi-detail">
-			<a href="wifi-cho-ho-gia-dinh.html"><h1 class="heading-secondary u-margin-bottom-medium">Dịch Vụ Wifi Và Truyền Hình Viettel</h1></a>
+			<a href="wifi-cho-ho-gia-dinh.php"><h1 class="heading-secondary u-margin-bottom-medium">Dịch Vụ Wifi Và Truyền Hình Viettel</h1></a>
 			<div class="wifi-detail__info">
 				<div class="wifi-detail__info--left">
 					<ul class="wifi-detail__info--list">
@@ -163,10 +173,10 @@
 				</div>
 			</div>
 			
-			<a href="wifi-cho-ho-gia-dinh.html" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
+			<a href="wifi-cho-ho-gia-dinh.php" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
 		</section>
 		<section class="phone-detail">
-			<a href="dich-vu-tra-sau-viettel.html"><h1 class="heading-secondary u-margin-bottom-medium">Dịch Vụ Trả Sau Và Trả Trước Viettel</h1></a>
+			<a href="dich-vu-tra-sau-viettel.php"><h1 class="heading-secondary u-margin-bottom-medium">Dịch Vụ Trả Sau Và Trả Trước Viettel</h1></a>
 			<div class="phone-detail__info">
 				<div class="phone-detail__info--left">
 					<div class="card">
@@ -216,7 +226,7 @@
 					</ul>
 				</div>
 			</div>
-			<a href="dich-vu-tra-sau-viettel.html" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
+			<a href="dich-vu-tra-sau-viettel.php" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
 		</section>
 		<section class="gallary">
 			<div class="gallary__info">
@@ -253,3 +263,6 @@
 			</figure>
 		</section>
 	</main>
+<?php
+	include "view/footer.php";
+?>
