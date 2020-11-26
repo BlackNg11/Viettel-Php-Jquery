@@ -35,7 +35,24 @@
 	include "view/header.php";
 
 	if (isset($_POST['submit'])) {
-		print_r($_POST);
+		// print_r($_POST);
+		$sdt = mysqli_real_escape_string($conn, $_POST['SDT']);
+		$contact = mysqli_real_escape_string($conn, $_POST['contact']);
+		$resInfo = mysqli_real_escape_string($conn, $_POST['res-info']);
+
+		 
+		// create sql
+		$sql = "INSERT INTO `user-no-reg`(SĐT,DIA_CHI,DICH_VU_DK) VALUES ('$sdt', '$contact', '$resInfo')";
+		
+		//save to db
+		if (mysqli_query($conn,$sql)) {
+			//success
+			// header('Location: index.php');
+		}else {
+			//error
+			echo $sql;
+			echo "query error" . mysqli_error($conn);
+		}
 	}
 
 
@@ -238,8 +255,8 @@
 		<section class="gallary">
 			<div class="gallary__info">
 				<h1 class="gallary__info--text">Hỗ Trợ Khách Hàng 24/7</h1>
-				<p class="gallary__info--textsmail">03.836.27790</h1>
-				<h1 class="gallary__info--textsmail">03.836.27790</h1>
+				<p class="gallary__info--textsmail">0383.61.71.61</h1>
+				<h1 class="gallary__info--textsmail">1800.1098</h1>
 			</div>
 			<figure class="gallary__item gallary__item--1">
 				<img src="img/Picture/1.jpg" alt="Viettel Picture 1" class="gallary__img">	

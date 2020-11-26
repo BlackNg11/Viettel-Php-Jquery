@@ -297,7 +297,7 @@
 					<span class="form-2__contact-form__circle form-2__contact-form__circle--two"></span>
 
 					<form action="#">
-						<h3 class="form-2__contact-form--title">Liên Hệ Chúng Tui</h3>
+						<h3 class="form-2__contact-form--title">Liên Hệ</h3>
 						<div class="form-2__contact-form--input-container">
 							<input type="tel" name="phone" autocomplete="nope" class="form-2__contact-form--input" />
 							<label for="">SĐT</label>
@@ -310,10 +310,10 @@
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
 							<select  name="res-info" class="form-2__contact-form--input">
-									<option value="0" selected class="form-2__contact-form--input-1">Gói Net</option>
-									<option value="1" class="form-2__contact-form--input-1">Gói SuperNet</option>
-									<option value="2" class="form-2__contact-form--input-1">Gói Net + Truyền Hình</option>
-									<option value="3" class="form-2__contact-form--input-1">Gói SuperNet + Truyền Hình</option>
+									<option value="Gói Net" selected class="form-2__contact-form--input-1">Gói Net</option>
+									<option value="Gói SuperNet" class="form-2__contact-form--input-1">Gói SuperNet</option>
+									<option value="Gói Net+Truyền Hình" class="form-2__contact-form--input-1">Gói Net + Truyền Hình</option>
+									<option value="Gói SuperNet+Truyền Hình" class="form-2__contact-form--input-1">Gói SuperNet + Truyền Hình</option>
 							</select>
 							<label for="">Gói Đăng Ký</label>
 							<span>Gói Đăng Ký</span>
