@@ -1,20 +1,22 @@
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Chi tiết các gói trả sau Viettel">
-	<meta name="keywords" content="Viettel Kiên Giang, Viettel Telecom,my viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
-	<meta name="og"> 
+	<meta name="keywords"
+		content="Viettel Kiên Giang, Viettel Telecom,my viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
+	<meta name="og">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="img/v-logo.png" rel="shortcut icon" type="image/x-icon" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;700&display=swap" rel="stylesheet">
-	
+
 	<!-- <link rel="stylesheet" href="ow_/css/docs.theme.min.css"> -->
 
 	<!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="ow_/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="ow_/owlcarousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="ow_/owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="ow_/owlcarousel/assets/owl.theme.default.min.css">
 
 
 
@@ -24,53 +26,61 @@
 
 	<title>Những Gói Trả Sau Viettel</title>
 </head>
+
 <body>
 	<!-- Load Facebook SDK for JavaScript -->
 	<div id="fb-root"></div>
 	<script>
-		window.fbAsyncInit = function() {
+		window.fbAsyncInit = function () {
 			FB.init({
-				xfbml            : true,
-				version          : 'v9.0'
+				xfbml: true,
+				version: 'v9.0'
 			});
 		};
 
-		(function(d, s, id) {
+		(function (d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
 			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
+			js = d.createElement(s);
+			js.id = id;
 			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
 			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 
-		<!-- Your Chat Plugin code -->
-		<div class="fb-customerchat"
-		attribution=setup_tool
-		page_id="119868136598056"
-		theme_color="#14AFB4"
+	<!-- Your Chat Plugin code -->
+	<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
 		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
 		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
 	</div>
 
-<?php
+	<?php
 	include "view/navigation.php";
 	include "view/header.php";
 ?>
 	<main class="main-phone">
 		<section class="phone-for">
 			<ul class="phone-for-lists">
-				<a href="index.php" class="phone-for-lists--item"><li>Trang Chủ</li></a>
-				<a href="#" class="phone-for-lists--item active-navigation"><li>Trả Sau</li></a>
-				<a href="dich-vu-tra-truoc-viettel.php" class="phone-for-lists--item "><li>Trả Trước</li></a>
+				<a href="index.php" class="phone-for-lists--item">
+					<li>Trang Chủ</li>
+				</a>
+				<a href="#" class="phone-for-lists--item active-navigation">
+					<li>Trả Sau</li>
+				</a>
+				<a href="dich-vu-tra-truoc-viettel.php" class="phone-for-lists--item ">
+					<li>Trả Trước</li>
+				</a>
 			</ul>
 		</section>
 		<section class="phone-contact">
 			<h1 class="heading-secondary phone-contact--head">Các gói trả sau Viettel</h1>
 			<div class="phone-contact__hotline">
-				<a href="#" class="phone-contact__hotline--blue">Hotline: <span class="phone-contact__hotline--red">0383.61.71.61</span></a>
-				<p class="phone-contact__hotline--red">Để thuận tiện và tốt nhất cho quý khách,quý khách vui lòng liên hệ qua message FB góc trái để hỗ trợ tốt nhất ạ</p>
+				<a href="#" class="phone-contact__hotline--blue">Hotline: <span
+						class="phone-contact__hotline--red">0383.61.71.61</span></a>
+				<p class="phone-contact__hotline--red">Để thuận tiện và tốt nhất cho quý khách,quý khách vui lòng liên
+					hệ qua message FB góc trái để hỗ trợ tốt nhất ạ</p>
 			</div>
-	
+
 			<div class="phone-detail-table">
 				<div class="phone-detail-table--item phone-detail-table-1 font-table">
 					<p>Tên Gói</p>
@@ -84,11 +94,13 @@
 				<div class="phone-detail-table--item phone-detail-table-4 font-table">
 					<p>Thoại Nội Mạng(Phút)</p>
 				</div>
-				<div class="phone-detail-table--item phone-detail-table-5 font-table"><p>Thoại Ngoại Mạng(phút)</p></div>
+				<div class="phone-detail-table--item phone-detail-table-5 font-table">
+					<p>Thoại Ngoại Mạng(phút)</p>
+				</div>
 				<div class="phone-detail-table--item phone-detail-table-6 font-table">Data 3G/4G Tốc Độ Cao</div>
 				<!-- <div class="phone-detail-table--item phone-detail-table-7 font-table">SMS Nội Mạng(Tin)</div>
 				<div class="phone-detail-table--item phone-detail-table-8 font-table">SMS Nội+Ngoại Mạng(Tin)</div> -->
-				
+
 				<div class="phone-detail-table--item phone-detail-table-9">T100</div>
 				<div class="phone-detail-table--item phone-detail-table-10 color-table">B100</div>
 				<div class="phone-detail-table--item phone-detail-table-11 ">B150</div>
@@ -102,7 +114,7 @@
 				<div class="phone-detail-table--item phone-detail-table-19">V200N</div>
 				<div class="phone-detail-table--item phone-detail-table-20 color-table">V250N</div>
 				<div class="phone-detail-table--item phone-detail-table-21">V300N</div>
-	
+
 				<div class="phone-detail-table--item phone-detail-table-22">100.000</div>
 				<div class="phone-detail-table--item phone-detail-table-23 color-table">100.000</div>
 				<div class="phone-detail-table--item phone-detail-table-24">150.000</div>
@@ -124,7 +136,7 @@
 				<div class="phone-detail-table--item phone-detail-table-39">Miễn Phí 20p đầu tiền/cuộc</div>
 				<div class="phone-detail-table--item phone-detail-table-40 color-table">Miễn Phí 30p đầu tiền/cuộc</div>
 				<div class="phone-detail-table--item phone-detail-table-41">Miễn Phí 60p đầu tiền/cuộc</div>
-				
+
 				<div class="phone-detail-table--item phone-detail-table-42">50</div>
 				<div class="phone-detail-table--item phone-detail-table-43 color-table">10</div>
 				<div class="phone-detail-table--item phone-detail-table-44">100</div>
@@ -194,9 +206,10 @@
 				<div class="phone-detail-table--item phone-detail-table-93"></div> -->
 			</div>
 			<div class="phone-contact--btn">
-				<a href="#" class="btn-text-2 phone-contact--btn--1" id="scrollTo1"><span class="btn-text-2-span">Đăng Ký</span></a>
+				<a href="#" class="btn-text-2 phone-contact--btn--1" id="scrollTo1"><span class="btn-text-2-span">Đăng
+						Ký</span></a>
 			</div>
-			
+
 			<div class="promotion-phone">
 				<ul class="promotion__lists">
 					<li class="promotion__list--item">
@@ -209,7 +222,7 @@
 							<use xlink:href="img/sprite.svg#icon-tag"></use>
 						</svg>Đóng trước 3 tháng tặng 1GB/tháng sử dụng trong 3 tháng
 					</li>
-				</ul>	
+				</ul>
 			</div>
 			<div class="promotion-phone">
 				<ul class="promotion__lists">
@@ -223,30 +236,43 @@
 							<use xlink:href="img/sprite.svg#icon-tag"></use>
 						</svg>Đóng trước 12 tháng tặng 1GB/tháng trong 12 tháng và giảm 5% giá
 					</li>
-				</ul>	
-			</div>		
+				</ul>
+			</div>
 		</section>
 		<section class="phone-contact">
 			<div class="phone-contact--infomation">
 				<h2 class="phone-contact--infomation--heading">Những lý do bạn nên đăng ký trả sau</h2>
 
 				<h3 class="phone-contact--infomation--title">1.Tiết kiệm tiền cho khách hàng</h3>
-				<p class="phone-contact--infomation--text">Điều mà nhiều người dùng quan tâm chính là cước gọi cả ngoại mạng lẫn nội mạng của thuê bao trả sau sẽ rẻ hơn rất nhiều so với thuê bao trả trước. Theo thống kê bạn sẽ tiết kiệm được khoảng từ 50 – 70% chi phí nếu dùng thuê bao trả sau.
-				Vd Gói cước tomato chi phí trả trước khá cao</p>
+				<p class="phone-contact--infomation--text">Điều mà nhiều người dùng quan tâm chính là cước gọi cả ngoại
+					mạng lẫn nội mạng của thuê bao trả sau sẽ rẻ hơn rất nhiều so với thuê bao trả trước. Theo thống kê
+					bạn sẽ tiết kiệm được khoảng từ 50 – 70% chi phí nếu dùng thuê bao trả sau.
+					Vd Gói cước tomato chi phí trả trước khá cao</p>
 				<img src="img/gói-tomato.png" alt="Tomato Viettel" class="phone-contact--infomation--img">
-				<p class="phone-contact--infomation--text">Bởi vì một lý do rất đơn giản là gói cước trả trước có giá niêm yết đắt hơn gói cước trả sau. Bạn còn ngần ngại gì mà không chuyển ngay thuê bao của mình sang gói cước trả sau viettel mới nhất .</p>	
+				<p class="phone-contact--infomation--text">Bởi vì một lý do rất đơn giản là gói cước trả trước có giá
+					niêm yết đắt hơn gói cước trả sau. Bạn còn ngần ngại gì mà không chuyển ngay thuê bao của mình sang
+					gói cước trả sau viettel mới nhất .</p>
 
 				<h3 class="phone-contact--infomation--title">2.Hình thức thanh toán đa dạng</h3>
-				<p class="phone-contact--infomation--text">Không giống như thuê bao trả trước bạn phải nạp thẻ khi tài khoản điện thoại hết tiền còn với thuê bao trả sau viettel bạn sẽ được thanh toán dưới nhiều hình thức.Chẳng hạn thanh toán tại nhà, Internet banking,ủy nhiệm thu,dùng thẻ cào thanh toán,… khi đến hạn.Như vậy sẽ rất tiện cho người dùng.</p>
+				<p class="phone-contact--infomation--text">Không giống như thuê bao trả trước bạn phải nạp thẻ khi tài
+					khoản điện thoại hết tiền còn với thuê bao trả sau viettel bạn sẽ được thanh toán dưới nhiều hình
+					thức.Chẳng hạn thanh toán tại nhà, Internet banking,ủy nhiệm thu,dùng thẻ cào thanh toán,… khi đến
+					hạn.Như vậy sẽ rất tiện cho người dùng.</p>
 
 				<h3 class="phone-contact--infomation--title">3.Nhiều ưu đãi khuyến mãi siêu hấp dẫn</h3>
-				<p class="phone-contact--infomation--text">Với những khách hàng sử dụng thuê bao trả sau viettel thường sẽ được hưởng nhiều chính sách ưu đãi hấp dẫn hơn thuê bao trả trước.</p>
+				<p class="phone-contact--infomation--text">Với những khách hàng sử dụng thuê bao trả sau viettel thường
+					sẽ được hưởng nhiều chính sách ưu đãi hấp dẫn hơn thuê bao trả trước.</p>
 
 				<h3 class="phone-contact--infomation--title">4.Không bị gián đoạn cuộc gọi</h3>
-				<p class="phone-contact--infomation--text">Với những thuê bao trả trước khi hết tiền nó sẽ không nhắc bạn. Vì thế nên bạn rất dễ gặp tình trạng đang gọi thì hết tiền. Để không bị gặp phải tình trạng này bạn nên chuyển sang thuê bao trả sau để tiện trong việc liên hệ.</p>
+				<p class="phone-contact--infomation--text">Với những thuê bao trả trước khi hết tiền nó sẽ không nhắc
+					bạn. Vì thế nên bạn rất dễ gặp tình trạng đang gọi thì hết tiền. Để không bị gặp phải tình trạng này
+					bạn nên chuyển sang thuê bao trả sau để tiện trong việc liên hệ.</p>
 
-				<p class="phone-contact--infomation--text">Với những ưu điểm nổi bật nêu trên, chắc chắn sẽ khiến người dùng quan tâm đến dịch vụ trả sau và lựa chọn nhanh cho mình gói cước phù hợp nhất. Tuyệt vời Hơn thao tác chuyển đổi trả trước sang trả sau cực kỳ đơn giản tại nhà ngay trên này sẽ giúp hoàn tất giao dịch chuyển sang dịch vụ trả sau đơn giản, nhanh chóng nhé.</p>
-			</div>	
+				<p class="phone-contact--infomation--text">Với những ưu điểm nổi bật nêu trên, chắc chắn sẽ khiến người
+					dùng quan tâm đến dịch vụ trả sau và lựa chọn nhanh cho mình gói cước phù hợp nhất. Tuyệt vời Hơn
+					thao tác chuyển đổi trả trước sang trả sau cực kỳ đơn giản tại nhà ngay trên này sẽ giúp hoàn tất
+					giao dịch chuyển sang dịch vụ trả sau đơn giản, nhanh chóng nhé.</p>
+			</div>
 		</section>
 		<section class="form-register">
 			<span class="form-register__big-circle"></span>
@@ -271,7 +297,7 @@
 							<p>038.362.7790</p>
 						</div>
 					</div>
-			<!-- 		<div class="form-2__contact-info__social-media">
+					<!-- 		<div class="form-2__contact-info__social-media">
 						<p>Mạng Xã Hội :</p>
 						<div class="form-2__contact-info__social-icons">
 							<a href="#">
@@ -306,10 +332,10 @@
 							<span>Địa Chỉ</span>
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
-							<select  name="res-info" class="form-2__contact-form--input">
-									<option value="0" selected class="form-2__contact-form--input-1">Gói T</option>
-									<option value="1" class="form-2__contact-form--input-1">Gói B</option>
-									<option value="2" class="form-2__contact-form--input-1">Gói V</option>
+							<select name="res-info" class="form-2__contact-form--input">
+								<option value="0" selected class="form-2__contact-form--input-1">Gói T</option>
+								<option value="1" class="form-2__contact-form--input-1">Gói B</option>
+								<option value="2" class="form-2__contact-form--input-1">Gói V</option>
 							</select>
 							<label for="">Gói Đăng Ký</label>
 							<span>Gói Đăng Ký</span>
@@ -333,7 +359,8 @@
 
 	<footer class="footer">
 		<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="footer__logo u-margin-bottom-medium">
-		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
+		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là
+			trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
 		<div class="footer__info">
 			<div class="footer__info__group footer__info--1">
 				<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
@@ -368,7 +395,7 @@
 					</svg>
 					<a href="tel:0383627790" class="header__contact-phone">1800.8098</a>
 				</div>
-				
+
 			</div>
 			<div class="footer__info__group footer__info--3">
 				<h3 class="footer-heading">Địa Chỉ Công Ty</h3>
@@ -381,28 +408,29 @@
 	</footer>
 
 	<!-- javascript -->
-    <script src="ow_/vendors/jquery.min.js"></script>
-    <script src="ow_/owlcarousel/owl.carousel.js"></script>
-    <script>
-    	const inputs = document.querySelectorAll(".form-2__contact-form--input");
+	<script src="ow_/vendors/jquery.min.js"></script>
+	<script src="ow_/owlcarousel/owl.carousel.js"></script>
+	<script>
+		const inputs = document.querySelectorAll(".form-2__contact-form--input");
 
-    	function focusFunc() {
-    		let parent = this.parentNode;
-    		parent.classList.add("focus");
-    	}
+		function focusFunc() {
+			let parent = this.parentNode;
+			parent.classList.add("focus");
+		}
 
-    	function blurFunc() {
-    		let parent = this.parentNode;
-    		if (this.value == "") {
-    			parent.classList.remove("focus");
-    		}
-    	}
+		function blurFunc() {
+			let parent = this.parentNode;
+			if (this.value == "") {
+				parent.classList.remove("focus");
+			}
+		}
 
-    	inputs.forEach((input) => {
-    		input.addEventListener("focus", focusFunc);
-    		input.addEventListener("blur", blurFunc);
-    	});
-    </script>
-    <script src="js/index.js"></script>
+		inputs.forEach((input) => {
+			input.addEventListener("focus", focusFunc);
+			input.addEventListener("blur", blurFunc);
+		});
+	</script>
+	<script src="js/index.js"></script>
 </body>
+
 </html>
