@@ -30,8 +30,15 @@
 
 
 <?php
+	include "config/config.php";
 	include "view/navigation.php";
 	include "view/header.php";
+
+	if (isset($_POST['submit'])) {
+		print_r($_POST);
+	}
+
+
 ?>
 	<main>		
 		<section class="navigation-pc">
@@ -52,34 +59,34 @@
 				</div>
 				<div class="wifi--info-right">
 					<div class="form">
-						<form action="" class="form-ui">
+						<form action="index.php" method="POST" class="form-ui">
 							<div class="form--info u-margin-bottom-smaill">
 								<h1 class="form--heading">LIÊN HỆ</h1>
 								<p class="form--text">Cung Cấp Những Dịch Vụ Tốt Nhất Cho Khách Hàng</p>
 							</div>
 							<div class="form__group">
 								<label for="name" class="form__label">SĐT</label>
-								<input type="tel" class="form__input" autocomplete="off" placeholder="SĐT" id="name" required pattern="(09|01|03|84[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')">
+								<input type="tel" name="SDT" class="form__input" autocomplete="off" placeholder="SĐT" id="name" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')">
 							</div>
 
 							<div class="form__group">
 								<label for="contact" class="form__label">Địa Chỉ</label>
-								<input type="text" class="form__input" autocomplete="off"  minlength="15" maxlength="80" placeholder="Địa Chỉ Liên Lạc" id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')">								
+								<input type="text" name="contact" class="form__input" autocomplete="off"  minlength="5" maxlength="80" placeholder="Địa Chỉ Liên Lạc" id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')">								
 							</div>
 
 							<div class="form__group">
 								<label for="res-info" class="form__label">Dịch Vụ Liên Hệ</label>
 								<select  name="res-info" class="form__input form__input--select">
-									<option value="0">Lắp đặt wifi</option>
-									<option value="1">Lắp đặt truyền hình</option>
-									<option value="2">Lắp đặt wifi + truyền hình</option>
-									<option value="3">Đăng ký trả sau</option>
-									<option value="3">Đăng ký gói 4G và gọi điện</option>
+									<option value="Lắp Wifi">Lắp đặt wifi</option>
+									<option value="Lắp Truyền Hình">Lắp đặt truyền hình</option>
+									<option value="Lắp Wifi + Truyền Hình">Lắp đặt wifi + truyền hình</option>
+									<option value="Trả Sau">Đăng ký trả sau</option>
+									<option value="V120">Đăng ký gói 4G và gọi điện</option>
 								</select>
 							</div>
 
 							<div class="form__group">
-								<button class="form-btn btn btn--primary u-margin-top-medium">Đăng Ký</button>
+								<button name="submit" class="form-btn btn btn--primary u-margin-top-medium">Đăng Ký</button>
 							</div>
 						</form>
 					</div>
