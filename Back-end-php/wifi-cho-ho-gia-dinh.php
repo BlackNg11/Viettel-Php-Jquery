@@ -25,32 +25,7 @@
 	<title>Viettel:Hỗ Trợ Khách Hàng Lắp Đặt Wifi Cho Gia Đình Nhanh Chóng Trong 24h</title>
 </head>
 <body>
-	<!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-	<script>
-		window.fbAsyncInit = function() {
-			FB.init({
-				xfbml            : true,
-				version          : 'v9.0'
-			});
-		};
 
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-
-		<!-- Your Chat Plugin code -->
-		<div class="fb-customerchat"
-		attribution=setup_tool
-		page_id="119868136598056"
-		theme_color="#14AFB4"
-		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
-	</div>
 <?php
 	include "view/navigation.php";
 	include "view/header.php";
@@ -293,7 +268,7 @@
 							<p class="card-wifi-bottom--text">Dành cho nhà 3-4 người sử dụng wifi</p>
 							<p class="card-wifi-bottom--text card-wifi-bottom--text-margin--bot">Hơn 160 kênh,gồm 60 kênh HD và 25 kênh đặc sắc VTVCab</p>
 						</div>
-						<a href="#" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi" >
 						<h2 class="card-wifi-heading card-wifi-heading--2">
@@ -311,7 +286,7 @@
 							<p class="card-wifi-bottom--text">Dành cho nhà 5 người trở lên sử dụng wifi</p>
 							<p class="card-wifi-bottom--text card-wifi-bottom--text-margin--bot">Hơn 160 kênh,gồm 60 kênh HD và 25 kênh đặc sắc VTVCab</p>	
 						</div>
-						<a href="#" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi" >
 						<h2 class="card-wifi-heading">
@@ -329,7 +304,7 @@
 							<p class="card-wifi-bottom--text">Dành cho nhà nhiều tầng 4-6 người sử dụng wifi</p>	
 							<p class="card-wifi-bottom--text card-wifi-bottom--text-margin--bot">Hơn 160 kênh,gồm 60 kênh HD và 25 kênh đặc sắc VTVCab</p>
 						</div>
-						<a href="#" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi" >
 						<span class="card-wifi--best">Phổ Biến Nhất</span>
@@ -391,7 +366,7 @@
 							<p class="card-wifi-bottom--text ">Hơn 160 kênh,gồm 60 kênh HD và 25 kênh đặc sắc VTVCab</p>
 							<p class="card-wifi-bottom--text card-wifi-bottom--text-margin--bot">Chùm kênh thể thao K+ đỉnh cao</p>		
 						</div>
-						<a href="#" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi" >
 						<h2 class="card-wifi-heading card-wifi-heading--2">
@@ -411,7 +386,7 @@
 							<p class="card-wifi-bottom--text card-wifi-bottom--text-margin--bot">Chùm kênh thể thao K+ đỉnh cao</p>
 							
 						</div>
-						<a href="#" class="btn card-wifi-bottom--btn">Đăng Ký</a>	
+						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>	
 					</div>
 					<div class="item card-wifi" >
 						<span class="card-wifi--best">Phổ Biến</span>
@@ -432,7 +407,7 @@
 							<p class="card-wifi-bottom--text card-wifi-bottom--text-margin--bot">Chùm kênh thể thao K+ đỉnh cao</p>
 
 						</div>
-						<a href="#" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi" >
 						<h2 class="card-wifi-heading card-wifi-heading--2">
@@ -451,7 +426,7 @@
 							<p class="card-wifi-bottom--text ">Hơn 160 kênh,gồm 60 kênh HD và 25 kênh đặc sắc VTVCab</p>
 							<p class="card-wifi-bottom--text card-wifi-bottom--text-margin--bot">Chùm kênh thể thao K+ đỉnh cao</p>	
 						</div>
-						<a href="#" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi" >
 						<span class="card-wifi--best">Phổ Biến Nhất</span>
@@ -657,6 +632,7 @@
     		loop:true,
     		margin:20,
     		nav:true,
+    		autoHeight: true,
     		autoplay:true,
     		autoplayTimeout:5000,
     		autoplayHoverPause:true,
@@ -692,6 +668,32 @@
     		input.addEventListener("blur", blurFunc);
     	});
     </script>
+    	<!-- Load Facebook SDK for JavaScript -->
+<!-- 	<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				xfbml            : true,
+				version          : 'v9.0'
+			});
+		};
+
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script> -->
+
+		<!-- Your Chat Plugin code -->
+		<!-- <div class="fb-customerchat"
+		attribution=setup_tool
+		page_id="119868136598056"
+		theme_color="#14AFB4"
+		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
+		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+	</div> -->
     <script src="js/index.js"></script>
 </body>
 </html>

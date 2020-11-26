@@ -85,58 +85,80 @@ if (elementRemove2) {
 
 
 //Scroll
+function findTop(element) {
+  var rec = document.querySelector(element).getBoundingClientRect();
+  return rec.top + window.scrollY;
+}
 
-let btnClickToScroll1 = document.querySelector('#scrollTo1');
-let btnClickToScroll2 = document.querySelector('#scrollTo2');
+// console.log(findTop(".btn-scroll--1"));
+console.log(findTop(".form-register"))
 
-let nodelistBtn = document.querySelectorAll('.btn-scroll--1');
-let btnClickToScroll3 = Array.from(nodelistBtn);
+let formRegister = findTop(".form-register");
+let btnClickToScrollPhone1 = document.querySelector('#scrollTo1');
+let btnClickToScrollPhone2 = document.querySelector('#scrollTo2');
+
+let nodelistBtn1 = document.querySelectorAll('.btn-scroll--1');
+let nodelistBtn2 = document.querySelectorAll('.btn-scroll--2');
+let nodelistBtn3 = document.querySelectorAll('.btn-scroll--3');
+
+let btnClickToScrollWifi1 = Array.from(nodelistBtn1);
+let btnClickToScrollWifi2 = Array.from(nodelistBtn2);
+let btnClickToScrollWifi3 = Array.from(nodelistBtn3);
 // window.addEventListener('scroll', () => {
 // 	console.log(window.pageYOffset);
 // })
 
-//console.log(btnClickToScroll3);
 
-if (btnClickToScroll1) {
-	btnClickToScroll1.addEventListener("click", (e) => {
+if (btnClickToScrollPhone1) {
+	btnClickToScrollPhone1.addEventListener("click", (e) => {
 		e.preventDefault();
-		window.scrollTo({top: 2150, behavior: 'smooth'});
+		window.scrollTo({top: formRegister, behavior: 'smooth'});
 
 	})
-}
+};
 
-if (btnClickToScroll2) {
-	btnClickToScroll1.addEventListener("click", (e) => {
+if (btnClickToScrollPhone2) {
+	btnClickToScrollPhone2.addEventListener("click", (e) => {
 		e.preventDefault();
-		window.scrollTo({top: 1900, behavior: 'smooth'});
+		window.scrollTo({top: formRegister, behavior: 'smooth'});
 	})
-}
+};
 
-if (btnClickToScroll3) {
-	btnClickToScroll3.map(index => {
+if (btnClickToScrollWifi1) {
+	btnClickToScrollWifi1.map(index => {
+
 		index.addEventListener("click", (e) => {
 			e.preventDefault();
-			window.scrollTo({top: 3370, behavior: 'smooth'});
+		
+			window.scrollTo({top: formRegister, behavior: 'smooth'});
 
 		})
 	})
-}
+};
 
-// if (btnClickToScroll3) {
-// 	btnClickToScroll2.addEventListener("click", (e) => {
-// 		e.preventDefault();
-// 		window.scrollTo({top: 1950, behavior: 'smooth'});
+if (btnClickToScrollWifi2) {
+	btnClickToScrollWifi2.map(index => {
 
-// 	})
-// }
+		index.addEventListener("click", (e) => {
+			e.preventDefault();
+		
+			window.scrollTo({top: formRegister, behavior: 'smooth'});
+
+		})
+	})
+};
+
+if (btnClickToScrollWifi3) {
+	btnClickToScrollWifi3.map(index => {
+
+		index.addEventListener("click", (e) => {
+			e.preventDefault();
+		
+			window.scrollTo({top: formRegister, behavior: 'smooth'});
+
+		})
+	})
+};
 
 
 
-//Scroll For Phone
-
-// if ($(window).width() < 480 || $(window).height() < 480) {
-//     //small screen, load other JS files
-//     $.getScript('/js/script.js', function () {
-//         //the script has been added to the DOM, you can now use it's code
-//     });
-// }

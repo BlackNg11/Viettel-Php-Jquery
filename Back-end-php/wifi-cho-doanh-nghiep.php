@@ -25,32 +25,7 @@
 	<title>Lắp đặt mạng wifi Viettel 2020</title>
 </head>
 <body>
-	<!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-	<script>
-		window.fbAsyncInit = function() {
-			FB.init({
-				xfbml            : true,
-				version          : 'v9.0'
-			});
-		};
 
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-
-		<!-- Your Chat Plugin code -->
-		<div class="fb-customerchat"
-		attribution=setup_tool
-		page_id="119868136598056"
-		theme_color="#14AFB4"
-		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
-	</div>
 <?php
 	include "view/navigation.php";
 	include "view/header.php";
@@ -90,7 +65,7 @@
 							</div>
 							<p class="card-wifi-bottom--text">Dành cho 8-12 người sử dụng wifi</p>					
 						</div>
-						<a href="#" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi" >
 						<h2 class="card-wifi-heading">
@@ -108,7 +83,7 @@
 							</div>
 							<p class="card-wifi-bottom--text">Dành cho 12-20 người sử dụng wifi</p>					
 						</div>
-						<a href="#" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi" >
 						<h2 class="card-wifi-heading card-wifi-heading--2">
@@ -125,7 +100,7 @@
 							</div>
 							<p class="card-wifi-bottom--text">Dành cho 20-40 người sử dụng wifi</p>					
 						</div>
-						<a href="#" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi" >
 						<h2 class="card-wifi-heading">
@@ -142,7 +117,7 @@
 							</div>
 							<p class="card-wifi-bottom--text">Dành cho công ty từ 30 máy tính</p>					
 						</div>
-						<a href="index.php" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi" >
 						<h2 class="card-wifi-heading card-wifi-heading--2">
@@ -160,7 +135,7 @@
 							<p class="card-wifi-bottom--text">Dành cho công ty từ 30 máy tính với mạng truy cập nước ngoài tốt nhất</p>
 							
 						</div>
-						<a href="index.php" class="btn card-wifi-bottom--btn">Đăng Ký</a>	
+						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>	
 					</div>
 					<div class="item card-wifi" >
 						<h2 class="card-wifi-heading">
@@ -178,7 +153,7 @@
 							<p class="card-wifi-bottom--text">Dành cho công ty từ 30-60 máy tính</p>
 
 						</div>
-						<a href="index.php" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi">
 						<h2 class="card-wifi-heading card-wifi-heading--2">
@@ -195,7 +170,7 @@
 							</div>
 							<p class="card-wifi-bottom--text">Dành cho công ty từ 30-60 máy tính với mạng truy cập nước ngoài tốt nhất</p>		
 						</div>
-						<a href="index.php" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi">
 						<h2 class="card-wifi-heading card-wifi-heading">
@@ -212,7 +187,7 @@
 							</div>
 							<p class="card-wifi-bottom--text">Dành cho công ty từ 100 máy tính trở lên</p>		
 						</div>
-						<a href="index.php" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi">
 						<h2 class="card-wifi-heading card-wifi-heading--2">
@@ -229,7 +204,7 @@
 							</div>
 							<p class="card-wifi-bottom--text">Dành cho công ty 100 máy tính trở lên với mạng truy cập nước ngoài tốt nhất</p>		
 						</div>
-						<a href="index.php" class="btn card-wifi-bottom--btn">Đăng Ký</a>
+						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
 				</div>
 			</div>
@@ -263,6 +238,8 @@
 			
 			<div class="wifi-contact--infomation">
 				<h3 class="wifi-contact--infomation--heading">Lắp đặt  wifi cáp quang Viettel có gì đặc biệt?</h3>
+				<p class="wifi-contact--infomation--text">Với mong muốn mang lại chất lượng và dịch vụ tốt nhất dành cho khách hàng.Viettel đã và đang cố gắng xây dựng mạng lưới hạ tầng rộng khắp tại tất cả các khu vực nội ngoại thành và các tỉnh trên toàn quốc, đồng thời xây dựng mức giá đa dạng và phù hợp nhất tới tất cả các đối tượng khách hàng từ sinh viên , hộ gia đình tới các quán game và doanh nghiệp lớn…</p>
+				<p class="wifi-contact--infomation--text">Khi bạn Lắp Mạng Wifi Viettel trên 1 đường truyền nền công nghệ là Cáp Quang tốc độ rất cao và ổn định, tại sao bạn không lắp thêm các dịch vụ thiết yếu khác trên cùng 1 đường truyền mà vẫn không ảnh hưởng tới tốc độ truy cập internet đó để tiết kiệm chi phí lắp đặt và không làm ảnh hưởng tới mỹ quan của ngôi nhà bạn , đồng thời cước sẽ gộp hết 1 nhà cung cấp và chỉ cần thanh toán 1 lần duy nhất trong tháng là xong.</p>
 				<p class="wifi-contact--infomation--text">Với công nghệ truyền tải internet hiện đại nhất trên thế giới GPON, mạng cáp quang Viettel mang đến nhiều trải nghiệm thú vị cho khách hàng khi truy cập internet. Đầu tiên đó là việc truy cập internet nhanh chóng hơn gấp 200 lần so với cáp đồng tốc độ download/upload nhanh như nhau, phục vụ nhu cầu giải trí, học tập và công việc diễn ra thuận lợi, suôn sẻ.</p>
 				<p class="wifi-contact--infomation--text">Hiện nay, chỉ với giá gói 185.000đ/tháng khách hàng đã có thể lắp wifi Viettel khi sử dụng gói cước cáp quang dành cho gia đình. Ngoài ra, còn có thêm các gói cước phù hợp với quán game, tổ chức doanh nghiệp, khách hàng lựa chọn tùy theo nhu cầu sử dụng.</p>
 				<p class="wifi-contact--infomation--text">Viettel cung cấp các gói cước cáp quang giá rẻ cho khách hàng đăng ký wifi cáp quang Viettel trong thời điểm này. Giá cước cáp quang giảm từ 26% đến 40% giá cước so với giá niêm yết cùng nhiều chương trình khuyến mãi hấp dẫn khác như:</p>
@@ -409,11 +386,13 @@
 	<!-- javascript -->
     <script src="ow_/vendors/jquery.min.js"></script>
     <script src="ow_/owlcarousel/owl.carousel.js"></script>
+    <script src="js/index.js"></script>
     <script>
     	$('.owl-carousel').owlCarousel({
     		loop:true,
     		margin:20,
     		nav:true,
+    		autoHeight: true,
     		autoplay:true,
     		autoplayTimeout:5000,
     		autoplayHoverPause:true,
@@ -449,5 +428,32 @@
     		input.addEventListener("blur", blurFunc);
     	});
     </script>
+    	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				xfbml            : true,
+				version          : 'v9.0'
+			});
+		};
+
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Your Chat Plugin code -->
+		<div class="fb-customerchat"
+		attribution=setup_tool
+		page_id="119868136598056"
+		theme_color="#14AFB4"
+		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
+		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+	</div>
+	<script src="js/index.js"></script>
 </body>
 </html>

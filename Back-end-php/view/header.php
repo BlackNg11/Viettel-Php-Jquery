@@ -40,17 +40,21 @@
 		</div>
 		<div class="header__contact">
 			<div class="header__contact__line header__contact__line--1">
-				<svg class="header__contact-icon">
+				<svg class="header__contact-icon" style="width: 2rem;height: 2rem;fill: #162A23">
 					<use xlink:href="img/sprite.svg#icon-phone1"></use>
 				</svg>
-				<a href="tel:0383627790" class="header__contact-phone">0383.61.71.61</a>
+				<div style="font-size: 2rem;color: #162A23">Hotline:</div>
+				<a href="tel:0383627790" class="header__contact-phone" 
+				style="margin-top: 0;font-weight: 700;font-size: 2rem;margin-left: 2px">0383.61.71.61</a>
 			</div>	
+
+		<!-- 
 			<div class="header__contact__line header__contact__line--2">
 				<svg class="header__contact-icon">
 					<use xlink:href="img/sprite.svg#icon-phone1"></use>
 				</svg>
 				<a href="tel:0383627790" class="header__contact-phone">1800.8098</a>
-			</div>		
+			</div> -->		
 		</div>
 	</header>
 

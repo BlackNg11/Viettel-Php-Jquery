@@ -85,22 +85,28 @@ if (elementRemove2) {
 
 
 //Scroll
+function findTop(element) {
+  var rec = document.querySelector(element).getBoundingClientRect();
+  return rec.top + window.scrollY;
+}
 
+// console.log(findTop(".btn-scroll--1"));
+console.log(findTop(".form-register"))
+
+let formRegister = findTop(".form-register");
 let btnClickToScroll1 = document.querySelector('#scrollTo1');
 let btnClickToScroll2 = document.querySelector('#scrollTo2');
-
 let nodelistBtn = document.querySelectorAll('.btn-scroll--1');
 let btnClickToScroll3 = Array.from(nodelistBtn);
 // window.addEventListener('scroll', () => {
 // 	console.log(window.pageYOffset);
 // })
 
-//console.log(btnClickToScroll3);
 
 if (btnClickToScroll1) {
 	btnClickToScroll1.addEventListener("click", (e) => {
 		e.preventDefault();
-		window.scrollTo({top: 2150, behavior: 'smooth'});
+		window.scrollTo({top: formRegister, behavior: 'smooth'});
 
 	})
 }
@@ -108,27 +114,22 @@ if (btnClickToScroll1) {
 if (btnClickToScroll2) {
 	btnClickToScroll1.addEventListener("click", (e) => {
 		e.preventDefault();
-		window.scrollTo({top: 1900, behavior: 'smooth'});
+		window.scrollTo({top: formRegister, behavior: 'smooth'});
 	})
 }
 
 if (btnClickToScroll3) {
 	btnClickToScroll3.map(index => {
+
 		index.addEventListener("click", (e) => {
 			e.preventDefault();
-			window.scrollTo({top: 3370, behavior: 'smooth'});
+		
+			window.scrollTo({top: formRegister, behavior: 'smooth'});
 
 		})
 	})
 }
 
-// if (btnClickToScroll3) {
-// 	btnClickToScroll2.addEventListener("click", (e) => {
-// 		e.preventDefault();
-// 		window.scrollTo({top: 1950, behavior: 'smooth'});
-
-// 	})
-// }
 
 
 
