@@ -6,7 +6,7 @@
 
 	<!-- Google Meta Tags -->
 	<meta name="description" content="Đầy đủ thông tin,chính xác mọi dịch vụ về wifi,di động của Viettel ở Kiên Giang.Đăng Ký để tận hưởng trải nghiệm lên mạng & dịch vụ chăm sóc khách hàng tốt nhất">
-	<meta name="keywords" content="Viettel Rạch Giá, Viettel Pay, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
+	<meta name="keywords" content="Đầy đủ thông tin,chính xác mọi dịch vụ về wifi,di động của Viettel ở Kiên Giang.Đăng Ký để tận hưởng trải nghiệm lên mạng & dịch vụ chăm sóc khách hàng tốt nhất">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<!-- Facebook Meta Tags -->
@@ -290,3 +290,76 @@
 <?php
 	include "view/footer.php";
 ?>
+		<!-- javascript -->
+    <script src="ow_/vendors/jquery.min.js"></script>
+    <script src="ow_/owlcarousel/owl.carousel.js"></script>
+    <script>
+    	$('.owl-carousel').owlCarousel({
+    		loop:true,
+    		margin:20,
+    		nav:true,
+    		autoHeight: true,
+    		autoplay:true,
+    		autoplayTimeout:5000,
+    		autoplayHoverPause:true,
+    		responsive:{
+    			0:{
+    				items:1
+    			},
+    			600:{
+    				items:1
+    			},
+    			1000:{
+    				items:3
+    			}
+    		}
+    	})
+
+    	const inputs = document.querySelectorAll(".form-2__contact-form--input");
+
+    	function focusFunc() {
+    		let parent = this.parentNode;
+    		parent.classList.add("focus");
+    	}
+
+    	function blurFunc() {
+    		let parent = this.parentNode;
+    		if (this.value == "") {
+    			parent.classList.remove("focus");
+    		}
+    	}
+
+    	inputs.forEach((input) => {
+    		input.addEventListener("focus", focusFunc);
+    		input.addEventListener("blur", blurFunc);
+    	});
+    </script>
+    	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				xfbml            : true,
+				version          : 'v9.0'
+			});
+		};
+
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Your Chat Plugin code -->
+		<div class="fb-customerchat"
+		attribution=setup_tool
+		page_id="119868136598056"
+		theme_color="#14AFB4"
+		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
+		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+	</div>
+    <script src="js/index.js"></script>
+</body>
+</html>

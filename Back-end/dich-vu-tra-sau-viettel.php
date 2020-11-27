@@ -2,9 +2,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Chi tiết trả sau Viettel 2020">
+	<meta name="description" content="Chi tiết trả sau Viettel 2020,hỗ trợ đăng kí nhanh gọn trong vòng 24h trong khu vực Kiên Giang">
 	<meta name="keywords"
-		content="Viettel Kiên Giang, Viettel Telecom,my viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
+		content="Dịch vụ Viettel ở Kiên Giang Kiên Giang,viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
 	<meta name="og">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="img/v-logo.png" rel="shortcut icon" type="image/x-icon" />
@@ -23,14 +23,36 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Gói Trả Sau Viettel</title>
+	<title>Giá Trả Sau Viettel 2020</title>
 </head>
 
 <body>
 	<?php
+	include "config/config.php";
 	include "view/navigation.php";
 	include "view/header.php";
-	?>
+
+	if (isset($_POST['submit'])) {
+		// print_r($_POST);
+		$sdt = mysqli_real_escape_string($conn, $_POST['SDT']);
+		$contact = mysqli_real_escape_string($conn, $_POST['contact']);
+		$resInfo = mysqli_real_escape_string($conn, $_POST['res-info']);
+		$message = mysqli_real_escape_string($conn, $_POST['message']);
+		 
+		// create sql
+		$sql = "INSERT INTO `user-no-reg`(SĐT,DIA_CHI,DICH_VU_DK,YEU_CAU) VALUES ('$sdt', '$contact', '$resInfo', '$message')";
+		
+		//save to db
+		if (mysqli_query($conn,$sql)) {
+			//success
+			// header('Location: index.php');
+		}else {
+			//error
+			echo $sql;
+			echo "query error" . mysqli_error($conn);
+		}
+	}
+?>
 	<main class="main-phone">
 		<section class="phone-for">
 			<ul class="phone-for-lists">
@@ -247,12 +269,146 @@
 					giao dịch chuyển sang dịch vụ trả sau đơn giản, nhanh chóng nhé.</p>
 			</div>
 		</section>
-		<?php include "view/footer.php"; ?>
-	</main>
+		<section class="form-register">
+			<span class="form-register__big-circle"></span>
+			<img src="img/shape.png" class="form-register--square" alt="" />
+			<div class="form-2">
+				<div class="form-2__contact-info">
+					<h3 class="form-2__contact-info__title">Viettel</h3>
+					<p class="form-2__contact-info__text">
+						Hỗ Trợ Khách Hàng Lắp Đặt Wifi và Dịch Vụ Di Động Nhanh Chóng 24/7 Trong Khu Vực Kiên Giang
+					</p>
+					<div class="form-2__contact-info__info">
+						<div class="form-2__contact-info__information">
+							<img src="img/location.png" class="form-2__contact-info__icon" alt="" />
+							<p>654 Nguyễn Trung Trực</p>
+						</div>
+						<div class="form-2__contact-info__information">
+							<img src="img/email.png" class="form-2__contact-info__icon" alt="" />
+							<p>lorem@ipsum.com</p>
+						</div>
+						<div class="form-2__contact-info__information">
+							<img src="img/phone.png" class="form-2__contact-info__icon" alt="" />
+							<p>038.362.7790</p>
+						</div>
+					</div>
+					<div class="form-2__contact-info__social-media">
+						<p>Mạng Xã Hội :</p>
+						<div class="form-2__contact-info__social-icons">
+							<a href="">
+								<svg class="wifi-detail__info--list-icon wifi-detail__info--list-icon--1">
+									<use xlink:href="img/sprite.svg#icon-facebook"></use>
+								</svg>
+							</a>
+							<a href="">
+								<svg class="wifi-detail__info--list-icon wifi-detail__info--list-icon--1">
+									<use xlink:href="img/sprite.svg#icon-youtube"></use>
+								</svg>
+							</a>
+							<!-- <a href="">
+								<svg class="wifi-detail__info--list-icon wifi-detail__info--list-icon--1">
+									<use xlink:href="img/sprite.svg#icon-facebook"></use>
+								</svg>
+							</a> -->
+						</div>
+					</div>
+				</div>
+				<div class="form-2__contact-form">
+					<span class="form-2__contact-form__circle form-2__contact-form__circle--one"></span>
+					<span class="form-2__contact-form__circle form-2__contact-form__circle--two"></span>
 
-<?php
-	include "view/footer.php";
-?>
+					<form action="wifi-cho-ho-gia-dinh.php" method="POST">
+						<h3 class="form-2__contact-form--title">Liên Hệ</h3>
+						<div class="form-2__contact-form--input-container">
+							<input type="tel" name="SDT"  autocomplete="nope" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')" class="form-2__contact-form--input" />
+							<label for="">SĐT</label>
+							<span>SĐT</span>
+						</div>
+						<div class="form-2__contact-form--input-container">
+							<input type="text" name="contact" autocomplete="nope" class="form-2__contact-form--input" minlength="5" maxlength="80"  id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')"/>
+							<label for="">Địa Chỉ</label>
+							<span>Địa Chỉ</span>
+						</div>
+						<div class="form-2__contact-form--input-container  focus">
+							<select  name="res-info" class="form-2__contact-form--input">
+									<option value="T100" selected class="form-2__contact-form--input-1">Gói T100</option>
+									<option value="Gói B" class="form-2__contact-form--input-1">Gói B</option>
+									<option value="Gói V" selected class="form-2__contact-form--input-1">Gói V</option>
+							</select>
+							<label for="">Gói Đăng Ký</label>
+							<span>Gói Đăng Ký</span>
+						</div>
+						<!-- <div class="form-2__contact-form--input-container">
+							<input type="email" name="email" autocomplete="off" class="form-2__contact-form--input" />
+							<label for="">Email</label>
+							<span>Email</span>
+						</div> -->
+						<div class="form-2__contact-form--input-container form-2__contact-form--textarea">
+							<textarea name="message" class="form-2__contact-form--input"></textarea>
+							<label for="">Yêu Cầu</label>
+							<span>Yêu Cầu</span>
+						</div>
+						<input type="submit" name="submit" value="Đăng Ký" class="form-2__contact-form--btn" />
+					</form>
+				</div>
+			</div>
+		</section>
+		
+	</main>
+	<?php include "view/footer.php"; ?>
+		<!-- javascript -->
+   
+    <script>
+    	
+
+    	const inputs = document.querySelectorAll(".form-2__contact-form--input");
+
+    	function focusFunc() {
+    		let parent = this.parentNode;
+    		parent.classList.add("focus");
+    	}
+
+    	function blurFunc() {
+    		let parent = this.parentNode;
+    		if (this.value == "") {
+    			parent.classList.remove("focus");
+    		}
+    	}
+
+    	inputs.forEach((input) => {
+    		input.addEventListener("focus", focusFunc);
+    		input.addEventListener("blur", blurFunc);
+    	});
+    </script>
+    	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				xfbml            : true,
+				version          : 'v9.0'
+			});
+		};
+
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Your Chat Plugin code -->
+		<div class="fb-customerchat"
+		attribution=setup_tool
+		page_id="119868136598056"
+		theme_color="#14AFB4"
+		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
+		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+	</div>
+    <script src="js/index.js"></script>
+</body>
+</html>
 </body>
 
 </html>

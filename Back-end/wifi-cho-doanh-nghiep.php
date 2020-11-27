@@ -2,8 +2,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Chi tiết dịch vụ wifi Viettel Rạch Giá-Kiên Giang">
-	<meta name="keywords" content="Lắp đặt mạng wifi viettel mãi internet viettel 2020 trọn gói chỉ từ 210k,tặng kèm modem wifi đời mới 4 cổng Holine tư vấn 038.362.7790">
+	<meta name="description" content="Lắp đặt mạng wifi Viettel 2020 cho doanh nghiệp,hỗ trợ nhanh chóng cho khách hàng ở Kiên Giang">
+	<meta name="keywords" content="Lắp đặt mạng wifi viettel mãi internet viettel 2020 trọn gói chỉ từ 210k,tặng kèm modem wifi đời mới 4 cổng">
 	<meta name="og"> 
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="img/v-logo.png" rel="shortcut icon" type="image/x-icon" />
@@ -22,7 +22,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Lắp đặt mạng wifi Viettel 2020</title>
+	<title>Lắp đặt mạng Viettel cho doanh nghiệp</title>
 </head>
 <body>
 
@@ -412,7 +412,6 @@
 	<!-- javascript -->
     <script src="ow_/vendors/jquery.min.js"></script>
     <script src="ow_/owlcarousel/owl.carousel.js"></script>
-    <script src="js/index.js"></script>
     <script>
     	$('.owl-carousel').owlCarousel({
     		loop:true,
@@ -480,6 +479,6 @@
 		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
 		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
 	</div>
-	<script src="js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
