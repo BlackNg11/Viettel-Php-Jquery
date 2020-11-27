@@ -9,18 +9,18 @@
 			<div class="footer__info__group footer__info--2">
 				<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
 				<div class="footer-bot--1">
-					<a href="">
+					<a href="https://www.facebook.com/D%E1%BB%8Bch-V%E1%BB%A5-Viettel-Ki%C3%AAn-Giang-119868136598056">
 						<svg class="wifi-detail__info--list-icon">
 							<use xlink:href="img/sprite.svg#icon-facebook"></use>
 						</svg>
 					</a>
-					<a href="">
+					<a href="https://www.youtube.com/user/Viettelchannels">
 						<svg class="wifi-detail__info--list-icon">
 							<use xlink:href="img/sprite.svg#icon-youtube"></use>
 						</svg>
 					</a>
 
-					<a href=""><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
+					<a href="https://zalo.me/1814378069399742003"><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
 				</div>
 				
 			</div>

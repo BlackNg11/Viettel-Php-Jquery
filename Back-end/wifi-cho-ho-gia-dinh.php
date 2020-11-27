@@ -524,36 +524,16 @@
 					</p>
 					<div class="form-2__contact-info__info">
 						<div class="form-2__contact-info__information">
-							<img src="img/location.png" class="form-2__contact-info__icon" alt="" />
+							<img src="img/location.png" class="form-2__contact-info__icon" alt="Địa Chỉ Viettel Kiên Giang" />
 							<p>654 Nguyễn Trung Trực</p>
 						</div>
 						<div class="form-2__contact-info__information">
-							<img src="img/email.png" class="form-2__contact-info__icon" alt="" />
-							<p>lorem@ipsum.com</p>
+							<img src="img/email.png" class="form-2__contact-info__icon" alt="email" />
+							<p>blackng10.5.1997@gmail.com</p>
 						</div>
 						<div class="form-2__contact-info__information">
-							<img src="img/phone.png" class="form-2__contact-info__icon" alt="" />
-							<p>038.362.7790</p>
-						</div>
-					</div>
-					<div class="form-2__contact-info__social-media">
-						<p>Mạng Xã Hội :</p>
-						<div class="form-2__contact-info__social-icons">
-							<a href="">
-								<svg class="wifi-detail__info--list-icon wifi-detail__info--list-icon--1">
-									<use xlink:href="img/sprite.svg#icon-facebook"></use>
-								</svg>
-							</a>
-							<a href="">
-								<svg class="wifi-detail__info--list-icon wifi-detail__info--list-icon--1">
-									<use xlink:href="img/sprite.svg#icon-youtube"></use>
-								</svg>
-							</a>
-							<!-- <a href="">
-								<svg class="wifi-detail__info--list-icon wifi-detail__info--list-icon--1">
-									<use xlink:href="img/sprite.svg#icon-facebook"></use>
-								</svg>
-							</a> -->
+							<img src="img/phone.png" class="form-2__contact-info__icon" alt="hotline Viettel Kiên Giang" />
+							<p>0383.61.71.61</p>
 						</div>
 					</div>
 				</div>
