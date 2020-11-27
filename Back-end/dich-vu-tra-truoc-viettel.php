@@ -201,7 +201,7 @@
 				<h3 class="phone-contact--infomation--title">Sim trả trước Viettel là gì?</h3>
 
 				<p class="phone-contact--infomation--text">Sim trả trước Viettel nói một cách dễ hiểu là người dùng phải trả các khoản tiền dịch vụ trước khi sử dụng. Tuy nhiên, thực tế là khi muốn sử dụng những dịch vụ nghe gọi, SMS, nhạc chuông, nhạc chờ,... từ nhà mạng thì người dùng cần nạp một khoảng tiền nhất định vào tài khoản. Có thể là 10.000đ, 20.000đ, 50.0000đ,... để có thể duy trì sử dụng các dịch vụ từ nhà mạng. Khi tài khoản hết tiền thì các nhà mạng sẽ ngừng cung cấp các dịch vụ này đến tài khoản cho đến khi người dùng nạp lại tiền vào tài khoản của mình.</p>
-				<img src="img/tra-truoc.jpg" alt="V120 Khuyễn Mãi Viettel" class="phone-contact--infomation--img phone-contact--infomation--img--2">
+				<img src="img/phonePrice.jpg" alt="V120 Khuyễn Mãi Viettel" class="phone-contact--infomation--img phone-contact--infomation--img--2">
 				<p class="phone-contact--infomation--text">Hiện nay, sim trả trước Viettel khá phổ biến trong cộng đồng người dùng. Theo một cuộc khảo sát đến từ nhà mạng thì có hơn 90% khách hàng đã và đang sử dụng sim trả trước Viettel, còn lại chưa tới 10% người dùng sim trả sau Viettel.</p>	
 
 				<h3 class="phone-contact--infomation--title">Có nên sử dụng sim trả trước Viettel không</h3>

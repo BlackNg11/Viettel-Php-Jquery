@@ -50,7 +50,7 @@
 			// header('Location: index.php');
 		}else {
 			//error
-			echo $sql;
+			// echo $sql;
 			echo "query error" . mysqli_error($conn);
 		}
 	}

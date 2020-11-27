@@ -263,6 +263,9 @@
 				<p class="wifi-contact--infomation--text">Với mong muốn mang lại chất lượng và dịch vụ tốt nhất dành cho khách hàng.Viettel đã và đang cố gắng xây dựng mạng lưới hạ tầng rộng khắp tại tất cả các khu vực nội ngoại thành và các tỉnh trên toàn quốc, đồng thời xây dựng mức giá đa dạng và phù hợp nhất tới tất cả các đối tượng khách hàng từ sinh viên , hộ gia đình tới các quán game và doanh nghiệp lớn…</p>
 				<p class="wifi-contact--infomation--text">Khi bạn Lắp Mạng Wifi Viettel trên 1 đường truyền nền công nghệ là Cáp Quang tốc độ rất cao và ổn định, tại sao bạn không lắp thêm các dịch vụ thiết yếu khác trên cùng 1 đường truyền mà vẫn không ảnh hưởng tới tốc độ truy cập internet đó để tiết kiệm chi phí lắp đặt và không làm ảnh hưởng tới mỹ quan của ngôi nhà bạn , đồng thời cước sẽ gộp hết 1 nhà cung cấp và chỉ cần thanh toán 1 lần duy nhất trong tháng là xong.</p>
 				<p class="wifi-contact--infomation--text">Với công nghệ truyền tải internet hiện đại nhất trên thế giới GPON, mạng cáp quang Viettel mang đến nhiều trải nghiệm thú vị cho khách hàng khi truy cập internet. Đầu tiên đó là việc truy cập internet nhanh chóng hơn gấp 200 lần so với cáp đồng tốc độ download/upload nhanh như nhau, phục vụ nhu cầu giải trí, học tập và công việc diễn ra thuận lợi, suôn sẻ.</p>
+				<div class="wifi-contact__img-2">
+					<img src="img/home.png" alt="Wifi và truyền hình Viettel" class="wifi-contact__img-2" style="width: 100%">
+				</div>
 				<p class="wifi-contact--infomation--text">Hiện nay, chỉ với giá gói 185.000đ/tháng khách hàng đã có thể lắp wifi Viettel khi sử dụng gói cước cáp quang dành cho gia đình. Ngoài ra, còn có thêm các gói cước phù hợp với quán game, tổ chức doanh nghiệp, khách hàng lựa chọn tùy theo nhu cầu sử dụng.</p>
 				<p class="wifi-contact--infomation--text">Viettel cung cấp các gói cước cáp quang giá rẻ cho khách hàng đăng ký wifi cáp quang Viettel trong thời điểm này. Giá cước cáp quang giảm từ 26% đến 40% giá cước so với giá niêm yết cùng nhiều chương trình khuyến mãi hấp dẫn khác như:</p>
 				<ul class="wifi-contact--infomation--list">
@@ -270,7 +273,7 @@
 					<li>✓ Miễn phí 100% phí lắp đặt mạng cáp quang Viettel khi khách hàng trả trước từ 3 tháng cước phí trở lên, tặng từ 1-3 tháng sử dụng internet miễn phí khi đăng ký trả trước từ 6 tháng trở lên.</li>
 				</ul>
 				<p class="wifi-contact--infomation--text">Dịch vụ lắp đặt mạng wifi Viettel hiện đại cùng phong cách làm việc chuyên nghiệp sẽ mang đến sự hài lòng tuyệt đối cho khách hàng. Liên hệ tới số hotline 038.362.7790 hoặc 1800 8168 để được tư vấn miễn phí về dịch vụ cũng như để được nhận những ưu đãi lớn nhất.</p>
-			</div>
+			</div>	
 		</section>
 		<section class="form-register">
 			<span class="form-register__big-circle"></span>

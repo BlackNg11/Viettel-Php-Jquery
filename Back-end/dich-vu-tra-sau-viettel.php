@@ -1,9 +1,8 @@
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Chi tiết các gói trả sau Viettel">
+	<meta name="description" content="Chi tiết trả sau Viettel 2020">
 	<meta name="keywords"
 		content="Viettel Kiên Giang, Viettel Telecom,my viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
 	<meta name="og">
@@ -24,40 +23,14 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Những Gói Trả Sau Viettel</title>
+	<title>Gói Trả Sau Viettel</title>
 </head>
 
 <body>
-	<!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-	<script>
-		window.fbAsyncInit = function () {
-			FB.init({
-				xfbml: true,
-				version: 'v9.0'
-			});
-		};
-
-		(function (d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s);
-			js.id = id;
-			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-
-	<!-- Your Chat Plugin code -->
-	<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
-		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
-	</div>
-
 	<?php
 	include "view/navigation.php";
 	include "view/header.php";
-?>
+	?>
 	<main class="main-phone">
 		<section class="phone-for">
 			<ul class="phone-for-lists">
@@ -274,163 +247,12 @@
 					giao dịch chuyển sang dịch vụ trả sau đơn giản, nhanh chóng nhé.</p>
 			</div>
 		</section>
-		<section class="form-register">
-			<span class="form-register__big-circle"></span>
-			<img src="img/shape.png" class="form-register--square" alt="" />
-			<div class="form-2">
-				<div class="form-2__contact-info">
-					<h3 class="form-2__contact-info__title">Viettel</h3>
-					<p class="form-2__contact-info__text">
-						Hỗ Trợ Khách Hàng Lắp Đặt Wifi và Dịch Vụ Di Động Nhanh Chóng 24/7 Trong Khu Vực Kiên Giang
-					</p>
-					<div class="form-2__contact-info__info">
-						<div class="form-2__contact-info__information">
-							<img src="img/location.png" class="form-2__contact-info__icon" alt="" />
-							<p>654 Nguyễn Trung Trực</p>
-						</div>
-						<div class="form-2__contact-info__information">
-							<img src="img/email.png" class="form-2__contact-info__icon" alt="" />
-							<p>lorem@ipsum.com</p>
-						</div>
-						<div class="form-2__contact-info__information">
-							<img src="img/phone.png" class="form-2__contact-info__icon" alt="" />
-							<p>038.362.7790</p>
-						</div>
-					</div>
-					<!-- 		<div class="form-2__contact-info__social-media">
-						<p>Mạng Xã Hội :</p>
-						<div class="form-2__contact-info__social-icons">
-							<a href="#">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-							<a href="#">
-								<i class="fab fa-twitter"></i>
-							</a>
-							<a href="#">
-								<i class="fab fa-instagram"></i>
-							</a>
-							<a href="#">
-								<i class="fab fa-linkedin-in"></i>
-							</a>
-						</div>
-					</div> -->
-				</div>
-				<div class="form-2__contact-form">
-					<span class="form-2__contact-form__circle form-2__contact-form__circle--one"></span>
-					<span class="form-2__contact-form__circle form-2__contact-form__circle--two"></span>
-
-					<form action="#" autocomplete="nope">
-						<h3 class="form-2__contact-form--title">Liên Hệ Chúng Tôi</h3>
-						<div class="form-2__contact-form--input-container">
-							<input type="tel" name="phone" autocomplete="nope" class="form-2__contact-form--input" />
-							<label for="">SĐT</label>
-							<span>SĐT</span>
-						</div>
-						<div class="form-2__contact-form--input-container">
-							<input type="text" name="name" autocomplete="nope" class="form-2__contact-form--input" />
-							<label for="">Địa Chỉ</label>
-							<span>Địa Chỉ</span>
-						</div>
-						<div class="form-2__contact-form--input-container  focus">
-							<select name="res-info" class="form-2__contact-form--input">
-								<option value="0" selected class="form-2__contact-form--input-1">Gói T</option>
-								<option value="1" class="form-2__contact-form--input-1">Gói B</option>
-								<option value="2" class="form-2__contact-form--input-1">Gói V</option>
-							</select>
-							<label for="">Gói Đăng Ký</label>
-							<span>Gói Đăng Ký</span>
-						</div>
-						<!-- <div class="form-2__contact-form--input-container">
-							<input type="email" name="email" autocomplete="off" class="form-2__contact-form--input" />
-							<label for="">Email</label>
-							<span>Email</span>
-						</div> -->
-						<div class="form-2__contact-form--input-container form-2__contact-form--textarea">
-							<textarea name="message" class="form-2__contact-form--input"></textarea>
-							<label for="">Yêu Cầu</label>
-							<span>Yêu Cầu</span>
-						</div>
-						<input type="submit" value="Đăng Ký" class="form-2__contact-form--btn" />
-					</form>
-				</div>
-			</div>
-		</section>
+		<?php include "view/footer.php"; ?>
 	</main>
 
-	<footer class="footer">
-		<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="footer__logo u-margin-bottom-medium">
-		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là
-			trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
-		<div class="footer__info">
-			<div class="footer__info__group footer__info--1">
-				<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
-			</div>
-			<div class="footer__info__group footer__info--2">
-				<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
-				<div class="footer-bot--1">
-					<a href="">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-facebook"></use>
-						</svg>
-					</a>
-					<a href="">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-youtube"></use>
-						</svg>
-					</a>
-
-					<a href=""><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
-				</div>
-				s
-			</div>
-			<div class="footer__info__group footer__info--3">
-				<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
-				<div class="footer-bot--2">
-					<svg class="header__contact-icon">
-						<use xlink:href="img/sprite.svg#icon-phone"></use>
-					</svg>
-					<a href="tel:0383627790" class="header__contact-phone footer__contact-phone">0383.61.71.61</a>
-					<svg class="header__contact-icon">
-						<use xlink:href="img/sprite.svg#icon-phone"></use>
-					</svg>
-					<a href="tel:0383627790" class="header__contact-phone">1800.8098</a>
-				</div>
-
-			</div>
-			<div class="footer__info__group footer__info--3">
-				<h3 class="footer-heading">Địa Chỉ Công Ty</h3>
-				<svg class="header__contact-icon">
-					<use xlink:href="img/sprite.svg#icon-office"></use>
-				</svg>
-				<a href="#" class="header__contact-phone">654 Nguyễn Trung Trực, Vĩnh Lạc, Rạch Giá, tỉnh Kiên Giang</a>
-			</div>
-		</div>
-	</footer>
-
-	<!-- javascript -->
-	<script src="ow_/vendors/jquery.min.js"></script>
-	<script src="ow_/owlcarousel/owl.carousel.js"></script>
-	<script>
-		const inputs = document.querySelectorAll(".form-2__contact-form--input");
-
-		function focusFunc() {
-			let parent = this.parentNode;
-			parent.classList.add("focus");
-		}
-
-		function blurFunc() {
-			let parent = this.parentNode;
-			if (this.value == "") {
-				parent.classList.remove("focus");
-			}
-		}
-
-		inputs.forEach((input) => {
-			input.addEventListener("focus", focusFunc);
-			input.addEventListener("blur", blurFunc);
-		});
-	</script>
-	<script src="js/index.js"></script>
+<?php
+	include "view/footer.php";
+?>
 </body>
 
 </html>
