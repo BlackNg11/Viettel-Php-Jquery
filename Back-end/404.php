@@ -25,106 +25,17 @@
 	<title>Những Gói Cước Trả Trước Viettel</title>
 </head>
 <body>
-	<div class="navigation">
-		<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-		<label for="navi-toggle" class="navigation__button">
-			<span class="navigation__icon">&nbsp;</span>
-		</label>
-
-		<div class="navigation__background">&nbsp;</div>
-
-
-		<nav class="navigation__nav">
-			<ul class="navigation__list">
-				<li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Trang Chủ</a></li>
-				<li class="navigation__item"><a href="wifi-cho-ho-gia-dinh.html" class="navigation__link"><span>02</span>Internet + Truyền Hình</a></li>
-				<li class="navigation__item"><a href="dich-vu-tra-sau-viettel.html" class="navigation__link"><span>03</span>Dịch Vụ Di Động</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Mua Sim</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Mua Điện Thoại</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>06</span>Tin Khuyễn Mãi</a></li>
-			</ul>
-		</nav>
-	</div>
-	<header class="header">
-		<div class="header__logo">
-			<div class="header__logo--alone">
-				<a href="index.html"><img src=img/v-logo.png alt="Viettel-logo-1" class="header__logo--big"></a>
-			</div>
-			<div class="header__logo__group">
-				<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="header__logo__group--small">	
-				<p class="header__logo__group--text">Hãy Nói Theo Cách Của Bạn</p>
-			</div>
-		</div>
-		<div class="header__contact">
-			<div class="header__contact__line header__contact__line--1">
-				<svg class="header__contact-icon">
-					<use xlink:href="img/sprite.svg#icon-phone1"></use>
-				</svg>
-				<a href="tel:0383627790" class="header__contact-phone1">0383.61.71.61</a>
-			</div>	
-			<div class="header__contact__line header__contact__line--2">
-				<svg class="header__contact-icon">
-					<use xlink:href="img/sprite.svg#icon-phone1"></use>
-				</svg>
-				<a href="tel:0383627790" class="header__contact-phone1">1800.8098</a>
-			</div>		
-		</div>
-	</header>
+	<?php 
+	include "view/navigation.php";
+	include "view/header.php";
+	 ?>
 	<main class="error">
 		<div class="error--heading">
 			<h1>Trang đang được phát triển mong quý khách vui lòng quay lại sau</h1>
 		</div>
 	</main>
 
-	<footer class="footer" id="name">
-		<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="footer__logo u-margin-bottom-medium">
-		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
-		<div class="footer__info">
-			<div class="footer__info__group footer__info--1">
-				<a class="footer-heading" href="index.html">Đăng Kí Dịch Vụ</a>
-			</div>
-			<div class="footer__info__group footer__info--2">
-				<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
-				<div class="footer-bot--1">
-					<a href="">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-facebook"></use>
-						</svg>
-					</a>
-					<a href="">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-youtube"></use>
-						</svg>
-					</a>
-
-					<a href=""><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
-				</div>
-				s
-			</div>
-			<div class="footer__info__group footer__info--3">
-				<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
-				<div class="footer-bot--2">
-					<svg class="header__contact-icon">
-						<use xlink:href="img/sprite.svg#icon-phone"></use>
-					</svg>
-					<a href="tel:0383627790" class="header__contact-phone footer__contact-phone">0383.61.71.61</a>
-					<svg class="header__contact-icon">
-						<use xlink:href="img/sprite.svg#icon-phone"></use>
-					</svg>
-					<a href="tel:0383627790" class="header__contact-phone">1800.8098</a>
-				</div>
-				
-			</div>
-			<div class="footer__info__group footer__info--3">
-				<h3 class="footer-heading">Địa Chỉ Công Ty</h3>
-				<svg class="header__contact-icon">
-					<use xlink:href="img/sprite.svg#icon-office"></use>
-				</svg>
-				<a href="#" class="header__contact-phone">654 Nguyễn Trung Trực, Vĩnh Lạc, Rạch Giá, tỉnh Kiên Giang</a>
-			</div>
-		</div>
-	</footer>
+	<?php include "view/footer.php"; ?>
 
 	<!-- javascript -->
  	<!-- Load Facebook SDK for JavaScript -->
