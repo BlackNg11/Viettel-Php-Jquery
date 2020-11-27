@@ -28,7 +28,7 @@
 
 
 
-	<header class="header">
+	<header class="header" style="height: 12.5vh;">
 		<div class="header__logo">
 			<div class="header__logo--alone">
 				<a href="index.php"><img src=img/v-logo.png alt="Viettel-logo-1" class="header__logo--big"></a>

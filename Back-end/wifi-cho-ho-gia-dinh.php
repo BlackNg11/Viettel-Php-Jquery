@@ -27,8 +27,30 @@
 <body>
 
 <?php
+	include "config/config.php";
 	include "view/navigation.php";
 	include "view/header.php";
+
+	if (isset($_POST['submit'])) {
+		// print_r($_POST);
+		$sdt = mysqli_real_escape_string($conn, $_POST['SDT']);
+		$contact = mysqli_real_escape_string($conn, $_POST['contact']);
+		$resInfo = mysqli_real_escape_string($conn, $_POST['res-info']);
+		$message = mysqli_real_escape_string($conn, $_POST['message']);
+		 
+		// create sql
+		$sql = "INSERT INTO `user-no-reg`(SĐT,DIA_CHI,DICH_VU_DK,YEU_CAU) VALUES ('$sdt', '$contact', '$resInfo', '$message')";
+		
+		//save to db
+		if (mysqli_query($conn,$sql)) {
+			//success
+			// header('Location: index.php');
+		}else {
+			//error
+			echo $sql;
+			echo "query error" . mysqli_error($conn);
+		}
+	}
 ?>
 	<main class="main-wifi">
 		<section class="wifi-for">
@@ -536,24 +558,24 @@
 					<span class="form-2__contact-form__circle form-2__contact-form__circle--one"></span>
 					<span class="form-2__contact-form__circle form-2__contact-form__circle--two"></span>
 
-					<form action="#">
-						<h3 class="form-2__contact-form--title">Liên Hệ Chúng Tui</h3>
+					<form action="wifi-cho-ho-gia-dinh.php" method="POST">
+						<h3 class="form-2__contact-form--title">Liên Hệ</h3>
 						<div class="form-2__contact-form--input-container">
-							<input type="tel" name="phone" autocomplete="nope" class="form-2__contact-form--input" />
+							<input type="tel" name="SDT"  autocomplete="nope" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')" class="form-2__contact-form--input" />
 							<label for="">SĐT</label>
 							<span>SĐT</span>
 						</div>
 						<div class="form-2__contact-form--input-container">
-							<input type="text" name="name" autocomplete="nope" class="form-2__contact-form--input" />
+							<input type="text" name="contact" autocomplete="nope" class="form-2__contact-form--input" minlength="5" maxlength="80"  id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')"/>
 							<label for="">Địa Chỉ</label>
 							<span>Địa Chỉ</span>
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
 							<select  name="res-info" class="form-2__contact-form--input">
-									<option value="0" selected class="form-2__contact-form--input-1">Gói Net</option>
-									<option value="1" class="form-2__contact-form--input-1">Gói SuperNet</option>
-									<option value="2" class="form-2__contact-form--input-1">Gói Net + Truyền Hình</option>
-									<option value="3" class="form-2__contact-form--input-1">Gói SuperNet + Truyền Hình</option>
+									<option value="Net" selected class="form-2__contact-form--input-1">Gói Net</option>
+									<option value="SuperNet" class="form-2__contact-form--input-1">Gói SuperNet</option>
+									<option value="Net + TV" class="form-2__contact-form--input-1">Gói Net + Truyền Hình</option>
+									<option value="SuperNet + TV" class="form-2__contact-form--input-1">Gói SuperNet + Truyền Hình</option>
 							</select>
 							<label for="">Gói Đăng Ký</label>
 							<span>Gói Đăng Ký</span>
@@ -568,7 +590,7 @@
 							<label for="">Yêu Cầu</label>
 							<span>Yêu Cầu</span>
 						</div>
-						<input type="submit" value="Đăng Ký" class="form-2__contact-form--btn" />
+						<input type="submit" name="submit" value="Đăng Ký" class="form-2__contact-form--btn" />
 					</form>
 				</div>
 			</div>
