@@ -2,7 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<<meta name="description" content="Chi tiết trả trước Viettel 2020,hỗ trợ đăng kí nhanh gọn trong vòng 24h trong khu vực Kiên Giang">
+	<meta name="description" content="Chi tiết trả trước Viettel 2020,hỗ trợ đăng kí nhanh gọn trong vòng 24h trong khu vực Kiên Giang">
 	<meta name="keywords"
 		content="Dịch vụ Viettel ở Kiên Giang Kiên Giang,viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
 	<meta name="og"> 
@@ -34,13 +34,13 @@
 
 	if (isset($_POST['submit'])) {
 		// print_r($_POST);
-		$sdt = mysqli_real_escape_string($conn, $_POST['SDT']);
-		$contact = mysqli_real_escape_string($conn, $_POST['contact']);
-		$resInfo = mysqli_real_escape_string($conn, $_POST['res-info']);
-		$message = mysqli_real_escape_string($conn, $_POST['message']);
-		 
+		$sdt = mysqli_real_escape_string($conn, $_POST['sdt']);
+		$diachi = mysqli_real_escape_string($conn, $_POST['diachi']);
+		$dichvudangky = mysqli_real_escape_string($conn, $_POST['dichvudangky']);
+		$content = mysqli_real_escape_string($conn, $_POST['content']);
+		
 		// create sql
-		$sql = "INSERT INTO `user-no-reg`(SĐT,DIA_CHI,DICH_VU_DK,YEU_CAU) VALUES ('$sdt', '$contact', '$resInfo', '$message')";
+		$sql = "INSERT INTO khachhang_thuong (sdt,diachi,dichvudangky,content,status) VALUES ('$sdt', '$diachi', '$dichvudangky', '$content',1)";
 		
 		//save to db
 		if (mysqli_query($conn,$sql)) {
@@ -254,27 +254,27 @@
 					<span class="form-2__contact-form__circle form-2__contact-form__circle--one"></span>
 					<span class="form-2__contact-form__circle form-2__contact-form__circle--two"></span>
 
-					<form  action="#">
-						<h3 class="form-2__contact-form--title">Liên Hệ Chúng Tui</h3>
+					<form action="dich-vu-tra-truoc-viettel.php" method="POST">
+						<h3 class="form-2__contact-form--title">Liên Hệ</h3>
 						<div class="form-2__contact-form--input-container">
-							<input type="tel" name="phone" autocomplete="nope" class="form-2__contact-form--input" />
+							<input type="tel" name="sdt"  autocomplete="nope" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên'" class="form-2__contact-form--input" />
 							<label for="">SĐT</label>
 							<span>SĐT</span>
 						</div>
 						<div class="form-2__contact-form--input-container">
-							<input type="text" name="name" autocomplete="nope" class="form-2__contact-form--input" />
+							<input type="text" name="diachi" autocomplete="nope" class="form-2__contact-form--input" maxlength="80"  id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')"/>
 							<label for="">Địa Chỉ</label>
 							<span>Địa Chỉ</span>
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
-							<select  name="res-info" class="form-2__contact-form--input">
-									<option value="0" selected class="form-2__contact-form--input-1">Gói V120</option>
-									<option value="1" class="form-2__contact-form--input-1">Gói F90U</option>
-									<option value="2" class="form-2__contact-form--input-1">Gói V90X</option>
-									<option value="3" class="form-2__contact-form--input-1">Gói ST</option>
-									<option value="4" class="form-2__contact-form--input-1">Gói G70D</option>
-									<option value="5" class="form-2__contact-form--input-1">Gói XL90U</option>
-									<option value="6" class="form-2__contact-form--input-1">Gói UMAX300</option>
+						<select  name="dichvudangky" class="form-2__contact-form--input">
+									<option value="Gói V120 - Trả Trước" selected class="form-2__contact-form--input-1">Gói V120</option>
+									<option value="Gói V90U - Trả Trước" class="form-2__contact-form--input-1">Gói F90U</option>
+									<option value="Gói V120 - Trả Trước" class="form-2__contact-form--input-1">Gói V90X</option>
+									<option value="Gói ST - Trả Trước" class="form-2__contact-form--input-1">Gói ST</option>
+									<option value="Gói G70D - Trả Trước" class="form-2__contact-form--input-1">Gói G70D</option>
+									<option value="Gói XL90U - Trả Trước" class="form-2__contact-form--input-1">Gói XL90U</option>
+									<option value="Gói UMAX300 - Trả Trước" class="form-2__contact-form--input-1">Gói UMAX300</option>
 							</select>
 							<label for="">Gói Đăng Ký</label>
 							<span>Gói Đăng Ký</span>
@@ -285,68 +285,20 @@
 							<span>Email</span>
 						</div> -->
 						<div class="form-2__contact-form--input-container form-2__contact-form--textarea">
-							<textarea name="message" class="form-2__contact-form--input"></textarea>
+							<textarea name="content" class="form-2__contact-form--input"></textarea>
 							<label for="">Yêu Cầu</label>
 							<span>Yêu Cầu</span>
 						</div>
-						<input type="submit" value="Đăng Ký" class="form-2__contact-form--btn" />
+						<input type="submit" name="submit" value="Đăng Ký" class="form-2__contact-form--btn" />
 					</form>
 				</div>
 			</div>
 		</section>
 	</main>
 
-	<?php include "view/footer.php"; ?>
-
-		<!-- javascript -->
-    <script>
-
-    	const inputs = document.querySelectorAll(".form-2__contact-form--input");
-
-    	function focusFunc() {
-    		let parent = this.parentNode;
-    		parent.classList.add("focus");
-    	}
-
-    	function blurFunc() {
-    		let parent = this.parentNode;
-    		if (this.value == "") {
-    			parent.classList.remove("focus");
-    		}
-    	}
-
-    	inputs.forEach((input) => {
-    		input.addEventListener("focus", focusFunc);
-    		input.addEventListener("blur", blurFunc);
-    	});
-    </script>
-    	<!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-	<script>
-		window.fbAsyncInit = function() {
-			FB.init({
-				xfbml            : true,
-				version          : 'v9.0'
-			});
-		};
-
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-
-		<!-- Your Chat Plugin code -->
-		<div class="fb-customerchat"
-		attribution=setup_tool
-		page_id="119868136598056"
-		theme_color="#14AFB4"
-		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
-	</div>
-    <script src="js/index.js"></script>
+	<?php
+		include "view/footer.php"; 
+	?>
 </body>
 </html>
 </body>

@@ -34,13 +34,13 @@
 
 	if (isset($_POST['submit'])) {
 		// print_r($_POST);
-		$sdt = mysqli_real_escape_string($conn, $_POST['SDT']);
-		$contact = mysqli_real_escape_string($conn, $_POST['contact']);
-		$resInfo = mysqli_real_escape_string($conn, $_POST['res-info']);
-		$message = mysqli_real_escape_string($conn, $_POST['message']);
-		 
+		$sdt = mysqli_real_escape_string($conn, $_POST['sdt']);
+		$diachi = mysqli_real_escape_string($conn, $_POST['diachi']);
+		$dichvudangky = mysqli_real_escape_string($conn, $_POST['dichvudangky']);
+		$content = mysqli_real_escape_string($conn, $_POST['content']);
+		
 		// create sql
-		$sql = "INSERT INTO `user-no-reg`(SĐT,DIA_CHI,DICH_VU_DK,YEU_CAU) VALUES ('$sdt', '$contact', '$resInfo', '$message')";
+		$sql = "INSERT INTO khachhang_thuong (sdt,diachi,dichvudangky,content,status) VALUES ('$sdt', '$diachi', '$dichvudangky', '$content',1)";
 		
 		//save to db
 		if (mysqli_query($conn,$sql)) {
@@ -317,23 +317,23 @@
 					<span class="form-2__contact-form__circle form-2__contact-form__circle--one"></span>
 					<span class="form-2__contact-form__circle form-2__contact-form__circle--two"></span>
 
-					<form action="wifi-cho-ho-gia-dinh.php" method="POST">
+					<form action="dich-vu-tra-sau-viettel.php" method="POST">
 						<h3 class="form-2__contact-form--title">Liên Hệ</h3>
 						<div class="form-2__contact-form--input-container">
-							<input type="tel" name="SDT"  autocomplete="nope" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')" class="form-2__contact-form--input" />
+							<input type="tel" name="sdt"  autocomplete="nope" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên'" class="form-2__contact-form--input" />
 							<label for="">SĐT</label>
 							<span>SĐT</span>
 						</div>
 						<div class="form-2__contact-form--input-container">
-							<input type="text" name="contact" autocomplete="nope" class="form-2__contact-form--input" minlength="5" maxlength="80"  id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')"/>
+							<input type="text" name="diachi" autocomplete="nope" class="form-2__contact-form--input" maxlength="80"  id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')"/>
 							<label for="">Địa Chỉ</label>
 							<span>Địa Chỉ</span>
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
-							<select  name="res-info" class="form-2__contact-form--input">
-									<option value="T100" selected class="form-2__contact-form--input-1">Gói T100</option>
-									<option value="Gói B" class="form-2__contact-form--input-1">Gói B</option>
-									<option value="Gói V" selected class="form-2__contact-form--input-1">Gói V</option>
+							<select  name="dichvudangky" class="form-2__contact-form--input">
+									<option value="T100 - Trả Sau" selected class="form-2__contact-form--input-1">Gói T100</option>
+									<option value="Gói B - Trả Sau" class="form-2__contact-form--input-1">Gói B</option>
+									<option value="Gói V - Trả Sau" class="form-2__contact-form--input-1">Gói V</option>
 							</select>
 							<label for="">Gói Đăng Ký</label>
 							<span>Gói Đăng Ký</span>
@@ -344,7 +344,7 @@
 							<span>Email</span>
 						</div> -->
 						<div class="form-2__contact-form--input-container form-2__contact-form--textarea">
-							<textarea name="message" class="form-2__contact-form--input"></textarea>
+							<textarea name="content" class="form-2__contact-form--input"></textarea>
 							<label for="">Yêu Cầu</label>
 							<span>Yêu Cầu</span>
 						</div>
@@ -355,58 +355,9 @@
 		</section>
 		
 	</main>
-	<?php include "view/footer.php"; ?>
-		<!-- javascript -->
-   
-    <script>
-    	
-
-    	const inputs = document.querySelectorAll(".form-2__contact-form--input");
-
-    	function focusFunc() {
-    		let parent = this.parentNode;
-    		parent.classList.add("focus");
-    	}
-
-    	function blurFunc() {
-    		let parent = this.parentNode;
-    		if (this.value == "") {
-    			parent.classList.remove("focus");
-    		}
-    	}
-
-    	inputs.forEach((input) => {
-    		input.addEventListener("focus", focusFunc);
-    		input.addEventListener("blur", blurFunc);
-    	});
-    </script>
-    	<!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-	<script>
-		window.fbAsyncInit = function() {
-			FB.init({
-				xfbml            : true,
-				version          : 'v9.0'
-			});
-		};
-
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-
-		<!-- Your Chat Plugin code -->
-		<div class="fb-customerchat"
-		attribution=setup_tool
-		page_id="119868136598056"
-		theme_color="#14AFB4"
-		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
-	</div>
-    <script src="js/index.js"></script>
+	<?php 
+		include "view/footer.php"; 
+	?>
 </body>
 </html>
 </body>

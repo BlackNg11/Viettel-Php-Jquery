@@ -36,13 +36,13 @@
 
 	if (isset($_POST['submit'])) {
 		// print_r($_POST);
-		$sdt = mysqli_real_escape_string($conn, $_POST['SDT']);
-		$contact = mysqli_real_escape_string($conn, $_POST['contact']);
-		$resInfo = mysqli_real_escape_string($conn, $_POST['res-info']);
+		$sdt = mysqli_real_escape_string($conn, $_POST['sdt']);
+		$diachi = mysqli_real_escape_string($conn, $_POST['diachi']);
+		$dichivudangky = mysqli_real_escape_string($conn, $_POST['dichivudangky']);
 
 		 
 		// create sql
-		$sql = "INSERT INTO `khachhang_thuong`(sdt,diachi,dichvudangky,status) VALUES ('$sdt', '$contact', '$resInfo',1)";
+		$sql = "INSERT INTO khachhang_thuong(sdt,diachi,dichvudangky,status) VALUES ('$sdt', '$diachi', '$dichivudangky',1)";
 		
 		//save to db
 		if (mysqli_query($conn,$sql)) {
@@ -83,17 +83,17 @@
 							</div>
 							<div class="form__group">
 								<label for="name" class="form__label">SĐT</label>
-								<input type="tel" name="SDT" class="form__input" autocomplete="off" placeholder="SĐT" id="name" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')">
+								<input type="tel" name="sdt" class="form__input" autocomplete="off" placeholder="SĐT" id="name" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')">
 							</div>
 
 							<div class="form__group">
 								<label for="contact" class="form__label">Địa Chỉ</label>
-								<input type="text" name="contact" class="form__input" autocomplete="off"  minlength="5" maxlength="80" placeholder="Địa Chỉ Liên Lạc" id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')">								
+								<input type="text" name="diachi" class="form__input" autocomplete="off" maxlength="80" placeholder="Địa Chỉ Liên Lạc" id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')">								
 							</div>
 
 							<div class="form__group">
 								<label for="res-info" class="form__label">Dịch Vụ Liên Hệ</label>
-								<select  name="res-info" class="form__input form__input--select">
+								<select  name="dichivudangky" class="form__input form__input--select">
 									<option value="Lắp Wifi">Lắp đặt wifi</option>
 									<option value="Lắp Truyền Hình">Lắp đặt truyền hình</option>
 									<option value="Lắp Wifi + Truyền Hình">Lắp đặt wifi + truyền hình</option>
@@ -290,76 +290,5 @@
 <?php
 	include "view/footer.php";
 ?>
-		<!-- javascript -->
-    <script src="ow_/vendors/jquery.min.js"></script>
-    <script src="ow_/owlcarousel/owl.carousel.js"></script>
-    <script>
-    	$('.owl-carousel').owlCarousel({
-    		loop:true,
-    		margin:20,
-    		nav:true,
-    		autoHeight: true,
-    		autoplay:true,
-    		autoplayTimeout:5000,
-    		autoplayHoverPause:true,
-    		responsive:{
-    			0:{
-    				items:1
-    			},
-    			600:{
-    				items:1
-    			},
-    			1000:{
-    				items:3
-    			}
-    		}
-    	})
-
-    	const inputs = document.querySelectorAll(".form-2__contact-form--input");
-
-    	function focusFunc() {
-    		let parent = this.parentNode;
-    		parent.classList.add("focus");
-    	}
-
-    	function blurFunc() {
-    		let parent = this.parentNode;
-    		if (this.value == "") {
-    			parent.classList.remove("focus");
-    		}
-    	}
-
-    	inputs.forEach((input) => {
-    		input.addEventListener("focus", focusFunc);
-    		input.addEventListener("blur", blurFunc);
-    	});
-    </script>
-    	<!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-	<script>
-		window.fbAsyncInit = function() {
-			FB.init({
-				xfbml            : true,
-				version          : 'v9.0'
-			});
-		};
-
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-
-		<!-- Your Chat Plugin code -->
-		<div class="fb-customerchat"
-		attribution=setup_tool
-		page_id="119868136598056"
-		theme_color="#14AFB4"
-		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
-	</div>
-    <script src="js/index.js"></script>
 </body>
 </html>

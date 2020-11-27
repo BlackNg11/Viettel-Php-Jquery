@@ -25,52 +25,20 @@
 	<title>Những Gói Cước Trả Trước Viettel</title>
 </head>
 <body>
-	<div class="navigation">
-		<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-		<label for="navi-toggle" class="navigation__button">
-			<span class="navigation__icon">&nbsp;</span>
-		</label>
-
-		<div class="navigation__background">&nbsp;</div>
-
-
-		<nav class="navigation__nav">
-			<ul class="navigation__list">
-				<li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Trang Chủ</a></li>
-				<li class="navigation__item"><a href="wifi-cho-ho-gia-dinh.html" class="navigation__link"><span>02</span>Internet + Truyền Hình</a></li>
-				<li class="navigation__item"><a href="dich-vu-tra-sau-viettel.html" class="navigation__link"><span>03</span>Dịch Vụ Di Động</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Mua Sim</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Mua Điện Thoại</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>06</span>Tin Khuyễn Mãi</a></li>
+	<?php
+		include "view/navigation.php";
+		include "view/header.php";
+	?>
+		<section class="navigation-pc">
+			<ul class="navigation-pc-lists">
+				<a href="#" class="navigation-pc-lists--item "><li>Trang Chủ</li></a>
+				<a href="wifi-cho-ho-gia-dinh.php" class="navigation-pc-lists--item"><li>Internet-Truyền Hình</li></a>
+				<a href="dich-vu-tra-sau-viettel.php" class="navigation-pc-lists--item "><li>Dịch Vụ Di Động</li></a>
+				<a href="404.php" class="navigation-pc-lists--item"><li>Mua Sim</li></a>
+				<a href="404.php" class="navigation-pc-lists--item"><li>Mua Điện Thoại</li></a>
+				<a href="404.php" class="navigation-pc-lists--item"><li>Tin Khuyến Mãi</li></a>
 			</ul>
-		</nav>
-	</div>
-	<header class="header">
-		<div class="header__logo">
-			<div class="header__logo--alone">
-				<a href="index.html"><img src=img/v-logo.png alt="Viettel-logo-1" class="header__logo--big"></a>
-			</div>
-			<div class="header__logo__group">
-				<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="header__logo__group--small">	
-				<p class="header__logo__group--text">Hãy Nói Theo Cách Của Bạn</p>
-			</div>
-		</div>
-		<div class="header__contact">
-			<div class="header__contact__line header__contact__line--1">
-				<svg class="header__contact-icon">
-					<use xlink:href="img/sprite.svg#icon-phone1"></use>
-				</svg>
-				<a href="tel:0383627790" class="header__contact-phone1">0383.61.71.61</a>
-			</div>	
-			<div class="header__contact__line header__contact__line--2">
-				<svg class="header__contact-icon">
-					<use xlink:href="img/sprite.svg#icon-phone1"></use>
-				</svg>
-				<a href="tel:0383627790" class="header__contact-phone1">1800.8098</a>
-			</div>		
-		</div>
-	</header>
+		</section>
 	<main class="error">
 		<div class="error--heading">
 			<h1>Trang đang được phát triển mong quý khách vui lòng quay lại sau</h1>
