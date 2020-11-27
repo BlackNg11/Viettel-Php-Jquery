@@ -2,8 +2,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Chi tiết các gói trả trước Viettel">
-	<meta name="keywords" content="Viettel Kiên Giang, Viettel Telecom,my viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
+	<<meta name="description" content="Chi tiết trả trước Viettel 2020,hỗ trợ đăng kí nhanh gọn trong vòng 24h trong khu vực Kiên Giang">
+	<meta name="keywords"
+		content="Dịch vụ Viettel ở Kiên Giang Kiên Giang,viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
 	<meta name="og"> 
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="img/v-logo.png" rel="shortcut icon" type="image/x-icon" />
@@ -22,38 +23,35 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Những Gói Cước Trả Trước Viettel</title>
+	<title>Đăng kí lên mạng 4G với Viettel 2020</title>
 </head>
 <body>
-	<!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-	<script>
-		window.fbAsyncInit = function() {
-			FB.init({
-				xfbml            : true,
-				version          : 'v9.0'
-			});
-		};
-
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-
-		<!-- Your Chat Plugin code -->
-		<div class="fb-customerchat"
-		attribution=setup_tool
-		page_id="119868136598056"
-		theme_color="#14AFB4"
-		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
-	</div>
+	
 <?php
+	include "config/config.php";
 	include "view/navigation.php";
 	include "view/header.php";
+
+	if (isset($_POST['submit'])) {
+		// print_r($_POST);
+		$sdt = mysqli_real_escape_string($conn, $_POST['SDT']);
+		$contact = mysqli_real_escape_string($conn, $_POST['contact']);
+		$resInfo = mysqli_real_escape_string($conn, $_POST['res-info']);
+		$message = mysqli_real_escape_string($conn, $_POST['message']);
+		 
+		// create sql
+		$sql = "INSERT INTO `user-no-reg`(SĐT,DIA_CHI,DICH_VU_DK,YEU_CAU) VALUES ('$sdt', '$contact', '$resInfo', '$message')";
+		
+		//save to db
+		if (mysqli_query($conn,$sql)) {
+			//success
+			// header('Location: index.php');
+		}else {
+			//error
+			echo $sql;
+			echo "query error" . mysqli_error($conn);
+		}
+	}
 ?>
 	<main class="main-phone">
 		<section class="phone-for">
@@ -201,7 +199,7 @@
 				<h3 class="phone-contact--infomation--title">Sim trả trước Viettel là gì?</h3>
 
 				<p class="phone-contact--infomation--text">Sim trả trước Viettel nói một cách dễ hiểu là người dùng phải trả các khoản tiền dịch vụ trước khi sử dụng. Tuy nhiên, thực tế là khi muốn sử dụng những dịch vụ nghe gọi, SMS, nhạc chuông, nhạc chờ,... từ nhà mạng thì người dùng cần nạp một khoảng tiền nhất định vào tài khoản. Có thể là 10.000đ, 20.000đ, 50.0000đ,... để có thể duy trì sử dụng các dịch vụ từ nhà mạng. Khi tài khoản hết tiền thì các nhà mạng sẽ ngừng cung cấp các dịch vụ này đến tài khoản cho đến khi người dùng nạp lại tiền vào tài khoản của mình.</p>
-				<img src="img/tra-truoc.jpg" alt="V120 Khuyễn Mãi Viettel" class="phone-contact--infomation--img phone-contact--infomation--img--2">
+				<img src="img/phonePrice.jpg" alt="V120 Khuyễn Mãi Viettel" class="phone-contact--infomation--img phone-contact--infomation--img--2">
 				<p class="phone-contact--infomation--text">Hiện nay, sim trả trước Viettel khá phổ biến trong cộng đồng người dùng. Theo một cuộc khảo sát đến từ nhà mạng thì có hơn 90% khách hàng đã và đang sử dụng sim trả trước Viettel, còn lại chưa tới 10% người dùng sim trả sau Viettel.</p>	
 
 				<h3 class="phone-contact--infomation--title">Có nên sử dụng sim trả trước Viettel không</h3>
@@ -298,59 +296,11 @@
 		</section>
 	</main>
 
-	<footer class="footer" id="name">
-		<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="footer__logo u-margin-bottom-medium">
-		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
-		<div class="footer__info">
-			<div class="footer__info__group footer__info--1">
-				<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
-			</div>
-			<div class="footer__info__group footer__info--2">
-				<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
-				<div class="footer-bot--1">
-					<a href="">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-facebook"></use>
-						</svg>
-					</a>
-					<a href="">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-youtube"></use>
-						</svg>
-					</a>
+	<?php include "view/footer.php"; ?>
 
-					<a href=""><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
-				</div>
-				s
-			</div>
-			<div class="footer__info__group footer__info--3">
-				<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
-				<div class="footer-bot--2">
-					<svg class="header__contact-icon">
-						<use xlink:href="img/sprite.svg#icon-phone"></use>
-					</svg>
-					<a href="tel:0383627790" class="header__contact-phone footer__contact-phone">03.836.27790</a>
-					<svg class="header__contact-icon">
-						<use xlink:href="img/sprite.svg#icon-phone"></use>
-					</svg>
-					<a href="tel:0383627790" class="header__contact-phone">03.836.27790</a>
-				</div>
-				
-			</div>
-			<div class="footer__info__group footer__info--3">
-				<h3 class="footer-heading">Địa Chỉ Công Ty</h3>
-				<svg class="header__contact-icon">
-					<use xlink:href="img/sprite.svg#icon-office"></use>
-				</svg>
-				<a href="#" class="header__contact-phone">654 Nguyễn Trung Trực, Vĩnh Lạc, Rạch Giá, tỉnh Kiên Giang</a>
-			</div>
-		</div>
-	</footer>
-
-	<!-- javascript -->
-    <script src="ow_/vendors/jquery.min.js"></script>
-    <script src="ow_/owlcarousel/owl.carousel.js"></script>
+		<!-- javascript -->
     <script>
+
     	const inputs = document.querySelectorAll(".form-2__contact-form--input");
 
     	function focusFunc() {
@@ -370,6 +320,34 @@
     		input.addEventListener("blur", blurFunc);
     	});
     </script>
+    	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				xfbml            : true,
+				version          : 'v9.0'
+			});
+		};
+
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Your Chat Plugin code -->
+		<div class="fb-customerchat"
+		attribution=setup_tool
+		page_id="119868136598056"
+		theme_color="#14AFB4"
+		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
+		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+	</div>
     <script src="js/index.js"></script>
+</body>
+</html>
 </body>
 </html>

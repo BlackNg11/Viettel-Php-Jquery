@@ -1,11 +1,10 @@
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Chi tiết các gói trả sau Viettel">
+	<meta name="description" content="Chi tiết trả sau Viettel 2020,hỗ trợ đăng kí nhanh gọn trong vòng 24h trong khu vực Kiên Giang">
 	<meta name="keywords"
-		content="Viettel Kiên Giang, Viettel Telecom,my viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
+		content="Dịch vụ Viettel ở Kiên Giang Kiên Giang,viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
 	<meta name="og">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="img/v-logo.png" rel="shortcut icon" type="image/x-icon" />
@@ -24,39 +23,35 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Những Gói Trả Sau Viettel</title>
+	<title>Giá Trả Sau Viettel 2020</title>
 </head>
 
 <body>
-	<!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-	<script>
-		window.fbAsyncInit = function () {
-			FB.init({
-				xfbml: true,
-				version: 'v9.0'
-			});
-		};
-
-		(function (d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s);
-			js.id = id;
-			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-
-	<!-- Your Chat Plugin code -->
-	<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
-		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
-	</div>
-
 	<?php
+	include "config/config.php";
 	include "view/navigation.php";
 	include "view/header.php";
+
+	if (isset($_POST['submit'])) {
+		// print_r($_POST);
+		$sdt = mysqli_real_escape_string($conn, $_POST['SDT']);
+		$contact = mysqli_real_escape_string($conn, $_POST['contact']);
+		$resInfo = mysqli_real_escape_string($conn, $_POST['res-info']);
+		$message = mysqli_real_escape_string($conn, $_POST['message']);
+		 
+		// create sql
+		$sql = "INSERT INTO `user-no-reg`(SĐT,DIA_CHI,DICH_VU_DK,YEU_CAU) VALUES ('$sdt', '$contact', '$resInfo', '$message')";
+		
+		//save to db
+		if (mysqli_query($conn,$sql)) {
+			//success
+			// header('Location: index.php');
+		}else {
+			//error
+			echo $sql;
+			echo "query error" . mysqli_error($conn);
+		}
+	}
 ?>
 	<main class="main-phone">
 		<section class="phone-for">
@@ -297,45 +292,48 @@
 							<p>038.362.7790</p>
 						</div>
 					</div>
-					<!-- 		<div class="form-2__contact-info__social-media">
+					<div class="form-2__contact-info__social-media">
 						<p>Mạng Xã Hội :</p>
 						<div class="form-2__contact-info__social-icons">
-							<a href="#">
-								<i class="fab fa-facebook-f"></i>
+							<a href="">
+								<svg class="wifi-detail__info--list-icon wifi-detail__info--list-icon--1">
+									<use xlink:href="img/sprite.svg#icon-facebook"></use>
+								</svg>
 							</a>
-							<a href="#">
-								<i class="fab fa-twitter"></i>
+							<a href="">
+								<svg class="wifi-detail__info--list-icon wifi-detail__info--list-icon--1">
+									<use xlink:href="img/sprite.svg#icon-youtube"></use>
+								</svg>
 							</a>
-							<a href="#">
-								<i class="fab fa-instagram"></i>
-							</a>
-							<a href="#">
-								<i class="fab fa-linkedin-in"></i>
-							</a>
+							<!-- <a href="">
+								<svg class="wifi-detail__info--list-icon wifi-detail__info--list-icon--1">
+									<use xlink:href="img/sprite.svg#icon-facebook"></use>
+								</svg>
+							</a> -->
 						</div>
-					</div> -->
+					</div>
 				</div>
 				<div class="form-2__contact-form">
 					<span class="form-2__contact-form__circle form-2__contact-form__circle--one"></span>
 					<span class="form-2__contact-form__circle form-2__contact-form__circle--two"></span>
 
-					<form action="#" autocomplete="nope">
-						<h3 class="form-2__contact-form--title">Liên Hệ Chúng Tôi</h3>
+					<form action="wifi-cho-ho-gia-dinh.php" method="POST">
+						<h3 class="form-2__contact-form--title">Liên Hệ</h3>
 						<div class="form-2__contact-form--input-container">
-							<input type="tel" name="phone" autocomplete="nope" class="form-2__contact-form--input" />
+							<input type="tel" name="SDT"  autocomplete="nope" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')" class="form-2__contact-form--input" />
 							<label for="">SĐT</label>
 							<span>SĐT</span>
 						</div>
 						<div class="form-2__contact-form--input-container">
-							<input type="text" name="name" autocomplete="nope" class="form-2__contact-form--input" />
+							<input type="text" name="contact" autocomplete="nope" class="form-2__contact-form--input" minlength="5" maxlength="80"  id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')"/>
 							<label for="">Địa Chỉ</label>
 							<span>Địa Chỉ</span>
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
-							<select name="res-info" class="form-2__contact-form--input">
-								<option value="0" selected class="form-2__contact-form--input-1">Gói T</option>
-								<option value="1" class="form-2__contact-form--input-1">Gói B</option>
-								<option value="2" class="form-2__contact-form--input-1">Gói V</option>
+							<select  name="res-info" class="form-2__contact-form--input">
+									<option value="T100" selected class="form-2__contact-form--input-1">Gói T100</option>
+									<option value="Gói B" class="form-2__contact-form--input-1">Gói B</option>
+									<option value="Gói V" selected class="form-2__contact-form--input-1">Gói V</option>
 							</select>
 							<label for="">Gói Đăng Ký</label>
 							<span>Gói Đăng Ký</span>
@@ -350,87 +348,67 @@
 							<label for="">Yêu Cầu</label>
 							<span>Yêu Cầu</span>
 						</div>
-						<input type="submit" value="Đăng Ký" class="form-2__contact-form--btn" />
+						<input type="submit" name="submit" value="Đăng Ký" class="form-2__contact-form--btn" />
 					</form>
 				</div>
 			</div>
 		</section>
+		
 	</main>
+	<?php include "view/footer.php"; ?>
+		<!-- javascript -->
+   
+    <script>
+    	
 
-	<footer class="footer">
-		<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="footer__logo u-margin-bottom-medium">
-		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là
-			trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
-		<div class="footer__info">
-			<div class="footer__info__group footer__info--1">
-				<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
-			</div>
-			<div class="footer__info__group footer__info--2">
-				<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
-				<div class="footer-bot--1">
-					<a href="">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-facebook"></use>
-						</svg>
-					</a>
-					<a href="">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-youtube"></use>
-						</svg>
-					</a>
+    	const inputs = document.querySelectorAll(".form-2__contact-form--input");
 
-					<a href=""><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
-				</div>
-				s
-			</div>
-			<div class="footer__info__group footer__info--3">
-				<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
-				<div class="footer-bot--2">
-					<svg class="header__contact-icon">
-						<use xlink:href="img/sprite.svg#icon-phone"></use>
-					</svg>
-					<a href="tel:0383627790" class="header__contact-phone footer__contact-phone">0383.61.71.61</a>
-					<svg class="header__contact-icon">
-						<use xlink:href="img/sprite.svg#icon-phone"></use>
-					</svg>
-					<a href="tel:0383627790" class="header__contact-phone">1800.8098</a>
-				</div>
+    	function focusFunc() {
+    		let parent = this.parentNode;
+    		parent.classList.add("focus");
+    	}
 
-			</div>
-			<div class="footer__info__group footer__info--3">
-				<h3 class="footer-heading">Địa Chỉ Công Ty</h3>
-				<svg class="header__contact-icon">
-					<use xlink:href="img/sprite.svg#icon-office"></use>
-				</svg>
-				<a href="#" class="header__contact-phone">654 Nguyễn Trung Trực, Vĩnh Lạc, Rạch Giá, tỉnh Kiên Giang</a>
-			</div>
-		</div>
-	</footer>
+    	function blurFunc() {
+    		let parent = this.parentNode;
+    		if (this.value == "") {
+    			parent.classList.remove("focus");
+    		}
+    	}
 
-	<!-- javascript -->
-	<script src="ow_/vendors/jquery.min.js"></script>
-	<script src="ow_/owlcarousel/owl.carousel.js"></script>
+    	inputs.forEach((input) => {
+    		input.addEventListener("focus", focusFunc);
+    		input.addEventListener("blur", blurFunc);
+    	});
+    </script>
+    	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
 	<script>
-		const inputs = document.querySelectorAll(".form-2__contact-form--input");
+		window.fbAsyncInit = function() {
+			FB.init({
+				xfbml            : true,
+				version          : 'v9.0'
+			});
+		};
 
-		function focusFunc() {
-			let parent = this.parentNode;
-			parent.classList.add("focus");
-		}
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 
-		function blurFunc() {
-			let parent = this.parentNode;
-			if (this.value == "") {
-				parent.classList.remove("focus");
-			}
-		}
-
-		inputs.forEach((input) => {
-			input.addEventListener("focus", focusFunc);
-			input.addEventListener("blur", blurFunc);
-		});
-	</script>
-	<script src="js/index.js"></script>
+		<!-- Your Chat Plugin code -->
+		<div class="fb-customerchat"
+		attribution=setup_tool
+		page_id="119868136598056"
+		theme_color="#14AFB4"
+		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
+		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+	</div>
+    <script src="js/index.js"></script>
+</body>
+</html>
 </body>
 
 </html>
