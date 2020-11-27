@@ -85,7 +85,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho 8-12 người sử dụng wifi</p>					
+							<p class="card-wifi-bottom--text">Dành cho 6-8 người sử dụng wifi</p>					
 						</div>
 						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
@@ -103,7 +103,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho 12-20 người sử dụng wifi</p>					
+							<p class="card-wifi-bottom--text">Dành cho 6-10 người sử dụng wifi</p>					
 						</div>
 						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
@@ -120,7 +120,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho 20-40 người sử dụng wifi</p>					
+							<p class="card-wifi-bottom--text">Dành cho 10-20 người sử dụng wifi</p>					
 						</div>
 						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
@@ -137,7 +137,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho công ty từ 30 máy tính</p>					
+							<p class="card-wifi-bottom--text">Dành cho 20-30 thiết bị truy cập wifi</p>					
 						</div>
 						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
@@ -154,7 +154,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho công ty từ 30 máy tính với mạng truy cập nước ngoài tốt nhất</p>
+							<p class="card-wifi-bottom--text">Dành cho 20-30 thiết bị truy cập wifi với mạng truy cập nước ngoài tốt nhất</p>
 							
 						</div>
 						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>	
@@ -172,7 +172,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho công ty từ 30-60 máy tính</p>
+							<p class="card-wifi-bottom--text">Dành cho 30-60 thiết bị truy cập wifi</p>
 
 						</div>
 						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
@@ -190,7 +190,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho công ty từ 30-60 máy tính với mạng truy cập nước ngoài tốt nhất</p>		
+							<p class="card-wifi-bottom--text">Dành cho 30-60 thiết bị truy cập wifi với mạng truy cập nước ngoài tốt nhất</p>		
 						</div>
 						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
@@ -207,7 +207,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho công ty từ 100 máy tính trở lên</p>		
+							<p class="card-wifi-bottom--text">Dành cho 60 thiết bị truy cập wifi trở lên</p>		
 						</div>
 						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
@@ -224,7 +224,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho công ty 100 máy tính trở lên với mạng truy cập nước ngoài tốt nhất</p>		
+							<p class="card-wifi-bottom--text">Dành cho 60 thiết bị truy cập wifi trở lên với mạng truy cập nước ngoài tốt nhất</p>		
 						</div>
 						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
@@ -286,36 +286,16 @@
 					</p>
 					<div class="form-2__contact-info__info">
 						<div class="form-2__contact-info__information">
-							<img src="img/location.png" class="form-2__contact-info__icon" alt="" />
+							<img src="img/location.png" class="form-2__contact-info__icon" alt="Địa Chỉ Viettel Kiên Giang" />
 							<p>654 Nguyễn Trung Trực</p>
 						</div>
 						<div class="form-2__contact-info__information">
-							<img src="img/email.png" class="form-2__contact-info__icon" alt="" />
-							<p>lorem@ipsum.com</p>
+							<img src="img/email.png" class="form-2__contact-info__icon" alt="email" />
+							<p>blackng10.5.1997@gmail.com</p>
 						</div>
 						<div class="form-2__contact-info__information">
-							<img src="img/phone.png" class="form-2__contact-info__icon" alt="" />
-							<p>038.362.7790</p>
-						</div>
-					</div>
-					<div class="form-2__contact-info__social-media">
-						<p>Mạng Xã Hội :</p>
-						<div class="form-2__contact-info__social-icons">
-							<a href="">
-								<svg class="wifi-detail__info--list-icon wifi-detail__info--list-icon--1">
-									<use xlink:href="img/sprite.svg#icon-facebook"></use>
-								</svg>
-							</a>
-							<a href="">
-								<svg class="wifi-detail__info--list-icon wifi-detail__info--list-icon--1">
-									<use xlink:href="img/sprite.svg#icon-youtube"></use>
-								</svg>
-							</a>
-							<!-- <a href="">
-								<svg class="wifi-detail__info--list-icon wifi-detail__info--list-icon--1">
-									<use xlink:href="img/sprite.svg#icon-facebook"></use>
-								</svg>
-							</a> -->
+							<img src="img/phone.png" class="form-2__contact-info__icon" alt="hotline Viettel Kiên Giang" />
+							<p>0383.61.71.61</p>
 						</div>
 					</div>
 				</div>
