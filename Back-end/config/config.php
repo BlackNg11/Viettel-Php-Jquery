@@ -1,7 +1,7 @@
 <?php
 define("DB_HOST", "localhost");
-define("DB_USER", "BlackNguyen");
-define("DB_PASS", "86976777");
+define("DB_USER", "root");
+define("DB_PASS", "");
 define("DB_NAME", "dichvu");
 
 //connect to database

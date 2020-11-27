@@ -42,7 +42,7 @@
 
 		 
 		// create sql
-		$sql = "INSERT INTO `user-no-reg`(SĐT,DIA_CHI,DICH_VU_DK) VALUES ('$sdt', '$contact', '$resInfo')";
+		$sql = "INSERT INTO `khachhang_thuong`(sdt,diachi,dichvudangky,status) VALUES ('$sdt', '$contact', '$resInfo',1)";
 		
 		//save to db
 		if (mysqli_query($conn,$sql)) {

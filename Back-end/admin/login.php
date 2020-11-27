@@ -7,7 +7,7 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $login_check = $class -> login_admin($username,$password);
+        $login_check = $class->login_admin($username,$password);
 }
 ?>
 <!DOCTYPE html>

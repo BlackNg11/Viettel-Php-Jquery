@@ -12,22 +12,22 @@
         private $fm;
 
         public function __contruct(){
-            $this -> db = new Database();
-            $this -> fm = new Format();
+            $this->db = new Database();
+            $this->fm = new Format();
         }
         public function login_admin($username,$password){
-            $username = $this -> fm -> validation($username);
-            $password = $this -> fm -> validation($password);
+            $username = $this->fm->validation($username);
+            $password = $this->fm->validation($password);
     
-            $username = mysqli_real_escape_string($this -> db -> link, $username);
-            $password = mysqli_real_escape_string($this -> db -> link, $password);
+            $username = mysqli_real_escape_string($this->db->link, $username);
+            $password = mysqli_real_escape_string($this->db->link, $password);
     
             if(empty($username) || empty($password)){
-                $aler = "user and pass must be not empty";
-                return $aler;
+                $alert = "user and pass must be not empty";
+                return $alert;
             }else{
-                $query = "SELECT * FORM user WHERE username = '$username'  AND password = '$password' LIMIT 1";
-                $result = $this -> db ->select($query);
+                $query = "SELECT * FORM admin WHERE username = '$username'  AND password = '$password' LIMIT 1";
+                $result = $this->db->select($query);
                 
                 if($result != false){
                     $value = $result -> fetch_assoc();
@@ -40,10 +40,10 @@
                     Session :: set('roleid',$value['roleidid']);
                     Session :: set('sdt',$value['sdt']);
                     Session :: set('diachi',$value['diachi']);
-                    header('Location:index.php');
+                    header('Location:admin.php');
                 }else{
-                    $aler = "user and pass not match  ";
-                return $aler;
+                    $alert = "user and pass not match  ";
+                return $alert;
                 }
             }
         }
