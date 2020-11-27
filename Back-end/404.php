@@ -25,7 +25,6 @@
 	<title>Những Gói Cước Trả Trước Viettel</title>
 </head>
 <body>
-<<<<<<< HEAD
 	<?php
 		include "view/navigation.php";
 		include "view/header.php";
@@ -40,12 +39,6 @@
 				<a href="404.php" class="navigation-pc-lists--item"><li>Tin Khuyến Mãi</li></a>
 			</ul>
 		</section>
-=======
-	<?php 
-	include "view/navigation.php";
-	include "view/header.php";
-	 ?>
->>>>>>> 63ea4021ba84963b7a73b75ede48b0e280c3a435
 	<main class="error">
 		<div class="error--heading">
 			<h1>Trang đang được phát triển mong quý khách vui lòng quay lại sau</h1>
@@ -55,7 +48,7 @@
 	<?php include "view/footer.php"; ?>
 
 	<!-- javascript -->
- 	<!-- Load Facebook SDK for JavaScript -->
+	<!-- Load Facebook SDK for JavaScript -->
 	<div id="fb-root"></div>
 	<script>
 		window.fbAsyncInit = function() {
