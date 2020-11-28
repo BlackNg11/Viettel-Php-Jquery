@@ -34,15 +34,15 @@
                 $result = $this->db->select($query);
                 
                 if($result != false){
-                    $value = $result -> fetch_assoc();
-                    Session :: set('adminlogin',true);
-                    Session :: set('id',$value['id']);
-                    Session :: set('username',$value['username']);
-                    Session :: set('password',$value['password']);
+                    $value = $result->fetch_assoc();
+                    Session::set('adminlogin',true);
+                    Session::set('id',$value['id']);
+                    Session::set('username',$value['username']);
+                    Session::set('password',$value['password']);
                     header('Location:index.php');
                 }else{
                     $alert = "user and pass not match";
-                return $alert;
+                    return $alert;
                 }
             }
         }
