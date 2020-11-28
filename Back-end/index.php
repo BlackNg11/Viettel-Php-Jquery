@@ -36,6 +36,7 @@
 	include "view/header.php";
 
 
+
 	// if (isset($_POST['submit'])) {
 	// 	//print_r($_POST);
 	// 	$sdt = mysqli_real_escape_string($conn, $_POST['SDT']);
@@ -45,6 +46,7 @@
 		 
 	// 	// create sql
 	// 	$sql = "INSERT INTO `khachhang_thuong`(sdt,diachi,dichvudangky,status) VALUES ('$sdt', '$contact', '$resInfo',1)";
+
 		
 	// 	//save to db
 	// 	if (mysqli_query($conn,$sql)) {
@@ -85,17 +87,17 @@
 							</div>
 							<div class="form__group">
 								<label for="name" class="form__label">SĐT</label>
-								<input type="tel" name="SDT" class="form__input" autocomplete="off" placeholder="SĐT" id="name" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')">
+								<input type="tel" name="sdt" class="form__input" autocomplete="off" placeholder="SĐT" id="name" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')">
 							</div>
 
 							<div class="form__group">
 								<label for="contact" class="form__label">Địa Chỉ</label>
-								<input type="text" name="contact" class="form__input" autocomplete="off"  minlength="5" maxlength="80" placeholder="Địa Chỉ Liên Lạc" id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')">								
+								<input type="text" name="diachi" class="form__input" autocomplete="off" maxlength="80" placeholder="Địa Chỉ Liên Lạc" id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')">								
 							</div>
 
 							<div class="form__group">
 								<label for="res-info" class="form__label">Dịch Vụ Liên Hệ</label>
-								<select  name="res-info" class="form__input form__input--select">
+								<select  name="dichivudangky" class="form__input form__input--select">
 									<option value="Lắp Wifi">Lắp đặt wifi</option>
 									<option value="Lắp Truyền Hình">Lắp đặt truyền hình</option>
 									<option value="Lắp Wifi + Truyền Hình">Lắp đặt wifi + truyền hình</option>
@@ -292,6 +294,7 @@
 <?php
 	include "view/footer.php";
 ?>
+
 		<!-- javascript -->
     <script src="ow_/vendors/jquery.min.js"></script>
     <script src="ow_/owlcarousel/owl.carousel.js"></script>
@@ -441,5 +444,6 @@
 	</script>
     <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 </body>
 </html>

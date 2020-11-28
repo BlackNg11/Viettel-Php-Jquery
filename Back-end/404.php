@@ -25,10 +25,27 @@
 	<title>Những Gói Cước Trả Trước Viettel</title>
 </head>
 <body>
+<<<<<<< HEAD
+	<?php
+		include "view/navigation.php";
+		include "view/header.php";
+	?>
+		<section class="navigation-pc">
+			<ul class="navigation-pc-lists">
+				<a href="#" class="navigation-pc-lists--item "><li>Trang Chủ</li></a>
+				<a href="wifi-cho-ho-gia-dinh.php" class="navigation-pc-lists--item"><li>Internet-Truyền Hình</li></a>
+				<a href="dich-vu-tra-sau-viettel.php" class="navigation-pc-lists--item "><li>Dịch Vụ Di Động</li></a>
+				<a href="404.php" class="navigation-pc-lists--item"><li>Mua Sim</li></a>
+				<a href="404.php" class="navigation-pc-lists--item"><li>Mua Điện Thoại</li></a>
+				<a href="404.php" class="navigation-pc-lists--item"><li>Tin Khuyến Mãi</li></a>
+			</ul>
+		</section>
+=======
 	<?php 
 	include "view/navigation.php";
 	include "view/header.php";
 	 ?>
+>>>>>>> 63ea4021ba84963b7a73b75ede48b0e280c3a435
 	<main class="error">
 		<div class="error--heading">
 			<h1>Trang đang được phát triển mong quý khách vui lòng quay lại sau</h1>
