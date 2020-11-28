@@ -13,8 +13,8 @@
 	<!-- <link rel="stylesheet" href="ow_/css/docs.theme.min.css"> -->
 
 	<!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="ow_/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="ow_/owlcarousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="ow_/owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="ow_/owlcarousel/assets/owl.theme.default.min.css">
 
 
 
@@ -25,7 +25,7 @@
 	<title>Lắp đặt mạng Viettel cho phòng net,cyber</title>
 </head>
 <body>
-<?php
+	<?php
 	include "config/config.php";
 	include "view/navigation.php";
 	include "view/header.php";
@@ -50,7 +50,7 @@
 			echo "query error" . mysqli_error($conn);
 		}
 	}
-?>
+	?>
 	<main class="main-wifi">
 		<section class="wifi-for">
 			<ul class="wifi-for-lists">
@@ -249,7 +249,7 @@
 				</ul>	
 			</div>
 
-	
+			
 			<div class="wifi-contact__setting">
 				<p>Để quán Game, quán Net của bạn là sự lựa chọn lý tưởng của các gamer hay các bạn sinh viên có nhu cầu học tập thì đường truyền cáp quang của bạn phải thực sự đáp ứng được nhu cầu của họ bằng sự hài lòng nhất, mạng không bị lag, không giật, tốc độ ổn định, mượt mà nếu không thì họ khó có thể quay lại quán của bạn một lần nữa đấy. Viettel cung cấp dịch vụ lắp mạng cáp quang Viettel cho quán game, quán net tốc độ cao với mức giá ưu đãi như sau:</p>
 				<p>Tùy vào quy mô, số lượng máy của quán mà bạn lựa chọn cho mình gói cước phù hợp nhé. Các gói Fast60, Fast60+ phù hợp với các tiệm Net có quy mô 10-15 máy tính để đạt tốc độ cao nhất, gói Fast80, Fast80+ phù hợp với quy mô 15-20 máy tính trở lên. Khi đăng kí lắp đặt và sử dụng một trong các gói cước trên, khách hàng sẽ có thêm các ưu đãi như sau:</p>
@@ -259,7 +259,7 @@
 				<p class="wifi-contact__img--status-img">Ưu điểm của công nghệ FTTH mà Viettel sử dụng</p>
 			</div>
 			
-						<div class="wifi-contact--infomation">
+			<div class="wifi-contact--infomation">
 				<h3 class="wifi-contact--infomation--heading">Lắp đặt  wifi cáp quang Viettel có gì đặc biệt?</h3>
 				<p class="wifi-contact--infomation--text">Với mong muốn mang lại chất lượng và dịch vụ tốt nhất dành cho khách hàng.Viettel đã và đang cố gắng xây dựng mạng lưới hạ tầng rộng khắp tại tất cả các khu vực nội ngoại thành và các tỉnh trên toàn quốc, đồng thời xây dựng mức giá đa dạng và phù hợp nhất tới tất cả các đối tượng khách hàng từ sinh viên , hộ gia đình tới các quán game và doanh nghiệp lớn…</p>
 				<p class="wifi-contact--infomation--text">Khi bạn Lắp Mạng Wifi Viettel trên 1 đường truyền nền công nghệ là Cáp Quang tốc độ rất cao và ổn định, tại sao bạn không lắp thêm các dịch vụ thiết yếu khác trên cùng 1 đường truyền mà vẫn không ảnh hưởng tới tốc độ truy cập internet đó để tiết kiệm chi phí lắp đặt và không làm ảnh hưởng tới mỹ quan của ngôi nhà bạn , đồng thời cước sẽ gộp hết 1 nhà cung cấp và chỉ cần thanh toán 1 lần duy nhất trong tháng là xong.</p>
@@ -315,8 +315,8 @@
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
 							<select  name="dichvudangky" class="form-2__contact-form--input">
-									<option value="Gói SuperNet - Net" selected class="form-2__contact-form--input-1">Gói SuperNet</option>
-									<option value="Gói Fat - Net" class="form-2__contact-form--input-1">Gói Fat</option>
+								<option value="Gói SuperNet - Net" selected class="form-2__contact-form--input-1">Gói SuperNet</option>
+								<option value="Gói Fat - Net" class="form-2__contact-form--input-1">Gói Fat</option>
 							</select>
 							<label for="">Gói Đăng Ký</label>
 							<span>Gói Đăng Ký</span>
@@ -338,10 +338,146 @@
 		</section>
 	</main>
 
-	<?php 
-		include "view/footer.php";
-	?>
 	
+
+	<footer class="footer">
+		<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="footer__logo u-margin-bottom-medium">
+		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
+		<div class="footer__info">
+			<div class="footer__info__group footer__info--1">
+				<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
+			</div>
+			<div class="footer__info__group footer__info--2">
+				<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
+				<div class="footer-bot--1">
+					<a href="https://www.facebook.com/D%E1%BB%8Bch-V%E1%BB%A5-Viettel-Ki%C3%AAn-Giang-119868136598056">
+						<svg class="wifi-detail__info--list-icon">
+							<use xlink:href="img/sprite.svg#icon-facebook"></use>
+						</svg>
+					</a>
+					<a href="https://www.youtube.com/user/Viettelchannels">
+						<svg class="wifi-detail__info--list-icon">
+							<use xlink:href="img/sprite.svg#icon-youtube"></use>
+						</svg>
+					</a>
+
+					<a href="https://zalo.me/1814378069399742003"><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
+				</div>
+				
+			</div>
+			<div class="footer__info__group footer__info--3">
+				<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
+				<div class="footer-bot--2">
+					<svg class="header__contact-icon">
+						<use xlink:href="img/sprite.svg#icon-phone"></use>
+
+					</svg>
+				</a>
+				<a href="">
+					<svg class="wifi-detail__info--list-icon">
+						<use xlink:href="img/sprite.svg#icon-youtube"></use>
+					</svg>
+				</a>
+
+				<a href=""><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
+			</div>
+
+		</div>
+		<div class="footer__info__group footer__info--3">
+			<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
+			<div class="footer-bot--2">
+				<svg class="header__contact-icon">
+					<use xlink:href="img/sprite.svg#icon-phone"></use>
+				</svg>
+				<a href="tel:0383627790" class="header__contact-phone footer__contact-phone">0383.61.71.61</a>
+				<svg class="header__contact-icon">
+					<use xlink:href="img/sprite.svg#icon-phone"></use>
+				</svg>
+				<a href="tel:0383627790" class="header__contact-phone">1800.8098</a>
+			</div>
+
+		</div>
+		<div class="footer__info__group footer__info--3">
+			<h3 class="footer-heading">Địa Chỉ Công Ty</h3>
+			<svg class="header__contact-icon">
+				<use xlink:href="img/sprite.svg#icon-office"></use>
+			</svg>
+			<a href="#" class="header__contact-phone">654 Nguyễn Trung Trực, Vĩnh Lạc, Rạch Giá, tỉnh Kiên Giang</a>
+		</div>
+	</div>
+</footer>
+
+	<!-- javascript -->
+	<script src="ow_/vendors/jquery.min.js"></script>
+	<script src="ow_/owlcarousel/owl.carousel.js"></script>
+	<script>
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 20,
+			nav: true,
+			autoHeight: true,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			autoplayHoverPause: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 1
+				},
+				1000: {
+					items: 3
+				}
+			}
+		})
+
+		const inputs = document.querySelectorAll(".form-2__contact-form--input");
+
+		function focusFunc() {
+			let parent = this.parentNode;
+			parent.classList.add("focus");
+		}
+
+		function blurFunc() {
+			let parent = this.parentNode;
+			if (this.value == "") {
+				parent.classList.remove("focus");
+			}
+		}
+
+		inputs.forEach((input) => {
+			input.addEventListener("focus", focusFunc);
+			input.addEventListener("blur", blurFunc);
+		});
+	</script>
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				xfbml: true,
+				version: 'v9.0'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<!-- Your Chat Plugin code -->
+	<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
+	logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
+	logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+	</div>
+	<script src="js/index.js"></script>
+
 </body>
 </html>
 </body>
