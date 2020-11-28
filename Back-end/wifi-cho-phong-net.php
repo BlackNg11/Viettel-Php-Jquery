@@ -33,44 +33,23 @@
 	include "config/config.php";
 	include "view/navigation.php";
 	include "view/header.php";
-
-	if (isset($_POST['submit'])) {
-		// print_r($_POST);
-		$sdt = mysqli_real_escape_string($conn, $_POST['sdt']);
-		$diachi = mysqli_real_escape_string($conn, $_POST['diachi']);
-		$dichvudangky = mysqli_real_escape_string($conn, $_POST['dichvudangky']);
-		$content = mysqli_real_escape_string($conn, $_POST['content']);
-		
-		// create sql
-		$sql = "INSERT INTO khachhang_thuong (sdt,diachi,dichvudangky,content,status) VALUES ('$sdt', '$diachi', '$dichvudangky', '$content',1)";
-		
-		//save to db
-		if (mysqli_query($conn,$sql)) {
-			//success
-			// header('Location: index.php');
-		}else {
-			//error
-			echo $sql;
-			echo "query error" . mysqli_error($conn);
-		}
-	}
 	?>
 	<main class="main-wifi">
 		<section class="wifi-for">
 			<ul class="wifi-for-lists">
-				<a href="index.php" class="wifi-for-lists--item">
+				<a href="trang-chu" class="wifi-for-lists--item">
 					<li>Trang Chủ</li>
 				</a>
-				<a href="wifi-cho-ho-gia-dinh.php" class="wifi-for-lists--item">
+				<a href="wifi-cho-ho-gia-dinh" class="wifi-for-lists--item">
 					<li>Hộ Gia Đình</li>
 				</a>
 				<a href="#" class="wifi-for-lists--item active-navigation">
 					<li>Quán Net</li>
 				</a>
-				<a href="wifi-cho-doanh-nghiep.php" class="wifi-for-lists--item">
+				<a href="wifi-cho-doanh-nghiep" class="wifi-for-lists--item">
 					<li>Doanh Nghiệp</li>
 				</a>
-				<!-- <a href="truyen-hinh-viettel.php" class="wifi-for-lists--item"><li>Truyền Hình</li></a> -->
+				<!-- <a href="truyen-hinh-viettel" class="wifi-for-lists--item"><li>Truyền Hình</li></a> -->
 			</ul>
 		</section>
 		<section class="wifi-contact">
@@ -152,7 +131,7 @@
 							</div>
 							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 30-40 máy tính</p>
 						</div>
-						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
+						<a href="trang-chu" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi">
 						<h2 class="card-wifi-heading card-wifi-heading--2">
@@ -171,7 +150,7 @@
 								ngoài tốt nhất</p>
 
 						</div>
-						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
+						<a href="trang-chu" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi">
 						<h2 class="card-wifi-heading">
@@ -189,7 +168,7 @@
 							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 40-60 máy tính</p>
 
 						</div>
-						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
+						<a href="trang-chu" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi">
 						<h2 class="card-wifi-heading card-wifi-heading--2">
@@ -207,7 +186,7 @@
 							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 40-60 máy tính với mạng truy cập nước
 								ngoài tốt nhất</p>
 						</div>
-						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
+						<a href="trang-chu" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi">
 						<h2 class="card-wifi-heading">
@@ -224,7 +203,7 @@
 							</div>
 							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 60-100 máy tính </p>
 						</div>
-						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
+						<a href="trang-chu" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
 					</div>
 					<div class="item card-wifi">
 						<h2 class="card-wifi-heading card-wifi-heading--2">
@@ -242,7 +221,7 @@
 							<p class="card-wifi-bottom--text">Dành cho tiệm net từ 60-100 máy tính với mạng truy cập
 								nước ngoài tốt nhất</p>
 						</div>
-						<a href="index.php" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
+						<a href="trang-chu" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
 					</div>
 				</div>
 			</div>
@@ -349,7 +328,7 @@
 					<span class="form-2__contact-form__circle form-2__contact-form__circle--one"></span>
 					<span class="form-2__contact-form__circle form-2__contact-form__circle--two"></span>
 
-					<form action="config/server.php" method="POST" id="test-form">
+					<form action="config/server" method="POST" id="test-form">
 						<h3 class="form-2__contact-form--title">Liên Hệ</h3>
 						<div class="form-2__contact-form--input-container">
 							<input type="tel" name="sdt"  autocomplete="nope" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên'" class="form-2__contact-form--input" />
@@ -394,7 +373,7 @@
 			<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
 			<div class="footer__info">
 				<div class="footer__info__group footer__info--1">
-					<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
+					<a class="footer-heading" href="trang-chu">Đăng Kí Dịch Vụ</a>
 				</div>
 				<div class="footer__info__group footer__info--2">
 					<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
@@ -505,7 +484,7 @@
 	logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
 	logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
 	</div>
-	<script src="js/index.js"></script>
+	<script src="js/trang-chu.js"></script>
 	<script src="js/ajax.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 

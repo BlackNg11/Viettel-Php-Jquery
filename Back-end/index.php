@@ -34,46 +34,21 @@
 
 
 <?php
-ob_start(); 
+
 include "config/config.php";
 include "view/navigation.php";
 include "view/header.php";
 
-
-
-	// if (isset($_POST['submit'])) {
-	// 	//print_r($_POST);
-	// 	$sdt = mysqli_real_escape_string($conn, $_POST['sdt']);
-	// 	$contact = mysqli_real_escape_string($conn, $_POST['diachi']);
-	// 	$resInfo = mysqli_real_escape_string($conn, $_POST['dichvudangky']);
-
-
-	// 	// create sql
-	// 	$sql = "INSERT INTO `khachhang_thuong`(sdt,diachi,dichvudangky,status) VALUES ('$sdt', '$contact', '$resInfo',1)";
-
-
-	// 	//save to db
-	// 	if (mysqli_query($conn,$sql)) {
-	// 		//success
-	// 		//header("Location: 404.php");
-	// 	}else {
-	// 		//error
-	// 		echo $sql;
-	// 		echo "query error" . mysqli_error($conn);
-
-	// 	}
-	// }
-ob_end_flush();
 ?>
 <main>		
 	<section class="navigation-pc">
 		<ul class="navigation-pc-lists">
 			<a href="#" class="navigation-pc-lists--item active-navigation"><li>Trang Chủ</li></a>
-			<a href="wifi-cho-ho-gia-dinh.php" class="navigation-pc-lists--item"><li>Internet-Truyền Hình</li></a>
-			<a href="dich-vu-tra-sau-viettel.php" class="navigation-pc-lists--item "><li>Dịch Vụ Di Động</li></a>
-			<a href="404.php" class="navigation-pc-lists--item"><li>Mua Sim</li></a>
-			<a href="404.php" class="navigation-pc-lists--item"><li>Mua Điện Thoại</li></a>
-			<a href="404.php" class="navigation-pc-lists--item"><li>Tin Khuyến Mãi</li></a>
+			<a href="wifi-cho-ho-gia-dinh" class="navigation-pc-lists--item"><li>Internet-Truyền Hình</li></a>
+			<a href="dich-vu-tra-sau-viettel" class="navigation-pc-lists--item "><li>Dịch Vụ Di Động</li></a>
+			<a href="404" class="navigation-pc-lists--item"><li>Mua Sim</li></a>
+			<a href="404" class="navigation-pc-lists--item"><li>Mua Điện Thoại</li></a>
+			<a href="404" class="navigation-pc-lists--item"><li>Tin Khuyến Mãi</li></a>
 		</ul>
 	</section>
 	<section class="wifi">		
@@ -85,7 +60,7 @@ ob_end_flush();
 			</div>
 			<div class="wifi--info-right">
 				<div class="form">
-					<form action="config/server.php" method="POST" class="form-ui" id="test-form">
+					<form action="config/server" method="POST" class="form-ui" id="test-form">
 
 						<div class="form--info u-margin-bottom-smaill">
 							<h1 class="form--heading">LIÊN HỆ</h1>
@@ -160,12 +135,11 @@ ob_end_flush();
 		</div>
 	</section>
 	<section class="wifi-detail">
-		<a href="wifi-cho-ho-gia-dinh.php"><h1 class="heading-secondary u-margin-bottom-medium">Dịch Vụ Wifi Và Truyền Hình Viettel</h1></a>
+		<a href="wifi-cho-ho-gia-dinh"><h1 class="heading-secondary u-margin-bottom-medium">Dịch Vụ Wifi Và Truyền Hình Viettel</h1></a>
 		<div class="wifi-detail__info">
-			<div class="center" style="display: flex; justify-content: center; align-items: center;">
 				<div class="wifi-detail__info--left">
 					<ul class="wifi-detail__info--list">
-						<li class="wifi-detail__info--list-text wifi-detail__info--list-text-1">	
+						<li class="wifi-detail__info--list-text wifi-detail__info--list-text-1">
 							<svg class="wifi-detail__info--list-icon">
 								<use xlink:href="img/sprite.svg#icon-connection"></use>
 							</svg>Internet Cáp Quang Tốc Độ Cao,Hàng Đầu Việt Nam
@@ -174,7 +148,6 @@ ob_end_flush();
 							<svg class="wifi-detail__info--list-icon">
 								<use xlink:href="img/sprite.svg#icon-play3"></use>
 							</svg>Lướt Web Siêu Nhanh,Coi Video Siêu Đã
-
 
 						</li>
 						<li class="wifi-detail__info--list-text wifi-detail__info--list-text-2">
@@ -200,13 +173,22 @@ ob_end_flush();
 							</svg>Hỗ trợ nhanh chóng cho khách hàng Kiên Giang 24/7
 						</li>
 					</ul>
+
 				</div>
 				<div class="wifi-detail__info--right">
+					<!-- <div class="card">
+						<div class="card__side card__side--front">
+							<img src="img/banner2-front.jpg" alt="Wifi Viettel" class="card__side--banner">
+						</div>
+						<div class="card__side card__side--back">
+							<img src="img/banner2-back.jpg" alt="Wifi Viettel" class="card__side--banner">
+						</div>	
+					</div> -->
 					<img src="img/wifi-router.png" alt="" class="wifi-detail__info--right-img">
 				</div>
 			</div>
 		</div>
-		<a href="wifi-cho-ho-gia-dinh.php" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
+		<a href="wifi-cho-ho-gia-dinh" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
 		</section>
 		<section class="cardSkew">
 			<div class="cardSkew__container">
@@ -240,7 +222,7 @@ ob_end_flush();
 			</div>
 		</section>
 		<section class="phone-detail">
-			<a href="dich-vu-tra-sau-viettel.php"><h1 class="heading-secondary u-margin-bottom-medium">Dịch Vụ Trả Sau Và Trả Trước Viettel</h1></a>
+			<a href="dich-vu-tra-sau-viettel"><h1 class="heading-secondary u-margin-bottom-medium">Dịch Vụ Trả Sau Và Trả Trước Viettel</h1></a>
 			<div class="phone-detail__info">
 				<div class="phone-detail__info--left">
 					<div class="card">
@@ -290,7 +272,7 @@ ob_end_flush();
 					</ul>
 				</div>
 			</div>
-			<a href="dich-vu-tra-sau-viettel.php" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
+			<a href="dich-vu-tra-sau-viettel" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
 		</section>
 		<section class="gallary">
 			<div class="gallary__info">
@@ -332,7 +314,7 @@ ob_end_flush();
 			<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
 			<div class="footer__info">
 				<div class="footer__info__group footer__info--1">
-					<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
+					<a class="footer-heading" href="index">Đăng Kí Dịch Vụ</a>
 				</div>
 				<div class="footer__info__group footer__info--2">
 					<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>

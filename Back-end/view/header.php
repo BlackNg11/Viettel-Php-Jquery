@@ -31,7 +31,7 @@
 	<header class="header" style="height: 12.5vh;">
 		<div class="header__logo">
 			<div class="header__logo--alone">
-				<a href="index.php"><img src=img/v-logo.png alt="Viettel-logo-1" class="header__logo--big"></a>
+				<a href="trang-chu"><img src=img/v-logo.png alt="Viettel-logo-1" class="header__logo--big"></a>
 			</div>
 			<div class="header__logo__group">
 				<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="header__logo__group--small">

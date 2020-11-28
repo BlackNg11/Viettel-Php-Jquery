@@ -31,12 +31,12 @@
 	?>
 	<section class="navigation-pc">
 		<ul class="navigation-pc-lists">
-			<a href="index.php" class="navigation-pc-lists--item"><li>Trang Chủ</li></a>
-			<a href="wifi-cho-ho-gia-dinh.php" class="navigation-pc-lists--item"><li>Internet-Truyền Hình</li></a>
-			<a href="dich-vu-tra-sau-viettel.php" class="navigation-pc-lists--item "><li>Dịch Vụ Di Động</li></a>
-			<a href="404.php" class="navigation-pc-lists--item"><li>Mua Sim</li></a>
-			<a href="404.php" class="navigation-pc-lists--item"><li>Mua Điện Thoại</li></a>
-			<a href="404.php" class="navigation-pc-lists--item"><li>Tin Khuyến Mãi</li></a>
+			<a href="trang-chu" class="navigation-pc-lists--item"><li>Trang Chủ</li></a>
+			<a href="wifi-cho-ho-gia-dinh" class="navigation-pc-lists--item"><li>Internet-Truyền Hình</li></a>
+			<a href="dich-vu-tra-sau-viettel" class="navigation-pc-lists--item "><li>Dịch Vụ Di Động</li></a>
+			<a href="404" class="navigation-pc-lists--item"><li>Mua Sim</li></a>
+			<a href="404" class="navigation-pc-lists--item"><li>Mua Điện Thoại</li></a>
+			<a href="404" class="navigation-pc-lists--item"><li>Tin Khuyến Mãi</li></a>
 		</ul>
 	</section>
 	<section class="error">
@@ -52,7 +52,7 @@
 			<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
 			<div class="footer__info">
 				<div class="footer__info__group footer__info--1">
-					<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
+					<a class="footer-heading" href="trang-chu">Đăng Kí Dịch Vụ</a>
 				</div>
 				<div class="footer__info__group footer__info--2">
 					<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>

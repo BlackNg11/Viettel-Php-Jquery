@@ -9,15 +9,15 @@
 
 		<nav class="navigation__nav">
 			<ul class="navigation__list">
-				<li class="navigation__item"><a href="index.php" class="navigation__link"><span>01</span>Trang Chủ</a></li>
-				<li class="navigation__item"><a href="wifi-cho-ho-gia-dinh.php"
+				<li class="navigation__item"><a href="trang-chu" class="navigation__link"><span>01</span>Trang Chủ</a></li>
+				<li class="navigation__item"><a href="wifi-cho-ho-gia-dinh"
 						class="navigation__link"><span>02</span>Internet + Truyền Hình</a></li>
-				<li class="navigation__item"><a href="dich-vu-tra-sau-viettel.php"
+				<li class="navigation__item"><a href="dich-vu-tra-sau-viettel"
 						class="navigation__link"><span>03</span>Dịch Vụ Di Động</a></li>
-				<li class="navigation__item"><a href="404.php" class="navigation__link"><span>04</span>Mua Sim</a></li>
-				<li class="navigation__item"><a href="404.php" class="navigation__link"><span>05</span>Mua Điện Thoại</a>
+				<li class="navigation__item"><a href="404" class="navigation__link"><span>04</span>Mua Sim</a></li>
+				<li class="navigation__item"><a href="404" class="navigation__link"><span>05</span>Mua Điện Thoại</a>
 				</li>
-				<li class="navigation__item"><a href="404.php" class="navigation__link"><span>06</span>Tin Khuyến Mãi</a>
+				<li class="navigation__item"><a href="404" class="navigation__link"><span>06</span>Tin Khuyến Mãi</a>
 				</li>
 			</ul>
 		</nav>
