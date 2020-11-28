@@ -43,7 +43,7 @@
 		$content = mysqli_real_escape_string($conn, $_POST['content']);
 		
 		// create sql
-		$sql = "INSERT INTO khachhang_thuong (sdt,diachi,dichvudangky,content,status) VALUES ('$sdt', '$diachi', '$dichvudangky', '$content',1)";
+		$sql = "INSERT INTO khachhang_thuong (sdt, diachi, dichvudangky, content, status) VALUES ('$sdt', '$diachi', '$dichvudangky', '$content',1)";
 		
 		//save to db
 		if (mysqli_query($conn,$sql)) {
