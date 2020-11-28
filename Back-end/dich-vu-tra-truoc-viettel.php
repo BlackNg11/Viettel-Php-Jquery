@@ -274,7 +274,6 @@
 					</div>
 				</div>
 			</div>
-<<<<<<< HEAD
 				<div class="form-2__contact-form">
 					<span class="form-2__contact-form__circle form-2__contact-form__circle--one"></span>
 					<span class="form-2__contact-form__circle form-2__contact-form__circle--two"></span>
@@ -292,7 +291,7 @@
 							<span>Địa Chỉ</span>
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
-						<select  name="dichvudangky" class="form-2__contact-form--input">
+						<select  name="res-info" class="form-2__contact-form--input">
 									<option value="Gói V120 - Trả Trước" selected class="form-2__contact-form--input-1">Gói V120</option>
 									<option value="Gói V90U - Trả Trước" class="form-2__contact-form--input-1">Gói F90U</option>
 									<option value="Gói V120 - Trả Trước" class="form-2__contact-form--input-1">Gói V90X</option>
@@ -304,51 +303,6 @@
 							<label for="">Gói Đăng Ký</label>
 							<span>Gói Đăng Ký</span>
 						</div>
-						<!-- <div class="form-2__contact-form--input-container">
-=======
-			<div class="form-2__contact-form">
-				<span class="form-2__contact-form__circle form-2__contact-form__circle--one"></span>
-				<span class="form-2__contact-form__circle form-2__contact-form__circle--two"></span>
-
-				<form action="dich-vu-tra-truoc-viettel.php" method="POST">
-					<h3 class="form-2__contact-form--title">Liên Hệ</h3>
-					<div class="form-2__contact-form--input-container">
-						<input type="tel" name="sdt" autocomplete="nope" required
-							pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b"
-							oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên'"
-							class="form-2__contact-form--input" />
-						<label for="">SĐT</label>
-						<span>SĐT</span>
-					</div>
-					<div class="form-2__contact-form--input-container">
-						<input type="text" name="diachi" autocomplete="nope" class="form-2__contact-form--input"
-							maxlength="80" id="contact" required
-							oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')" />
-						<label for="">Địa Chỉ</label>
-						<span>Địa Chỉ</span>
-					</div>
-					<div class="form-2__contact-form--input-container  focus">
-						<select name="dichvudangky" class="form-2__contact-form--input">
-							<option value="Gói V120 - Trả Trước" selected class="form-2__contact-form--input-1">Gói V120
-							</option>
-							<option value="Gói V90U - Trả Trước" class="form-2__contact-form--input-1">Gói F90U</option>
-							<option value="Gói V120 - Trả Trước" class="form-2__contact-form--input-1">Gói V90X</option>
-							<option value="Gói ST - Trả Trước" class="form-2__contact-form--input-1">Gói ST</option>
-							<option value="Gói G70D - Trả Trước" class="form-2__contact-form--input-1">Gói G70D</option>
-							<option value="Gói XL90U - Trả Trước" class="form-2__contact-form--input-1">Gói XL90U
-							</option>
-							<option value="Gói UMAX300 - Trả Trước" class="form-2__contact-form--input-1">Gói UMAX300
-							</option>
-						</select>
-						<label for="">Gói Đăng Ký</label>
-						<span>Gói Đăng Ký</span>
-					</div>
-					<!-- <div class="form-2__contact-form--input-container">
->>>>>>> 5b60b0b34e35282e7ac3595a0a5817b7e979fbe4
-							<input type="email" name="email" autocomplete="off" class="form-2__contact-form--input" />
-							<label for="">Email</label>
-							<span>Email</span>
-						</div> -->
 					<div class="form-2__contact-form--input-container form-2__contact-form--textarea">
 						<textarea name="content" class="form-2__contact-form--input"></textarea>
 						<label for="">Yêu Cầu</label>

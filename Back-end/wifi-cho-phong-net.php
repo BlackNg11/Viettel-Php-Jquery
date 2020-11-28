@@ -511,13 +511,9 @@
 	logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
 	</div>
 	<script src="js/index.js"></script>
-<<<<<<< HEAD
 	<script src="js/ajax.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-=======
->>>>>>> 03bbdcdbdaca92ada6ecd918207e13e9ece22c3b
 
->>>>>>> 5b60b0b34e35282e7ac3595a0a5817b7e979fbe4
 </body>
 
 </html>

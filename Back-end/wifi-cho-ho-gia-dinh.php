@@ -611,7 +611,6 @@
 							<span>Địa Chỉ</span>
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
-<<<<<<< HEAD
 							<select  name="res-info" class="form-2__contact-form--input">
 									<option value="Gói Net - Gia Đình" selected class="form-2__contact-form--input-1">Gói Net</option>
 									<option value="Gói SuperNet - Gia Đình" class="form-2__contact-form--input-1">Gói SuperNet</option>
