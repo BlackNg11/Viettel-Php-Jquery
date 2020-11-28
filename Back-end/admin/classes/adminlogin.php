@@ -39,7 +39,7 @@
                     Session :: set('password',$value['password']);
                     header('Location:index.php');
                 }else{
-                    $alert = "user and pass not match  ";
+                    $alert = "user and pass not match";
                 return $alert;
                 }
             }

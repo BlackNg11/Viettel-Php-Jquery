@@ -40,30 +40,13 @@
 	include "view/header.php";
 
 
-<<<<<<< HEAD
-		// create sql
-		$sql = "INSERT INTO khachhang_thuong(sdt,diachi,dichvudangky,status) VALUES ('$sdt', '$diachi', '$dichivudangky',1)";
-		
-		//save to db
-		if (mysqli_query($conn,$sql)) {
-			//success
-			// header('Location: index.php');
-		}else {
-			//error
-			// echo $sql;
-			echo "query error" . mysqli_error($conn);
-		}
-	}
-=======
->>>>>>> 03bbdcdbdaca92ada6ecd918207e13e9ece22c3b
 
 	// if (isset($_POST['submit'])) {
 	// 	//print_r($_POST);
-	// 	$sdt = mysqli_real_escape_string($conn, $_POST['SDT']);
-	// 	$contact = mysqli_real_escape_string($conn, $_POST['contact']);
-	// 	$resInfo = mysqli_real_escape_string($conn, $_POST['res-info']);
+	// 	$sdt = mysqli_real_escape_string($conn, $_POST['sdt']);
+	// 	$contact = mysqli_real_escape_string($conn, $_POST['diachi']);
+	// 	$resInfo = mysqli_real_escape_string($conn, $_POST['dichvudangky']);
 
-		 
 	// 	// create sql
 	// 	$sql = "INSERT INTO `khachhang_thuong`(sdt,diachi,dichvudangky,status) VALUES ('$sdt', '$contact', '$resInfo',1)";
 
@@ -81,7 +64,6 @@
 	// }
 	ob_end_flush();
 ?>
-<<<<<<< HEAD
 <main>
 	<section class="navigation-pc">
 		<ul class="navigation-pc-lists">
@@ -124,36 +106,6 @@
 								id="name" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b"
 								oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')">
 						</div>
-=======
-	<main>		
-		<section class="navigation-pc">
-			<ul class="navigation-pc-lists">
-				<a href="#" class="navigation-pc-lists--item active-navigation"><li>Trang Chủ</li></a>
-				<a href="wifi-cho-ho-gia-dinh.php" class="navigation-pc-lists--item"><li>Internet-Truyền Hình</li></a>
-				<a href="dich-vu-tra-sau-viettel.php" class="navigation-pc-lists--item "><li>Dịch Vụ Di Động</li></a>
-				<a href="404.php" class="navigation-pc-lists--item"><li>Mua Sim</li></a>
-				<a href="404.php" class="navigation-pc-lists--item"><li>Mua Điện Thoại</li></a>
-				<a href="404.php" class="navigation-pc-lists--item"><li>Tin Khuyến Mãi</li></a>
-			</ul>
-		</section>
-		<section class="wifi">		
-			<div class="wifi__info">
-				<div class="wifi__info--left">
-					<h1 class="heading-secondary--2 wifi__info--heading">Hỗ Trợ Lắp Đặt Mạng Wifi Viettel Ở Kiên Giang</h1>
-					<!-- <p class="wifi__info--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nemo libero, ullam provident repellat expedita nihil beatae explicabo, maiores facere reprehenderit voluptatibus omnis sapiente nisi non tempore dicta saepe rem!</p> -->
-				</div>
-				<div class="wifi--info-right">
-					<div class="form">
-						<form  action="server.php" method="POST" class="form-ui" id="test-form">
-							<div class="form--info u-margin-bottom-smaill">
-								<h1 class="form--heading">LIÊN HỆ</h1>
-								<p class="form--text">Cung Cấp Những Dịch Vụ Tốt Nhất Cho Khách Hàng</p>
-							</div>
-							<div class="form__group">
-								<label for="name" class="form__label">SĐT</label>
-								<input type="tel" name="sdt" class="form__input" autocomplete="off" placeholder="SĐT" id="name" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')">
-							</div>
->>>>>>> 03bbdcdbdaca92ada6ecd918207e13e9ece22c3b
 
 						<div class="form__group">
 							<label for="contact" class="form__label">Địa Chỉ</label>
@@ -339,7 +291,6 @@
 			<h1 class="gallary__info--text">Hỗ Trợ Khách Hàng 24/7</h1>
 			<p class="gallary__info--textsmail">0383.61.71.61</h1>
 				<h1 class="gallary__info--textsmail">1800.1098</h1>
-<<<<<<< HEAD
 		</div>
 		<figure class="gallary__item gallary__item--1">
 			<img src="img/Picture/1.jpg" alt="Viettel Picture 1" class="gallary__img">
@@ -370,72 +321,40 @@
 		</figure>
 	</section>
 </main>
-<?php
-	include "view/footer.php";
-?>
-=======
-			</div>
-			<figure class="gallary__item gallary__item--1">
-				<img src="img/Picture/1.jpg" alt="Viettel Picture 1" class="gallary__img">	
-			</figure>
-			<figure class="gallary__item gallary__item--2">
-				<img src="img/Picture/2.jpg" alt="Viettel Picture 2" class="gallary__img">	
-			</figure>
-			<figure class="gallary__item gallary__item--3">
-				<img src="img/Picture/3.jpg" alt="Viettel Picture 3" class="gallary__img">	
-			</figure>
-			<figure class="gallary__item gallary__item--4">
-				<img src="img/Picture/16.jpg" alt="Viettel Picture 4" class="gallary__img">	
-			</figure>
-			<figure class="gallary__item gallary__item--5">
-				<img src="img/Picture/5.jpg" alt="Viettel Picture 5" class="gallary__img">	
-			</figure>
-			<figure class="gallary__item gallary__item--6">
-				<img src="img/Picture/15.jpg" alt="Viettel Picture 6" class="gallary__img">	
-			</figure>
-			<figure class="gallary__item gallary__item--7">
-				<img src="img/Picture/7.jpg" alt="Viettel Picture 7" class="gallary__img">	
-			</figure>
-			<figure class="gallary__item gallary__item--8">
-				<img src="img/Picture/8.jpg" alt="Viettel Picture 8" class="gallary__img">	
-			</figure>
-			<figure class="gallary__item gallary__item--9">
-				<img src="img/Picture/9.jpg" alt="Viettel Picture 9" class="gallary__img">	
-			</figure>
-		</section>
-	</main>
-	<footer class="footer">
-		<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="footer__logo u-margin-bottom-medium">
-		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
-		<div class="footer__info">
-			<div class="footer__info__group footer__info--1">
-				<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
-			</div>
-			<div class="footer__info__group footer__info--2">
-				<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
-				<div class="footer-bot--1">
-					<a href="https://www.facebook.com/D%E1%BB%8Bch-V%E1%BB%A5-Viettel-Ki%C3%AAn-Giang-119868136598056">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-facebook"></use>
-						</svg>
-					</a>
-					<a href="https://www.youtube.com/user/Viettelchannels">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-youtube"></use>
-						</svg>
-					</a>
-
-					<a href="https://zalo.me/1814378069399742003"><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
-				</div>
-				
-			</div>
-			<div class="footer__info__group footer__info--3">
-				<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
-				<div class="footer-bot--2">
-					<svg class="header__contact-icon">
-						<use xlink:href="img/sprite.svg#icon-phone"></use>
-
+<footer class="footer">
+	<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="footer__logo u-margin-bottom-medium">
+	<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên
+		hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
+	<div class="footer__info">
+		<div class="footer__info__group footer__info--1">
+			<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
+		</div>
+		<div class="footer__info__group footer__info--2">
+			<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
+			<div class="footer-bot--1">
+				<a href="https://www.facebook.com/D%E1%BB%8Bch-V%E1%BB%A5-Viettel-Ki%C3%AAn-Giang-119868136598056">
+					<svg class="wifi-detail__info--list-icon">
+						<use xlink:href="img/sprite.svg#icon-facebook"></use>
 					</svg>
+				</a>
+				<a href="https://www.youtube.com/user/Viettelchannels">
+					<svg class="wifi-detail__info--list-icon">
+						<use xlink:href="img/sprite.svg#icon-youtube"></use>
+					</svg>
+				</a>
+
+				<a href="https://zalo.me/1814378069399742003"><img src="img/zalo-seeklogo.com.svg" alt="Zalo"
+						class="wifi-detail__info--list-icon"></a>
+			</div>
+
+		</div>
+		<div class="footer__info__group footer__info--3">
+			<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
+			<div class="footer-bot--2">
+				<svg class="header__contact-icon">
+					<use xlink:href="img/sprite.svg#icon-phone"></use>
+
+				</svg>
 				</a>
 				<a href="">
 					<svg class="wifi-detail__info--list-icon">
@@ -470,157 +389,154 @@
 		</div>
 	</div>
 </footer>
-		<!-- javascript -->
-    <script src="ow_/vendors/jquery.min.js"></script>
-    <script src="ow_/owlcarousel/owl.carousel.js"></script>
-    <script>
-    	$('.owl-carousel').owlCarousel({
-    		loop:true,
-    		margin:20,
-    		nav:true,
-    		autoHeight: true,
-    		autoplay:true,
-    		autoplayTimeout:5000,
-    		autoplayHoverPause:true,
-    		responsive:{
-    			0:{
-    				items:1
-    			},
-    			600:{
-    				items:1
-    			},
-    			1000:{
-    				items:3
-    			}
-    		}
-    	})
+<!-- javascript -->
+<script src="ow_/vendors/jquery.min.js"></script>
+<script src="ow_/owlcarousel/owl.carousel.js"></script>
+<script>
+	$('.owl-carousel').owlCarousel({
+		loop: true,
+		margin: 20,
+		nav: true,
+		autoHeight: true,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 1
+			},
+			1000: {
+				items: 3
+			}
+		}
+	})
 
-    	const inputs = document.querySelectorAll(".form-2__contact-form--input");
+	const inputs = document.querySelectorAll(".form-2__contact-form--input");
 
-    	function focusFunc() {
-    		let parent = this.parentNode;
-    		parent.classList.add("focus");
-    	}
+	function focusFunc() {
+		let parent = this.parentNode;
+		parent.classList.add("focus");
+	}
 
-    	function blurFunc() {
-    		let parent = this.parentNode;
-    		if (this.value == "") {
-    			parent.classList.remove("focus");
-    		}
-    	}
+	function blurFunc() {
+		let parent = this.parentNode;
+		if (this.value == "") {
+			parent.classList.remove("focus");
+		}
+	}
 
-    	inputs.forEach((input) => {
-    		input.addEventListener("focus", focusFunc);
-    		input.addEventListener("blur", blurFunc);
-    	});
-    </script>
-    <!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-	<script>
-		window.fbAsyncInit = function() {
-			FB.init({
-				xfbml            : true,
-				version          : 'v9.0'
-			});
-		};
-
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-
-		<!-- Your Chat Plugin code -->
-		<div class="fb-customerchat"
-		attribution=setup_tool
-		page_id="119868136598056"
-		theme_color="#14AFB4"
-		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
-	</div>
-	<!-- Form Validation -->
-	<script>
-		// function myFunction() {
-		// 	let pattern = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-		// 	let elements = document.getElementsByClassName("form__input");
-			
-		// 	let error = [];
-		// 	let formData = new FormData();
-			
-
-		// 	if (elements[0].value === "" || elements[1].value === "") {
-		// 		error.push("form is blank");
-		// 	} else if (pattern.test(elements[0].value) === false) {
-		// 		error.push("Sdt ko hop le")
-		// 	}
-
-		// 	if (error.length === 0) {
-		// 		for(var i=0; i<elements.length; i++)
-		// 		{
-		// 			formData.append(elements[i].name, elements[i].value);
-		// 		}
-				
-
-		// 		var xmlHttp = new XMLHttpRequest();
-		// 		xmlHttp.onreadystatechange = function()
-		// 		{
-		// 			if(xmlHttp.readyState == 4 && xmlHttp.status == 200)
-		// 			{
-		// 				Swal.fire({
-		// 					position: 'center',
-		// 					icon: 'success',
-		// 					title: 'Your work has been saved',
-		// 					showConfirmButton: false,
-		// 					timer: 1500
-		// 				})
-		// 			}
-		// 		}
-		// 		xmlHttp.open("post", "server.php"); 
-		// 		xmlHttp.send(formData); 
-		// 	}
-		// }
-
-		$('#test-form').submit(function(e) {
-			// Prevent default posting of form - put here to work in case of errors
-			e.preventDefault();
-
-			//data
-			var postData = $(this).serializeArray();
-			var formURL = $(this).attr("action");
-			// console.log(postData);
-			// console.log(formURL);
-
-
-			/* start ajax submission process */
-			var resquest = $.ajax({
-			    url: formURL,
-			    method: "post",
-			    data: postData
-			});
-
-			resquest.done(function(msg) {
-				Swal.fire({
-					position: 'center',
-					icon: 'success',
-					title: 'Đăng Kí Thành Công',
-					showConfirmButton: false,
-					timer: 1500
-				})
-			});
-
-			resquest.fail(function (){
-		         console.log('Loi');
-      		});
-
-			 
+	inputs.forEach((input) => {
+		input.addEventListener("focus", focusFunc);
+		input.addEventListener("blur", blurFunc);
+	});
+</script>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+	window.fbAsyncInit = function () {
+		FB.init({
+			xfbml: true,
+			version: 'v9.0'
 		});
-	</script>
-    <script src="js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	};
 
->>>>>>> 03bbdcdbdaca92ada6ecd918207e13e9ece22c3b
+	(function (d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
+	logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
+	logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+</div>
+<!-- Form Validation -->
+<script>
+	// function myFunction() {
+	// 	let pattern = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+	// 	let elements = document.getElementsByClassName("form__input");
+
+	// 	let error = [];
+	// 	let formData = new FormData();
+
+
+	// 	if (elements[0].value === "" || elements[1].value === "") {
+	// 		error.push("form is blank");
+	// 	} else if (pattern.test(elements[0].value) === false) {
+	// 		error.push("Sdt ko hop le")
+	// 	}
+
+	// 	if (error.length === 0) {
+	// 		for(var i=0; i<elements.length; i++)
+	// 		{
+	// 			formData.append(elements[i].name, elements[i].value);
+	// 		}
+
+
+	// 		var xmlHttp = new XMLHttpRequest();
+	// 		xmlHttp.onreadystatechange = function()
+	// 		{
+	// 			if(xmlHttp.readyState == 4 && xmlHttp.status == 200)
+	// 			{
+	// 				Swal.fire({
+	// 					position: 'center',
+	// 					icon: 'success',
+	// 					title: 'Your work has been saved',
+	// 					showConfirmButton: false,
+	// 					timer: 1500
+	// 				})
+	// 			}
+	// 		}
+	// 		xmlHttp.open("post", "server.php"); 
+	// 		xmlHttp.send(formData); 
+	// 	}
+	// }
+
+	$('#test-form').submit(function (e) {
+		// Prevent default posting of form - put here to work in case of errors
+		e.preventDefault();
+
+		//data
+		var postData = $(this).serializeArray();
+		var formURL = $(this).attr("action");
+		// console.log(postData);
+		// console.log(formURL);
+
+
+		/* start ajax submission process */
+		var resquest = $.ajax({
+			url: formURL,
+			method: "post",
+			data: postData
+		});
+
+		resquest.done(function (msg) {
+			Swal.fire({
+				position: 'center',
+				icon: 'success',
+				title: 'Đăng Kí Thành Công',
+				showConfirmButton: false,
+				timer: 1500
+			})
+		});
+
+		resquest.fail(function () {
+			console.log('Loi');
+		});
+
+	});
+</script>
+<script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 </body>
 
 </html>
