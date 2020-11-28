@@ -834,6 +834,103 @@ body {
   .card-wifi-bottom--btn {
     text-align: center; }
 
+.cardSkew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: radial-gradient(#2CC2AF, #298ACC);
+  overflow: hidden;
+  box-sizing: border-box; }
+  .cardSkew__container {
+    position: relative;
+    width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: 0.5s;
+    transform: skewY(-10deg); }
+  .cardSkew__card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transition: 0.5s; }
+    .cardSkew__card:before {
+      content: '';
+      position: absolute;
+      top: -15px;
+      left: 0;
+      width: 100%;
+      height: 15px;
+      background: #00c0f6;
+      transform-origin: bottom;
+      transform: skewX(45deg);
+      transition: .5s; }
+    .cardSkew__card:after {
+      content: '';
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      width: 15px;
+      height: 100%;
+      background: #00c0f6;
+      transform-origin: left;
+      transform: skewY(45deg);
+      border-bottom: 200px solid #d9d9d9;
+      transition: .5s; }
+    .cardSkew__card:hover {
+      transform: translateY(-40px); }
+    .cardSkew__card__imgBx {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background: #00c7ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .cardSkew__card__imgBx img {
+        max-width: 100px; }
+      .cardSkew__card__imgBx h3 {
+        position: relative;
+        color: #fff;
+        margin-top: 10px;
+        font-size: 2.5rem;
+        font-weight: 700; }
+    .cardSkew__card__content {
+      position: relative;
+      font-size: 1.6rem;
+      width: 100%;
+      height: 200px;
+      padding: 20px;
+      color: #777;
+      text-align: center;
+      background: #fff; }
+      .cardSkew__card__content:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.1));
+        transform-origin: bottom;
+        transform: skewX(45deg);
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: -1; }
+    .cardSkew__card:hover .cardSkew__card__content:before {
+      transform: translateY(40px) skewX(45deg);
+      filter: blur(5px);
+      opacity: 0.5; }
+    .cardSkew__card:nth-child(1) {
+      z-index: 3; }
+    .cardSkew__card:nth-child(2) {
+      z-index: 2; }
+    .cardSkew__card:nth-child(3) {
+      z-index: 1; }
+
 .gallary {
   position: relative; }
   .gallary__info {
@@ -1948,7 +2045,8 @@ body {
           font-size: 2.3rem; } }
 
 .navigation__checkbox {
-  display: none; }
+  display: none;
+  visibility: hidden; }
 
 .navigation__button {
   background-color: #fff;
@@ -2009,6 +2107,7 @@ body {
   left: 0;
   z-index: 1500;
   opacity: 0;
+  visibility: hidden;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
@@ -2052,6 +2151,7 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
+  visibility: visible;
   width: 100%; }
 
 .navigation__icon {
@@ -2220,8 +2320,7 @@ body {
 
 .phone-detail {
   padding: 8rem 5rem;
-  text-align: center;
-  background-color: #f7f7f7; }
+  text-align: center; }
 
 .gallary {
   display: grid;
