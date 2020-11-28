@@ -5,7 +5,7 @@ include "config.php";
 		$contact = isset($_POST['diachi']) ? mysqli_real_escape_string($conn,$_POST['diachi']) : null;
 		$content = isset($_POST['content']) ? mysqli_real_escape_string($conn,$_POST['content']) : null;
 		$resInfo = isset($_POST['res-info']) ? mysqli_real_escape_string($conn,$_POST['res-info']) : null;
-		var_dump($_POST);
+		
 		// create sql
 		$sql = "INSERT INTO `khachhang_thuong`(sdt,diachi,dichvudangky,content,status) VALUES ('$sdt', '$contact', '$resInfo','$content',1)";
 		
@@ -20,5 +20,4 @@ include "config.php";
 			
 		}
 
- ?>
- 
+

@@ -3,7 +3,9 @@
     Session::checklogin();
     include "lib/database.php";
     include "helpers/format.php"
+    
 ?>
+
 <?php
 
     class adminlogin
@@ -39,7 +41,7 @@
                     Session :: set('password',$value['password']);
                     header('Location:index.php');
                 }else{
-                    $alert = "user and pass not match  ";
+                    $alert = "user and pass not match";
                 return $alert;
                 }
             }

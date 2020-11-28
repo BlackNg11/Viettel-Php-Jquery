@@ -1,8 +1,10 @@
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Chi tiết trả sau Viettel 2020,hỗ trợ đăng kí nhanh gọn trong vòng 24h trong khu vực Kiên Giang">
+	<meta name="description"
+		content="Chi tiết trả sau Viettel 2020,hỗ trợ đăng kí nhanh gọn trong vòng 24h trong khu vực Kiên Giang">
 	<meta name="keywords"
 	content="Dịch vụ Viettel ở Kiên Giang Kiên Giang,viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
 	<meta name="og">
@@ -280,7 +282,8 @@
 					</p>
 					<div class="form-2__contact-info__info">
 						<div class="form-2__contact-info__information">
-							<img src="img/location.png" class="form-2__contact-info__icon" alt="Địa Chỉ Viettel Kiên Giang" />
+							<img src="img/location.png" class="form-2__contact-info__icon"
+								alt="Địa Chỉ Viettel Kiên Giang" />
 							<p>654 Nguyễn Trung Trực</p>
 						</div>
 						<div class="form-2__contact-info__information">
@@ -288,7 +291,8 @@
 							<p>blackng10.5.1997@gmail.com</p>
 						</div>
 						<div class="form-2__contact-info__information">
-							<img src="img/phone.png" class="form-2__contact-info__icon" alt="hotline Viettel Kiên Giang" />
+							<img src="img/phone.png" class="form-2__contact-info__icon"
+								alt="hotline Viettel Kiên Giang" />
 							<p>0383.61.71.61</p>
 						</div>
 					</div>
@@ -300,12 +304,17 @@
 					<form action="config/server.php" method="POST" id="test-form">
 						<h3 class="form-2__contact-form--title">Liên Hệ</h3>
 						<div class="form-2__contact-form--input-container">
-							<input type="tel" name="sdt"  autocomplete="nope" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên'" class="form-2__contact-form--input" />
+							<input type="tel" name="sdt" autocomplete="nope" required
+								pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b"
+								oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên'"
+								class="form-2__contact-form--input" />
 							<label for="">SĐT</label>
 							<span>SĐT</span>
 						</div>
 						<div class="form-2__contact-form--input-container">
-							<input type="text" name="diachi" autocomplete="nope" class="form-2__contact-form--input" maxlength="80"  id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')"/>
+							<input type="text" name="diachi" autocomplete="nope" class="form-2__contact-form--input"
+								maxlength="80" id="contact" required
+								oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')" />
 							<label for="">Địa Chỉ</label>
 							<span>Địa Chỉ</span>
 						</div>
@@ -333,7 +342,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 	</main>
 	
 
@@ -438,6 +447,7 @@
 		<script src="js/ajax.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
+
 </html>
 </body>
 
