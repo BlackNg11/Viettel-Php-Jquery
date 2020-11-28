@@ -319,7 +319,7 @@
 							<span>Địa Chỉ</span>
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
-							<select  name="dichvudangky" class="form-2__contact-form--input">
+							<select  name="res-info" class="form-2__contact-form--input">
 								<option value="T100 - Trả Sau" selected class="form-2__contact-form--input-1">Gói T100</option>
 								<option value="Gói B - Trả Sau" class="form-2__contact-form--input-1">Gói B</option>
 								<option value="Gói V - Trả Sau" class="form-2__contact-form--input-1">Gói V</option>

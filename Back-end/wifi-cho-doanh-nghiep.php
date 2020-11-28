@@ -367,7 +367,7 @@
 							<span>Địa Chỉ</span>
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
-							<select name="dichvudangky" class="form-2__contact-form--input">
+							<select name="res-info" class="form-2__contact-form--input">
 								<option value="Gói SuperNet - Doanh Nghiệp" selected
 									class="form-2__contact-form--input-1">Gói SuperNet</option>
 								<option value="Gói Fat - Doanh Nghiệp" class="form-2__contact-form--input-1">Gói Fat
