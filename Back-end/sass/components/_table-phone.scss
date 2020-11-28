@@ -14,12 +14,13 @@
 
     @include respond(phone) {
         grid-template-rows: repeat(15, 5vw);
+        grid-template-columns: repeat(5, 20%);
     }
 
     @include respond(smaill-phone) {
         grid-template-rows: repeat(15, 20vw);
-        grid-template-columns: repeat(5, 7.8vh);
-        font-size: 1.8rem;
+        grid-template-columns: repeat(5, 20%);
+        font-size: 2.3rem;
         line-height: 2rem;
 
     }
@@ -532,7 +533,7 @@
 
 .phoneT-detail-table {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(10, 3.5vw);
     // justify-items: center;
     // align-items: center;
@@ -546,12 +547,13 @@
 
     @include respond(phone) {
         grid-template-rows: repeat(10, 5vw);
+        grid-template-columns: repeat(5, 20%);
     }
 
      @include respond(smaill-phone) {
         grid-template-rows: repeat(10, 13vw);
-        grid-template-columns: repeat(7, 12.5vh);
-        font-size: 1.8rem;
+        grid-template-columns: repeat(5, 20%);
+        font-size: 2rem;
         line-height: 2rem;
 
     }
@@ -579,7 +581,7 @@
 
         & p {
             @include respond(smaill-phone) {
-            max-width: 7rem;
+                max-width: 7rem;
             }
         }
     }

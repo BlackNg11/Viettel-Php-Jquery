@@ -243,7 +243,7 @@
 				<h3 class="phone-contact--infomation--title">1.Tiết kiệm tiền cho khách hàng</h3>
 				<p class="phone-contact--infomation--text">Điều mà nhiều người dùng quan tâm chính là cước gọi cả ngoại
 					mạng lẫn nội mạng của thuê bao trả sau sẽ rẻ hơn rất nhiều so với thuê bao trả trước. Theo thống kê
-					bạn sẽ tiết kiệm được khoảng từ 50 – 70% chi phí nếu dùng thuê bao trả sau.
+					bạn sẽ tiết kiệm được khoảng từ 30% - 50% chi phí nếu dùng thuê bao trả sau.
 				Vd Gói cước tomato chi phí trả trước khá cao</p>
 				<img src="img/gói-tomato.png" alt="Tomato Viettel" class="phone-contact--infomation--img">
 				<p class="phone-contact--infomation--text">Bởi vì một lý do rất đơn giản là gói cước trả trước có giá
@@ -283,7 +283,7 @@
 					<div class="form-2__contact-info__info">
 						<div class="form-2__contact-info__information">
 							<img src="img/location.png" class="form-2__contact-info__icon"
-								alt="Địa Chỉ Viettel Kiên Giang" />
+							alt="Địa Chỉ Viettel Kiên Giang" />
 							<p>654 Nguyễn Trung Trực</p>
 						</div>
 						<div class="form-2__contact-info__information">
@@ -292,7 +292,7 @@
 						</div>
 						<div class="form-2__contact-info__information">
 							<img src="img/phone.png" class="form-2__contact-info__icon"
-								alt="hotline Viettel Kiên Giang" />
+							alt="hotline Viettel Kiên Giang" />
 							<p>0383.61.71.61</p>
 						</div>
 					</div>
@@ -304,34 +304,28 @@
 					<form action="config/server.php" method="POST" id="test-form">
 						<h3 class="form-2__contact-form--title">Liên Hệ</h3>
 						<div class="form-2__contact-form--input-container">
-							<input type="tel" name="sdt" autocomplete="nope" required
-								pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b"
-								oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên'"
-								class="form-2__contact-form--input" />
+							<input type="tel" name="sdt"  autocomplete="nope" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên'" class="form-2__contact-form--input" />
 							<label for="">SĐT</label>
 							<span>SĐT</span>
 						</div>
 						<div class="form-2__contact-form--input-container">
-							<input type="text" name="diachi" autocomplete="nope" class="form-2__contact-form--input"
-								maxlength="80" id="contact" required
-								oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')" />
+							<input type="text" name="diachi" autocomplete="nope" class="form-2__contact-form--input" maxlength="80"  id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')"/>
 							<label for="">Địa Chỉ</label>
 							<span>Địa Chỉ</span>
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
 							<select  name="res-info" class="form-2__contact-form--input">
-								<option value="T100 - Trả Sau" selected class="form-2__contact-form--input-1">Gói T100</option>
-								<option value="Gói B - Trả Sau" class="form-2__contact-form--input-1">Gói B</option>
-								<option value="Gói V - Trả Sau" class="form-2__contact-form--input-1">Gói V</option>
+								<option value="Gói V120 - Trả Trước" selected class="form-2__contact-form--input-1">Gói V120</option>
+								<option value="Gói V90U - Trả Trước" class="form-2__contact-form--input-1">Gói F90U</option>
+								<option value="Gói V120 - Trả Trước" class="form-2__contact-form--input-1">Gói V90X</option>
+								<option value="Gói ST - Trả Trước" class="form-2__contact-form--input-1">Gói ST</option>
+								<option value="Gói G70D - Trả Trước" class="form-2__contact-form--input-1">Gói G70D</option>
+								<option value="Gói XL90U - Trả Trước" class="form-2__contact-form--input-1">Gói XL90U</option>
+								<option value="Gói UMAX300 - Trả Trước" class="form-2__contact-form--input-1">Gói UMAX300</option>
 							</select>
 							<label for="">Gói Đăng Ký</label>
 							<span>Gói Đăng Ký</span>
 						</div>
-						<!-- <div class="form-2__contact-form--input-container">
-							<input type="email" name="email" autocomplete="off" class="form-2__contact-form--input" />
-							<label for="">Email</label>
-							<span>Email</span>
-						</div> -->
 						<div class="form-2__contact-form--input-container form-2__contact-form--textarea">
 							<textarea name="content" class="form-2__contact-form--input"></textarea>
 							<label for="">Yêu Cầu</label>

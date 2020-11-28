@@ -221,7 +221,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho nhà nhiều tầng trên 10 người sử dụng trở lên wifi
+							<p class="card-wifi-bottom--text">Dành cho nhà nhiều tầng trên 10 người sử dụng wifi
 							</p>
 						</div>
 						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
@@ -361,7 +361,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho nhà nhiều tầng trên 10 người sử dụng trở lên wifi
+							<p class="card-wifi-bottom--text">Dành cho nhà nhiều tầng trên 10 người sử dụng wifi
 							</p>
 							<p class="card-wifi-bottom--text card-wifi-bottom--text-margin--bot">Tặng miễn phí 1 gói
 								truyền hình và 1 gói K+</p>
@@ -489,7 +489,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho nhà nhiều tầng trên 10 người sử dụng trở lên wifi
+							<p class="card-wifi-bottom--text">Dành cho nhà nhiều tầng trên 10 người sử dụng wifi 
 							</p>
 							<p class="card-wifi-bottom--text card-wifi-bottom--text-margin--bot">Tặng miễn phí 1 gói
 								truyền hình và 1 gói K+</p>
@@ -575,7 +575,7 @@
 					<div class="form-2__contact-info__info">
 						<div class="form-2__contact-info__information">
 							<img src="img/location.png" class="form-2__contact-info__icon"
-								alt="Địa Chỉ Viettel Kiên Giang" />
+							alt="Địa Chỉ Viettel Kiên Giang" />
 							<p>654 Nguyễn Trung Trực</p>
 						</div>
 						<div class="form-2__contact-info__information">
@@ -584,7 +584,7 @@
 						</div>
 						<div class="form-2__contact-info__information">
 							<img src="img/phone.png" class="form-2__contact-info__icon"
-								alt="hotline Viettel Kiên Giang" />
+							alt="hotline Viettel Kiên Giang" />
 							<p>0383.61.71.61</p>
 						</div>
 					</div>
@@ -596,35 +596,28 @@
 					<form action="config/server.php" method="POST" id="test-form">
 						<h3 class="form-2__contact-form--title">Liên Hệ</h3>
 						<div class="form-2__contact-form--input-container">
-							<input type="tel" name="sdt" autocomplete="nope" required
-								pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b"
-								oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên'"
-								class="form-2__contact-form--input" />
+							<input type="tel" name="sdt"  autocomplete="nope" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên'" class="form-2__contact-form--input" />
 							<label for="">SĐT</label>
 							<span>SĐT</span>
 						</div>
 						<div class="form-2__contact-form--input-container">
-							<input type="text" name="diachi" autocomplete="nope" class="form-2__contact-form--input"
-								maxlength="80" id="contact" required
-								oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')" />
+							<input type="text" name="diachi" autocomplete="nope" class="form-2__contact-form--input" maxlength="80"  id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')"/>
 							<label for="">Địa Chỉ</label>
 							<span>Địa Chỉ</span>
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
 							<select  name="res-info" class="form-2__contact-form--input">
-									<option value="Gói Net - Gia Đình" selected class="form-2__contact-form--input-1">Gói Net</option>
-									<option value="Gói SuperNet - Gia Đình" class="form-2__contact-form--input-1">Gói SuperNet</option>
-									<option value="Gói Net + TV - Gia Đình" class="form-2__contact-form--input-1">Gói Net + Truyền Hình</option>
-									<option value="Gói SuperNet + TV - Gia Đình" class="form-2__contact-form--input-1">Gói SuperNet + Truyền Hình</option>
+								<option value="Gói V120 - Trả Trước" selected class="form-2__contact-form--input-1">Gói V120</option>
+								<option value="Gói V90U - Trả Trước" class="form-2__contact-form--input-1">Gói F90U</option>
+								<option value="Gói V120 - Trả Trước" class="form-2__contact-form--input-1">Gói V90X</option>
+								<option value="Gói ST - Trả Trước" class="form-2__contact-form--input-1">Gói ST</option>
+								<option value="Gói G70D - Trả Trước" class="form-2__contact-form--input-1">Gói G70D</option>
+								<option value="Gói XL90U - Trả Trước" class="form-2__contact-form--input-1">Gói XL90U</option>
+								<option value="Gói UMAX300 - Trả Trước" class="form-2__contact-form--input-1">Gói UMAX300</option>
 							</select>
 							<label for="">Gói Đăng Ký</label>
 							<span>Gói Đăng Ký</span>
 						</div>
-						<!-- <div class="form-2__contact-form--input-container">
-							<input type="email" name="email" autocomplete="off" class="form-2__contact-form--input" />
-							<label for="">Email</label>
-							<span>Email</span>
-						</div> -->
 						<div class="form-2__contact-form--input-container form-2__contact-form--textarea">
 							<textarea name="content" class="form-2__contact-form--input"></textarea>
 							<label for="">Yêu Cầu</label>

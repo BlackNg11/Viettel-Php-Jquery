@@ -216,7 +216,7 @@ ob_end_flush();
 						<h3>Dịch Vụ Wifi</h3>
 					</div>		
 					<div class="cardSkew__card__content">
-						<p>Chất lượng đường truyền cao ổn định và xây dựng mức giá đa dạng và phù hợp nhất tới tất cả các đối tượng khách hàng từ sinh viên , hộ gia đình tới các quán game và doanh nghiệp lớn</p>
+						<p>Chất lượng đường truyền wifi Viettel cao và ổn định và xây dựng mức giá đa dạng và phù hợp nhất tới tất cả các đối tượng khách hàng từ sinh viên , hộ gia đình tới các quán game và doanh nghiệp lớn</p>
 					</div>
 				</div>
 					<div class="cardSkew__card">
@@ -225,7 +225,7 @@ ob_end_flush();
 						<h3>Dịch Vụ Di Động</h3>
 					</div>		
 					<div class="cardSkew__card__content">
-						<p>Nhiều gói khuyến mãi gọi thoại,lên mạng 4G.Đăng kí trả sau tiết kiệm chi phí gọi điện với những mức giá hợp lí cho khách hàng </p>
+						<p>Viettel tặng nhiều gói khuyến mãi gọi thoại,lên mạng 4G dành cho khách hàng.Đăng kí trả sau tiết kiệm chi phí gọi điện 30%-50% với những mức giá hợp lí cho khách hàng </p>
 					</div>
 				</div>
 					<div class="cardSkew__card">
