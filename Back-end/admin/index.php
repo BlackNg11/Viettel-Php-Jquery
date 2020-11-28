@@ -1,3 +1,8 @@
+<?php
+    include "lib/session.php";
+    Session::checkSession();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +26,6 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
-
 <body id="page-top">
 
     <!-- Page Wrapper -->
@@ -370,7 +374,12 @@
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <?php
+                                    if(isset($_GET['action']) && $_GET['action'] == 'logout'){
+                                        Session::destroy();
+                                    }
+                                ?>
+                                <a class="dropdown-item" href="?action=logout" /*data-toggle="modal"*/ data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
