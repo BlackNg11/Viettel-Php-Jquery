@@ -317,8 +317,8 @@
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
 							<select  name="res-info" class="form-2__contact-form--input">
-									<option value="Net" selected class="form-2__contact-form--input-1">Gói SuperNet</option>
-									<option value="SuperNet" class="form-2__contact-form--input-1">Gói Fat</option>
+									<option value="SuperNet" selected class="form-2__contact-form--input-1">Gói SuperNet</option>
+									<option value="Fat" class="form-2__contact-form--input-1">Gói Fat</option>
 							</select>
 							<label for="">Gói Đăng Ký</label>
 							<span>Gói Đăng Ký</span>

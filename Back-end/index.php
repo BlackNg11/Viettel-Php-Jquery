@@ -30,32 +30,34 @@
 
 
 <?php
+	ob_start(); 
 	include "config/config.php";
 	include "view/navigation.php";
 	include "view/header.php";
 
-	if (isset($_POST['submit'])) {
-		// print_r($_POST);
-		$sdt = mysqli_real_escape_string($conn, $_POST['SDT']);
-		$contact = mysqli_real_escape_string($conn, $_POST['contact']);
-		$resInfo = mysqli_real_escape_string($conn, $_POST['res-info']);
+
+	// if (isset($_POST['submit'])) {
+	// 	//print_r($_POST);
+	// 	$sdt = mysqli_real_escape_string($conn, $_POST['SDT']);
+	// 	$contact = mysqli_real_escape_string($conn, $_POST['contact']);
+	// 	$resInfo = mysqli_real_escape_string($conn, $_POST['res-info']);
 
 		 
-		// create sql
-		$sql = "INSERT INTO `khachhang_thuong`(sdt,diachi,dichvudangky,status) VALUES ('$sdt', '$contact', '$resInfo',1)";
+	// 	// create sql
+	// 	$sql = "INSERT INTO `khachhang_thuong`(sdt,diachi,dichvudangky,status) VALUES ('$sdt', '$contact', '$resInfo',1)";
 		
-		//save to db
-		if (mysqli_query($conn,$sql)) {
-			//success
-			// header('Location: index.php');
-		}else {
-			//error
-			// echo $sql;
-			echo "query error" . mysqli_error($conn);
-		}
-	}
-
-
+	// 	//save to db
+	// 	if (mysqli_query($conn,$sql)) {
+	// 		//success
+	// 		//header("Location: 404.php");
+	// 	}else {
+	// 		//error
+	// 		echo $sql;
+	// 		echo "query error" . mysqli_error($conn);
+			
+	// 	}
+	// }
+	ob_end_flush();
 ?>
 	<main>		
 		<section class="navigation-pc">
@@ -76,7 +78,7 @@
 				</div>
 				<div class="wifi--info-right">
 					<div class="form">
-						<form action="index.php" method="POST" class="form-ui">
+						<form  action="server.php" method="POST" class="form-ui" id="test-form">
 							<div class="form--info u-margin-bottom-smaill">
 								<h1 class="form--heading">LIÊN HỆ</h1>
 								<p class="form--text">Cung Cấp Những Dịch Vụ Tốt Nhất Cho Khách Hàng</p>
@@ -334,7 +336,7 @@
     		input.addEventListener("blur", blurFunc);
     	});
     </script>
-    	<!-- Load Facebook SDK for JavaScript -->
+    <!-- Load Facebook SDK for JavaScript -->
 	<div id="fb-root"></div>
 	<script>
 		window.fbAsyncInit = function() {
@@ -360,6 +362,84 @@
 		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
 		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
 	</div>
+	<!-- Form Validation -->
+	<script>
+		// function myFunction() {
+		// 	let pattern = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+		// 	let elements = document.getElementsByClassName("form__input");
+			
+		// 	let error = [];
+		// 	let formData = new FormData();
+			
+
+		// 	if (elements[0].value === "" || elements[1].value === "") {
+		// 		error.push("form is blank");
+		// 	} else if (pattern.test(elements[0].value) === false) {
+		// 		error.push("Sdt ko hop le")
+		// 	}
+
+		// 	if (error.length === 0) {
+		// 		for(var i=0; i<elements.length; i++)
+		// 		{
+		// 			formData.append(elements[i].name, elements[i].value);
+		// 		}
+				
+
+		// 		var xmlHttp = new XMLHttpRequest();
+		// 		xmlHttp.onreadystatechange = function()
+		// 		{
+		// 			if(xmlHttp.readyState == 4 && xmlHttp.status == 200)
+		// 			{
+		// 				Swal.fire({
+		// 					position: 'center',
+		// 					icon: 'success',
+		// 					title: 'Your work has been saved',
+		// 					showConfirmButton: false,
+		// 					timer: 1500
+		// 				})
+		// 			}
+		// 		}
+		// 		xmlHttp.open("post", "server.php"); 
+		// 		xmlHttp.send(formData); 
+		// 	}
+		// }
+
+		$('#test-form').submit(function(e) {
+			// Prevent default posting of form - put here to work in case of errors
+			e.preventDefault();
+
+			//data
+			var postData = $(this).serializeArray();
+			var formURL = $(this).attr("action");
+			// console.log(postData);
+			// console.log(formURL);
+
+
+			/* start ajax submission process */
+			var resquest = $.ajax({
+			    url: formURL,
+			    method: "post",
+			    data: postData
+			});
+
+			resquest.done(function(msg) {
+				Swal.fire({
+					position: 'center',
+					icon: 'success',
+					title: 'Đăng Kí Thành Công',
+					showConfirmButton: false,
+					timer: 1500
+				})
+			});
+
+			resquest.fail(function (){
+		         console.log('Loi');
+      		});
+
+			 
+		});
+	</script>
     <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>

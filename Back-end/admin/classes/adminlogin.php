@@ -1,8 +1,8 @@
 <?php
-    include "../lib/session.php";
-    Session :: checklogin();
-    include "../lib/database.php";
-    include "../helpers/format.php"
+    include "lib/session.php";
+    Session::checklogin();
+    include "lib/database.php";
+    include "helpers/format.php"
 ?>
 <?php
 
@@ -11,13 +11,15 @@
         private $db;
         private $fm;
 
-        public function __contruct(){
+        public function __construct(){
             $this->db = new Database();
             $this->fm = new Format();
         }
+
         public function login_admin($username,$password){
             $username = $this->fm->validation($username);
             $password = $this->fm->validation($password);
+
     
             $username = mysqli_real_escape_string($this->db->link, $username);
             $password = mysqli_real_escape_string($this->db->link, $password);
@@ -26,7 +28,7 @@
                 $alert = "user and pass must be not empty";
                 return $alert;
             }else{
-                $query = "SELECT * FORM admin WHERE username = '$username'  AND password = '$password' LIMIT 1";
+                $query = "SELECT * FROM admin WHERE username = '$username'  AND password = '$password' LIMIT 1";
                 $result = $this->db->select($query);
                 
                 if($result != false){
@@ -35,12 +37,7 @@
                     Session :: set('id',$value['id']);
                     Session :: set('username',$value['username']);
                     Session :: set('password',$value['password']);
-                    Session :: set('fullname',$value['fullname']);
-                    Session :: set('status',$value['status']);
-                    Session :: set('roleid',$value['roleidid']);
-                    Session :: set('sdt',$value['sdt']);
-                    Session :: set('diachi',$value['diachi']);
-                    header('Location:admin.php');
+                    header('Location:index.php');
                 }else{
                     $alert = "user and pass not match  ";
                 return $alert;
