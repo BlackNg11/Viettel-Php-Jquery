@@ -162,59 +162,51 @@ ob_end_flush();
 	<section class="wifi-detail">
 		<a href="wifi-cho-ho-gia-dinh.php"><h1 class="heading-secondary u-margin-bottom-medium">Dịch Vụ Wifi Và Truyền Hình Viettel</h1></a>
 		<div class="wifi-detail__info">
-			<div class="wifi-detail__info--left">
-				<ul class="wifi-detail__info--list">
-					<li class="wifi-detail__info--list-text wifi-detail__info--list-text-1">	
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-connection"></use>
-						</svg>Internet Cáp Quang Tốc Độ Cao,Hàng Đầu Việt Nam
-					</li>
-					<li class="wifi-detail__info--list-text">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-play3"></use>
-						</svg>Lướt Web Siêu Nhanh,Coi Video Siêu Đã
+			<div class="center" style="display: flex; justify-content: center; align-items: center;">
+				<div class="wifi-detail__info--left">
+					<ul class="wifi-detail__info--list">
+						<li class="wifi-detail__info--list-text wifi-detail__info--list-text-1">	
+							<svg class="wifi-detail__info--list-icon">
+								<use xlink:href="img/sprite.svg#icon-connection"></use>
+							</svg>Internet Cáp Quang Tốc Độ Cao,Hàng Đầu Việt Nam
+						</li>
+						<li class="wifi-detail__info--list-text">
+							<svg class="wifi-detail__info--list-icon">
+								<use xlink:href="img/sprite.svg#icon-play3"></use>
+							</svg>Lướt Web Siêu Nhanh,Coi Video Siêu Đã
 
 
-					</li>
-					<li class="wifi-detail__info--list-text wifi-detail__info--list-text-2">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-display"></use>
-						</svg>Hơn 160 Kênh Truyền Hình Và Chùm Kênh Thể Thao K+
-					</li>
-					<li class="wifi-detail__info--list-text">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-rotate"></use>
-						</svg>Xem Và Tua Lại Các Chương Trình Truyền Hình
+						</li>
+						<li class="wifi-detail__info--list-text wifi-detail__info--list-text-2">
+							<svg class="wifi-detail__info--list-icon">
+								<use xlink:href="img/sprite.svg#icon-display"></use>
+							</svg>Hơn 160 Kênh Truyền Hình Và Chùm Kênh Thể Thao K+
+						</li>
+						<li class="wifi-detail__info--list-text">
+							<svg class="wifi-detail__info--list-icon">
+								<use xlink:href="img/sprite.svg#icon-rotate"></use>
+							</svg>Xem Và Tua Lại Các Chương Trình Truyền Hình
 
-					</li>
-					<li class="wifi-detail__info--list-text wifi-detail__info--list-text-3">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-hd"></use>
-						</svg>Chất Lượng Hình Ảnh HD Độ Nét Cao
+						</li>
+						<li class="wifi-detail__info--list-text wifi-detail__info--list-text-3">
+							<svg class="wifi-detail__info--list-icon">
+								<use xlink:href="img/sprite.svg#icon-hd"></use>
+							</svg>Chất Lượng Hình Ảnh HD Độ Nét Cao
 
-					</li>
-					<li class="wifi-detail__info--list-text">
-						<svg class="wifi-detail__info--list-icon">
-							<use xlink:href="img/sprite.svg#icon-wrench"></use>
-						</svg>Hỗ trợ nhanh chóng cho khách hàng Kiên Giang 24/7
-					</li>
-				</ul>
-
+						</li>
+						<li class="wifi-detail__info--list-text">
+							<svg class="wifi-detail__info--list-icon">
+								<use xlink:href="img/sprite.svg#icon-wrench"></use>
+							</svg>Hỗ trợ nhanh chóng cho khách hàng Kiên Giang 24/7
+						</li>
+					</ul>
+				</div>
+				<div class="wifi-detail__info--right">
+					<img src="img/wifi-router.png" alt="" class="wifi-detail__info--right-img">
+				</div>
 			</div>
-			<div class="wifi-detail__info--right">
-					<!-- <div class="card">
-
-						<div class="card__side card__side--front">
-							<img src="img/banner2-front.jpg" alt="Wifi Viettel" class="card__side--banner">
-						</div>
-						<div class="card__side card__side--back">
-							<img src="img/banner2-back.jpg" alt="Wifi Viettel" class="card__side--banner">
-						</div>	
-					</div> -->
-				<img src="img/wifi-router.png" alt="" class="wifi-detail__info--right-img">
-			</div>
-			
-			<a href="wifi-cho-ho-gia-dinh.php" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
+		</div>
+		<a href="wifi-cho-ho-gia-dinh.php" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
 		</section>
 		<section class="cardSkew">
 			<div class="cardSkew__container">

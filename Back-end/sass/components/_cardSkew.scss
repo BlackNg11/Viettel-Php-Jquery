@@ -7,6 +7,12 @@
 	overflow: hidden;
 	box-sizing: border-box;
 
+	@include respond(phone) {
+        overflow:auto
+    }
+
+
+
 	&__container {
 		position: relative;
 		width: 1050px;
@@ -15,6 +21,13 @@
 		justify-content: space-between;
 		transition: 0.5s;
 		transform: skewY(-10deg);
+
+		@include respond(phone) {
+	        padding-top: 200px;
+	        position: relative;
+	        left: 15%;   
+	        top:80%;
+    	}
 	}
 
 	&__card {
@@ -23,6 +36,12 @@
 		height: 400px;
 		background: #fff;
 		transition: 0.5s;
+
+		@include respond(phone) {
+	        width: 80%;
+        	margin-bottom: 50px; 
+        	padding-bottom: 40px
+    	}
 
 		&:before {
 			content: '';
@@ -53,6 +72,10 @@
 
 		&:hover {
 			transform: translateY(-40px);
+
+			@include respond(phone) {
+	        	transform: translateY(-25px);
+    		}
 		}
 
 		&__imgBx {
@@ -63,7 +86,11 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			flex-direction: column;
+			flex-direction: column;	
+
+			@include respond(phone) {
+	        	width: 100%;
+    		}
 
 			& img {
 				max-width: 100px;
@@ -75,6 +102,10 @@
 				margin-top: 10px;
 				font-size: 2.5rem;
 				font-weight: 700;
+
+				@include respond(phone) {
+	        		font-size: 3.5rem;
+    			}
 			}
 		}
 
@@ -86,7 +117,11 @@
 			padding: 20px;
 			color: #777;
 			text-align: center;
-			background: #fff;
+			background: #fff;	
+
+			@include respond(phone) {
+	        	font-size: 2.3rem;
+    		}
 
 			&:before {
 				content: '';

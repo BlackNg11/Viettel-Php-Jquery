@@ -16,7 +16,7 @@
         grid-template-rows: repeat(15, 5vw);
     }
 
-     @include respond(smaill-phone) {
+    @include respond(smaill-phone) {
         grid-template-rows: repeat(15, 20vw);
         grid-template-columns: repeat(5, 7.8vh);
         font-size: 1.8rem;

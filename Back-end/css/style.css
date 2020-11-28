@@ -842,6 +842,9 @@ body {
   background-image: radial-gradient(#2CC2AF, #298ACC);
   overflow: hidden;
   box-sizing: border-box; }
+  @media only screen and (max-width: 37.5em) {
+    .cardSkew {
+      overflow: auto; } }
   .cardSkew__container {
     position: relative;
     width: 1050px;
@@ -850,12 +853,23 @@ body {
     justify-content: space-between;
     transition: 0.5s;
     transform: skewY(-10deg); }
+    @media only screen and (max-width: 37.5em) {
+      .cardSkew__container {
+        padding-top: 200px;
+        position: relative;
+        left: 15%;
+        top: 80%; } }
   .cardSkew__card {
     position: relative;
     width: 300px;
     height: 400px;
     background: #fff;
     transition: 0.5s; }
+    @media only screen and (max-width: 37.5em) {
+      .cardSkew__card {
+        width: 80%;
+        margin-bottom: 50px;
+        padding-bottom: 40px; } }
     .cardSkew__card:before {
       content: '';
       position: absolute;
@@ -881,6 +895,9 @@ body {
       transition: .5s; }
     .cardSkew__card:hover {
       transform: translateY(-40px); }
+      @media only screen and (max-width: 37.5em) {
+        .cardSkew__card:hover {
+          transform: translateY(-25px); } }
     .cardSkew__card__imgBx {
       position: relative;
       width: 300px;
@@ -890,6 +907,9 @@ body {
       justify-content: center;
       align-items: center;
       flex-direction: column; }
+      @media only screen and (max-width: 37.5em) {
+        .cardSkew__card__imgBx {
+          width: 100%; } }
       .cardSkew__card__imgBx img {
         max-width: 100px; }
       .cardSkew__card__imgBx h3 {
@@ -898,6 +918,9 @@ body {
         margin-top: 10px;
         font-size: 2.5rem;
         font-weight: 700; }
+        @media only screen and (max-width: 37.5em) {
+          .cardSkew__card__imgBx h3 {
+            font-size: 3.5rem; } }
     .cardSkew__card__content {
       position: relative;
       font-size: 1.6rem;
@@ -907,6 +930,9 @@ body {
       color: #777;
       text-align: center;
       background: #fff; }
+      @media only screen and (max-width: 37.5em) {
+        .cardSkew__card__content {
+          font-size: 2.3rem; } }
       .cardSkew__card__content:before {
         content: '';
         position: absolute;
