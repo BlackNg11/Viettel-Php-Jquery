@@ -13,8 +13,8 @@
 	<!-- <link rel="stylesheet" href="ow_/css/docs.theme.min.css"> -->
 
 	<!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="ow_/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="ow_/owlcarousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="ow_/owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="ow_/owlcarousel/assets/owl.theme.default.min.css">
 
 
 
@@ -25,61 +25,122 @@
 	<title>Những Gói Cước Trả Trước Viettel</title>
 </head>
 <body>
-<<<<<<< HEAD
+	<<<<<<< HEAD
 	<?php
-		include "view/navigation.php";
-		include "view/header.php";
+	include "view/navigation.php";
+	include "view/header.php";
 	?>
-		<section class="navigation-pc">
-			<ul class="navigation-pc-lists">
-				<a href="#" class="navigation-pc-lists--item "><li>Trang Chủ</li></a>
-				<a href="wifi-cho-ho-gia-dinh.php" class="navigation-pc-lists--item"><li>Internet-Truyền Hình</li></a>
-				<a href="dich-vu-tra-sau-viettel.php" class="navigation-pc-lists--item "><li>Dịch Vụ Di Động</li></a>
-				<a href="404.php" class="navigation-pc-lists--item"><li>Mua Sim</li></a>
-				<a href="404.php" class="navigation-pc-lists--item"><li>Mua Điện Thoại</li></a>
-				<a href="404.php" class="navigation-pc-lists--item"><li>Tin Khuyến Mãi</li></a>
-			</ul>
-		</section>
-=======
+	<section class="navigation-pc">
+		<ul class="navigation-pc-lists">
+			<a href="#" class="navigation-pc-lists--item "><li>Trang Chủ</li></a>
+			<a href="wifi-cho-ho-gia-dinh.php" class="navigation-pc-lists--item"><li>Internet-Truyền Hình</li></a>
+			<a href="dich-vu-tra-sau-viettel.php" class="navigation-pc-lists--item "><li>Dịch Vụ Di Động</li></a>
+			<a href="404.php" class="navigation-pc-lists--item"><li>Mua Sim</li></a>
+			<a href="404.php" class="navigation-pc-lists--item"><li>Mua Điện Thoại</li></a>
+			<a href="404.php" class="navigation-pc-lists--item"><li>Tin Khuyến Mãi</li></a>
+		</ul>
+	</section>
+
 	<?php 
 	include "view/navigation.php";
 	include "view/header.php";
-	 ?>
->>>>>>> 63ea4021ba84963b7a73b75ede48b0e280c3a435
-	<main class="error">
-		<div class="error--heading">
-			<h1>Trang đang được phát triển mong quý khách vui lòng quay lại sau</h1>
+	?>
+
+
+
+	<footer class="footer">
+		<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="footer__logo u-margin-bottom-medium">
+		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
+		<div class="footer__info">
+			<div class="footer__info__group footer__info--1">
+				<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
+			</div>
+			<div class="footer__info__group footer__info--2">
+				<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
+				<div class="footer-bot--1">
+					<a href="https://www.facebook.com/D%E1%BB%8Bch-V%E1%BB%A5-Viettel-Ki%C3%AAn-Giang-119868136598056">
+						<svg class="wifi-detail__info--list-icon">
+							<use xlink:href="img/sprite.svg#icon-facebook"></use>
+						</svg>
+					</a>
+					<a href="https://www.youtube.com/user/Viettelchannels">
+						<svg class="wifi-detail__info--list-icon">
+							<use xlink:href="img/sprite.svg#icon-youtube"></use>
+						</svg>
+					</a>
+
+					<a href="https://zalo.me/1814378069399742003"><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
+				</div>
+				
+			</div>
+			<div class="footer__info__group footer__info--3">
+				<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
+				<div class="footer-bot--2">
+					<svg class="header__contact-icon">
+						<use xlink:href="img/sprite.svg#icon-phone"></use>
+
+					</svg>
+				</a>
+				<a href="">
+					<svg class="wifi-detail__info--list-icon">
+						<use xlink:href="img/sprite.svg#icon-youtube"></use>
+					</svg>
+				</a>
+
+				<a href=""><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
+			</div>
+
 		</div>
-	</main>
+		<div class="footer__info__group footer__info--3">
+			<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
+			<div class="footer-bot--2">
+				<svg class="header__contact-icon">
+					<use xlink:href="img/sprite.svg#icon-phone"></use>
+				</svg>
+				<a href="tel:0383627790" class="header__contact-phone footer__contact-phone">0383.61.71.61</a>
+				<svg class="header__contact-icon">
+					<use xlink:href="img/sprite.svg#icon-phone"></use>
+				</svg>
+				<a href="tel:0383627790" class="header__contact-phone">1800.8098</a>
+			</div>
 
-	<?php include "view/footer.php"; ?>
-
-	<!-- javascript -->
- 	<!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-	<script>
-		window.fbAsyncInit = function() {
-			FB.init({
-				xfbml            : true,
-				version          : 'v9.0'
-			});
-		};
-
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-
-		<!-- Your Chat Plugin code -->
-		<div class="fb-customerchat"
-		attribution=setup_tool
-		page_id="119868136598056"
-		theme_color="#14AFB4"
-		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+		</div>
+		<div class="footer__info__group footer__info--3">
+			<h3 class="footer-heading">Địa Chỉ Công Ty</h3>
+			<svg class="header__contact-icon">
+				<use xlink:href="img/sprite.svg#icon-office"></use>
+			</svg>
+			<a href="#" class="header__contact-phone">654 Nguyễn Trung Trực, Vĩnh Lạc, Rạch Giá, tỉnh Kiên Giang</a>
+		</div>
 	</div>
+</footer>
+
+<!-- javascript -->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+	window.fbAsyncInit = function () {
+		FB.init({
+			xfbml: true,
+			version: 'v9.0'
+		});
+	};
+
+	(function (d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
+logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
+logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+</div>
+
 </body>
 </html>
