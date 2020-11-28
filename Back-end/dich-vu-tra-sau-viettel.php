@@ -6,7 +6,7 @@
 	<meta name="description"
 		content="Chi tiết trả sau Viettel 2020,hỗ trợ đăng kí nhanh gọn trong vòng 24h trong khu vực Kiên Giang">
 	<meta name="keywords"
-		content="Dịch vụ Viettel ở Kiên Giang Kiên Giang,viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
+	content="Dịch vụ Viettel ở Kiên Giang Kiên Giang,viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
 	<meta name="og">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="img/v-logo.png" rel="shortcut icon" type="image/x-icon" />
@@ -54,7 +54,7 @@
 			echo "query error" . mysqli_error($conn);
 		}
 	}
-?>
+	?>
 	<main class="main-phone">
 		<section class="phone-for">
 			<ul class="phone-for-lists">
@@ -73,106 +73,106 @@
 			<h1 class="heading-secondary phone-contact--head">Các gói trả sau Viettel</h1>
 			<div class="phone-contact__hotline">
 				<a href="#" class="phone-contact__hotline--blue">Hotline: <span
-						class="phone-contact__hotline--red">0383.61.71.61</span></a>
-				<p class="phone-contact__hotline--red">Để thuận tiện và tốt nhất cho quý khách,quý khách vui lòng liên
+					class="phone-contact__hotline--red">0383.61.71.61</span></a>
+					<p class="phone-contact__hotline--red">Để thuận tiện và tốt nhất cho quý khách,quý khách vui lòng liên
 					hệ qua message FB góc trái để hỗ trợ tốt nhất ạ</p>
-			</div>
+				</div>
 
-			<div class="phone-detail-table">
-				<div class="phone-detail-table--item phone-detail-table-1 font-table">
-					<p>Tên Gói</p>
-				</div>
-				<div class="phone-detail-table--item phone-detail-table-2 font-table">
-					<p>Cước Phí Trọn Gói/Tháng(VND)</p>
-				</div>
-				<div class="phone-detail-table--item phone-detail-table-3 font-table">
-					Miễn Phí Trọn Gói
-				</div>
-				<div class="phone-detail-table--item phone-detail-table-4 font-table">
-					<p>Thoại Nội Mạng(Phút)</p>
-				</div>
-				<div class="phone-detail-table--item phone-detail-table-5 font-table">
-					<p>Thoại Ngoại Mạng(phút)</p>
-				</div>
-				<div class="phone-detail-table--item phone-detail-table-6 font-table">Data 3G/4G Tốc Độ Cao</div>
+				<div class="phone-detail-table">
+					<div class="phone-detail-table--item phone-detail-table-1 font-table">
+						<p>Tên Gói</p>
+					</div>
+					<div class="phone-detail-table--item phone-detail-table-2 font-table">
+						<p>Cước Phí Trọn Gói/Tháng(VND)</p>
+					</div>
+					<div class="phone-detail-table--item phone-detail-table-3 font-table">
+						Miễn Phí Trọn Gói
+					</div>
+					<div class="phone-detail-table--item phone-detail-table-4 font-table">
+						<p>Thoại Nội Mạng(Phút)</p>
+					</div>
+					<div class="phone-detail-table--item phone-detail-table-5 font-table">
+						<p>Thoại Ngoại Mạng(phút)</p>
+					</div>
+					<div class="phone-detail-table--item phone-detail-table-6 font-table">Data 3G/4G Tốc Độ Cao</div>
 				<!-- <div class="phone-detail-table--item phone-detail-table-7 font-table">SMS Nội Mạng(Tin)</div>
-				<div class="phone-detail-table--item phone-detail-table-8 font-table">SMS Nội+Ngoại Mạng(Tin)</div> -->
+					<div class="phone-detail-table--item phone-detail-table-8 font-table">SMS Nội+Ngoại Mạng(Tin)</div> -->
 
-				<div class="phone-detail-table--item phone-detail-table-9">T100</div>
-				<div class="phone-detail-table--item phone-detail-table-10 color-table">B100</div>
-				<div class="phone-detail-table--item phone-detail-table-11 ">B150</div>
-				<div class="phone-detail-table--item phone-detail-table-12 color-table">B350</div>
-				<div class="phone-detail-table--item phone-detail-table-13">B400</div>
-				<div class="phone-detail-table--item phone-detail-table-14 color-table">B500</div>
-				<div class="phone-detail-table--item phone-detail-table-15">B700</div>
-				<div class="phone-detail-table--item phone-detail-table-16 color-table">B1000</div>
-				<div class="phone-detail-table--item phone-detail-table-17">B2000</div>
-				<div class="phone-detail-table--item phone-detail-table-18 color-table">V160N</div>
-				<div class="phone-detail-table--item phone-detail-table-19">V200N</div>
-				<div class="phone-detail-table--item phone-detail-table-20 color-table">V250N</div>
-				<div class="phone-detail-table--item phone-detail-table-21">V300N</div>
+					<div class="phone-detail-table--item phone-detail-table-9">T100</div>
+					<div class="phone-detail-table--item phone-detail-table-10 color-table">B100</div>
+					<div class="phone-detail-table--item phone-detail-table-11 ">B150</div>
+					<div class="phone-detail-table--item phone-detail-table-12 color-table">B350</div>
+					<div class="phone-detail-table--item phone-detail-table-13">B400</div>
+					<div class="phone-detail-table--item phone-detail-table-14 color-table">B500</div>
+					<div class="phone-detail-table--item phone-detail-table-15">B700</div>
+					<div class="phone-detail-table--item phone-detail-table-16 color-table">B1000</div>
+					<div class="phone-detail-table--item phone-detail-table-17">B2000</div>
+					<div class="phone-detail-table--item phone-detail-table-18 color-table">V160N</div>
+					<div class="phone-detail-table--item phone-detail-table-19">V200N</div>
+					<div class="phone-detail-table--item phone-detail-table-20 color-table">V250N</div>
+					<div class="phone-detail-table--item phone-detail-table-21">V300N</div>
 
-				<div class="phone-detail-table--item phone-detail-table-22">100.000</div>
-				<div class="phone-detail-table--item phone-detail-table-23 color-table">100.000</div>
-				<div class="phone-detail-table--item phone-detail-table-24">150.000</div>
-				<div class="phone-detail-table--item phone-detail-table-25 color-table">350.000</div>
-				<div class="phone-detail-table--item phone-detail-table-26">400.000</div>
-				<div class="phone-detail-table--item phone-detail-table-27 color-table">500.000</div>
-				<div class="phone-detail-table--item phone-detail-table-28">700.000</div>
-				<div class="phone-detail-table--item phone-detail-table-29 color-table">1.000.000</div>
-				<div class="phone-detail-table--item phone-detail-table-30">2.000.000</div>
-				<div class="phone-detail-table--item phone-detail-table-31 color-table">160.000</div>
-				<div class="phone-detail-table--item phone-detail-table-32">200.000</div>
-				<div class="phone-detail-table--item phone-detail-table-33 color-table">250.000</div>
-				<div class="phone-detail-table--item phone-detail-table-34">300.000</div>
+					<div class="phone-detail-table--item phone-detail-table-22">100.000</div>
+					<div class="phone-detail-table--item phone-detail-table-23 color-table">100.000</div>
+					<div class="phone-detail-table--item phone-detail-table-24">150.000</div>
+					<div class="phone-detail-table--item phone-detail-table-25 color-table">350.000</div>
+					<div class="phone-detail-table--item phone-detail-table-26">400.000</div>
+					<div class="phone-detail-table--item phone-detail-table-27 color-table">500.000</div>
+					<div class="phone-detail-table--item phone-detail-table-28">700.000</div>
+					<div class="phone-detail-table--item phone-detail-table-29 color-table">1.000.000</div>
+					<div class="phone-detail-table--item phone-detail-table-30">2.000.000</div>
+					<div class="phone-detail-table--item phone-detail-table-31 color-table">160.000</div>
+					<div class="phone-detail-table--item phone-detail-table-32">200.000</div>
+					<div class="phone-detail-table--item phone-detail-table-33 color-table">250.000</div>
+					<div class="phone-detail-table--item phone-detail-table-34">300.000</div>
 
-				<div class="phone-detail-table--item phone-detail-table-35">1.000</div>
-				<div class="phone-detail-table--item phone-detail-table-36 color-table">1.000</div>
-				<div class="phone-detail-table--item phone-detail-table-37">1.000</div>
-				<div class="phone-detail-table--item phone-detail-table-38 ">Miễn Phí 30p đầu tiền/cuộc</div>
-				<div class="phone-detail-table--item phone-detail-table-39">Miễn Phí 20p đầu tiền/cuộc</div>
-				<div class="phone-detail-table--item phone-detail-table-40 color-table">Miễn Phí 30p đầu tiền/cuộc</div>
-				<div class="phone-detail-table--item phone-detail-table-41">Miễn Phí 60p đầu tiền/cuộc</div>
+					<div class="phone-detail-table--item phone-detail-table-35">1.000</div>
+					<div class="phone-detail-table--item phone-detail-table-36 color-table">1.000</div>
+					<div class="phone-detail-table--item phone-detail-table-37">1.000</div>
+					<div class="phone-detail-table--item phone-detail-table-38 ">Miễn Phí 30p đầu tiền/cuộc</div>
+					<div class="phone-detail-table--item phone-detail-table-39">Miễn Phí 20p đầu tiền/cuộc</div>
+					<div class="phone-detail-table--item phone-detail-table-40 color-table">Miễn Phí 30p đầu tiền/cuộc</div>
+					<div class="phone-detail-table--item phone-detail-table-41">Miễn Phí 60p đầu tiền/cuộc</div>
 
-				<div class="phone-detail-table--item phone-detail-table-42">50</div>
-				<div class="phone-detail-table--item phone-detail-table-43 color-table">10</div>
-				<div class="phone-detail-table--item phone-detail-table-44">100</div>
-				<div class="phone-detail-table--item phone-detail-table-45 color-table">300</div>
-				<div class="phone-detail-table--item phone-detail-table-46">350</div>
-				<div class="phone-detail-table--item phone-detail-table-47 color-table">500</div>
-				<div class="phone-detail-table--item phone-detail-table-48">700</div>
-				<div class="phone-detail-table--item phone-detail-table-49 color-table">1000</div>
-				<div class="phone-detail-table--item phone-detail-table-50">2000</div>
-				<div class="phone-detail-table--item phone-detail-table-51 color-table">60</div>
-				<div class="phone-detail-table--item phone-detail-table-52">100</div>
-				<div class="phone-detail-table--item phone-detail-table-53 color-table">150</div>
-				<div class="phone-detail-table--item phone-detail-table-54">200</div>
+					<div class="phone-detail-table--item phone-detail-table-42">50</div>
+					<div class="phone-detail-table--item phone-detail-table-43 color-table">10</div>
+					<div class="phone-detail-table--item phone-detail-table-44">100</div>
+					<div class="phone-detail-table--item phone-detail-table-45 color-table">300</div>
+					<div class="phone-detail-table--item phone-detail-table-46">350</div>
+					<div class="phone-detail-table--item phone-detail-table-47 color-table">500</div>
+					<div class="phone-detail-table--item phone-detail-table-48">700</div>
+					<div class="phone-detail-table--item phone-detail-table-49 color-table">1000</div>
+					<div class="phone-detail-table--item phone-detail-table-50">2000</div>
+					<div class="phone-detail-table--item phone-detail-table-51 color-table">60</div>
+					<div class="phone-detail-table--item phone-detail-table-52">100</div>
+					<div class="phone-detail-table--item phone-detail-table-53 color-table">150</div>
+					<div class="phone-detail-table--item phone-detail-table-54">200</div>
 
-				<div class="phone-detail-table--item phone-detail-table-55"></div>
-				<div class="phone-detail-table--item phone-detail-table-56 color-table">2GB</div>
-				<div class="phone-detail-table--item phone-detail-table-57">4GB</div>
-				<div class="phone-detail-table--item phone-detail-table-58 color-table">12GB</div>
-				<div class="phone-detail-table--item phone-detail-table-59">15GB</div>
-				<div class="phone-detail-table--item phone-detail-table-60 color-table">30GB</div>
-				<div class="phone-detail-table--item phone-detail-table-61">30GB</div>
-				<div class="phone-detail-table--item phone-detail-table-62 color-table">30GB</div>
-				<div class="phone-detail-table--item phone-detail-table-63">60GB</div>
-				<div class="phone-detail-table--item phone-detail-table-64 color-table">
-					<p>1.5GB/ngày</p>
-					<p>(45GB/30 ngày)</p>
-				</div>
-				<div class="phone-detail-table--item phone-detail-table-65">
-					<p>2GB/ngày</p>
-					<p>(60GB/30 ngày)</p>
-				</div>
-				<div class="phone-detail-table--item phone-detail-table-66 color-table">
-					<p>3GB/ngày</p>
-					<p>(90GB/30 ngày)</p>
-				</div>
-				<div class="phone-detail-table--item phone-detail-table-67">
-					<p>4GB/ngày</p>
-					<p>(120GB/30 ngày)</p>
-				</div>
+					<div class="phone-detail-table--item phone-detail-table-55"></div>
+					<div class="phone-detail-table--item phone-detail-table-56 color-table">2GB</div>
+					<div class="phone-detail-table--item phone-detail-table-57">4GB</div>
+					<div class="phone-detail-table--item phone-detail-table-58 color-table">12GB</div>
+					<div class="phone-detail-table--item phone-detail-table-59">15GB</div>
+					<div class="phone-detail-table--item phone-detail-table-60 color-table">30GB</div>
+					<div class="phone-detail-table--item phone-detail-table-61">30GB</div>
+					<div class="phone-detail-table--item phone-detail-table-62 color-table">30GB</div>
+					<div class="phone-detail-table--item phone-detail-table-63">60GB</div>
+					<div class="phone-detail-table--item phone-detail-table-64 color-table">
+						<p>1.5GB/ngày</p>
+						<p>(45GB/30 ngày)</p>
+					</div>
+					<div class="phone-detail-table--item phone-detail-table-65">
+						<p>2GB/ngày</p>
+						<p>(60GB/30 ngày)</p>
+					</div>
+					<div class="phone-detail-table--item phone-detail-table-66 color-table">
+						<p>3GB/ngày</p>
+						<p>(90GB/30 ngày)</p>
+					</div>
+					<div class="phone-detail-table--item phone-detail-table-67">
+						<p>4GB/ngày</p>
+						<p>(120GB/30 ngày)</p>
+					</div>
 
 				<!-- <div class="phone-detail-table--item phone-detail-table-68"></div>
 				<div class="phone-detail-table--item phone-detail-table-69 color-table"></div>
@@ -204,7 +204,7 @@
 			</div>
 			<div class="phone-contact--btn">
 				<a href="#" class="btn-text-2 phone-contact--btn--1" id="scrollTo1"><span class="btn-text-2-span">Đăng
-						Ký</span></a>
+				Ký</span></a>
 			</div>
 
 			<div class="promotion-phone">
@@ -244,31 +244,31 @@
 				<p class="phone-contact--infomation--text">Điều mà nhiều người dùng quan tâm chính là cước gọi cả ngoại
 					mạng lẫn nội mạng của thuê bao trả sau sẽ rẻ hơn rất nhiều so với thuê bao trả trước. Theo thống kê
 					bạn sẽ tiết kiệm được khoảng từ 50 – 70% chi phí nếu dùng thuê bao trả sau.
-					Vd Gói cước tomato chi phí trả trước khá cao</p>
+				Vd Gói cước tomato chi phí trả trước khá cao</p>
 				<img src="img/gói-tomato.png" alt="Tomato Viettel" class="phone-contact--infomation--img">
 				<p class="phone-contact--infomation--text">Bởi vì một lý do rất đơn giản là gói cước trả trước có giá
 					niêm yết đắt hơn gói cước trả sau. Bạn còn ngần ngại gì mà không chuyển ngay thuê bao của mình sang
-					gói cước trả sau viettel mới nhất .</p>
+				gói cước trả sau viettel mới nhất .</p>
 
 				<h3 class="phone-contact--infomation--title">2.Hình thức thanh toán đa dạng</h3>
 				<p class="phone-contact--infomation--text">Không giống như thuê bao trả trước bạn phải nạp thẻ khi tài
 					khoản điện thoại hết tiền còn với thuê bao trả sau viettel bạn sẽ được thanh toán dưới nhiều hình
 					thức.Chẳng hạn thanh toán tại nhà, Internet banking,ủy nhiệm thu,dùng thẻ cào thanh toán,… khi đến
-					hạn.Như vậy sẽ rất tiện cho người dùng.</p>
+				hạn.Như vậy sẽ rất tiện cho người dùng.</p>
 
 				<h3 class="phone-contact--infomation--title">3.Nhiều ưu đãi khuyến mãi siêu hấp dẫn</h3>
 				<p class="phone-contact--infomation--text">Với những khách hàng sử dụng thuê bao trả sau viettel thường
-					sẽ được hưởng nhiều chính sách ưu đãi hấp dẫn hơn thuê bao trả trước.</p>
+				sẽ được hưởng nhiều chính sách ưu đãi hấp dẫn hơn thuê bao trả trước.</p>
 
 				<h3 class="phone-contact--infomation--title">4.Không bị gián đoạn cuộc gọi</h3>
 				<p class="phone-contact--infomation--text">Với những thuê bao trả trước khi hết tiền nó sẽ không nhắc
 					bạn. Vì thế nên bạn rất dễ gặp tình trạng đang gọi thì hết tiền. Để không bị gặp phải tình trạng này
-					bạn nên chuyển sang thuê bao trả sau để tiện trong việc liên hệ.</p>
+				bạn nên chuyển sang thuê bao trả sau để tiện trong việc liên hệ.</p>
 
 				<p class="phone-contact--infomation--text">Với những ưu điểm nổi bật nêu trên, chắc chắn sẽ khiến người
 					dùng quan tâm đến dịch vụ trả sau và lựa chọn nhanh cho mình gói cước phù hợp nhất. Tuyệt vời Hơn
 					thao tác chuyển đổi trả trước sang trả sau cực kỳ đơn giản tại nhà ngay trên này sẽ giúp hoàn tất
-					giao dịch chuyển sang dịch vụ trả sau đơn giản, nhanh chóng nhé.</p>
+				giao dịch chuyển sang dịch vụ trả sau đơn giản, nhanh chóng nhé.</p>
 			</div>
 		</section>
 		<section class="form-register">
@@ -319,9 +319,14 @@
 							<span>Địa Chỉ</span>
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
+<<<<<<< HEAD
 							<select name="dichvudangky" class="form-2__contact-form--input">
 								<option value="T100 - Trả Sau" selected class="form-2__contact-form--input-1">Gói T100
 								</option>
+=======
+							<select  name="dichvudangky" class="form-2__contact-form--input">
+								<option value="T100 - Trả Sau" selected class="form-2__contact-form--input-1">Gói T100</option>
+>>>>>>> 03bbdcdbdaca92ada6ecd918207e13e9ece22c3b
 								<option value="Gói B - Trả Sau" class="form-2__contact-form--input-1">Gói B</option>
 								<option value="Gói V - Trả Sau" class="form-2__contact-form--input-1">Gói V</option>
 							</select>
@@ -345,9 +350,126 @@
 		</section>
 
 	</main>
-	<?php 
-		include "view/footer.php"; 
-	?>
+	
+
+	<footer class="footer">
+		<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="footer__logo u-margin-bottom-medium">
+		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
+		<div class="footer__info">
+			<div class="footer__info__group footer__info--1">
+				<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
+			</div>
+			<div class="footer__info__group footer__info--2">
+				<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
+				<div class="footer-bot--1">
+					<a href="https://www.facebook.com/D%E1%BB%8Bch-V%E1%BB%A5-Viettel-Ki%C3%AAn-Giang-119868136598056">
+						<svg class="wifi-detail__info--list-icon">
+							<use xlink:href="img/sprite.svg#icon-facebook"></use>
+						</svg>
+					</a>
+					<a href="https://www.youtube.com/user/Viettelchannels">
+						<svg class="wifi-detail__info--list-icon">
+							<use xlink:href="img/sprite.svg#icon-youtube"></use>
+						</svg>
+					</a>
+
+					<a href="https://zalo.me/1814378069399742003"><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
+				</div>
+				
+			</div>
+			<div class="footer__info__group footer__info--3">
+				<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
+				<div class="footer-bot--2">
+					<svg class="header__contact-icon">
+						<use xlink:href="img/sprite.svg#icon-phone"></use>
+
+					</svg>
+				</a>
+				<a href="">
+					<svg class="wifi-detail__info--list-icon">
+						<use xlink:href="img/sprite.svg#icon-youtube"></use>
+					</svg>
+				</a>
+
+				<a href=""><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
+			</div>
+
+		</div>
+		<div class="footer__info__group footer__info--3">
+			<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
+			<div class="footer-bot--2">
+				<svg class="header__contact-icon">
+					<use xlink:href="img/sprite.svg#icon-phone"></use>
+				</svg>
+				<a href="tel:0383627790" class="header__contact-phone footer__contact-phone">0383.61.71.61</a>
+				<svg class="header__contact-icon">
+					<use xlink:href="img/sprite.svg#icon-phone"></use>
+				</svg>
+				<a href="tel:0383627790" class="header__contact-phone">1800.8098</a>
+			</div>
+
+		</div>
+		<div class="footer__info__group footer__info--3">
+			<h3 class="footer-heading">Địa Chỉ Công Ty</h3>
+			<svg class="header__contact-icon">
+				<use xlink:href="img/sprite.svg#icon-office"></use>
+			</svg>
+			<a href="#" class="header__contact-phone">654 Nguyễn Trung Trực, Vĩnh Lạc, Rạch Giá, tỉnh Kiên Giang</a>
+		</div>
+	</div>
+	</footer>
+
+		<!-- javascript -->
+		<script src="ow_/vendors/jquery.min.js"></script>
+		
+		<script>
+			
+
+			const inputs = document.querySelectorAll(".form-2__contact-form--input");
+
+			function focusFunc() {
+				let parent = this.parentNode;
+				parent.classList.add("focus");
+			}
+
+			function blurFunc() {
+				let parent = this.parentNode;
+				if (this.value == "") {
+					parent.classList.remove("focus");
+				}
+			}
+
+			inputs.forEach((input) => {
+				input.addEventListener("focus", focusFunc);
+				input.addEventListener("blur", blurFunc);
+			});
+		</script>
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function () {
+				FB.init({
+					xfbml: true,
+					version: 'v9.0'
+				});
+			};
+
+			(function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<!-- Your Chat Plugin code -->
+		<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
+		logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
+		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+		</div>
+		<script src="js/index.js"></script>
 </body>
 
 </html>

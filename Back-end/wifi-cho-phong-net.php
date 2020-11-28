@@ -54,7 +54,7 @@
 			echo "query error" . mysqli_error($conn);
 		}
 	}
-?>
+	?>
 	<main class="main-wifi">
 		<section class="wifi-for">
 			<ul class="wifi-for-lists">
@@ -266,7 +266,11 @@
 				</ul>
 			</div>
 
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> 03bbdcdbdaca92ada6ecd918207e13e9ece22c3b
 			<div class="wifi-contact__setting">
 				<p>Để quán Game, quán Net của bạn là sự lựa chọn lý tưởng của các gamer hay các bạn sinh viên có nhu cầu
 					học tập thì đường truyền cáp quang của bạn phải thực sự đáp ứng được nhu cầu của họ bằng sự hài lòng
@@ -283,6 +287,7 @@
 					class="wifi-contact__img--size">
 				<p class="wifi-contact__img--status-img">Ưu điểm của công nghệ FTTH mà Viettel sử dụng</p>
 			</div>
+<<<<<<< HEAD
 
 			<div class="wifi-contact--infomation">
 				<h3 class="wifi-contact--infomation--heading">Lắp đặt wifi cáp quang Viettel có gì đặc biệt?</h3>
@@ -307,6 +312,16 @@
 				<p class="wifi-contact--infomation--text">Viettel cung cấp các gói cước cáp quang giá rẻ cho khách hàng
 					đăng ký wifi cáp quang Viettel trong thời điểm này. Giá cước cáp quang giảm từ 26% đến 40% giá cước
 					so với giá niêm yết cùng nhiều chương trình khuyến mãi hấp dẫn khác như:</p>
+=======
+			
+			<div class="wifi-contact--infomation">
+				<h3 class="wifi-contact--infomation--heading">Lắp đặt  wifi cáp quang Viettel có gì đặc biệt?</h3>
+				<p class="wifi-contact--infomation--text">Với mong muốn mang lại chất lượng và dịch vụ tốt nhất dành cho khách hàng.Viettel đã và đang cố gắng xây dựng mạng lưới hạ tầng rộng khắp tại tất cả các khu vực nội ngoại thành và các tỉnh trên toàn quốc, đồng thời xây dựng mức giá đa dạng và phù hợp nhất tới tất cả các đối tượng khách hàng từ sinh viên , hộ gia đình tới các quán game và doanh nghiệp lớn…</p>
+				<p class="wifi-contact--infomation--text">Khi bạn Lắp Mạng Wifi Viettel trên 1 đường truyền nền công nghệ là Cáp Quang tốc độ rất cao và ổn định, tại sao bạn không lắp thêm các dịch vụ thiết yếu khác trên cùng 1 đường truyền mà vẫn không ảnh hưởng tới tốc độ truy cập internet đó để tiết kiệm chi phí lắp đặt và không làm ảnh hưởng tới mỹ quan của ngôi nhà bạn , đồng thời cước sẽ gộp hết 1 nhà cung cấp và chỉ cần thanh toán 1 lần duy nhất trong tháng là xong.</p>
+				<p class="wifi-contact--infomation--text">Với công nghệ truyền tải internet hiện đại nhất trên thế giới GPON, mạng cáp quang Viettel mang đến nhiều trải nghiệm thú vị cho khách hàng khi truy cập internet. Đầu tiên đó là việc truy cập internet nhanh chóng hơn gấp 200 lần so với cáp đồng tốc độ download/upload nhanh như nhau, phục vụ nhu cầu giải trí, học tập và công việc diễn ra thuận lợi, suôn sẻ.</p>
+				<p class="wifi-contact--infomation--text">Hiện nay, chỉ với giá gói 185.000đ/tháng khách hàng đã có thể lắp wifi Viettel khi sử dụng gói cước cáp quang dành cho gia đình. Ngoài ra, còn có thêm các gói cước phù hợp với quán game, tổ chức doanh nghiệp, khách hàng lựa chọn tùy theo nhu cầu sử dụng.</p>
+				<p class="wifi-contact--infomation--text">Viettel cung cấp các gói cước cáp quang giá rẻ cho khách hàng đăng ký wifi cáp quang Viettel trong thời điểm này. Giá cước cáp quang giảm từ 26% đến 40% giá cước so với giá niêm yết cùng nhiều chương trình khuyến mãi hấp dẫn khác như:</p>
+>>>>>>> 03bbdcdbdaca92ada6ecd918207e13e9ece22c3b
 				<ul class="wifi-contact--infomation--list">
 					<li>✓ Tặng modem wifi 4 cổng</li>
 					<li>✓ Miễn phí 100% phí lắp đặt mạng cáp quang Viettel khi khách hàng trả trước từ 3 tháng cước phí
@@ -367,9 +382,14 @@
 							<span>Địa Chỉ</span>
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
+<<<<<<< HEAD
 							<select name="dichvudangky" class="form-2__contact-form--input">
 								<option value="Gói SuperNet - Net" selected class="form-2__contact-form--input-1">Gói
 									SuperNet</option>
+=======
+							<select  name="dichvudangky" class="form-2__contact-form--input">
+								<option value="Gói SuperNet - Net" selected class="form-2__contact-form--input-1">Gói SuperNet</option>
+>>>>>>> 03bbdcdbdaca92ada6ecd918207e13e9ece22c3b
 								<option value="Gói Fat - Net" class="form-2__contact-form--input-1">Gói Fat</option>
 							</select>
 							<label for="">Gói Đăng Ký</label>
@@ -392,9 +412,151 @@
 		</section>
 	</main>
 
+<<<<<<< HEAD
 	<?php 
 		include "view/footer.php";
 	?>
+=======
+	
+
+	<footer class="footer">
+		<img src="img/vietteltext-logo.png" alt="Viettel-logo-2" class="footer__logo u-margin-bottom-medium">
+		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
+		<div class="footer__info">
+			<div class="footer__info__group footer__info--1">
+				<a class="footer-heading" href="index.php">Đăng Kí Dịch Vụ</a>
+			</div>
+			<div class="footer__info__group footer__info--2">
+				<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
+				<div class="footer-bot--1">
+					<a href="https://www.facebook.com/D%E1%BB%8Bch-V%E1%BB%A5-Viettel-Ki%C3%AAn-Giang-119868136598056">
+						<svg class="wifi-detail__info--list-icon">
+							<use xlink:href="img/sprite.svg#icon-facebook"></use>
+						</svg>
+					</a>
+					<a href="https://www.youtube.com/user/Viettelchannels">
+						<svg class="wifi-detail__info--list-icon">
+							<use xlink:href="img/sprite.svg#icon-youtube"></use>
+						</svg>
+					</a>
+
+					<a href="https://zalo.me/1814378069399742003"><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
+				</div>
+				
+			</div>
+			<div class="footer__info__group footer__info--3">
+				<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
+				<div class="footer-bot--2">
+					<svg class="header__contact-icon">
+						<use xlink:href="img/sprite.svg#icon-phone"></use>
+
+					</svg>
+				</a>
+				<a href="">
+					<svg class="wifi-detail__info--list-icon">
+						<use xlink:href="img/sprite.svg#icon-youtube"></use>
+					</svg>
+				</a>
+
+				<a href=""><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
+			</div>
+
+		</div>
+		<div class="footer__info__group footer__info--3">
+			<h3 class="footer-heading">Liên Hệ Qua Điện Thoại</h3>
+			<div class="footer-bot--2">
+				<svg class="header__contact-icon">
+					<use xlink:href="img/sprite.svg#icon-phone"></use>
+				</svg>
+				<a href="tel:0383627790" class="header__contact-phone footer__contact-phone">0383.61.71.61</a>
+				<svg class="header__contact-icon">
+					<use xlink:href="img/sprite.svg#icon-phone"></use>
+				</svg>
+				<a href="tel:0383627790" class="header__contact-phone">1800.8098</a>
+			</div>
+
+		</div>
+		<div class="footer__info__group footer__info--3">
+			<h3 class="footer-heading">Địa Chỉ Công Ty</h3>
+			<svg class="header__contact-icon">
+				<use xlink:href="img/sprite.svg#icon-office"></use>
+			</svg>
+			<a href="#" class="header__contact-phone">654 Nguyễn Trung Trực, Vĩnh Lạc, Rạch Giá, tỉnh Kiên Giang</a>
+		</div>
+	</div>
+</footer>
+
+	<!-- javascript -->
+	<script src="ow_/vendors/jquery.min.js"></script>
+	<script src="ow_/owlcarousel/owl.carousel.js"></script>
+	<script>
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 20,
+			nav: true,
+			autoHeight: true,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			autoplayHoverPause: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 1
+				},
+				1000: {
+					items: 3
+				}
+			}
+		})
+
+		const inputs = document.querySelectorAll(".form-2__contact-form--input");
+
+		function focusFunc() {
+			let parent = this.parentNode;
+			parent.classList.add("focus");
+		}
+
+		function blurFunc() {
+			let parent = this.parentNode;
+			if (this.value == "") {
+				parent.classList.remove("focus");
+			}
+		}
+
+		inputs.forEach((input) => {
+			input.addEventListener("focus", focusFunc);
+			input.addEventListener("blur", blurFunc);
+		});
+	</script>
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				xfbml: true,
+				version: 'v9.0'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<!-- Your Chat Plugin code -->
+	<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
+	logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
+	logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+	</div>
+	<script src="js/index.js"></script>
+>>>>>>> 03bbdcdbdaca92ada6ecd918207e13e9ece22c3b
 
 </body>
 
