@@ -23,7 +23,7 @@
             $content = $this->fm->validation($content);
 
     
-            $usersdtname = mysqli_real_escape_string($this->db->link, $sdt);
+            $sdt = mysqli_real_escape_string($this->db->link, $sdt);
             $diachi = mysqli_real_escape_string($this->db->link, $diachi);
             $dichvudangky = mysqli_real_escape_string($this->db->link, $dichvudangky);
             $content = mysqli_real_escape_string($this->db->link, $content);
@@ -44,10 +44,9 @@
         }
         public function delete_khachhangthuong($id){
             $query = "DELETE FROM khachhang_thuong WHERE id = '$id' ";
-            $result = $this->db->select($query);
+            $result = $this->db->delete($query);
             return $result;
         }
     }
-    
  
 ?>

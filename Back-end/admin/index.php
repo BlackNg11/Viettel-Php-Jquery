@@ -2,6 +2,7 @@
 <html lang="en">
 <?php
     include "view/header.php";
+
 ?>
 <body id="page-top">
 
