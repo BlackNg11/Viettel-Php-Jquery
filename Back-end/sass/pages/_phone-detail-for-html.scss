@@ -4,7 +4,7 @@
 // }
 
 .phone-for {
-	padding: 2rem;
+	padding: 1rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -24,6 +24,7 @@
 		&--item {
 			&:link,
     		&:visited {
+    			padding: 1rem;
     			font-size: 1.7rem;
 				font-weight: 700;
 				line-height: 1.5rem;

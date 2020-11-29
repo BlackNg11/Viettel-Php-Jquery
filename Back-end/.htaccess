@@ -5,6 +5,6 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 RewriteRule ^trang-chu index.php
 
 
-<FilesMatch ".(jpg|jpeg|png|gif|js|css|swf)$">
+<FilesMatch ".(jpg|jpeg|png|gif|swf)$">
 Header set Cache-Control "max-age=604800, public"
 </FilesMatch>

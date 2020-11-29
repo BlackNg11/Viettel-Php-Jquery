@@ -41,7 +41,7 @@ if (slide1) {
 //Navigation
 let navigationButton = document.querySelector(".navigation__button");
 let elementRemove = document.querySelector(".viettel-infomation");
-let elementRemove2 = document.querySelector(".form-2");
+let elementRemove2 = document.querySelector(".form-register");
 let isRemove = true;
 let isRemove2 = true;
 

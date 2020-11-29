@@ -2390,7 +2390,7 @@ body {
       grid-template-rows: repeat(7, 10vw); } }
 
 .wifi-for {
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2404,6 +2404,7 @@ body {
       .wifi-for-lists {
         width: 100%; } }
     .wifi-for-lists--item:link, .wifi-for-lists--item:visited {
+      padding: 1rem;
       font-size: 1.7rem;
       font-weight: 700;
       line-height: 1.5rem;
@@ -2557,7 +2558,7 @@ body {
   color: #14AFB4 !important; }
 
 .phone-for {
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2571,6 +2572,7 @@ body {
       .phone-for-lists {
         width: 100%; } }
     .phone-for-lists--item:link, .phone-for-lists--item:visited {
+      padding: 1rem;
       font-size: 1.7rem;
       font-weight: 700;
       line-height: 1.5rem;

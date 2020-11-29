@@ -483,7 +483,7 @@
 	logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
 	logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
 </div>
-<script src="js/trang-chu.js"></script>
+<script src="js/index.js"></script>
 <script src="js/ajax.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
