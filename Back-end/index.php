@@ -85,8 +85,8 @@ include "view/header.php";
 								<option value="Lắp Wifi">Lắp đặt wifi</option>
 								<option value="Lắp Truyền Hình">Lắp đặt truyền hình</option>
 								<option value="Lắp Wifi + Truyền Hình">Lắp đặt wifi + truyền hình</option>
-								<option value="Trả Sau">Đăng ký trả sau</option>
-								<option value="V120">Đăng ký gói 4G và gọi điện</option>
+								<option value="Gói Trả Sau">Đăng ký trả sau</option>
+								<option value="Gói Trả Trước">Đăng ký gói 4G và gọi điện</option>
 							</select>
 						</div>
 

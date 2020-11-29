@@ -7,7 +7,7 @@ include "config.php";
 		$resInfo = isset($_POST['res-info']) ? mysqli_real_escape_string($conn,$_POST['res-info']) : null;
 		
 		// create sql
-		$sql = "INSERT INTO `khachhang_thuong`(sdt,diachi,dichvudangky,content,status) VALUES ('$sdt', '$contact', '$resInfo','$content',1)";
+		$sql = "INSERT INTO khachhang_thuong (sdt,diachi,dichvudangky,content,status) VALUES ('$sdt', '$contact', '$resInfo','$content',1)";
 		
 		//save to db
 		if (mysqli_query($conn,$sql)) {
