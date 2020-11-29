@@ -44,7 +44,7 @@
 					<use xlink:href="img/sprite.svg#icon-phone1"></use>
 				</svg>
 				<div style="font-size: 2rem;color: #162A23">Hotline:</div>
-				<a href="tel:0383627790" class="header__contact-phone"
+				<a href="tel:0383617161" class="header__contact-phone"
 					style="margin-top: 0;font-weight: 700;font-size: 2rem;margin-left: 2px">0383.61.71.61</a>
 			</div>
 

@@ -329,7 +329,7 @@
 					</div>
 					<div class="item card-wifi">
 						<span class="card-wifi--best">Phổ Biến Nhất</span>
-						<h2 class="card-wifi-heading card-wifi-heading--2">
+						<h2 class="card-wifi-heading card-wifi-heading--2" >
 							SUPERNET5
 							<span>200 MBPS</span>
 						</h2>

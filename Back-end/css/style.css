@@ -957,6 +957,9 @@ body {
     .cardSkew__card:nth-child(3) {
       z-index: 1; }
 
+.cardSkew__card:hover .cardSkew__card__imgBx h3 {
+  color: #0059A7; }
+
 .gallary {
   position: relative; }
   .gallary__info {

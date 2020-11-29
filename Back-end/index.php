@@ -194,11 +194,11 @@ include "view/header.php";
 			<div class="cardSkew__container">
 				<div class="cardSkew__card">
 					<div class="cardSkew__card__imgBx">
-						<img src="img/wifi.svg" alt="Wifi Viettel">
+						<img src="img/wifi.svg" alt="Wifi Cáp Quang Viettel">
 						<h3>Dịch Vụ Wifi</h3>
 					</div>		
 					<div class="cardSkew__card__content">
-						<p>Chất lượng đường truyền wifi Viettel cao và ổn định và xây dựng mức giá đa dạng và phù hợp nhất tới tất cả các đối tượng khách hàng từ sinh viên , hộ gia đình tới các quán game và doanh nghiệp lớn</p>
+						<p>Chất lượng đường truyền wifi Viettel cao và ổn định.Xây dựng mức giá đa dạng và phù hợp nhất tới tất cả các đối tượng khách hàng từ sinh viên,hộ gia đình tới các quán game và doanh nghiệp lớn</p>
 					</div>
 				</div>
 					<div class="cardSkew__card">

@@ -2,7 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Chi tiết các gói trả trước Viettel">
+	<meta name="description" content="Dịch Vụ Viettel Ở Kiên Giang">
 	<meta name="keywords" content="Viettel Kiên Giang, Viettel Telecom,my viettel, Khuyến mại nạp thẻ, data, 3G, 4G, 5G, nạp tiền điện thoại, sim số đẹp, gói cước di động, cửa hàng Viettel, tổng đài Viettel, chăm sóc khách hàng Viettel">
 	<meta name="og"> 
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,7 +22,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Những Gói Cước Trả Trước Viettel</title>
+	<title>Trang Không Tồn Tại</title>
 </head>
 <body>
 	<?php
@@ -41,7 +41,7 @@
 	</section>
 	<section class="error">
 		<div class="error--heading">
-			Trang đang được phát triển mong quý khách vui lòng quay lại sau .-.
+			Trang đang được phát triển mong quý khách vui lòng quay lại sau :((
 		</div>
 	</section>
 

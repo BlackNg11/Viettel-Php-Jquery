@@ -72,11 +72,12 @@
 
 		&:hover {
 			transform: translateY(-40px);
-
 			@include respond(phone) {
 	        	transform: translateY(-25px);
     		}
 		}
+
+		
 
 		&__imgBx {
 			position: relative;
@@ -158,8 +159,8 @@
 		}
 	}
 
-
-
-
 }
 
+.cardSkew__card:hover .cardSkew__card__imgBx h3 {
+	color: #0059A7;
+}
