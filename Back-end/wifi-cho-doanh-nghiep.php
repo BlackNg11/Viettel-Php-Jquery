@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Lắp đặt mạng Viettel cho doanh nghiệp</title>
+	<title>Đăng kí mạng Viettel cho doanh nghiệp</title>
 </head>
 
 <body>
@@ -54,7 +54,7 @@
 			</ul>
 		</section>
 		<section class="wifi-contact">
-			<h1 class="heading-secondary wifi-contact--head">Bảng giá dịch vụ wifi Viettel doanh nghiệp</h1>
+			<h1 class="heading-secondary wifi-contact--head">Bảng giá wifi Viettel doanh nghiệp</h1>
 			<div class="wifi-contact__hotline">
 				<a href="#" class="wifi-contact__hotline--blue">Hotline: <span
 						class="wifi-contact__hotline--red">0383.61.71.61</span></a>
@@ -87,7 +87,7 @@
 							SUPERNET4
 							<span>100 MBPS</span>
 						</h2>
-						<span class="card-wifi--best">Phổ Biến Nhất</span>
+						
 						<div class="card-wifi-bottom">
 							<div class="card-wifi-bottom-prices">
 								<!-- <p class="card-wifi-bottom-percent">-26%</p> -->
@@ -105,6 +105,7 @@
 							SUPERNET5
 							<span>200 MBPS</span>
 						</h2>
+						<span class="card-wifi--best">Phổ Biến Nhất</span>
 						<div class="card-wifi-bottom">
 							<div class="card-wifi-bottom-prices">
 								<!-- <p class="card-wifi-bottom-percent">-26%</p> -->
@@ -130,7 +131,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho 20-30 thiết bị truy cập wifi</p>
+							<p class="card-wifi-bottom--text">Đường truyền từ nước ngoài được đảm bảo từ Viettel 1Mbps và đường truyền trong nước ổn định</p>
 						</div>
 						<a href="trang-chu" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
@@ -147,8 +148,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho 20-30 thiết bị truy cập wifi với mạng truy cập
-								nước ngoài tốt nhất</p>
+							<p class="card-wifi-bottom--text">Đường truyền từ nước ngoài được đảm bảo từ Viettel 2Mbps và đường truyền trong nước ổn định</p>
 
 						</div>
 						<a href="trang-chu" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
@@ -166,7 +166,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho 30-60 thiết bị truy cập wifi</p>
+							<p class="card-wifi-bottom--text">Đường truyền từ nước ngoài được đảm bảo từ Viettel 1.5Mbps và đường truyền trong nước ổn định</p>
 
 						</div>
 						<a href="trang-chu" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
@@ -184,8 +184,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho 30-60 thiết bị truy cập wifi với mạng truy cập
-								nước ngoài tốt nhất</p>
+							<p class="card-wifi-bottom--text">Đường truyền từ nước ngoài được đảm bảo từ Viettel 3Mbps và đường truyền trong nước ổn định</p>
 						</div>
 						<a href="trang-chu" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
@@ -202,7 +201,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho 60 thiết bị truy cập wifi trở lên</p>
+							<p class="card-wifi-bottom--text">Đường truyền từ nước ngoài được đảm bảo từ Viettel 2Mbps và đường truyền trong nước ổn định</p>
 						</div>
 						<a href="trang-chu" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
@@ -219,8 +218,7 @@
 									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 								</div>
 							</div>
-							<p class="card-wifi-bottom--text">Dành cho 60 thiết bị truy cập wifi trở lên với mạng truy
-								cập nước ngoài tốt nhất</p>
+							<p class="card-wifi-bottom--text">Đường truyền từ nước ngoài được đảm bảo từ Viettel 3Mbps và đường truyền trong nước ổn định</p>
 						</div>
 						<a href="trang-chu" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
 					</div>
@@ -342,13 +340,8 @@
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
 							<select  name="res-info" class="form-2__contact-form--input">
-								<option value="Gói V120 - Trả Trước" selected class="form-2__contact-form--input-1">Gói V120</option>
-								<option value="Gói V90U - Trả Trước" class="form-2__contact-form--input-1">Gói F90U</option>
-								<option value="Gói V120 - Trả Trước" class="form-2__contact-form--input-1">Gói V90X</option>
-								<option value="Gói ST - Trả Trước" class="form-2__contact-form--input-1">Gói ST</option>
-								<option value="Gói G70D - Trả Trước" class="form-2__contact-form--input-1">Gói G70D</option>
-								<option value="Gói XL90U - Trả Trước" class="form-2__contact-form--input-1">Gói XL90U</option>
-								<option value="Gói UMAX300 - Trả Trước" class="form-2__contact-form--input-1">Gói UMAX300</option>
+								<option value="SuperNet-Wifi-DN" class="form-2__contact-form--input-1">Gói SuperNet</option>
+								<option value="Fast-Wifi-DN" class="form-2__contact-form--input-1">Gói Fast</option>
 							</select>
 							<label for="">Gói Đăng Ký</label>
 							<span>Gói Đăng Ký</span>

@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -294,13 +294,9 @@
 						</div>
 						<div class="form-2__contact-form--input-container  focus">
 							<select  name="res-info" class="form-2__contact-form--input">
-								<option value="Gói V120 - Trả Trước" selected class="form-2__contact-form--input-1">Gói V120</option>
-								<option value="Gói V90U - Trả Trước" class="form-2__contact-form--input-1">Gói F90U</option>
-								<option value="Gói V120 - Trả Trước" class="form-2__contact-form--input-1">Gói V90X</option>
-								<option value="Gói ST - Trả Trước" class="form-2__contact-form--input-1">Gói ST</option>
-								<option value="Gói G70D - Trả Trước" class="form-2__contact-form--input-1">Gói G70D</option>
-								<option value="Gói XL90U - Trả Trước" class="form-2__contact-form--input-1">Gói XL90U</option>
-								<option value="Gói UMAX300 - Trả Trước" class="form-2__contact-form--input-1">Gói UMAX300</option>
+								<option value="Gói T - Trả Sau" class="form-2__contact-form--input-1">Gói T</option>
+								<option value="Gói B - Trả Sau" class="form-2__contact-form--input-1">Gói B</option>
+								<option value="Gói V - Trả Sau" class="form-2__contact-form--input-1">Gói V</option>
 							</select>
 							<label for="">Gói Đăng Ký</label>
 							<span>Gói Đăng Ký</span>

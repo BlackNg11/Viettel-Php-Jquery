@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Đăng kí lên mạng 4G với Viettel 2020</title>
+	<title>Đăng kí 3G,4G trong 1 tháng hoặc ngày của Viettel 2020</title>
 </head>
 
 <body>
@@ -179,16 +179,14 @@
 			<div class="phone-contact--infomation">
 				<h3 class="phone-contact--infomation--title">Sim trả trước Viettel là gì?</h3>
 
-				<p class="phone-contact--infomation--text">Sim trả trước Viettel nói một cách dễ hiểu là người dùng phải
-					trả các khoản tiền dịch vụ trước khi sử dụng. Tuy nhiên, thực tế là khi muốn sử dụng những dịch vụ
-					nghe gọi, SMS, nhạc chuông, nhạc chờ,... từ nhà mạng thì người dùng cần nạp một khoảng tiền nhất
+				<p class="phone-contact--infomation--text">Sim trả trước Viettel nói một cách dễ hiểu là người dùng phảitrả các khoản tiền dịch vụ trước khi sử dụng. Tuy nhiên, thực tế là khi muốn sử dụng những dịch vụ.nghe gọi, SMS, nhạc chuông, nhạc chờ,... từ nhà mạng thì người dùng cần nạp một khoảng tiền nhất
 					định vào tài khoản. Có thể là 10.000đ, 20.000đ, 50.0000đ,... để có thể duy trì sử dụng các dịch vụ
 					từ nhà mạng. Khi tài khoản hết tiền thì các nhà mạng sẽ ngừng cung cấp các dịch vụ này đến tài khoản
 				cho đến khi người dùng nạp lại tiền vào tài khoản của mình.</p>
-				<img src="img/phonePrice.jpg" alt="V120 Khuyễn Mãi Viettel"
+				<img src="img/phonePrice.jpg" alt="V120 Viettel"
 				class="phone-contact--infomation--img phone-contact--infomation--img--2">
 				<p class="phone-contact--infomation--text">Hiện nay, sim trả trước Viettel khá phổ biến trong cộng đồng
-					người dùng. Theo một cuộc khảo sát đến từ nhà mạng thì có hơn 90% khách hàng đã và đang sử dụng sim
+					người dùng. Theo một cuộc khảo sát đến từ nhà mạng thì có hơn 90% khách hàng đã và đang sử dụng sim 3G hoặc 4g
 				trả trước Viettel, còn lại chưa tới 10% người dùng sim trả sau Viettel.</p>
 
 				<h3 class="phone-contact--infomation--title">Có nên sử dụng sim trả trước Viettel không</h3>
@@ -204,9 +202,7 @@
 
 				<p class="phone-contact--infomation--text">Nhìn chung thì Viettel đã đưa đến cho người dùng rất nhiều
 					loại gói cước khác nhau để có thể mang lại sự hài lòng nhất cho khách hàng khi sử dụng dịch vụ từ
-					nhà mạng. Mỗi loại sim lại có một đặc điểm riêng, có thể loại này phù hợp với người này nhưng không
-					phù hợp với người kia. Tuy nhiên, chắc chắn rằng sim trả trước Viettel là một sự lựa chọn đáng để
-				người dùng lưu tâm khi sử dụng mạng Viettel.</p>
+					nhà mạng.Tuy nhiên, chắc chắn rằng trả trước Viettel là một sự lựa chọn đáng để người dùng lưu tâm khi sử dụng mạng Viettel với những gói lên mạng với giá hợp lí và nhiều khuyến mãi từ Viettel</p>
 			</div>
 		</section>
 		<section class="form-register">
@@ -225,12 +221,12 @@
 							<p>654 Nguyễn Trung Trực</p>
 						</div>
 						<div class="form-2__contact-info__information">
-							<img src="img/email.png" class="form-2__contact-info__icon" alt="email" />
+							<img src="img/email.png" class="form-2__contact-info__icon" alt="email Viettel" />
 							<p>blackng10.5.1997@gmail.com</p>
 						</div>
 						<div class="form-2__contact-info__information">
 							<img src="img/phone.png" class="form-2__contact-info__icon"
-							alt="hotline Viettel Kiên Giang" />
+							alt="Tổng Đài Viettel-Kiên Giang" />
 							<p>0383.61.71.61</p>
 						</div>
 					</div>

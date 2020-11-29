@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +28,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Hỗ Trợ Dịch Vụ Viettel Ở Kiên Giang</title>
+	<title>Đăng kí wifi Viettel ở Kiên Giang</title>
 </head>
 
 
@@ -135,7 +134,7 @@ include "view/header.php";
 		</div>
 	</section>
 	<section class="wifi-detail">
-		<a href="wifi-cho-ho-gia-dinh"><h1 class="heading-secondary u-margin-bottom-medium">Dịch Vụ Wifi Và Truyền Hình Viettel</h1></a>
+		<a href="wifi-cho-ho-gia-dinh"><h1 class="heading-secondary u-margin-bottom-medium">Wifi Và Truyền Hình Viettel</h1></a>
 		<div class="wifi-detail__info">
 				<div class="wifi-detail__info--left">
 					<ul class="wifi-detail__info--list">
@@ -207,7 +206,7 @@ include "view/header.php";
 						<h3>Dịch Vụ Di Động</h3>
 					</div>		
 					<div class="cardSkew__card__content">
-						<p>Viettel tặng nhiều gói khuyến mãi gọi thoại,lên mạng 4G dành cho khách hàng.Đăng kí trả sau tiết kiệm chi phí gọi điện 30%-50% với những mức giá hợp lí cho khách hàng </p>
+						<p>Viettel tặng nhiều gói khuyến mãi gọi thoại,lên mạng 4G dành cho khách hàng.Đăng kí trả sau Viettel tiết kiệm chi phí gọi điện 30%-50% với những mức giá hợp lí cho khách hàng </p>
 					</div>
 				</div>
 					<div class="cardSkew__card">
@@ -222,7 +221,7 @@ include "view/header.php";
 			</div>
 		</section>
 		<section class="phone-detail">
-			<a href="dich-vu-tra-sau-viettel"><h1 class="heading-secondary u-margin-bottom-medium">Dịch Vụ Trả Sau Và Trả Trước Viettel</h1></a>
+			<a href="dich-vu-tra-sau-viettel"><h1 class="heading-secondary u-margin-bottom-medium">Trả Sau Và Trả Trước Viettel</h1></a>
 			<div class="phone-detail__info">
 				<div class="phone-detail__info--left">
 					<div class="card">
@@ -277,8 +276,8 @@ include "view/header.php";
 		<section class="gallary">
 			<div class="gallary__info">
 				<h1 class="gallary__info--text">Hỗ Trợ Khách Hàng 24/7</h1>
-				<p class="gallary__info--textsmail">0383.61.71.61</h1>
-					<h1 class="gallary__info--textsmail">1800.1098</h1>
+				<p class="gallary__info--textsmail">Hotline:<span style="color: red">0383.61.71.61</span></h1>
+					<h1 class="gallary__info--textsmail">Tổng đài Viettel:<span style="color: red">1800.1098</span> </h1>
 				</div>
 				<figure class="gallary__item gallary__item--1">
 					<img src="img/Picture/1.jpg" alt="Viettel Picture 1" class="gallary__img">	
