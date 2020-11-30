@@ -90,10 +90,7 @@ function findTop(element) {
   return rec.top + window.scrollY;
 }
 
-// console.log(findTop(".btn-scroll--1"));
-console.log(findTop(".form-register"))
 
-let formRegister = findTop(".form-register");
 let btnClickToScrollPhone1 = document.querySelector('#scrollTo1');
 let btnClickToScrollPhone2 = document.querySelector('#scrollTo2');
 
@@ -104,10 +101,39 @@ let nodelistBtn3 = document.querySelectorAll('.btn-scroll--3');
 let btnClickToScrollWifi1 = Array.from(nodelistBtn1);
 let btnClickToScrollWifi2 = Array.from(nodelistBtn2);
 let btnClickToScrollWifi3 = Array.from(nodelistBtn3);
-// window.addEventListener('scroll', () => {
-// 	console.log(window.pageYOffset);
-// })
 
+let findWifi,findPhone;
+let wifiToScroll = document.querySelector('#wifiScroll');
+let phoneToScroll = document.querySelector('#phoneScroll');
+
+let formSetToScroll = document.querySelector('.form-register');
+if (formSetToScroll) {
+	var formRegister = findTop(".form-register");
+}
+
+let indexToScroll = document.querySelector('.wifi-detail');
+if (indexToScroll) {
+	findWifi = findTop(".wifi-detail");
+	findPhone = findTop(".phone-detail");
+}
+
+
+
+if (wifiToScroll) {
+	wifiToScroll.addEventListener("click", (e) => {
+		e.preventDefault();
+		window.scrollTo({top: findWifi, behavior: 'smooth'});
+
+	})
+}
+
+if (phoneToScroll) {
+	phoneToScroll.addEventListener("click", (e) => {
+		e.preventDefault();
+		window.scrollTo({top: findPhone, behavior: 'smooth'});
+
+	})
+}
 
 if (btnClickToScrollPhone1) {
 	btnClickToScrollPhone1.addEventListener("click", (e) => {
@@ -162,3 +188,15 @@ if (btnClickToScrollWifi3) {
 
 
 
+//Hide And Show
+let itemHide = $(".navigation");
+// let trangThai = "300px";
+itemHide.hide();
+
+window.addEventListener('scroll', () => {
+	if(window.pageYOffset > 50) {
+		itemHide.show("slow");
+	}else if (window.pageYOffset <= 50) {
+		itemHide.hide("slow");
+	}
+});

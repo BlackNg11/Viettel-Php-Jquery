@@ -25,7 +25,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Đăng kí mạng Viettel cho phòng net,cyber</title>
+	<title>Đăng kí mạng Viettel cho quán cafe,phòng net</title>
 </head>
 
 <body>
@@ -41,19 +41,19 @@
 					<li>Trang Chủ</li>
 				</a>
 				<a href="wifi-cho-ho-gia-dinh" class="wifi-for-lists--item">
-					<li>Hộ Gia Đình</li>
+					<li>Gia Đình</li>
 				</a>
 				<a href="#" class="wifi-for-lists--item active-navigation">
-					<li>Quán Net</li>
+					<li>Quán Net,Cafe</li>
 				</a>
-				<a href="wifi-cho-doanh-nghiep" class="wifi-for-lists--item">
+				<a href="404" class="wifi-for-lists--item">
 					<li>Doanh Nghiệp</li>
 				</a>
-				<!-- <a href="truyen-hinh-viettel" class="wifi-for-lists--item"><li>Truyền Hình</li></a> -->
+				
 			</ul>
 		</section>
 		<section class="wifi-contact">
-			<h1 class="heading-secondary wifi-contact--head">Bảng giá wifi Viettel cho phòng Net</h1>
+			<h1 class="heading-secondary wifi-contact--head">Bảng giá wifi Viettel cho phòng Net,Cafe</h1>
 			<div class="wifi-contact__hotline">
 				<a href="#" class="wifi-contact__hotline--blue">Hotline: <span
 					class="wifi-contact__hotline--red">0383.61.71.61</span></a>
@@ -73,11 +73,11 @@
 								<div class="card-wifi-bottom-prices">
 									<!-- <p class="card-wifi-bottom-percent">-26%</p> -->
 									<div class="card-wifi-bottom__sale">
-										<p class="card-wifi-bottom__sale--price">310.000đ/tháng</p>
+										<p class="card-wifi-bottom__sale--price">260.000đ/tháng</p>
 										<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 									</div>
 								</div>
-								<p class="card-wifi-bottom--text">Dành cho tiệm net từ 10-15 máy tinh</p>
+								<p class="card-wifi-bottom--text">Dành cho 10-15 thiết bị kết nối wifi</p>
 							</div>
 							<a href="#" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
 						</div>
@@ -91,11 +91,11 @@
 								<div class="card-wifi-bottom-prices">
 									<!-- <p class="card-wifi-bottom-percent">-26%</p> -->
 									<div class="card-wifi-bottom__sale">
-										<p class="card-wifi-bottom__sale--price">310.000đ/tháng</p>
+										<p class="card-wifi-bottom__sale--price">400.000đ/tháng</p>
 										<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 									</div>
 								</div>
-								<p class="card-wifi-bottom--text">Dành cho tiệm net từ 15-50 máy tinh</p>
+								<p class="card-wifi-bottom--text">Dành cho 15-50 thiết bị kết nối wifi</p>
 							</div>
 							<a href="#" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
 						</div>
@@ -112,7 +112,7 @@
 										<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 									</div>
 								</div>
-								<p class="card-wifi-bottom--text">Dành cho tiệm net nhiều tầng từ 10-20 máy tinh</p>
+								<p class="card-wifi-bottom--text">Dành cho quán có nhiều tầng 10-20 thiết bị kết nối wifi</p>
 							</div>
 							<a href="#" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
 						</div>
@@ -129,7 +129,7 @@
 										<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 									</div>
 								</div>
-								<p class="card-wifi-bottom--text">Dành cho tiệm net nhiều tầng từ 20-30 máy tinh</p>
+								<p class="card-wifi-bottom--text">Dành cho quán có nhiều tầng 20-30 thiết bị kết nối wifi</p>
 							</div>
 							<a href="#" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
 						</div>
@@ -147,7 +147,7 @@
 										<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 									</div>
 								</div>
-								<p class="card-wifi-bottom--text">Dành cho tiệm net nhiều tầng từ 30-100 máy tinh</p>
+								<p class="card-wifi-bottom--text">Dành cho quán có nhiều tầng 30-100 thiết bị kết nối wifi</p>
 							</div>
 							<a href="#" class="btn card-wifi-bottom--btn btn-scroll--2">Đăng Ký</a>
 						</div>
@@ -207,23 +207,20 @@
 						Đầu tiên đó là việc truy cập internet nhanh chóng hơn gấp 200 lần so với cáp đồng tốc độ
 						download/upload nhanh như nhau, phục vụ nhu cầu giải trí, học tập và công việc diễn ra thuận lợi,
 					suôn sẻ.</p>
-					<p class="wifi-contact--infomation--text">Hiện nay, chỉ với giá gói 185.000đ/tháng khách hàng đã có thể
-						lắp wifi Viettel khi sử dụng gói cước cáp quang dành cho gia đình. Ngoài ra, còn có thêm các gói
-					cước phù hợp với quán game, tổ chức doanh nghiệp, khách hàng lựa chọn tùy theo nhu cầu sử dụng.</p>
-					<p class="wifi-contact--infomation--text">Viettel cung cấp các gói cước cáp quang giá rẻ cho khách hàng
-						đăng ký wifi cáp quang Viettel trong thời điểm này. Giá cước cáp quang giảm từ 26% đến 40% giá cước
-					so với giá niêm yết cùng nhiều chương trình khuyến mãi hấp dẫn khác như:</p>
-
-					<ul class="wifi-contact--infomation--list">
+					<h3 class="wifi-contact--infomation--heading">Hãy dùng bộ thiết bị HomeWIFI Viettel</h3>
+					<div class="wifi-contact__img-2">
+						<img src="img/home.png" alt="Wifi và truyền hình Viettel" class="wifi-contact__img-2"
+						style="width: 100%">
+					</div>		
+					<p class="wifi-contact--infomation--text">Homewifi của Viettel là bộ thiết bị khuếch đại tín hiệu wifi, được kết nối với nhau một cách thống nhất và có khả năng phủ sóng wifi đến toàn bộ góc trong căn nhà, quán cafe.</p>
+					<p class="wifi-contact--infomation--text">Với thiết bị này, bạn sẽ khắc phục được những vấn đề của Wifi truyền thống (không phủ sóng đều, nhiễu sóng do vật cản, khả năng chịu tải không lớn,…) và có kết nối internet thông suốt, không giật lag.Bộ thiết bị Homewifi gồm 2 đến 3 thiết bị, mỗi thiết bị là 1 điểm phát sóng trong mạng lưới wifi.</p>
+					<!-- <ul class="wifi-contact--infomation--list">
 						<li>✓ Tặng modem wifi 4 cổng</li>
 						<li>✓ Miễn phí 100% phí lắp đặt mạng cáp quang Viettel khi khách hàng trả trước từ 3 tháng cước phí
 							trở lên, tặng từ 1-3 tháng sử dụng internet miễn phí khi đăng ký trả trước từ 6 tháng trở lên.
 						</li>
-					</ul>
-					<p class="wifi-contact--infomation--text">Dịch vụ lắp đặt mạng wifi Viettel hiện đại cùng phong cách làm
-						việc chuyên nghiệp sẽ mang đến sự hài lòng tuyệt đối cho khách hàng. Liên hệ tới số hotline
-						038.362.7790 hoặc 1800 8168 để được tư vấn miễn phí về dịch vụ cũng như để được nhận những ưu đãi
-					lớn nhất.</p>
+					</ul> -->
+					<p class="wifi-contact--infomation--text">Dịch vụ lắp đặt mạng wifi Viettel hiện đại cùng phong cách làm việc chuyên nghiệp sẽ mang đến sự hài lòng tuyệt đối cho khách hàng. Liên hệ tới số hotline 0383.61.71.61 hoặc 1800 8168 để được tư vấn miễn phí về dịch vụ cũng như để được nhận những ưu đãi lớn nhất.</p>
 				</div>
 			</section>
 			<section class="form-register">

@@ -1,6 +1,5 @@
 	<div class="navigation">
 		<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
 		<label for="navi-toggle" class="navigation__button">
 			<span class="navigation__icon">&nbsp;</span>
 		</label>
@@ -15,9 +14,9 @@
 				<li class="navigation__item"><a href="dich-vu-tra-sau-viettel"
 						class="navigation__link"><span>03</span>Dịch Vụ Di Động</a></li>
 				<li class="navigation__item"><a href="404" class="navigation__link"><span>04</span>Mua Sim</a></li>
-				<li class="navigation__item"><a href="404" class="navigation__link"><span>05</span>Mua Điện Thoại</a>
-				</li>
-				<li class="navigation__item"><a href="404" class="navigation__link"><span>06</span>Tin Khuyến Mãi</a>
+<!-- 				<li class="navigation__item"><a href="404" class="navigation__link"><span>05</span>Mua Điện Thoại</a>
+				</li> -->
+				<li class="navigation__item"><a href="404" class="navigation__link"><span>05</span>Tin Tức</a>
 				</li>
 			</ul>
 		</nav>

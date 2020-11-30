@@ -196,7 +196,7 @@
 			height: 45vh;
 
 			@include respond(phone) {
-				height: 65vh;
+				display: none;
 			}
 
 			&--2 {

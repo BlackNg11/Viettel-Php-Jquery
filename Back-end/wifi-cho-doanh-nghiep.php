@@ -42,7 +42,7 @@
 					<li>Trang Chủ</li>
 				</a>
 				<a href="wifi-cho-ho-gia-dinh" class="wifi-for-lists--item">
-					<li>Hộ Gia Đình</li>
+					<li>Gia Đình</li>
 				</a>
 				<a href="wifi-cho-phong-net" class="wifi-for-lists--item ">
 					<li>Quán Net</li>
@@ -65,59 +65,6 @@
 			<h3 class="wifi-contact--wifi">Wifi</h3>
 			<div class="wifi-contact--carousel">
 				<div class="owl-carousel owl-theme">
-					<div class="item card-wifi">
-						<h2 class="card-wifi-heading card-wifi-heading--2">
-							SUPERNET3
-							<span>80 MBPS</span>
-						</h2>
-						<div class="card-wifi-bottom">
-							<div class="card-wifi-bottom-prices">
-								<!-- <p class="card-wifi-bottom-percent">-26%</p> -->
-								<div class="card-wifi-bottom__sale">
-									<p class="card-wifi-bottom__sale--price">310.000đ/tháng</p>
-									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
-								</div>
-							</div>
-							<p class="card-wifi-bottom--text">Dành cho 6-8 người sử dụng wifi</p>
-						</div>
-						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
-					</div>
-					<div class="item card-wifi">
-						<h2 class="card-wifi-heading">
-							SUPERNET4
-							<span>100 MBPS</span>
-						</h2>
-						
-						<div class="card-wifi-bottom">
-							<div class="card-wifi-bottom-prices">
-								<!-- <p class="card-wifi-bottom-percent">-26%</p> -->
-								<div class="card-wifi-bottom__sale">
-									<p class="card-wifi-bottom__sale--price">350.000đ/tháng</p>
-									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
-								</div>
-							</div>
-							<p class="card-wifi-bottom--text">Dành cho 6-10 người sử dụng wifi</p>
-						</div>
-						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
-					</div>
-					<div class="item card-wifi">
-						<h2 class="card-wifi-heading card-wifi-heading--2">
-							SUPERNET5
-							<span>200 MBPS</span>
-						</h2>
-						<span class="card-wifi--best">Phổ Biến Nhất</span>
-						<div class="card-wifi-bottom">
-							<div class="card-wifi-bottom-prices">
-								<!-- <p class="card-wifi-bottom-percent">-26%</p> -->
-								<div class="card-wifi-bottom__sale">
-									<p class="card-wifi-bottom__sale--price">535.000đ/tháng</p>
-									<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
-								</div>
-							</div>
-							<p class="card-wifi-bottom--text">Dành cho 10-20 người sử dụng wifi</p>
-						</div>
-						<a href="#" class="btn card-wifi-bottom--btn btn-scroll--3">Đăng Ký</a>
-					</div>
 					<div class="item card-wifi">
 						<h2 class="card-wifi-heading">
 							FAST 60

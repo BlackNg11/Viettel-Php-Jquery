@@ -23,6 +23,10 @@
 		transform: translate(0%,-25%);
 	}
 
+	@include respond(iphone-X) {
+		transform: translateY(-20rem);
+	}
+
 	
 	&-btn {
 		@include respond(phone) {
