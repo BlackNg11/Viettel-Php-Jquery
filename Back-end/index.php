@@ -28,7 +28,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Lắp đặt wifi Viettel(Kiên Giang)</title>
+	<title>Viettel(Kiên Giang) - Lắp mạng cáp quang Viettel</title>
 </head>
 
 

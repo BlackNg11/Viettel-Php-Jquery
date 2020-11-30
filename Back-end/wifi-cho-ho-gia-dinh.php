@@ -589,6 +589,16 @@
 							trở lên, tặng từ 1-3 tháng sử dụng internet miễn phí khi đăng ký trả trước từ 6 tháng trở lên.
 						</li>
 					</ul> -->
+					
+					<p class="wifi-contact--infomation--text">Home Wifi Viettel được đánh giá với điểm 10 chất lượng khi mang đến những ưu điểm vượt trội như:</p>
+					<p class="wifi-contact--infomation--text">- Mở rộng vùng phủ sóng wifi trong nhà dễ dàng thông qua việc lắp đặt thiết bị home wifi Viettel ở nhiều vị trí khác nhau trong nhà.</p>
+					<p class="wifi-contact--infomation--text">- Trải nghiệm dịch vụ internet Viettel tốc độ cao không giới hạn từ chơi game, xem video HD/4K, video Call,… không hề bị gián đoạn.</p>
+					<p class="wifi-contact--infomation--text">- Dễ dàng thiết lập và quản lý từ điều khiển, tắt mở, chặn chia sẻ wifi ở nhiều vị trí trực tiếp bằng smartphone vô cùng tiện lợi.</p>
+					<p class="wifi-contact--infomation--text">- Không tốn thời gian để kết nối lại wifi mỗi khi ra ngoài hay di chuyển tới vị trí khác, bởi vì hệ thống Home Wifi được sử dụng chung một SSID.</p>
+					<p class="wifi-contact--infomation--text">- Thiết lập một căn hộ thông minh trong thời đại 4.0 khi có thể giúp mọi người điều khiển âm thanh, ánh sáng, rèm cửa, camera, điều hòa,… dễ dàng và tiện lợi.</p>
+					<p class="wifi-contact--infomation--text">- Thiết bị Home Wifi Viettel thiết kế hiện đại, gọn nhẹ, không cần đi dây, lắp đặt dễ dàng nên hoàn toàn không làm ảnh hưởng đến thẩm mỹ của căn hộ.</p>
+					<p class="wifi-contact--infomation--text">- Giá gói cước Home Wifi khá đa dạng, với nhiều mức giá khác nhau nên hoàn toàn có thể đáp ứng mọi nhu cầu và tài chính của các hộ gia đình hoặc doanh nghiệp vừa và nhỏ.</p>
+					<p class="wifi-contact--infomation--text">- Thiết bị cung cấp tốc độ truyền tải dữ liệu khá cao, có thể lên tới 2000Mbps, cùng khả năng ưu tiên truy cập internet 5GHz để người dùng có thể tận hưởng mọi tiện ích không lo bị gián đoạn.</p>
 					<p class="wifi-contact--infomation--text">Dịch vụ lắp đặt mạng wifi Viettel hiện đại cùng phong cách làm việc chuyên nghiệp sẽ mang đến sự hài lòng tuyệt đối cho khách hàng. Liên hệ tới số hotline 0383.61.71.61 hoặc 1800 8168 để được tư vấn miễn phí về dịch vụ cũng như để được nhận những ưu đãi lớn nhất.</p>
 				</div>
 			</section>

@@ -118,7 +118,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Web Edit:</h6>
-                        <a class="collapse-item" href="#">Nhập Blog</a>
+                        <a class="collapse-item" href="blog.php">Nhập Blog</a>
                         <a class="collapse-item" href="#">Chỉnh Sửa Blog</a>
                         <a class="collapse-item" href="tables.php">Yêu Cầu Khách Hàng</a>
                         <!-- <div class="collapse-divider"></div>
