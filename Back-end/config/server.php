@@ -5,9 +5,10 @@ include "config.php";
 		$contact = isset($_POST['diachi']) ? mysqli_real_escape_string($conn,$_POST['diachi']) : null;
 		$content = isset($_POST['content']) ? mysqli_real_escape_string($conn,$_POST['content']) : null;
 		$resInfo = isset($_POST['res-info']) ? mysqli_real_escape_string($conn,$_POST['res-info']) : null;
-		
+		$d=strtotime("+6 Hours");
+		$time=date("Y-m-d H:i:s", $d);
 		// create sql
-		$sql = "INSERT INTO khachhang_thuong (sdt,diachi,dichvudangky,content,status) VALUES ('$sdt', '$contact', '$resInfo','$content',1)";
+		$sql = "INSERT INTO khachhang_thuong (sdt,diachi,dichvudangky,content,status,createddate) VALUES ('$sdt', '$contact', '$resInfo','$content',1,timestamp '$time' )";
 		
 		//save to db
 		if (mysqli_query($conn,$sql)) {
@@ -19,5 +20,9 @@ include "config.php";
 			echo "query error" . mysqli_error($conn);
 			
 		}
-
+?>		
+<?php
+$d=strtotime("+7 Hours");
+echo date("Y-m-d H:i:s", $d);
+?>
 

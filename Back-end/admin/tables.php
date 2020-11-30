@@ -64,6 +64,7 @@
                                             <th>Dịch Vụ</th>
                                             <th>Yêu Cầu</th>
                                             <th>Tình Trạng</th>
+                                            <th>Ngày Đăng Ký</th>
                                             <th>Thao Tác</th>
                                             
                                         </tr>
@@ -75,6 +76,7 @@
                                             <th>Dịch Vụ</th>
                                             <th>Yêu Cầu</th>
                                             <th>Tình Trạng</th>
+                                            <th>Ngày Đăng Ký</th>
                                             <th>Thao Tác</th>
                                         </tr>
                                     </tfoot>
@@ -99,6 +101,7 @@
 
                                                     ?>
                                                 </td>
+                                                <td><?php echo $result_allkhachhang['content'] ?></td>
                                             <td>
                                                 <form action = "" method="POST">
                                                     <button type="submit" class="btn btn-primary" name= "update">
@@ -123,11 +126,11 @@
                                                     </button>
                                                 </form>
                                                 <?php 
-                                                    if(isset($_POST["delete"])){
-                                                        $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
-                                                        header("Location:tables.php");
-                                                    }
-                                                ?>
+                                                        if(isset($_POST["delete"])){
+                                                            $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
+                                                            header("Location:tables.php");
+                                                        }
+                                                    ?>
                                             </td>
                                         </tr>
                                         <?php 
