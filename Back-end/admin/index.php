@@ -1,6 +1,8 @@
+<?php ob_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <?php
+
     include "view/header.php";
 
 ?>

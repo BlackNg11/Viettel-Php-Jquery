@@ -115,7 +115,7 @@
 
 					<div class="phoneT-detail-table--item phoneT-detail-table-55"
 					style="display: flex; flex-direction: column;">
-					<p>4GB/ngày</p>
+					<p>2GB/ngày</p>
 					<p>60GB/th</p>
 				</div>
 				<div class="phoneT-detail-table--item phoneT-detail-table-56 color-table">5GB</div>

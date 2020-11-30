@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     include"classes/khachhangthuong.php";
 ?>
 <?php
@@ -122,15 +123,10 @@
                                                     </button>
                                                 </form>
                                                 <?php 
-                                                        if(isset($_POST["delete"])){
-                                                            $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
-                                                            
-                                                        }
-                                                    ?>
-                                                <?php 
-                                                    // if(isset($_POST['delete'])){
-                                                    //     $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
-                                                    // }
+                                                    if(isset($_POST["delete"])){
+                                                        $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
+                                                        header("Location:tables.php");
+                                                    }
                                                 ?>
                                             </td>
                                         </tr>
