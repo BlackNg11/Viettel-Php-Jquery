@@ -22,7 +22,6 @@
             $username = $this->fm->validation($username);
             $password = $this->fm->validation($password);
 
-    
             $username = mysqli_real_escape_string($this->db->link, $username);
             $password = mysqli_real_escape_string($this->db->link, $password);
     
