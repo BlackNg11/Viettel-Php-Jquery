@@ -9,32 +9,32 @@ let isSlide3Active = false;
 
 if (slide1) {
 	setInterval(() => {
-	if (isSlide1Active) {
-		setTimeout(() => {
-			slide1.classList.remove('active');
-			slide2.classList.add('active');
-			isSlide1Active = false;
-			isSlide2Active = true;
+		if (isSlide1Active) {
+			setTimeout(() => {
+				slide1.classList.remove('active');
+				slide2.classList.add('active');
+				isSlide1Active = false;
+				isSlide2Active = true;
 
-		},1000)
-	} else if (isSlide2Active) {
-		setTimeout(() => {
-			slide2.classList.remove('active');
-			slide3.classList.add('active');
-			isSlide2Active = false;
-			isSlide3Active = true;
-		},1000)
+			},1000)
+		} else if (isSlide2Active) {
+			setTimeout(() => {
+				slide2.classList.remove('active');
+				slide3.classList.add('active');
+				isSlide2Active = false;
+				isSlide3Active = true;
+			},1000)
 
-	} else if (isSlide3Active) {
-		setTimeout(() => {
-			slide3.classList.remove('active');
-			slide1.classList.add('active');
-			isSlide3Active = false;
-			isSlide1Active = true;
-		},1000)	
-	}
+		} else if (isSlide3Active) {
+			setTimeout(() => {
+				slide3.classList.remove('active');
+				slide1.classList.add('active');
+				isSlide3Active = false;
+				isSlide1Active = true;
+			},1000)	
+		}
 
-},7000)
+	},7000)
 
 }
 
@@ -47,17 +47,17 @@ let isRemove2 = true;
 
 if (elementRemove) {
 	navigationButton.addEventListener('click', () => {
-	if (isRemove) {
-		elementRemove.classList.add("display-active");
-		isRemove = false;
-	} else {
-		setTimeout(() => {
-			elementRemove.classList.remove("display-active");
-			isRemove = true;
-		},500)	
-		
-	}
-});
+		if (isRemove) {
+			elementRemove.classList.add("display-active");
+			isRemove = false;
+		} else {
+			setTimeout(() => {
+				elementRemove.classList.remove("display-active");
+				isRemove = true;
+			},500)	
+			
+		}
+	});
 }
 
 
@@ -86,8 +86,8 @@ if (elementRemove2) {
 
 //Scroll
 function findTop(element) {
-  var rec = document.querySelector(element).getBoundingClientRect();
-  return rec.top + window.scrollY;
+	var rec = document.querySelector(element).getBoundingClientRect();
+	return rec.top + window.scrollY;
 }
 
 
@@ -155,7 +155,7 @@ if (btnClickToScrollWifi1) {
 
 		index.addEventListener("click", (e) => {
 			e.preventDefault();
-		
+			
 			window.scrollTo({top: formRegister, behavior: 'smooth'});
 
 		})
@@ -167,7 +167,7 @@ if (btnClickToScrollWifi2) {
 
 		index.addEventListener("click", (e) => {
 			e.preventDefault();
-		
+			
 			window.scrollTo({top: formRegister, behavior: 'smooth'});
 
 		})
@@ -179,7 +179,7 @@ if (btnClickToScrollWifi3) {
 
 		index.addEventListener("click", (e) => {
 			e.preventDefault();
-		
+			
 			window.scrollTo({top: formRegister, behavior: 'smooth'});
 
 		})
@@ -196,6 +196,7 @@ itemHide.hide();
 window.addEventListener('scroll', () => {
 	if(window.pageYOffset > 50) {
 		itemHide.show("slow");
+		
 	}else if (window.pageYOffset <= 50) {
 		itemHide.hide("slow");
 	}

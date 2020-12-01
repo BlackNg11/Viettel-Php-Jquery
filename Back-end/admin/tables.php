@@ -126,10 +126,10 @@
                                                     </button>
                                                 </form>
                                                 <?php 
-                                                        if(isset($_POST["delete"])){
-                                                            $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
-                                                            header("Location:tables.php");
-                                                        }
+                                                        // if(isset($_POST["delete"])){
+                                                        //     $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
+                                                        //     header("Location:tables.php");
+                                                        // }
                                                     ?>
                                             </td>
                                         </tr>

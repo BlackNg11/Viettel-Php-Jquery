@@ -8,10 +8,10 @@
 
 		<nav class="navigation__nav">
 			<ul class="navigation__list">
-				<li class="navigation__item"><a href="trang-chu" class="navigation__link"><span>01</span>Trang Chủ</a></li>
-				<li class="navigation__item"><a href="wifi-cho-ho-gia-dinh"
+				<li class="navigation__item"><a href="trang-chu.php" class="navigation__link"><span>01</span>Trang Chủ</a></li>
+				<li class="navigation__item"><a href="wifi-gia-dinh"
 						class="navigation__link"><span>02</span>Internet + Truyền Hình</a></li>
-				<li class="navigation__item"><a href="dich-vu-tra-sau-viettel"
+				<li class="navigation__item"><a href="tra-sau-viettel"
 						class="navigation__link"><span>03</span>Dịch Vụ Di Động</a></li>
 				<li class="navigation__item"><a href="404" class="navigation__link"><span>04</span>Mua Sim</a></li>
 <!-- 				<li class="navigation__item"><a href="404" class="navigation__link"><span>05</span>Mua Điện Thoại</a>

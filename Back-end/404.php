@@ -33,8 +33,8 @@
 	<section class="navigation-pc">
 		<ul class="navigation-pc-lists">
 			<a href="trang-chu" class="navigation-pc-lists--item"><li>Trang Chủ</li></a>
-			<a href="wifi-cho-ho-gia-dinh" class="navigation-pc-lists--item"><li>Internet-Truyền Hình</li></a>
-			<a href="dich-vu-tra-sau-viettel" class="navigation-pc-lists--item "><li>Dịch Vụ Di Động</li></a>
+			<a href="wifi-gia-dinh" class="navigation-pc-lists--item"><li>Internet-Truyền Hình</li></a>
+			<a href="tra-sau" class="navigation-pc-lists--item "><li>Dịch Vụ Di Động</li></a>
 			<a href="404" class="navigation-pc-lists--item"><li>Mua Sim</li></a>
 			<!-- <a href="404" class="navigation-pc-lists--item"><li>Mua Điện Thoại</li></a> -->
 			<a href="404" class="navigation-pc-lists--item"><li>Tin Khuyến Mãi</li></a>
