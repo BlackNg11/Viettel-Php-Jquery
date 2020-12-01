@@ -125,6 +125,7 @@
                                                     </button>
                                                 </form>
                                                 <?php 
+<<<<<<< HEAD
                                                     
                                                     if (isset($_GET['delete']) && $_GET['delete'] == $result_allkhachhang['id']){
                                                         $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
@@ -135,6 +136,13 @@
                                                         // header("Location:tables.php");
                                                     
                                                 ?>
+=======
+                                                        // if(isset($_POST["delete"])){
+                                                        //     $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
+                                                        //     header("Location:tables.php");
+                                                        // }
+                                                    ?>
+>>>>>>> 6dfcfce6dc8cb2977c1836614122809d7da88b2c
                                             </td>
                                         </tr>
                                         <?php 

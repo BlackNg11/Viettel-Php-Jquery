@@ -38,9 +38,9 @@ include "view/header.php";
                                 <label for="descripsion">Descripsion</label>
                                 <input type="text" class="form-control" id="descripsion">
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" id="editor">
                                 <label for="editor">Content</label>
-                                <input type="text" class="form-control" id="editor">
+                                <input type="text" class="form-control">
                             </div>
 
                             <button type="submit" class="btn btn-primary">Submit</button>

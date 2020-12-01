@@ -6,9 +6,9 @@
 
 	<!-- Google Meta Tags -->
 	<meta name="description"
-	content="Đầy đủ thông tin,chính xác mọi dịch vụ về wifi,di động của Viettel ở Kiên Giang.Đăng Ký để tận hưởng trải nghiệm lên mạng & dịch vụ chăm sóc khách hàng tốt nhất">
+	content="Lắp đặt wifi cáp quang Viettel,đăng kí trả sau cho khách hàng ở Kiên Giang.Đăng kí ViettelPay,nâng cấp sim 3G lên 4G,chuyển mạng giữ số miễn phí và tận nơi.Tin tức khuyến mãi Viettell mỗi tháng.Hỗ trợ và giải đáp thắc mắc khách hàng về Viettel 24/7 Kiên Giang">
 	<meta name="keywords"
-	content="Đầy đủ thông tin,chính xác mọi dịch vụ về wifi,di động của Viettel ở Kiên Giang.Đăng Ký để tận hưởng trải nghiệm lên mạng & dịch vụ chăm sóc khách hàng tốt nhất">
+	content="Lắp đặt wifi cáp quang Viettel,đăng kí trả sau cho khách hàng ở Kiên Giang.Đăng kí ViettelPay,nâng cấp sim 3G lên 4G tận nơi và miễn phí.Tin tức khuyến mãi Viettell mỗi tháng.Hỗ trợ và giải đáp thắc mắc khách hàng về Viettel 24/7 Kiên Giang">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<!-- Facebook Meta Tags -->
@@ -17,8 +17,7 @@
 	<meta property="og:title" content="Cổng thông tin hỗ trợ dịch vụ Di động, Internet, Truyền hình Viettel Rạch Giá">
 	<meta property="og:description"
 	content="Cung cấp thông tin đầy đủ,chính xác mọi dịch vụ về wifi,trả sau của Viettel ở Kiên Giang.Đăng Ký để tận hưởng trải nghiệm lên mạng & dịch vụ chăm sóc khách hàng tốt nhất">
-	<meta property="og:image" content="https://lorempixel.com/400/200/">
-
+	<meta property="og:image" content="img/Picture/7.jpg">
 	<link href="img/v-logo.png" rel="shortcut icon" type="image/x-icon" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;700&display=swap" rel="stylesheet">
@@ -28,12 +27,22 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
-	<title>Viettel(Kiên Giang) - Lắp mạng cáp quang Viettel</title>
-</head>
+	<title>Viettet - Lắp mạng cáp quang Viettel ở Kiên Giang</title>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155251028-1">
+	</script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-155251028-1');
+	</script>
+	</head>
 
 
 <?php
-
+// error_reporting(E_ALL ^ E_WARNING); 
 include "config/config.php";
 include "view/navigation.php";
 // include "view/header.php";
@@ -149,7 +158,7 @@ include "view/navigation.php";
 			</div>
 		</section>
 		<section class="wifi-detail">
-			<a href="wifi-cho-ho-gia-dinh"><h1 class="heading-secondary u-margin-bottom-medium">Wifi Và Truyền Hình Viettel</h1></a>
+			<a href="wifi-gia-dinh"><h1 class="heading-secondary u-margin-bottom-medium">Wifi Và Truyền Hình Viettel</h1></a>
 			<div class="wifi-detail__info">
 				<div class="wifi-detail__info--left">
 					<ul class="wifi-detail__info--list">
@@ -201,14 +210,14 @@ include "view/navigation.php";
 				</div>
 			</div>
 		</div>
-		<a href="wifi-cho-ho-gia-dinh" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
+		<a href="wifi-gia-dinh" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
 	</section>
 	<section class="cardSkew">
 		<div class="cardSkew__container">
 			<div class="cardSkew__card">
 				<div class="cardSkew__card__imgBx">
 					<img src="img/wifi.svg" alt="Wifi Cáp Quang Viettel">
-					<a href="wifi-cho-ho-gia-dinh" style="text-decoration: none;"><h3>Dịch Vụ Wifi</h3></a>
+					<a href="wifi-gia-dinh" style="text-decoration: none;"><h3>Dịch Vụ Wifi</h3></a>
 				</div>		
 				<div class="cardSkew__card__content">
 					<p>Chất lượng đường truyền wifi Viettel cao và ổn định.Xây dựng mức giá đa dạng và phù hợp nhất tới tất cả các đối tượng khách hàng từ sinh viên,hộ gia đình tới các quán game và doanh nghiệp lớn</p>
@@ -217,7 +226,7 @@ include "view/navigation.php";
 			<div class="cardSkew__card">
 				<div class="cardSkew__card__imgBx">
 					<img src="img/smartphone.svg" alt="Trả sau và trả trước Viettel">
-					<a href="dich-vu-tra-sau-viettel" style="text-decoration: none;"><h3>Dịch Vụ Di Động</h3></a>
+					<a href="tra-sau-viettel" style="text-decoration: none;"><h3>Dịch Vụ Di Động</h3></a>
 				</div>		
 				<div class="cardSkew__card__content">
 					<p>Viettel tặng nhiều gói khuyến mãi gọi thoại,lên mạng 4G dành cho khách hàng.Đăng kí trả sau Viettel tiết kiệm chi phí gọi điện 30%-50% với những mức giá hợp lí cho khách hàng </p>
@@ -237,7 +246,7 @@ include "view/navigation.php";
 		</div>
 	</section>
 	<section class="phone-detail">
-		<a href="dich-vu-tra-sau-viettel"><h1 class="heading-secondary u-margin-bottom-medium">Trả Sau Và Trả Trước Viettel</h1></a>
+		<a href="tra-sau-viettel"><h1 class="heading-secondary u-margin-bottom-medium">Trả Sau Và Trả Trước Viettel</h1></a>
 		<div class="phone-detail__info">
 			<div class="phone-detail__info--left">
 				<div class="card">
@@ -286,7 +295,7 @@ include "view/navigation.php";
 				</ul>
 			</div>
 		</div>
-		<a href="dich-vu-tra-sau-viettel" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
+		<a href="tra-sau-viettel" class="btn-text-2"><span class="btn-text-2-span">Tìm hiểu thêm &rarr;</span></a>
 	</section>
 	<section class="gallary">
 		<div class="gallary__info">
@@ -328,12 +337,12 @@ include "view/navigation.php";
 		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
 		<div class="footer__info">
 			<div class="footer__info__group footer__info--1">
-				<a class="footer-heading" href="index">Đăng Kí Dịch Vụ</a>
+				<a class="footer-heading" href="trang-chu.php">Đăng Kí Dịch Vụ</a>
 			</div>
 			<div class="footer__info__group footer__info--2">
 				<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>
 				<div class="footer-bot--1">
-					<a href="https://www.facebook.com/D%E1%BB%8Bch-V%E1%BB%A5-Viettel-Ki%C3%AAn-Giang-119868136598056">
+					<a href="https://www.facebook.com/viettelkiengiang">
 						<svg class="wifi-detail__info--list-icon">
 							<use xlink:href="img/sprite.svg#icon-facebook"></use>
 						</svg>
