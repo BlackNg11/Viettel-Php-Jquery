@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php
@@ -26,8 +29,8 @@ include "view/header.php";
                     <div class="row">
                         <div class="col">
                             <h1>Nhập Blog</h1>
-                          <form>
-                              <div class="form-group">
+                        <form>
+                            <div class="form-group">
                                 <label for="title">Title</label>
                                 <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
                             </div>

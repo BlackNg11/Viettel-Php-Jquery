@@ -101,9 +101,9 @@
 
                                                     ?>
                                                 </td>
-                                                <td><?php echo $result_allkhachhang['content'] ?></td>
+                                                <td><?php echo $result_allkhachhang['createddate'] ?></td>
                                             <td>
-                                                <form action = "" method="POST">
+                                                <form action = "tables.php" method="get">
                                                     <button type="submit" class="btn btn-primary" name= "update">
                                                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square"
                                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -114,8 +114,7 @@
                                                         </svg>
                                                     </button>
                                                 
-                                                
-                                                    <button type="submit" class="btn btn-primary" name="delete">
+                                                    <button type="submit" class="btn btn-primary" name="delete" value=<?php echo $result_allkhachhang['id'] ?>>
                                                         <svg width="1em" height="1em" viewBox="0 0 16 16"
                                                             class="bi bi-x-circle-fill" fill="currentColor"
                                                             xmlns="http://www.w3.org/2000/svg">
@@ -126,11 +125,16 @@
                                                     </button>
                                                 </form>
                                                 <?php 
-                                                        if(isset($_POST["delete"])){
-                                                            $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
-                                                            header("Location:tables.php");
-                                                        }
-                                                    ?>
+                                                    
+                                                    if (isset($_GET['delete']) && $_GET['delete'] == $result_allkhachhang['id']){
+                                                        $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
+                                                        header("Location:tables.php");
+                                                    }
+                                                    // if(isset($_POST['delete']) && $_POST['delete'] == $result_allkhachhang['id']){
+                                                        // $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
+                                                        // header("Location:tables.php");
+                                                    
+                                                ?>
                                             </td>
                                         </tr>
                                         <?php 
