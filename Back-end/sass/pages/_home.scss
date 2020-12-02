@@ -30,8 +30,13 @@
         padding: 5rem 5rem 68rem 5rem ;
     }
 
+     @include respond(tini-phone) {
+        padding: 5rem 5rem 45rem 5rem ;
+    }
+
+
     @include respond(smaill-phone) {
-        padding: 5rem 5rem 50rem 5rem ;
+        padding: 5rem 5rem 45rem 5rem ;
     }
 
     &--h1 {

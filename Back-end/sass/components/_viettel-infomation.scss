@@ -63,15 +63,19 @@
 			padding: 0 5rem;
 		}
 
-		@include respond(smaill-phone) {
+		@include respond(tini-phone) {
 			  position: absolute;
 			  top: 50%;
 			  left: 50%;
-			  transform: translate(-20%,-48%);
+			  transform: translate(0%,-48%);
 			  height: 35vh;
 			  width: 40rem;
 			  padding: 0;
 			  margin-right: 0rem;
+		}
+
+		@include respond(smaill-phone) {	  
+			  transform: translate(-20%,-48%);
 		}
 
 		
@@ -86,17 +90,16 @@
 
 		& p {
 			font-size: 1.6rem;
-			font-weight: .8rem;
 			color: black;
 
 			@include respond(phone) {
 			  	font-size: 2rem;
-				font-weight: .8rem;
+
 			}
 
 			@include respond(iphone-X) {
-			  	font-size: 2.5rem;
-				font-weight: .8rem;
+			  	font-size: 2rem;
+				
 			}
 		}
 	}
@@ -108,7 +111,7 @@
 			width: 50rem;
 			
 
-			@include respond(smaill-phone) {
+			@include respond(tini-phone) {
 				height: 35vh;
 				width: 40rem;		
 			}
@@ -125,6 +128,13 @@
 			  left: 50%;
 			  transform: translate(-45%,80%);
 			  width: 55rem;
+		}
+
+		@include respond(tini-phone) {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-13%,80%);
 		}
 
 		@include respond(smaill-phone) {

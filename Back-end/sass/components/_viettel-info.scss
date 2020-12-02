@@ -93,19 +93,12 @@
 		margin-top: -35rem;
 
 		@include respond(phone) {
-			// margin-top: -12rem;
-			// margin-right: 3rem;
-			// margin-left: 3rem;
-			// flex: 0 0 30%;
 			margin-top: 0;
 		}
 
 		@include respond(smaill-phone) {
-			// margin-top: 10rem;
-			// margin-right: 3rem;
-			// margin-left: 3rem;
-			// flex: 0 0 30%;
-			margin-top: 8rem;
+			margin-top: 5rem;
+			transform: translate(1rem,-2rem);
 		}
 	}
 
@@ -152,7 +145,7 @@
 
 
 .header__contact__line {
-	@include respond(smaill-phone) {
+	@include respond(tini-phone) {
 		display: none !important
 	}
 }
