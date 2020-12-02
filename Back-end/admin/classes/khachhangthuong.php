@@ -47,6 +47,12 @@
             $result = $this->db->delete($query);
             return $result;
         }
+        public function update_khachhangthuong($id,$status){
+            $query = "UPDATE khachhang_thuong
+            SET status = $status
+            WHERE id = $id";
+            $result = $this->db->update($query);
+            return $result;
+        }
     }
- 
 ?>

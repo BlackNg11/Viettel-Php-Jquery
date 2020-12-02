@@ -63,7 +63,8 @@
                                             <th>Địa Chỉ</th>
                                             <th>Dịch Vụ</th>
                                             <th>Yêu Cầu</th>
-                                            <th>Tình Trạng</th>
+                                            <th>Đã Tiếp Xúc</th>
+                                            <th>Người Liên Hệ</th>
                                             <th>Ngày Đăng Ký</th>
                                             <th>Thao Tác</th>
                                             
@@ -75,7 +76,8 @@
                                             <th>Địa Chỉ</th>
                                             <th>Dịch Vụ</th>
                                             <th>Yêu Cầu</th>
-                                            <th>Tình Trạng</th>
+                                            <th>Đã Tiếp Xúc</th>
+                                            <th>Người Liên Hệ</th>
                                             <th>Ngày Đăng Ký</th>
                                             <th>Thao Tác</th>
                                         </tr>
@@ -92,15 +94,24 @@
                                                 <td><?php echo $result_allkhachhang['diachi'] ?></td>
                                                 <td><?php echo $result_allkhachhang['dichvudangky'] ?></td>
                                                 <td><?php echo $result_allkhachhang['content'] ?></td>
-                                                <td><?php 
-                                                    if($result_allkhachhang['status'] == 1){
-                                                        echo "Chưa tiếp xúc"; 
-                                                    }else{
-                                                        echo "Đã tiếp xúc";
-                                                    } 
-
+                                                <td>
+                                                <div class="form-group form-check">
+                                                    <input type="checkbox" class="form-check-input" id="status" name="vehicle3" value="Boat" <?php $checked ?>
+                                                        <?php if ($result_allkhachhang['status'] == 0) { 
+                                                            echo "checked='checked'"; 
+                                                            } 
+                                                        ?>
+                                                    > 
+                                                </div>
+                                                <?php 
+                                                    // if($result_allkhachhang['status'] == 1){
+                                                    //     echo "Chưa tiếp xúc"; 
+                                                    // }else{
+                                                    //     echo "Đã tiếp xúc";
+                                                    // } 
                                                     ?>
                                                 </td>
+                                                <td><?php echo $result_allkhachhang['content'] ?></td>
                                                 <td><?php echo $result_allkhachhang['createddate'] ?></td>
                                             <td>
                                                 <form action = "tables.php" method="get">
@@ -125,7 +136,6 @@
                                                     </button>
                                                 </form>
                                                 <?php 
-<<<<<<< HEAD
                                                     
                                                     if (isset($_GET['delete']) && $_GET['delete'] == $result_allkhachhang['id']){
                                                         $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
@@ -136,13 +146,6 @@
                                                         // header("Location:tables.php");
                                                     
                                                 ?>
-=======
-                                                        // if(isset($_POST["delete"])){
-                                                        //     $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
-                                                        //     header("Location:tables.php");
-                                                        // }
-                                                    ?>
->>>>>>> 6dfcfce6dc8cb2977c1836614122809d7da88b2c
                                             </td>
                                         </tr>
                                         <?php 
