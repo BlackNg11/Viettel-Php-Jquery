@@ -101,6 +101,30 @@ body {
 
 }
 
+.heading-secondary--3 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    //background-image: linear-gradient(to right, $color-secondary-light-2, $color-secondary-dark-2);
+    //color: transparent;
+    //-webkit-background-clip: text; 
+    color: ghostwhite;
+    letter-spacing: .2rem;
+
+    
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(smail-phone) {
+        font-size: 2rem;
+    }
+
+
+
+}
+
 .heading-tertiary {
     font-size: $default-font-size;
     font-weight: 700;

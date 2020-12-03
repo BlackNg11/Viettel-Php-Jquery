@@ -78,7 +78,7 @@ include "view/navigation.php";
 			</div>
 			<div class="wifi__info">
 				<div class="wifi__info--left">
-					<h1 class="heading-secondary--2 wifi__info--heading">Hỗ Trợ Lắp Đặt Mạng Wifi Viettel Ở Kiên Giang</h1>
+					<h1 class="heading-secondary--3 wifi__info--heading">Hỗ Trợ Lắp Đặt Mạng Wifi Viettel Ở Kiên Giang</h1>
 					<!-- <p class="wifi__info--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nemo libero, ullam provident repellat expedita nihil beatae explicabo, maiores facere reprehenderit voluptatibus omnis sapiente nisi non tempore dicta saepe rem!</p> -->
 				</div>
 				<div class="wifi--info-right">
@@ -91,7 +91,7 @@ include "view/navigation.php";
 							</div>
 							<div class="form__group">
 								<label for="name" class="form__label">SĐT</label>
-								<input type="tel" name="sdt" class="form__input" autocomplete="off" placeholder="SĐT" id="name" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')">
+								<input type="tel" name="sdt" class="form__input" autocomplete="off" placeholder="SĐT" id="name" required pattern="(09|01|03|08|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')">
 
 							</div>
 
@@ -130,7 +130,7 @@ include "view/navigation.php";
 						<p>Môt trong những công ty hàng đầu về công nghệ lớn nhất Việt Nam,là nơi được nhiều khách hàng tin tưởng và gửi gắm niền tin lựa chọn dịch vụ wifi và điện thoại</p>
 					</div>
 					<div class="viettel-infomation__deep--right">
-						<img class="viettel-infomation__deep--right-img" src="img/Viettel-cong-ty.jpg" alt="Công Ty Viettel">
+						<img class="viettel-infomation__deep--right-img" src="img/img-s/Viettel-cong-ty-s.jpg" alt="Công Ty Viettel">
 
 					</div>
 				</div>
@@ -206,7 +206,7 @@ include "view/navigation.php";
 							<img src="img/banner2-back.jpg" alt="Wifi Viettel" class="card__side--banner">
 						</div>	
 					</div> -->
-					<img src="img/wifi-router.png" alt="" class="wifi-detail__info--right-img">
+					<img src="img/img-s/wifi-router-s.png" alt="" class="wifi-detail__info--right-img">
 				</div>
 			</div>
 		</div>
@@ -254,7 +254,7 @@ include "view/navigation.php";
 						<img src="img/banner1-front.jpg" alt="Phone Viettel" class="card__side--banner">
 					</div>
 					<div class="card__side card__side--back">
-						<img src="img/banner1-back.jpg" alt="Phone Viettel" class="card__side--banner">
+						<img src="img/img-s/banner1-back-s.jpg" alt="Phone Viettel" class="card__side--banner">
 					</div>	
 				</div>
 			</div>
@@ -307,19 +307,19 @@ include "view/navigation.php";
 				<img src="img/Picture/1.jpg" alt="Viettel Picture 1" class="gallary__img">	
 			</figure>
 			<figure class="gallary__item gallary__item--2">
-				<img src="img/Picture/2.jpg" alt="Viettel Picture 2" class="gallary__img">	
+				<img src="img/img-s/2-s.jpg" alt="Viettel Picture 2" class="gallary__img">	
 			</figure>
 			<figure class="gallary__item gallary__item--3">
 				<img src="img/Picture/3.jpg" alt="Viettel Picture 3" class="gallary__img">	
 			</figure>
 			<figure class="gallary__item gallary__item--4">
-				<img src="img/Picture/16.jpg" alt="Viettel Picture 4" class="gallary__img">	
+				<img src="img/img-s/16-s.jpg" alt="Viettel Picture 4" class="gallary__img">	
 			</figure>
 			<figure class="gallary__item gallary__item--5">
 				<img src="img/Picture/5.jpg" alt="Viettel Picture 5" class="gallary__img">	
 			</figure>
 			<figure class="gallary__item gallary__item--6">
-				<img src="img/Picture/15.jpg" alt="Viettel Picture 6" class="gallary__img">	
+				<img src="img/img-s/15-s.jpg" alt="Viettel Picture 6" class="gallary__img">	
 			</figure>
 			<figure class="gallary__item gallary__item--7">
 				<img src="img/Picture/7.jpg" alt="Viettel Picture 7" class="gallary__img">	

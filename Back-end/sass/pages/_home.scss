@@ -4,7 +4,7 @@
         to right bottom,
         rgba($color-secondary-light, 0.85),
         rgba($color-secondary-dark, 0.85)),
-    url(../img/Picture/7.jpg);
+    url(../img/img-s/viettel-tru-so-s.jpeg);
     background-size: cover;
     background-position: center;
 
@@ -30,13 +30,8 @@
         padding: 5rem 5rem 68rem 5rem ;
     }
 
-     @include respond(tini-phone) {
-        padding: 5rem 5rem 45rem 5rem ;
-    }
-
-
     @include respond(smaill-phone) {
-        padding: 5rem 5rem 45rem 5rem ;
+        padding: 5rem 5rem 50rem 5rem ;
     }
 
     &--h1 {

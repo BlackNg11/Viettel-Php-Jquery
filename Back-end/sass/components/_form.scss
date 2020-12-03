@@ -8,23 +8,16 @@
 	transform: translateY(-13rem);
 
 	@include respond(phone) {		
-		// transform: translateX(0rem) translateY(-5rem);
-		// width: 80%;
-		// height: 50%;
-		// padding: 0rem ;
-		transform: translate(15%,-15%);
+		 transform: translate(15%,-15%);
 		
 	}
 
 	@include respond(smaill-phone) {
-		// transform: translateX(-3rem) translateY(5rem);
-		// width: 60%;
-		// height: 60%;
 		transform: translate(0%,-25%);
 	}
 
 	@include respond(iphone-X) {
-		transform: translateY(-20rem);
+		transform: translateY(-16rem);
 	}
 
 	
@@ -56,79 +49,68 @@
 
 	&__input {
 		font-size: 1.5rem;
-		font-family: inherit;
-		color: inherit;
-		padding: 1.5rem 2rem;
-		border-radius: 5rem;
-		background-color: rbga($color-white, .5);
-		border: none;
-		border-bottom: 3px solid transparent;
-		display: block;
-		text-align: center;
-		transition: all .3s;
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 5rem;
+        background-color: rbga($color-white, .5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        display: block;
+        text-align: center;
+        transition: all .3s;
 
-		@include respond(phone) {
+        @include respond(phone) {
 			font-size: 2.1rem;
 			padding: 1.5rem 1.3rem;
 		}
 
-		@include respond(smaill-phone) {
+        @include respond(smaill-phone) {
 			font-size: 2rem;
 		}
 
-		&:focus {
-			outline: none;
-			box-shadow: 0 1rem 2rem rgba($color-black, .1);
-			border-bottom: 3px solid $color-primary;
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-primary;
 
-			&::-webkit-input-placeholder {
-				opacity: 0;
-			}
-		}
+            &::-webkit-input-placeholder {
+            	opacity: 0;
+        	}
+        }
 
-		&:focus:invalid {
-			border-bottom: 3px solid red;
-		}
+        &:focus:invalid {
+            border-bottom: 3px solid red;
+        }
 
-		&::-webkit-input-placeholder {
-			color: $color-grey-dark-2;
+        &::-webkit-input-placeholder {
+            color: $color-grey-dark-2;
 
-		}
+        }
 
-		&--select {
-			text-align-last:center; 
-			padding: 1.5rem 1rem;
-			border-radius: 1.2rem;
-			background: none repeat scroll 0 0 #FFFFFF;
-			border:0px;
-			outline:none;
-			box-shadow: 0 0 10px #E8E8E8 inset;
+        &--select {
+        	text-align-last:center; 
+        	padding: 1.5rem 1rem;
+        	border-radius: 1.2rem;
+        	background: none repeat scroll 0 0 #FFFFFF;
+        	border:0px;
+  			outline:none;
+  			box-shadow: 0 0 10px #E8E8E8 inset;
 
-			@include respond(phone) {
-				padding: 1.5rem 0rem;
-			}
-		}
-
-		&::-webkit-input-placeholder {
-			text-align-last:center; 
-			padding: 1.5rem 1rem;
-			border-radius: 1.2rem;
-			background: none repeat scroll 0 0 #FFFFFF;
-			border:0px;
-			outline:none;
-			box-shadow: 0 0 10px #E8E8E8 inset;
-
-		}
+        	@include respond(phone) {
+        		padding: 1.5rem 0rem;
+        	}
+        }
 	}
 
 	&__label {
 		color: $color-white;
-		font-size: 1.5rem;
-		font-weight: 700;
-		margin-left: 2rem;
-		margin-top: .7rem;
-		display: block;
-		transition: all .3s;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
 		
 		@include respond(phone) {
 			font-size: 2.5rem;
@@ -137,7 +119,7 @@
 		@include respond(smaill-phone) {
 			font-size: 2.5rem;
 		}
-	}
+    }
 
 	&-ui {
 		display: flex;

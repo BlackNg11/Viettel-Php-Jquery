@@ -234,7 +234,7 @@
 					mạng lẫn nội mạng của thuê bao trả sau sẽ rẻ hơn rất nhiều so với thuê bao trả trước. Theo thống kê
 					bạn sẽ tiết kiệm được khoảng từ 30% - 50% chi phí nếu dùng thuê bao trả sau.
 				Vd Gói cước tomato chi phí trả trước khá cao</p>
-				<img src="img/gói-tomato.png" alt="Tomato Viettel" class="phone-contact--infomation--img">
+				<img src="img/tomato.png" style="height: 100vh" alt="Tomato Viettel" class="phone-contact--infomation--img">
 				<p class="phone-contact--infomation--text">Bởi vì một lý do rất đơn giản là gói cước trả trước có giá
 					niêm yết đắt hơn gói cước trả sau. Bạn còn ngần ngại gì mà không chuyển ngay thuê bao của mình sang
 				gói cước trả sau viettel mới nhất .</p>
@@ -293,7 +293,7 @@
 					<form action="config/server" method="POST" id="test-form">
 						<h3 class="form-2__contact-form--title">Liên Hệ</h3>
 						<div class="form-2__contact-form--input-container">
-							<input type="tel" name="sdt"  autocomplete="nope" required pattern="(09|01|03|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')" class="form-2__contact-form--input" />
+							<input type="tel" name="sdt"  autocomplete="nope" required pattern="(09|01|03|08|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')" class="form-2__contact-form--input" />
 							<label for="">SĐT</label>
 							<span>SĐT</span>
 						</div>

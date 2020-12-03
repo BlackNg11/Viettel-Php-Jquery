@@ -93,13 +93,30 @@
 		margin-top: -35rem;
 
 		@include respond(phone) {
-			margin-top: 0;
+			// margin-top: -12rem;
+			// margin-right: 3rem;
+			// margin-left: 3rem;
+			// flex: 0 0 30%;
+			margin: 0;
 		}
 
 		@include respond(smaill-phone) {
-			margin-top: 5rem;
-			transform: translate(1rem,-2rem);
+			// margin-top: 10rem;
+			// margin-right: 3rem;
+			// margin-left: 3rem;
+			// flex: 0 0 30%;
+			margin: 0rem;
 		}
+
+		@include respond(iphone-X) {
+			// margin-top: 10rem;
+			// margin-right: 3rem;
+			// margin-left: 3rem;
+			// flex: 0 0 30%;
+			margin-top: 3.4rem;
+		}
+
+
 	}
 
 	&--right {
@@ -145,7 +162,7 @@
 
 
 .header__contact__line {
-	@include respond(tini-phone) {
-		display: none !important
+	@include respond(tiny-phone) {
+		display: none !important;
 	}
 }
