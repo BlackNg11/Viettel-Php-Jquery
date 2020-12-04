@@ -95,14 +95,19 @@
                                                 <td><?php echo $result_allkhachhang['dichvudangky'] ?></td>
                                                 <td><?php echo $result_allkhachhang['content'] ?></td>
                                                 <td>
-                                                <div class="form-group form-check">
-                                                    <input type="checkbox" class="form-check-input" id="status" name="vehicle3" value="Boat" <?php $checked ?>
-                                                        <?php if ($result_allkhachhang['status'] == 0) { 
-                                                            echo "checked='checked'"; 
-                                                            } 
-                                                        ?>
-                                                    > 
-                                                </div>
+                                                <form  action="" method="POST">    
+                                                    <div class="form-group form-check">
+                                                        <input type="checkbox" class="form-check-input" name="status" value=<?php echo $result_allkhachhang['id'] ?> 
+                                                            <?php if ($result_allkhachhang['status'] == 0) {
+                                                                    echo "checked='checked'"; 
+                                                                } else{
+                                                                    echo "";
+                                                                }
+                                                                
+                                                            ?>
+                                                        > 
+                                                    </div>
+                                                </form>
                                                 <?php 
                                                     // if($result_allkhachhang['status'] == 1){
                                                     //     echo "Chưa tiếp xúc"; 
@@ -111,11 +116,11 @@
                                                     // } 
                                                     ?>
                                                 </td>
-                                                <td><?php echo $result_allkhachhang['content'] ?></td>
+                                                <td><?php echo $result_allkhachhang['modifiedby'] ?></td>
                                                 <td><?php echo $result_allkhachhang['createddate'] ?></td>
                                             <td>
-                                                <form action = "tables.php" method="get">
-                                                    <button type="submit" class="btn btn-primary" name= "update">
+                                                <form action = "tables.php" method="GET">
+                                                    <button type="submit" class="btn btn-primary" name= "update" value=<?php echo $result_allkhachhang['id'] ?>>
                                                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square"
                                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                             <path
@@ -137,6 +142,11 @@
                                                 </form>
                                                 <?php 
                                                     
+                                                        if( isset($_GET['update']) && $_GET['update'] == $result_allkhachhang['id']){
+                                                            $khachhang->update_khachhangthuong($result_allkhachhang['id'],0,Session::get('username'));
+                                                            header("Location:tables.php"); 
+                                                        }
+                                                        
                                                     if (isset($_GET['delete']) && $_GET['delete'] == $result_allkhachhang['id']){
                                                         $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
                                                         header("Location:tables.php");
