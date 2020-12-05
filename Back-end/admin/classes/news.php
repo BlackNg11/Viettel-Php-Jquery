@@ -48,6 +48,18 @@
             $result = $this->db->select($query);
             return $result;
         }
+        public function show_1newskhuyenmai(){
+            $query = "SELECT * FROM news where status = 1 
+                    order by id limit 1";
+            $result = $this->db->select($query);
+            return $result;
+        }
+        public function show_2newskhuyenmai(){
+            $query = "SELECT * FROM news where status = 1 
+                    order by id limit 1,2";
+            $result = $this->db->select($query);
+            return $result;
+        }
         public function show_news(){
             $query = "SELECT * FROM news order by id";
             $result = $this->db->select($query);

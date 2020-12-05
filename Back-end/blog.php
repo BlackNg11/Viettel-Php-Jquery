@@ -102,27 +102,38 @@
 					</a>
 					
 				</div>
+				<?php
+				$get_newkhuyenmai = $news->show_1newskhuyenmai();
+				if($get_newkhuyenmai){
+					while($result_newkhuyenmai = $get_newkhuyenmai->fetch_assoc()){
+				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="img/tomato.png" alt=""></a>
+					<a href="#"><img src="<?php echo $result_newkhuyenmai['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#">Lorem ipsum dolor sit amet</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod commodi esse saepe unde voluptates eum molestiae autem ipsum soluta, enim dolorum voluptatem ad, dicta quo ipsam. Quam, praesentium error eos.</p>
+						<a href="#"><?php echo $result_newkhuyenmai['title'] ?></a>
+						<p><?php echo $result_newkhuyenmai['content'] ?></p>
 					</div>
 				</div>
+				<?php 
+					}
+				} 
+				?>
+				<?php
+				$get_newskhuyenmai = $news->show_2newskhuyenmai();
+				if($get_newskhuyenmai){
+					while($result_newskhuyenmai = $get_newskhuyenmai->fetch_assoc()){
+				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="img/tomato.png" alt=""></a>
+					<a href="#"><img src="<?php echo $result_newskhuyenmai['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#">Lorem ipsum dolor sit amet</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod commodi esse saepe unde voluptates eum molestiae autem ipsum soluta, enim dolorum voluptatem ad, dicta quo ipsam. Quam, praesentium error eos.</p>
+						<a href="#"><?php echo $result_newskhuyenmai['title'] ?></a>
+						<p><?php echo $result_newskhuyenmai['content'] ?></p>
 					</div>
 				</div>
-				<div class="mainBlog__news__recent--smaillNew mainBlog__news__recent--smaillNew-mb">
-					<a href="#"><img src="img/tomato.png" alt=""></a>
-					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#">Lorem ipsum dolor sit amet</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod commodi esse saepe unde voluptates eum molestiae autem ipsum soluta, enim dolorum voluptatem ad, dicta quo ipsam. Quam, praesentium error eos.</p>
-					</div>
-				</div>
+				<?php 
+					}
+				} 
+				?>
 			</div>
 		</section>
 	</main>

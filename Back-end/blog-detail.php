@@ -64,7 +64,7 @@
 					<div class="blogDetail__content--img">
 						<img src="<?php echo $result_new['thumbnail'] ?>" alt="">
 					</div>
-					<p><?php echo $result_new['title'] ?></p>
+					<p><?php echo $result_new['descripsion'] ?></p>
 					<div class="blogDetail__content--ct">
 						<p><?php echo $result_new['content'] ?></p>
 					</div>
