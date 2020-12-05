@@ -1,6 +1,6 @@
 <?php
     ob_start();
-    include"classes/khachhangthuong.php";
+    include "classes/khachhangthuong.php";
 ?>
 <?php
     $khachhang = new khachhangthuong();

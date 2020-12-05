@@ -1,3 +1,11 @@
+<?php
+    ob_start();
+    include "admin/classes/news.php";
+?>
+<?php
+    $news = new news();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,20 +55,25 @@
 				<h1>Hello everybody lalalaal</h1>
 				<p>NOVEMBER 24, 2020 BY ADMIN</p>
 			</div>
-			<div class="blogDetail__content">
-				<div class="blogDetail__content--img">
-					<img src="img/tomato.png" alt="">
+			<?php
+			$get_new = $news->show_1news();
+			if($get_new){
+				while($result_new = $get_new->fetch_assoc()){
+			?>  
+				<div class="blogDetail__content">
+					<div class="blogDetail__content--img">
+						<img src="<?php echo $result_new['thumbnail'] ?>" alt="">
+					</div>
+					<p><?php echo $result_new['descripsion'] ?></p>
+					<div class="blogDetail__content--ct">
+						<p><?php echo $result_new['content'] ?></p>
+					</div>
+					
 				</div>
-				<p>Descripsion</p>
-				<div class="blogDetail__content--ct">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eveniet earum culpa vitae, beatae sapiente laudantium autem accusamus sed rerum pariatur, iure doloremque non unde quibusdam quam! Dolore, facilis, hic.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quae vero beatae, maxime adipisci eos corporis quod architecto ullam consectetur ducimus, iste delectus, laudantium quia? Obcaecati, praesentium labore nostrum voluptatibus.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi perspiciatis rerum, possimus illum quos iste, necessitatibus ipsum, quibusdam, provident dignissimos veritatis perferendis est minus sequi voluptatum illo autem ab explicabo.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nostrum soluta itaque, vel aspernatur enim fuga. Nam soluta laboriosam non alias in dolorem optio, dolor aliquid natus, suscipit sint tempore.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia incidunt cupiditate reiciendis libero modi laboriosam omnis, praesentium ad. Ipsam fuga vitae, molestiae saepe a. Dolores voluptatum dolorem error odit quibusdam?</p>
-				</div>
-				
-			</div>
+			<?php 
+				}
+			} 
+			?>  
 			<div class="blogDetail__foot">
 				<div class="blogDetail__foot--releted">
 					<h3>Tin Liên Quan</h3>
@@ -70,16 +83,20 @@
 				</div>
 
 				<div class="blogDetail__foot__list">
+				<?php
+				$get_news = $news->show_2news();
+				if($get_news){
+					while($result_news = $get_news->fetch_assoc()){
+				?> 
 					<div class="blogDetail__foot__list--card">
-						<a href="#"><img src="img/tomato.png" alt=""></a>
-						<a href="#">Hello everybody lalalaal</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat earum, non a ipsa quia nobis</p>
+						<a href="#"><img src="<?php echo $result_news['thumbnail'] ?>" alt=""></a>
+						<a href="#"><?php echo $result_news['descripsion'] ?></a>
+						<p><?php echo $result_news['content'] ?></p>
 					</div>
-					<div class="blogDetail__foot__list--card">
-						<a href="#"><img src="img/tomato.png" alt=""></a>
-						<a href="#">Hello everybody lalalaal</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat earum, non a ipsa quia nobis</p>
-					</div>
+				<?php 
+					}
+				} 
+				?>
 				</div>
 				
 			</div>
