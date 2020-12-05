@@ -244,12 +244,12 @@
 						<li class="promotion__list--item">
 							<svg class="wifi-detail__info--list-icon">
 								<use xlink:href="img/sprite.svg#icon-tag"></use>
-							</svg>Đóng trước 12 tháng tặng 3 tháng cho khách hàng
+							</svg>Đóng trước 12 tháng tặng 2 tháng cho khách hàng
 						</li>
 						<li class="promotion__list--item">
 							<svg class="wifi-detail__info--list-icon">
 								<use xlink:href="img/sprite.svg#icon-tag"></use>
-							</svg>Đóng trước 18 tháng tặng 5 tháng cho khách hàng
+							</svg>Đóng trước 18 tháng tặng 3 tháng cho khách hàng
 						</li>
 					</ul>
 				</div>
@@ -405,12 +405,12 @@
 						<li class="promotion__list--item">
 							<svg class="wifi-detail__info--list-icon">
 								<use xlink:href="img/sprite.svg#icon-tag"></use>
-							</svg>Đóng trước 12 tháng tặng 3 tháng cho khách hàng
+							</svg>Đóng trước 12 tháng tặng 2 tháng cho khách hàng
 						</li>
 						<li class="promotion__list--item">
 							<svg class="wifi-detail__info--list-icon">
 								<use xlink:href="img/sprite.svg#icon-tag"></use>
-							</svg>Đóng trước 18 tháng tặng 5 tháng cho khách hàng
+							</svg>Đóng trước 18 tháng tặng 3 tháng cho khách hàng
 						</li>
 					</ul>
 				</div>
@@ -553,12 +553,12 @@
 						<li class="promotion__list--item">
 							<svg class="wifi-detail__info--list-icon">
 								<use xlink:href="img/sprite.svg#icon-tag"></use>
-							</svg>Đóng trước 12 tháng tặng 3 tháng cho khách hàng
+							</svg>Đóng trước 12 tháng tặng 2 tháng cho khách hàng
 						</li>
 						<li class="promotion__list--item">
 							<svg class="wifi-detail__info--list-icon">
 								<use xlink:href="img/sprite.svg#icon-tag"></use>
-							</svg>Đóng trước 18 tháng tặng 5 tháng cho khách hàng
+							</svg>Đóng trước 18 tháng tặng 3 tháng cho khách hàng
 						</li>
 					</ul>
 				</div>
