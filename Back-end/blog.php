@@ -1,3 +1,11 @@
+<?php
+    ob_start();
+    include "admin/classes/news.php";
+?>
+<?php
+    $news = new news();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +45,7 @@
 				<a href="trang-chu.php" class="phone-for-lists--item">
 					<li>Trang Chủ</li>
 				</a>
-				<a href="tra-truoc-viettel" class="phone-for-lists--item ">
+				<a href="#" class="phone-for-lists--item ">
 					<li>Tin Khuyến Mãi</li>
 				</a>
 			</ul>
@@ -52,27 +60,38 @@
 					</a>
 					
 				</div>
+				<?php
+				$get_new = $news->show_1news();
+				if($get_new){
+					while($result_new = $get_new->fetch_assoc()){
+				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="img/tomato.png" alt=""></a>
+					<a href="#"><img src="<?php echo $result_new['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#">Lorem ipsum dolor sit amet</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod commodi esse saepe unde voluptates eum molestiae autem ipsum soluta, enim dolorum voluptatem ad, dicta quo ipsam. Quam, praesentium error eos.</p>
+						<a href="#"><?php echo $result_new['title'] ?></a>
+						<p><?php echo $result_new['content'] ?></p>
 					</div>
 				</div>
+				<?php 
+					}
+				} 
+				?>
+				<?php
+				$get_news = $news->show_2news();
+				if($get_news){
+					while($result_news = $get_news->fetch_assoc()){
+				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="img/tomato.png" alt=""></a>
+					<a href="#"><img src="<?php echo $result_news['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#">Lorem ipsum dolor sit amet</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod commodi esse saepe unde voluptates eum molestiae autem ipsum soluta, enim dolorum voluptatem ad, dicta quo ipsam. Quam, praesentium error eos.</p>
+						<a href="#"><?php echo $result_news['title'] ?></a>
+						<p><?php echo $result_news['content'] ?></p>
 					</div>
 				</div>
-				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="img/tomato.png" alt=""></a>
-					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#">Lorem ipsum dolor sit amet</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod commodi esse saepe unde voluptates eum molestiae autem ipsum soluta, enim dolorum voluptatem ad, dicta quo ipsam. Quam, praesentium error eos.</p>
-					</div>
-				</div>
+				<?php 
+					}
+				} 
+				?>
 			</div>
 			<div class="mainBlog__news__recent">
 				<div class="mainBlog__news__recent--h1">

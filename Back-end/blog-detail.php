@@ -64,7 +64,7 @@
 					<div class="blogDetail__content--img">
 						<img src="<?php echo $result_new['thumbnail'] ?>" alt="">
 					</div>
-					<p><?php echo $result_new['descripsion'] ?></p>
+					<p><?php echo $result_new['title'] ?></p>
 					<div class="blogDetail__content--ct">
 						<p><?php echo $result_new['content'] ?></p>
 					</div>
@@ -90,7 +90,7 @@
 				?> 
 					<div class="blogDetail__foot__list--card">
 						<a href="#"><img src="<?php echo $result_news['thumbnail'] ?>" alt=""></a>
-						<a href="#"><?php echo $result_news['descripsion'] ?></a>
+						<a href="#"><?php echo $result_news['title'] ?></a>
 						<p><?php echo $result_news['content'] ?></p>
 					</div>
 				<?php 
