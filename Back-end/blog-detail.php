@@ -51,6 +51,7 @@
 				<div class="blogDetail__content--img">
 					<img src="img/tomato.png" alt="">
 				</div>
+				<p>Descripsion</p>
 				<div class="blogDetail__content--ct">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eveniet earum culpa vitae, beatae sapiente laudantium autem accusamus sed rerum pariatur, iure doloremque non unde quibusdam quam! Dolore, facilis, hic.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quae vero beatae, maxime adipisci eos corporis quod architecto ullam consectetur ducimus, iste delectus, laudantium quia? Obcaecati, praesentium labore nostrum voluptatibus.</p>

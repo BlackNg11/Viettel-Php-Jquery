@@ -19,9 +19,16 @@
 
 	&__content {
 
+		font-size: 1.6rem;
+
 		&--img {
 			width: 80vw;
 			height: 60vh;
+
+			& p {
+				font-size: 1.6rem;
+				margin 3rem 0;
+			}
 
 
 			& img {
