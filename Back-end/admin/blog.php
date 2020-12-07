@@ -1,5 +1,10 @@
 <?php 
     session_start();
+    include "classes/news.php";
+    include "server.php";
+?>
+<?php
+    $news = new news();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,25 +33,75 @@ include "view/header.php";
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <h1>Nhập Blog</h1>
-                        <form>
-                            <div class="form-group">
-                                <label for="title">Title</label>
-                                <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                        <form action="index.php" method="post" enctype="multipart/form-data" class="post-form">
+                            <h1 class="text-center">Add Blog Post</h1>
+                            <div class="form-group row">
+                                <label for="title" class="col-sm-2 col-form-label">Tiêu Đề :</label>
+                                <div class="col-sm-10">
+                                <input type="text" class="form-control" id="title">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="descripsion">Descripsion</label>
-                                <input type="text" class="form-control" id="descripsion">
+                            <div class="form-group row">
+                                <label for="descripsion" class="col-sm-2 col-form-label">Giới Thiệu :</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="descripsion">
+                                </div>
                             </div>
-                            <div class="form-group" id="editor">
-                                <label for="editor">Content</label>
-                                <input type="text" class="form-control">
+                            <div class="form-group row">
+                            <label for="loaitin" class="col-sm-2 col-form-label">Loại Tin Tức :</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" id="loaitin">
+                                        <option>Tin Tức</option>
+                                        <option>Khuyến Mãi</option>
+                                    </select>
+                                </div>
                             </div>
+                            <div class="form-group row">
+                                <label for="images" class="col-sm-2 col-form-label">Chọn Hình Ảnh :</label>
+                                <div class="col-sm-10">
+                                    <input type="file" class="form-control-file" id="images">
+                                </div>
+                            </div>
+                            <div class="form-group " style="position: relative;">
+                                <label for="post">Nội Dung :</label>
+                                
+                                <!-- Upload image button -->
+                                <a href="#" class="btn btn-outline-primary upload-img-btn" data-toggle="modal" data-target="#myModal">upload image</a>
 
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                                <!-- Input to browse your machine and select image to upload -->
+                                <input type="file" id="image-input" style="display: none;">
+
+                                <textarea name="body" id="body" class="form-control" cols="30" rows="5"></textarea>
+
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" name="save-post" class="btn btn-primary pull-right">Save Post</button>
+                            </div>
                         </form>
-                    </div>
 
+                        <!-- Pop-up Modal to display image URL -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myModalLabel">Click below to copy image url</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- returned image url will be displayed here -->
+                                        <input 
+                                        type="text" 
+                                        id="post_image_url" 
+                                        onclick="return copyUrl()" 
+                                        class="form-control"
+                                        >
+                                        <p id="feedback_msg" style="color: green; display: none;"><b>Image url copied to clipboard</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- /.container-fluid -->
@@ -86,15 +141,9 @@ include "view/header.php";
 <!-- Page level custom scripts -->
 <script src="js/demo/chart-area-demo.js"></script>
 <script src="js/demo/chart-pie-demo.js"></script>
-<script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
-<script>
-    ClassicEditor
-    .create( document.querySelector( '#editor' ) )
-    .catch( error => {
-        console.error( error );
-    } );
-    
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.8.0/ckeditor.js"></script>
+
+<script src="js/scripts.js"></script>
 </body>
 
 </html>
