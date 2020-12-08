@@ -112,6 +112,10 @@ body {
     color: ghostwhite;
     letter-spacing: .2rem;
 
+    &-black {
+        color: $color-secondary-light;
+    }
+
     
     @include respond(tab-port) {
         font-size: 3rem;
@@ -120,6 +124,8 @@ body {
     @include respond(smail-phone) {
         font-size: 2rem;
     }
+
+
 
 
 

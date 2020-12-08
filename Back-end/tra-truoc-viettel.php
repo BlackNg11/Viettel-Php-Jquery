@@ -62,7 +62,7 @@
 			</ul>
 		</section>
 		<section class="phone-contact">
-			<h1 class="heading-secondary phone-contact--head">Gói cước trả trước Viettel</h1>
+			<h1 class="heading-secondary--3 heading-secondary--3-black  phone-contact--head">Gói cước trả trước Viettel</h1>
 			<div class="phone-contact__hotline">
 				<a href="#" class="phone-contact__hotline--blue">Hotline: <span
 					class="phone-contact__hotline--red">03.836.27790</span></a>
@@ -335,8 +335,8 @@
 
 			<!-- Your Chat Plugin code -->
 			<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
-			logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-			logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+			logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?"
+			logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?">
 		</div>
 </body>
 

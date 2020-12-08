@@ -63,7 +63,7 @@
 			</ul>
 		</section>
 		<section class="wifi-contact">
-			<h1 class="heading-secondary wifi-contact--head">Bảng giá wifi Viettel cho phòng Net,Cafe</h1>
+			<h1 class="heading-secondary--3 heading-secondary--3-black wifi-contact--head">Bảng giá wifi Viettel cho phòng Net,Cafe</h1>
 			<div class="wifi-contact__hotline">
 				<a href="#" class="wifi-contact__hotline--blue">Hotline: <span
 					class="wifi-contact__hotline--red">0383.61.71.61</span></a>
@@ -183,15 +183,12 @@
 					</ul>
 				</div>
 				<div class="wifi-contact__setting">
-					<p>Để quán Game, quán Net của bạn là sự lựa chọn lý tưởng của các gamer hay các bạn sinh viên có nhu cầu
+					<p>Để tiệm Net,quán cafe của bạn là sự lựa chọn lý tưởng của các khách hàng,gamer hay các bạn sinh viên có nhu cầu
 						học tập thì đường truyền cáp quang của bạn phải thực sự đáp ứng được nhu cầu của họ bằng sự hài lòng
 						nhất, mạng không bị lag, không giật, tốc độ ổn định, mượt mà nếu không thì họ khó có thể quay lại
 						quán của bạn một lần nữa đấy. Viettel cung cấp dịch vụ lắp mạng cáp quang Viettel cho quán game,
-					quán net tốc độ cao với mức giá ưu đãi như sau:</p>
-					<p>Tùy vào quy mô, số lượng máy của quán mà bạn lựa chọn cho mình gói cước phù hợp nhé. Các gói Fast60,
-						Fast60+ phù hợp với các tiệm Net có quy mô 10-15 máy tính để đạt tốc độ cao nhất, gói Fast80,
-						Fast80+ phù hợp với quy mô 15-20 máy tính trở lên. Khi đăng kí lắp đặt và sử dụng một trong các gói
-					cước trên, khách hàng sẽ có thêm các ưu đãi như sau:</p>
+					quán net tốc độ cao với mức giá ưu đãi</p>
+					<p>Tùy vào quy mô, số lượng thiết bị truy cập wifi của quán mà bạn lựa chọn cho mình gói cước phù hợp nhé.Gói Net5plus phù hợp với các tiệm Net hoặc quán cafe có quy mô 10-45 thiết bị truy cập wifi để đạt tốc độ cao nhất,các gói SuperNet phù hợp với các tiệm Net hoặc quán cafe nhiều tầng sử dụng homeWifi sẽ khắc phục được những vấn đề của Wifi truyền thống (không phủ sóng đều, nhiễu sóng do vật cản, khả năng chịu tải không lớn,…) và có kết nối internet thông suốt, không giật lag.</p>
 				</div>
 				<div class="wifi-contact__img">
 					<img src="img/khuyen-mai-cap-quang-viettel.jpg" alt="Chi Tiết Cáp Quang"
@@ -202,6 +199,7 @@
 
 				<div class="wifi-contact--infomation">
 					<h3 class="wifi-contact--infomation--heading">Lắp đặt wifi cáp quang Viettel có gì đặc biệt?</h3>
+					<p class="wifi-contact--infomation--text">Internet là một phần không thể thiếu trong cuộc sống hiện đại ngày nay,với nhu cầu lắp đặt mạng ngày càng tăng Viettel hiểu điều đó và đã triển khai lắp đặt mạng,cung cấp nhu cầu sử dụng internet cho mọi khách hàng cần.</p>
 					<p class="wifi-contact--infomation--text">Với mong muốn mang lại chất lượng và dịch vụ tốt nhất dành cho
 						khách hàng.Viettel đã và đang cố gắng xây dựng mạng lưới hạ tầng rộng khắp tại tất cả các khu vực
 						nội ngoại thành và các tỉnh trên toàn quốc, đồng thời xây dựng mức giá đa dạng và phù hợp nhất tới
@@ -213,10 +211,19 @@
 						lắp đặt và không làm ảnh hưởng tới mỹ quan của ngôi nhà bạn , đồng thời cước sẽ gộp hết 1 nhà cung
 					cấp và chỉ cần thanh toán 1 lần duy nhất trong tháng là xong.</p>
 					<p class="wifi-contact--infomation--text">Với công nghệ truyền tải internet hiện đại nhất trên thế giới
-						GPON, mạng cáp quang Viettel mang đến nhiều trải nghiệm thú vị cho khách hàng khi truy cập internet.
-						Đầu tiên đó là việc truy cập internet nhanh chóng hơn gấp 200 lần so với cáp đồng tốc độ
+						GPON và cáp quang Viettel có đến 4 đường truyền cáp quang kết nối quốc tế (2 trên biển, 2 trên bộ) mang tính ổn định, băng thông truy cập cao và không bị ảnh hưởng gián đoạn đường truyền bởi các yếu tốt tự nhiên dẫn tới đứt cáp quang biển.
+						Giúp việc truy cập internet nhanh chóng hơn gấp 200 lần so với cáp đồng tốc độ
 						download/upload nhanh như nhau, phục vụ nhu cầu giải trí, học tập và công việc diễn ra thuận lợi,
 					suôn sẻ.</p>
+					<p class="wifi-contact--infomation--text">
+						Khi lắp đặt 6 tháng khách hàng của Viettel được ưu đãi tặng thêm 1 tháng sử dụng và miễn phí lắp đặt(200.000).
+					</p>
+					<p class="wifi-contact--infomation--text">
+						Dịch vụ chăm sóc kháng hàng Viettel luôn phục vụ khánh hàng 24/7,hỗ trợ và giải đáp mọi thắc mắc vấn đề của khách hàng khi có sự cố xảy ra.
+					</p>
+					<p class="wifi-contact--infomation--text">
+						Dịch vụ lắp đặt mạng Viettel hiện đại cùng phong cách làm việc chuyên nghiệp sẽ mang đến sự hài lòng tuyệt đối cho khách hàng. Liên hệ tới số hotline 0383.61.71.61 hoặc tổng đài Viettel 1800 8168 để được tư vấn miễn phí về dịch vụ cũng như để được nhận những ưu đãi lớn nhất.
+					</p>
 					<h3 class="wifi-contact--infomation--heading">Hãy dùng bộ thiết bị HomeWIFI Viettel</h3>
 					<div class="wifi-contact__img-2">
 						<img src="img/home.png" alt="Wifi và truyền hình Viettel" class="wifi-contact__img-2"
@@ -239,8 +246,7 @@
 					<p class="wifi-contact--infomation--text">- Thiết lập một căn hộ thông minh trong thời đại 4.0 khi có thể giúp mọi người điều khiển âm thanh, ánh sáng, rèm cửa, camera, điều hòa,… dễ dàng và tiện lợi.</p>
 					<p class="wifi-contact--infomation--text">- Thiết bị Home Wifi Viettel thiết kế hiện đại, gọn nhẹ, không cần đi dây, lắp đặt dễ dàng nên hoàn toàn không làm ảnh hưởng đến thẩm mỹ của căn hộ.</p>
 					<p class="wifi-contact--infomation--text">- Giá gói cước Home Wifi khá đa dạng, với nhiều mức giá khác nhau nên hoàn toàn có thể đáp ứng mọi nhu cầu và tài chính của các hộ gia đình hoặc doanh nghiệp vừa và nhỏ.</p>
-					<p class="wifi-contact--infomation--text">- Thiết bị cung cấp tốc độ truyền tải dữ liệu khá cao, có thể lên tới 2000Mbps, cùng khả năng ưu tiên truy cập internet 5GHz để người dùng có thể tận hưởng mọi tiện ích không lo bị gián đoạn.</p>
-					<p class="wifi-contact--infomation--text">Dịch vụ lắp đặt mạng wifi Viettel hiện đại cùng phong cách làm việc chuyên nghiệp sẽ mang đến sự hài lòng tuyệt đối cho khách hàng. Liên hệ tới số hotline 0383.61.71.61 hoặc 1800 8168 để được tư vấn miễn phí về dịch vụ cũng như để được nhận những ưu đãi lớn nhất.</p>
+					<p class="wifi-contact--infomation--text">- Thiết bị cung cấp tốc độ truyền tải dữ liệu khá cao, có thể lên tới 2000Mbps, cùng khả năng ưu tiên truy cập internet 5GHz để người dùng có thể tận hưởng mọi tiện ích không lo bị gián đoạn.</p>					
 				</div>
 			</section>
 			<section class="form-register">
@@ -378,8 +384,8 @@
 
 			<!-- Your Chat Plugin code -->
 			<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
-			logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-			logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+			logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?"
+			logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?">
 		</div>
 	</body>
 

@@ -118,6 +118,8 @@ body {
   display: inline-block;
   color: ghostwhite;
   letter-spacing: .2rem; }
+  .heading-secondary--3-black {
+    color: #324B4C; }
   @media only screen and (max-width: 56.25em) {
     .heading-secondary--3 {
       font-size: 3rem; } }
@@ -906,9 +908,6 @@ body {
   background-image: radial-gradient(#2CC2AF, #298ACC);
   overflow: hidden;
   box-sizing: border-box; }
-  @media only screen and (max-width: 37.5em) {
-    .cardSkew {
-      overflow: auto; } }
   .cardSkew__container {
     position: relative;
     width: 1050px;
@@ -2115,14 +2114,19 @@ body {
       color: #333; }
     .blogDetail__heading p {
       font-size: 1.6rem; }
-  .blogDetail__content--img {
-    width: 80vw;
-    height: 60vh; }
-    .blogDetail__content--img img {
-      width: 100%;
-      height: 100%; }
-  .blogDetail__content p {
+  .blogDetail__content {
     font-size: 1.6rem; }
+    .blogDetail__content--img {
+      width: 80vw;
+      height: 60vh; }
+      .blogDetail__content--img p {
+        font-size: 1.6rem;
+        margin: 3rem 0; }
+      .blogDetail__content--img img {
+        width: 100%;
+        height: 100%; }
+    .blogDetail__content p {
+      font-size: 1.6rem; }
   .blogDetail__foot {
     margin: 10rem 0;
     display: flex;

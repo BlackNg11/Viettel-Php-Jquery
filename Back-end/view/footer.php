@@ -19,7 +19,9 @@
 					</svg>
 				</a>
 
-				<a href="https://zalo.me/1814378069399742003"><img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon"></a>
+				<a href="https://zalo.me/0383627790">
+					<img src="img/zalo-seeklogo.com.svg" alt="Zalo" class="wifi-detail__info--list-icon" >
+				</a>
 			</div>
 		</div>
 		<div class="footer__info__group footer__info--3">

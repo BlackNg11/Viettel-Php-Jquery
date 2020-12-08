@@ -61,8 +61,9 @@
 				</a>
 			</ul>
 		</section>
+		
 		<section class="wifi-contact">
-			<h1 class="heading-secondary wifi-contact--head">Bảng giá wifi Viettel + truyền hình cho gia đình
+			<h1 class="heading-secondary--3 heading-secondary--3-black wifi-contact--head">Bảng giá wifi Viettel + truyền hình cho gia đình
 			</h1>
 			<div class="wifi-contact__hotline">
 				<a href="#" class="wifi-contact__hotline--blue">Hotline: <span
@@ -146,7 +147,7 @@
 							<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 						</div>
 						<div class="item card-wifi">
-							<h2 class="card-wifi-heading card-wifi-heading--2">
+							<h2 class="card-wifi-heading">
 								Net5Plus
 								<span>150 MBPS</span>
 							</h2>
@@ -163,7 +164,7 @@
 							<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 						</div>
 						<div class="item card-wifi">
-							<h2 class="card-wifi-heading">
+							<h2 class="card-wifi-heading card-wifi-heading--2">
 								SUPERNET2
 								<span>50 MBPS</span>
 							</h2>
@@ -180,7 +181,7 @@
 							<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 						</div>
 						<div class="item card-wifi">
-							<h2 class="card-wifi-heading card-wifi-heading--2">
+							<h2 class="card-wifi-heading">
 								SUPERNET3
 								<span>80 MBPS</span>
 							</h2>
@@ -198,7 +199,7 @@
 							<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 						</div>
 						<div class="item card-wifi">
-							<h2 class="card-wifi-heading">
+							<h2 class="card-wifi-heading card-wifi-heading--2">
 								SUPERNET4
 								<span>100 MBPS</span>
 							</h2>
@@ -215,7 +216,7 @@
 							<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 						</div>
 						<div class="item card-wifi">
-							<h2 class="card-wifi-heading card-wifi-heading--2">
+							<h2 class="card-wifi-heading">
 								SUPERNET5
 								<span>200 MBPS</span>
 							</h2>
@@ -335,7 +336,7 @@
 							<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 						</div>
 						<div class="item card-wifi">
-							<h2 class="card-wifi-heading card-wifi-heading--2">
+							<h2 class="card-wifi-heading">
 								Net5Plus
 								<span>150 MBPS</span>
 							</h2>
@@ -354,7 +355,7 @@
 							<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 						</div>
 						<div class="item card-wifi">
-							<h2 class="card-wifi-heading">
+							<h2 class="card-wifi-heading card-wifi-heading--2">
 								SUPERNET2
 								<span>50 MBPS</span>
 							</h2>
@@ -374,7 +375,7 @@
 						</div>
 						<div class="item card-wifi">
 							<span class="card-wifi--best">Phổ Biến Nhất</span>
-							<h2 class="card-wifi-heading card-wifi-heading--2" >
+							<h2 class="card-wifi-heading" >
 								SUPERNET5
 								<span>200 MBPS</span>
 							</h2>
@@ -501,9 +502,9 @@
 							<a href="#" class="btn card-wifi-bottom--btn btn-scroll--1">Đăng Ký</a>
 						</div>
 						<div class="item card-wifi">
-							<h2 class="card-wifi-heading card-wifi-heading--2">
+							<h2 class="card-wifi-heading">
 								Net5Plus
-								<span>70 MBPS</span>
+								<span>150 MBPS</span>
 							</h2>
 							<div class="card-wifi-bottom">
 								<div class="card-wifi-bottom-prices">
@@ -534,7 +535,7 @@
 										<!-- <p class="card-wifi-bottom__sale--discount">250.000đ/tháng</p> -->
 									</div>
 								</div>
-								<p class="card-wifi-bottom--text">Dành cho nhà nhiều tầng trên 10 người sử dụng wifi 
+								<p class="card-wifi-bottom--text">Dành cho nhà nhiều tầng 15-40 thiết bị sử dụng wifi,trang bị thêm Home wifi phủ sóng nhiều tầng 
 								</p>
 								<p class="card-wifi-bottom--text card-wifi-bottom--text-margin--bot">Tặng miễn phí 1 gói
 								truyền hình và 1 gói K+</p>
@@ -570,6 +571,7 @@
 
 				<div class="wifi-contact--infomation">
 					<h3 class="wifi-contact--infomation--heading">Lắp đặt wifi cáp quang Viettel có gì đặc biệt?</h3>
+					<p class="wifi-contact--infomation--text">Internet là một phần không thể thiếu trong cuộc sống hiện đại ngày nay,với nhu cầu lắp đặt mạng ngày càng tăng Viettel hiểu điều đó và đã triển khai lắp đặt mạng,cung cấp nhu cầu sử dụng internet cho mọi khách hàng cần.</p>
 					<p class="wifi-contact--infomation--text">Với mong muốn mang lại chất lượng và dịch vụ tốt nhất dành cho
 						khách hàng.Viettel đã và đang cố gắng xây dựng mạng lưới hạ tầng rộng khắp tại tất cả các khu vực
 						nội ngoại thành và các tỉnh trên toàn quốc, đồng thời xây dựng mức giá đa dạng và phù hợp nhất tới
@@ -581,10 +583,19 @@
 						lắp đặt và không làm ảnh hưởng tới mỹ quan của ngôi nhà bạn , đồng thời cước sẽ gộp hết 1 nhà cung
 					cấp và chỉ cần thanh toán 1 lần duy nhất trong tháng là xong.</p>
 					<p class="wifi-contact--infomation--text">Với công nghệ truyền tải internet hiện đại nhất trên thế giới
-						GPON, mạng cáp quang Viettel mang đến nhiều trải nghiệm thú vị cho khách hàng khi truy cập internet.
-						Đầu tiên đó là việc truy cập internet nhanh chóng hơn gấp 200 lần so với cáp đồng tốc độ
+						GPON và cáp quang Viettel có đến 4 đường truyền cáp quang kết nối quốc tế (2 trên biển, 2 trên bộ) mang tính ổn định, băng thông truy cập cao và không bị ảnh hưởng gián đoạn đường truyền bởi các yếu tốt tự nhiên dẫn tới đứt cáp quang biển.
+						Giúp việc truy cập internet nhanh chóng hơn gấp 200 lần so với cáp đồng tốc độ
 						download/upload nhanh như nhau, phục vụ nhu cầu giải trí, học tập và công việc diễn ra thuận lợi,
 					suôn sẻ.</p>
+					<p class="wifi-contact--infomation--text">
+						Khi lắp đặt 6 tháng khách hàng của Viettel được ưu đãi tặng thêm 1 tháng sử dụng và miễn phí lắp đặt(200.000).
+					</p>
+					<p class="wifi-contact--infomation--text">
+						Dịch vụ chăm sóc kháng hàng Viettel luôn phục vụ khánh hàng 24/7,hỗ trợ và giải đáp mọi thắc mắc vấn đề của khách hàng khi có sự cố xảy ra.
+					</p>
+					<p class="wifi-contact--infomation--text">
+						Dịch vụ lắp đặt mạng Viettel hiện đại cùng phong cách làm việc chuyên nghiệp sẽ mang đến sự hài lòng tuyệt đối cho khách hàng. Liên hệ tới số hotline 0383.61.71.61 hoặc tổng đài Viettel 1800 8168 để được tư vấn miễn phí về dịch vụ cũng như để được nhận những ưu đãi lớn nhất.
+					</p>
 					<h3 class="wifi-contact--infomation--heading">Hãy dùng bộ thiết bị HomeWIFI Viettel</h3>
 					<div class="wifi-contact__img-2">
 						<img src="img/home.png" alt="Wifi và truyền hình Viettel" class="wifi-contact__img-2"
@@ -607,8 +618,7 @@
 					<p class="wifi-contact--infomation--text">- Thiết lập một căn hộ thông minh trong thời đại 4.0 khi có thể giúp mọi người điều khiển âm thanh, ánh sáng, rèm cửa, camera, điều hòa,… dễ dàng và tiện lợi.</p>
 					<p class="wifi-contact--infomation--text">- Thiết bị Home Wifi Viettel thiết kế hiện đại, gọn nhẹ, không cần đi dây, lắp đặt dễ dàng nên hoàn toàn không làm ảnh hưởng đến thẩm mỹ của căn hộ.</p>
 					<p class="wifi-contact--infomation--text">- Giá gói cước Home Wifi khá đa dạng, với nhiều mức giá khác nhau nên hoàn toàn có thể đáp ứng mọi nhu cầu và tài chính của các hộ gia đình hoặc doanh nghiệp vừa và nhỏ.</p>
-					<p class="wifi-contact--infomation--text">- Thiết bị cung cấp tốc độ truyền tải dữ liệu khá cao, có thể lên tới 2000Mbps, cùng khả năng ưu tiên truy cập internet 5GHz để người dùng có thể tận hưởng mọi tiện ích không lo bị gián đoạn.</p>
-					<p class="wifi-contact--infomation--text">Dịch vụ lắp đặt mạng wifi Viettel hiện đại cùng phong cách làm việc chuyên nghiệp sẽ mang đến sự hài lòng tuyệt đối cho khách hàng. Liên hệ tới số hotline 0383.61.71.61 hoặc 1800 8168 để được tư vấn miễn phí về dịch vụ cũng như để được nhận những ưu đãi lớn nhất.</p>
+					<p class="wifi-contact--infomation--text">- Thiết bị cung cấp tốc độ truyền tải dữ liệu khá cao, có thể lên tới 2000Mbps, cùng khả năng ưu tiên truy cập internet 5GHz để người dùng có thể tận hưởng mọi tiện ích không lo bị gián đoạn.</p>					
 				</div>
 			</section>
 
@@ -750,8 +760,8 @@
 
 			<!-- Your Chat Plugin code -->
 			<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
-			logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-			logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+			logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?"
+			logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?">
 		</div>
 	</body>
 
