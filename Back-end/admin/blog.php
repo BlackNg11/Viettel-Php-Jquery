@@ -1,7 +1,7 @@
 <?php 
     session_start();
     include "classes/news.php";
-    include "server.php";
+    include "classes/addblog.php";
 ?>
 <?php
     $news = new news();
@@ -33,33 +33,33 @@ include "view/header.php";
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                        <form action="index.php" method="post" enctype="multipart/form-data" class="post-form">
+                        <form action="blog.php" method="post" enctype="multipart/form-data" class="post-form">
                             <h1 class="text-center">Add Blog Post</h1>
                             <div class="form-group row">
                                 <label for="title" class="col-sm-2 col-form-label">Tiêu Đề :</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="title">
+                                <input type="text" class="form-control" id="title" name="title">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="descripsion" class="col-sm-2 col-form-label">Giới Thiệu :</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="descripsion">
+                                    <input type="text" class="form-control" id="descripsion" name="descripsion">
                                 </div>
                             </div>
                             <div class="form-group row">
                             <label for="loaitin" class="col-sm-2 col-form-label">Loại Tin Tức :</label>
                                 <div class="col-sm-10">
-                                    <select class="form-control" id="loaitin">
-                                        <option>Tin Tức</option>
-                                        <option>Khuyến Mãi</option>
+                                    <select class="form-control" id="loaitin" name="status">
+                                        <option value = "0">Tin Tức</option>
+                                        <option value = "1">Khuyến Mãi</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="images" class="col-sm-2 col-form-label">Chọn Hình Ảnh :</label>
+                                <label for="file" class="col-sm-2 col-form-label">Chọn Hình Ảnh :</label>
                                 <div class="col-sm-10">
-                                    <input type="file" class="form-control-file" id="images">
+                                    <input type="file" class="form-control-file" id="file" name="file">
                                 </div>
                             </div>
                             <div class="form-group " style="position: relative;">
@@ -71,11 +71,11 @@ include "view/header.php";
                                 <!-- Input to browse your machine and select image to upload -->
                                 <input type="file" id="image-input" style="display: none;">
 
-                                <textarea name="body" id="body" class="form-control" cols="30" rows="5"></textarea>
+							<textarea name="body" id="body" class="form-control" cols="30" rows="5"></textarea>
 
                             </div>
                             <div class="form-group">
-                                <button type="submit" name="save-post" class="btn btn-primary pull-right">Save Post</button>
+                                <button type="submit" name="save-post" class="btn btn-success pull-right">Save Post</button>
                             </div>
                         </form>
 
@@ -86,7 +86,7 @@ include "view/header.php";
                                     <div class="modal-header">
                                         <h4 class="modal-title" id="myModalLabel">Click below to copy image url</h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        
+                                    
                                     </div>
                                     <div class="modal-body">
                                         <!-- returned image url will be displayed here -->
@@ -141,7 +141,7 @@ include "view/header.php";
 <!-- Page level custom scripts -->
 <script src="js/demo/chart-area-demo.js"></script>
 <script src="js/demo/chart-pie-demo.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.8.0/ckeditor.js"></script>
+<script src="https://cdn.ckeditor.com/4.15.1/full/ckeditor.js"></script>
 
 <script src="js/scripts.js"></script>
 </body>
