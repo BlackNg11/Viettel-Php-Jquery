@@ -81,7 +81,7 @@
 					while($result_news = $get_news->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="admin/images/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
+					<a href="blog-detail.php?id=<?php echo $result_news['id'] ?>&status=<?php echo $result_news['status'] ?>"><img src="admin/images/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_news['title'] ?></a>
 						<p><?php echo $result_news['descripsion'] ?></p>
@@ -107,9 +107,9 @@
 					while($result_newkhuyenmai = $get_newkhuyenmai->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="admin/images/<?php echo $result_newkhuyenmai['thumbnail'] ?>" alt=""></a>
+					<a href="blog-detail.php?id=<?php echo $result_newkhuyenmai['id'] ?>&status=<?php echo $result_newkhuyenmai['status'] ?>"><img src="admin/images/<?php echo $result_newkhuyenmai['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_newkhuyenmai['title'] ?></a>
+						<a href="blog-detail.php?id=<?php echo $result_newkhuyenmai['id'] ?>&status=<?php echo $result_newkhuyenmai['status'] ?>"><?php echo $result_newkhuyenmai['title'] ?></a>
 						<p><?php echo $result_newkhuyenmai['descripsion'] ?></p>
 					</div>
 				</div>
@@ -123,9 +123,9 @@
 					while($result_newskhuyenmai = $get_newskhuyenmai->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="admin/images/<?php echo $result_newskhuyenmai['thumbnail'] ?>" alt=""></a>
+					<a href="blog-detail.php?id=<?php echo $result_newskhuyenmai['id'] ?>&status=<?php echo $result_newskhuyenmai['status'] ?>"><img src="admin/images/<?php echo $result_newskhuyenmai['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_newskhuyenmai['title'] ?></a>
+						<a href="blog-detail.php?id=<?php echo $result_newskhuyenmai['id'] ?>&status=<?php echo $result_newskhuyenmai['status'] ?>"><?php echo $result_newskhuyenmai['title'] ?></a>
 						<p><?php echo $result_newskhuyenmai['descripsion'] ?></p>
 					</div>
 				</div>
@@ -149,9 +149,9 @@
 					while($result_tintuc = $get_tintuc->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="admin/images/<?php echo $result_tintuc['thumbnail'] ?>" alt=""></a>
+					<a href="blog-detail.php?id=<?php echo $result_tintuc['id'] ?>&status=<?php echo $result_tintuc['status'] ?>"><img src="admin/images/<?php echo $result_tintuc['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_tintuc['title'] ?></a>
+						<a href="blog-detail.php?id=<?php echo $result_tintuc['id'] ?>&status=<?php echo $result_tintuc['status'] ?>"><?php echo $result_tintuc['title'] ?></a>
 						<p><?php echo $result_tintuc['descripsion'] ?></p>
 					</div>
 				</div>
@@ -165,9 +165,9 @@
 					while($result_2tintuc = $get_2tintuc->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="admin/images/<?php echo $result_2tintuc['thumbnail'] ?>" alt=""></a>
+					<a href="blog-detail.php?id=<?php echo $result_2tintuc['id'] ?>&status=<?php echo $result_2tintuc['status'] ?>"><img src="admin/images/<?php echo $result_2tintuc['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_2tintuc['title'] ?></a>
+						<a href="blog-detail.php?id=<?php echo $result_2tintuc['id'] ?>&status=<?php echo $result_2tintuc['status'] ?>"><?php echo $result_2tintuc['title'] ?></a>
 						<p><?php echo $result_2tintuc['descripsion'] ?></p>
 					</div>
 				</div>
