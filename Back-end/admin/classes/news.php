@@ -39,29 +39,46 @@
             }
         }
         public function show_1news(){
-            $query = "SELECT * FROM news order by id limit 1";
+            $query = "SELECT * FROM news order by id desc limit 1";
             $result = $this->db->select($query);
             return $result;
         }
         public function show_2news(){
-            $query = "SELECT * FROM news order by id limit 1,2";
+            $query = "SELECT * FROM news order by id desc limit 1,2";
             $result = $this->db->select($query);
             return $result;
         }
         public function show_1newskhuyenmai(){
             $query = "SELECT * FROM news where status = 1 
-                    order by id limit 1";
+                    order by id desc limit 1";
             $result = $this->db->select($query);
             return $result;
         }
         public function show_2newskhuyenmai(){
             $query = "SELECT * FROM news where status = 1 
-                    order by id limit 1,2";
+                    order by id desc limit 1,2";
+            $result = $this->db->select($query);
+            return $result;
+        }
+        public function show_1tintuc(){
+            $query = "SELECT * FROM news where status = 0
+                    order by id desc limit 1";
+            $result = $this->db->select($query);
+            return $result;
+        }
+        public function show_2tintuc(){
+            $query = "SELECT * FROM news where status = 0 
+                    order by id desc limit 1,2";
             $result = $this->db->select($query);
             return $result;
         }
         public function show_news(){
-            $query = "SELECT * FROM news order by id";
+            $query = "SELECT * FROM news order by id desc";
+            $result = $this->db->select($query);
+            return $result;
+        }
+        public function show_newsform2(){
+            $query = "SELECT * FROM news order by id desc limit 1,99";
             $result = $this->db->select($query);
             return $result;
         }

@@ -1,5 +1,6 @@
 // initialize ckeditor
 CKEDITOR.replace('body');
+CKEDITOR.config.autoParagraph = false;
 
 // Javascript function to copy image url to clipboard from modal
 function copyUrl() {
