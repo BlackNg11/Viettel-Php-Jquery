@@ -64,10 +64,10 @@
 					while($result_new = $get_new->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="img/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
+					<a href="#"><img src="admin/images/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_new['title'] ?></a>
-						<p><?php echo $result_new['content'] ?></p>
+						<p><?php echo $result_new['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -80,10 +80,10 @@
 					while($result_news = $get_news->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="img/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
+					<a href="#"><img src="admin/images/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_news['title'] ?></a>
-						<p><?php echo $result_news['content'] ?></p>
+						<p><?php echo $result_news['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -106,10 +106,10 @@
 					while($result_newkhuyenmai = $get_newkhuyenmai->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="img/<?php echo $result_newkhuyenmai['thumbnail'] ?>" alt=""></a>
+					<a href="#"><img src="admin/images/<?php echo $result_newkhuyenmai['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_newkhuyenmai['title'] ?></a>
-						<p><?php echo $result_newkhuyenmai['content'] ?></p>
+						<p><?php echo $result_newkhuyenmai['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -122,10 +122,10 @@
 					while($result_newskhuyenmai = $get_newskhuyenmai->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="img/<?php echo $result_newskhuyenmai['thumbnail'] ?>" alt=""></a>
+					<a href="#"><img src="admin/images/<?php echo $result_newskhuyenmai['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_newskhuyenmai['title'] ?></a>
-						<p><?php echo $result_newskhuyenmai['content'] ?></p>
+						<p><?php echo $result_newskhuyenmai['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 

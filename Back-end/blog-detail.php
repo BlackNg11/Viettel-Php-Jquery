@@ -66,7 +66,7 @@
 					</div>
 					<p><?php echo $result_new['descripsion'] ?></p>
 					<div class="blogDetail__content--ct">
-						<p><?php echo $result_new['content'] ?></p>
+						<?php echo $result_new['content'] ?>
 					</div>
 					
 				</div>
@@ -89,9 +89,9 @@
 					while($result_news = $get_news->fetch_assoc()){
 				?> 
 					<div class="blogDetail__foot__list--card">
-						<a href="#"><img src="img/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
+						<a href="#"><img src="admin/images/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
 						<a href="#"><?php echo $result_news['title'] ?></a>
-						<p><?php echo $result_news['content'] ?></p>
+						<?php echo $result_news['descripsion'] ?>
 					</div>
 				<?php 
 					}
