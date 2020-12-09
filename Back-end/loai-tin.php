@@ -36,8 +36,7 @@
 	include "view/navigation.php";
 	include "view/header.php";
 	?>
-
-	<main class="mainBlog">
+    <main class="mainBlog">
 		<section class="phone-for">
 			<ul class="phone-for-lists">
 				<a href="trang-chu.php" class="phone-for-lists--item">
@@ -48,10 +47,14 @@
 				</a>
 			</ul>
 		</section>
+        <?php
+        if(isset($_GET['status']) && $_GET['status'] == '0'){
+        ?>
+        
 		<section class="mainBlog__news">
 			<div class="mainBlog__news__recent">
 				<div class="mainBlog__news__recent--h1">
-					<a href="loai-tin.php?status=all">Tin Mới
+					<a href="">Tin Tức Viettel
 						<svg viewBox="0 0 185.343 185.343">
 							<path d="M51.707 185.343a10.692 10.692 0 01-7.593-3.149 10.724 10.724 0 010-15.175l74.352-74.347L44.114 18.32c-4.194-4.194-4.194-10.987 0-15.175 4.194-4.194 10.987-4.194 15.18 0l81.934 81.934c4.194 4.194 4.194 10.987 0 15.175l-81.934 81.939a10.678 10.678 0 01-7.587 3.15z" fill="#14AFB4"></path>
 						</svg>
@@ -64,10 +67,10 @@
 					while($result_new = $get_new->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="admin/images/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
+					<a href="#"><img src="img/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_new['title'] ?></a>
-						<p><?php echo $result_new['descripsion'] ?></p>
+						<p><?php echo $result_new['content'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -75,99 +78,15 @@
 				} 
 				?>
 				<?php
-				$get_news = $news->show_2news();
+				$get_news = $news->show_newsform2();
 				if($get_news){
 					while($result_news = $get_news->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="admin/images/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
+					<a href="#"><img src="img/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_news['title'] ?></a>
-						<p><?php echo $result_news['descripsion'] ?></p>
-					</div>
-				</div>
-				<?php 
-					}
-				} 
-				?>
-			</div>
-			<div class="mainBlog__news__recent">
-				<div class="mainBlog__news__recent--h1">
-					<a href="loai-tin.php?status=1">Khuyến Mãi
-						<svg viewBox="0 0 185.343 185.343">
-							<path d="M51.707 185.343a10.692 10.692 0 01-7.593-3.149 10.724 10.724 0 010-15.175l74.352-74.347L44.114 18.32c-4.194-4.194-4.194-10.987 0-15.175 4.194-4.194 10.987-4.194 15.18 0l81.934 81.934c4.194 4.194 4.194 10.987 0 15.175l-81.934 81.939a10.678 10.678 0 01-7.587 3.15z" fill="#14AFB4"></path>
-						</svg>
-					</a>
-					
-				</div>
-				<?php
-				$get_newkhuyenmai = $news->show_1newskhuyenmai();
-				if($get_newkhuyenmai){
-					while($result_newkhuyenmai = $get_newkhuyenmai->fetch_assoc()){
-				?> 
-				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="admin/images/<?php echo $result_newkhuyenmai['thumbnail'] ?>" alt=""></a>
-					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_newkhuyenmai['title'] ?></a>
-						<p><?php echo $result_newkhuyenmai['descripsion'] ?></p>
-					</div>
-				</div>
-				<?php 
-					}
-				} 
-				?>
-				<?php
-				$get_newskhuyenmai = $news->show_2newskhuyenmai();
-				if($get_newskhuyenmai){
-					while($result_newskhuyenmai = $get_newskhuyenmai->fetch_assoc()){
-				?> 
-				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="admin/images/<?php echo $result_newskhuyenmai['thumbnail'] ?>" alt=""></a>
-					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_newskhuyenmai['title'] ?></a>
-						<p><?php echo $result_newskhuyenmai['descripsion'] ?></p>
-					</div>
-				</div>
-				<?php 
-					}
-				} 
-				?>
-			</div>
-			<div class="mainBlog__news__recent">
-				<div class="mainBlog__news__recent--h1">
-					<a href="loai-tin.php?status=0">Tin Tức
-						<svg viewBox="0 0 185.343 185.343">
-							<path d="M51.707 185.343a10.692 10.692 0 01-7.593-3.149 10.724 10.724 0 010-15.175l74.352-74.347L44.114 18.32c-4.194-4.194-4.194-10.987 0-15.175 4.194-4.194 10.987-4.194 15.18 0l81.934 81.934c4.194 4.194 4.194 10.987 0 15.175l-81.934 81.939a10.678 10.678 0 01-7.587 3.15z" fill="#14AFB4"></path>
-						</svg>
-					</a>
-					
-				</div>
-				<?php
-				$get_tintuc = $news->show_1tintuc();
-				if($get_tintuc){
-					while($result_tintuc = $get_tintuc->fetch_assoc()){
-				?> 
-				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="admin/images/<?php echo $result_tintuc['thumbnail'] ?>" alt=""></a>
-					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_tintuc['title'] ?></a>
-						<p><?php echo $result_tintuc['content'] ?></p>
-					</div>
-				</div>
-				<?php 
-					}
-				} 
-				?>
-				<?php
-				$get_2tintuc = $news->show_2tintuc();
-				if($get_2tintuc){
-					while($result_2tintuc = $get_2tintuc->fetch_assoc()){
-				?> 
-				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="admin/images/<?php echo $result_2tintuc['thumbnail'] ?>" alt=""></a>
-					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_2tintuc['title'] ?></a>
-						<p><?php echo $result_2tintuc['content'] ?></p>
+						<p><?php echo $result_news['content'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -176,9 +95,107 @@
 				?>
 			</div>
 		</section>
+        <?php 
+        }else if(isset($_GET['status']) && $_GET['status'] == '1'){
+        ?>
+        <section class="mainBlog__news">
+			<div class="mainBlog__news__recent">
+				<div class="mainBlog__news__recent--h1">
+					<a href="">Tin Khuyến Mãi
+						<svg viewBox="0 0 185.343 185.343">
+							<path d="M51.707 185.343a10.692 10.692 0 01-7.593-3.149 10.724 10.724 0 010-15.175l74.352-74.347L44.114 18.32c-4.194-4.194-4.194-10.987 0-15.175 4.194-4.194 10.987-4.194 15.18 0l81.934 81.934c4.194 4.194 4.194 10.987 0 15.175l-81.934 81.939a10.678 10.678 0 01-7.587 3.15z" fill="#14AFB4"></path>
+						</svg>
+					</a>
+					
+				</div>
+				<?php
+				$get_new = $news->show_1news();
+				if($get_new){
+					while($result_new = $get_new->fetch_assoc()){
+				?> 
+				<div class="mainBlog__news__recent--bigNew">
+					<a href="#"><img src="img/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
+					<div class="mainBlog__news__recent--bigNew-layout">
+						<a href="#"><?php echo $result_new['title'] ?></a>
+						<p><?php echo $result_new['content'] ?></p>
+					</div>
+				</div>
+				<?php 
+					}
+				} 
+				?>
+				<?php
+				$get_news = $news->show_newsform2();
+				if($get_news){
+					while($result_news = $get_news->fetch_assoc()){
+				?> 
+				<div class="mainBlog__news__recent--smaillNew">
+					<a href="#"><img src="img/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
+					<div class="mainBlog__news__recent--bigNew-layout">
+						<a href="#"><?php echo $result_news['title'] ?></a>
+						<p><?php echo $result_news['content'] ?></p>
+					</div>
+				</div>
+				<?php 
+					}
+				} 
+				?>
+			</div>
+		</section>
+        <?php 
+        }else{
+        ?>
+        <section class="mainBlog__news">
+			<div class="mainBlog__news__recent">
+				<div class="mainBlog__news__recent--h1">
+					<a href="">Tin Mới
+						<svg viewBox="0 0 185.343 185.343">
+							<path d="M51.707 185.343a10.692 10.692 0 01-7.593-3.149 10.724 10.724 0 010-15.175l74.352-74.347L44.114 18.32c-4.194-4.194-4.194-10.987 0-15.175 4.194-4.194 10.987-4.194 15.18 0l81.934 81.934c4.194 4.194 4.194 10.987 0 15.175l-81.934 81.939a10.678 10.678 0 01-7.587 3.15z" fill="#14AFB4"></path>
+						</svg>
+					</a>
+					
+				</div>
+				<?php
+				$get_new = $news->show_1news();
+				if($get_new){
+					while($result_new = $get_new->fetch_assoc()){
+				?> 
+				<div class="mainBlog__news__recent--bigNew">
+					<a href="#"><img src="img/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
+					<div class="mainBlog__news__recent--bigNew-layout">
+						<a href="#"><?php echo $result_new['title'] ?></a>
+						<p><?php echo $result_new['content'] ?></p>
+					</div>
+				</div>
+				<?php 
+					}
+				} 
+				?>
+				<?php
+				$get_news = $news->show_newsform2();
+				if($get_news){
+					while($result_news = $get_news->fetch_assoc()){
+				?> 
+				<div class="mainBlog__news__recent--smaillNew">
+					<a href="#"><img src="img/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
+					<div class="mainBlog__news__recent--bigNew-layout">
+						<a href="#"><?php echo $result_news['title'] ?></a>
+						<p><?php echo $result_news['content'] ?></p>
+					</div>
+				</div>
+				<?php 
+					}
+				} 
+				?>
+			</div>
+		</section>
+        <?php
+        }
+        ?>
+
 	</main>
 
-	<?php
+    <?php
 		include "view/footer.php";
 	?>
 
@@ -236,4 +253,4 @@
 		logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?">
 	</div>
 </body>
-</html>
+</html>   
