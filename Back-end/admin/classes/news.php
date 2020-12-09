@@ -48,15 +48,21 @@
             $result = $this->db->select($query);
             return $result;
         }
-        public function show_1newskhuyenmai(){
+        public function show_1khuyenmai(){
             $query = "SELECT * FROM news where status = 1 
                     order by id desc limit 1";
             $result = $this->db->select($query);
             return $result;
         }
-        public function show_2newskhuyenmai(){
+        public function show_2khuyenmai(){
             $query = "SELECT * FROM news where status = 1 
                     order by id desc limit 1,2";
+            $result = $this->db->select($query);
+            return $result;
+        }
+        public function show_khuyenmaiform2(){
+            $query = "SELECT * FROM news where status = 1 
+                        order by id desc limit 1,99";
             $result = $this->db->select($query);
             return $result;
         }
@@ -69,6 +75,12 @@
         public function show_2tintuc(){
             $query = "SELECT * FROM news where status = 0 
                     order by id desc limit 1,2";
+            $result = $this->db->select($query);
+            return $result;
+        }
+        public function show_tintucform2(){
+            $query = "SELECT * FROM news where status = 0
+                        order by id desc limit 1,99";
             $result = $this->db->select($query);
             return $result;
         }

@@ -1,7 +1,9 @@
 // initialize ckeditor
 CKEDITOR.replace('body');
 CKEDITOR.config.autoParagraph = false;
-
+// CKEDITOR.config.enterMode = CKEDITOR.ENTER_BR;
+// CKEDITOR.config.enterMode = CKEDITOR.ENTER_P;
+// CKEDITOR.config.enterMode = CKEDITOR.ENTER_DIV;
 // Javascript function to copy image url to clipboard from modal
 function copyUrl() {
 	var copyText = document.getElementById("post_image_url");

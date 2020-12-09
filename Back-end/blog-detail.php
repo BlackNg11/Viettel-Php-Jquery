@@ -50,27 +50,41 @@
 				</a>
 			</ul>
 		</section>
+		<?php
+		// $get_new = $news->show_news();
+		// if($get_new){
+		// 	while($result_new = $get_new->fetch_assoc()){
+		// 		if(isset($_GET['id']) && $_GET['id'] ==  $result_new['id']){
+
+		// 		}
+		?>    
+		<?php 
+		// 	}
+		// }	
+		?>
 		<section class="blogDetail">
-			<div class="blogDetail__heading">
-				<h1>Hello everybody lalalaal</h1>
-				<p>NOVEMBER 24, 2020 BY ADMIN</p>
-			</div>
 			<?php
 			$get_new = $news->show_1news();
 			if($get_new){
 				while($result_new = $get_new->fetch_assoc()){
+					if(isset($_GET['id']) && $_GET['id'] ==  $result_new['id']){
 			?>  
-				<div class="blogDetail__content">
-					<div class="blogDetail__content--img">
-						<img src="img/<?php echo $result_new['thumbnail'] ?>" alt="">
+					<div class="blogDetail__heading">
+						<h1>Hello everybody lalalaal</h1>
+						<p>NOVEMBER 24, 2020 BY ADMIN</p>
 					</div>
-					<p><?php echo $result_new['descripsion'] ?></p>
-					<div class="blogDetail__content--ct">
-						<?php echo $result_new['content'] ?>
-					</div>
-					
-				</div>
+						<div class="blogDetail__content">
+							<div class="blogDetail__content--img">
+								<img src="img/<?php echo $result_new['thumbnail'] ?>" alt="">
+							</div>
+							<p><?php echo $result_new['descripsion'] ?></p>
+							<div class="blogDetail__content--ct">
+								<?php echo $result_new['content'] ?>
+							</div>
+							
+						</div>
 			<?php 
+					}
 				}
 			} 
 			?>  

@@ -64,7 +64,8 @@
 					while($result_new = $get_new->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="admin/images/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
+					<a href="blog-detail.php?id=<?php echo $result_new['id'] ?>&status=<?php echo $result_new['status'] ?>">
+						<img src="admin/images/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_new['title'] ?></a>
 						<p><?php echo $result_new['descripsion'] ?></p>
@@ -101,7 +102,7 @@
 					
 				</div>
 				<?php
-				$get_newkhuyenmai = $news->show_1newskhuyenmai();
+				$get_newkhuyenmai = $news->show_1khuyenmai();
 				if($get_newkhuyenmai){
 					while($result_newkhuyenmai = $get_newkhuyenmai->fetch_assoc()){
 				?> 
@@ -117,7 +118,7 @@
 				} 
 				?>
 				<?php
-				$get_newskhuyenmai = $news->show_2newskhuyenmai();
+				$get_newskhuyenmai = $news->show_2khuyenmai();
 				if($get_newskhuyenmai){
 					while($result_newskhuyenmai = $get_newskhuyenmai->fetch_assoc()){
 				?> 
@@ -135,7 +136,7 @@
 			</div>
 			<div class="mainBlog__news__recent">
 				<div class="mainBlog__news__recent--h1">
-					<a href="loai-tin.php?status=0">Tin Tức
+					<a href="loai-tin.php?status=0">Tin Tức Viettel
 						<svg viewBox="0 0 185.343 185.343">
 							<path d="M51.707 185.343a10.692 10.692 0 01-7.593-3.149 10.724 10.724 0 010-15.175l74.352-74.347L44.114 18.32c-4.194-4.194-4.194-10.987 0-15.175 4.194-4.194 10.987-4.194 15.18 0l81.934 81.934c4.194 4.194 4.194 10.987 0 15.175l-81.934 81.939a10.678 10.678 0 01-7.587 3.15z" fill="#14AFB4"></path>
 						</svg>
@@ -151,7 +152,7 @@
 					<a href="#"><img src="admin/images/<?php echo $result_tintuc['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_tintuc['title'] ?></a>
-						<p><?php echo $result_tintuc['content'] ?></p>
+						<p><?php echo $result_tintuc['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -167,7 +168,7 @@
 					<a href="#"><img src="admin/images/<?php echo $result_2tintuc['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_2tintuc['title'] ?></a>
-						<p><?php echo $result_2tintuc['content'] ?></p>
+						<p><?php echo $result_2tintuc['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 

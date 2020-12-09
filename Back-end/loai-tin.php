@@ -62,15 +62,15 @@
 					
 				</div>
 				<?php
-				$get_new = $news->show_1news();
-				if($get_new){
-					while($result_new = $get_new->fetch_assoc()){
+				$get_1tintuc = $news->show_1tintuc();
+				if($get_1tintuc){
+					while($result_1tintuc = $get_1tintuc->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="img/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
+					<a href="#"><img src="img/<?php echo $result_1tintuc['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_new['title'] ?></a>
-						<p><?php echo $result_new['content'] ?></p>
+						<a href="#"><?php echo $result_1tintuc['title'] ?></a>
+						<p><?php echo $result_1tintuc['content'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -78,15 +78,15 @@
 				} 
 				?>
 				<?php
-				$get_news = $news->show_newsform2();
-				if($get_news){
-					while($result_news = $get_news->fetch_assoc()){
+				$get_tintucform2 = $news->show_tintucform2();
+				if($get_tintucform2){
+					while($result_tintucform2 = $get_tintucform2->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="img/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
+					<a href="#"><img src="img/<?php echo $result_tintucform2['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_news['title'] ?></a>
-						<p><?php echo $result_news['content'] ?></p>
+						<a href="#"><?php echo $result_tintucform2['title'] ?></a>
+						<p><?php echo $result_tintucform2	['content'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -109,15 +109,15 @@
 					
 				</div>
 				<?php
-				$get_new = $news->show_1news();
-				if($get_new){
-					while($result_new = $get_new->fetch_assoc()){
+				$get_1khuyenmai = $news->show_1khuyenmai();
+				if($get_1khuyenmai){
+					while($result_1khuyenmai = $get_1khuyenmai->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="img/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
+					<a href="#"><img src="img/<?php echo $result_1khuyenmai['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_new['title'] ?></a>
-						<p><?php echo $result_new['content'] ?></p>
+						<a href="#"><?php echo $result_1khuyenmai['title'] ?></a>
+						<p><?php echo $result_1khuyenmai['content'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -125,15 +125,15 @@
 				} 
 				?>
 				<?php
-				$get_news = $news->show_newsform2();
-				if($get_news){
-					while($result_news = $get_news->fetch_assoc()){
+				$get_khuyenmaiform2 = $news->show_khuyenmaiform2();
+				if($get_khuyenmaiform2){
+					while($result_khuyenmaiform2 = $get_khuyenmaiform2->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="img/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
+					<a href="#"><img src="img/<?php echo $result_khuyenmaiform2['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_news['title'] ?></a>
-						<p><?php echo $result_news['content'] ?></p>
+						<a href="#"><?php echo $result_khuyenmaiform2['title'] ?></a>
+						<p><?php echo $result_khuyenmaiform2['content'] ?></p>
 					</div>
 				</div>
 				<?php 
