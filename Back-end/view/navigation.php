@@ -16,7 +16,7 @@
 				<li class="navigation__item"><a href="404" class="navigation__link"><span>04</span>Mua Sim</a></li>
 <!-- 				<li class="navigation__item"><a href="404" class="navigation__link"><span>05</span>Mua Điện Thoại</a>
 				</li> -->
-				<li class="navigation__item"><a href="404" class="navigation__link"><span>05</span>Tin Tức</a>
+				<li class="navigation__item"><a href="blog.php" class="navigation__link"><span>05</span>Tin Tức</a>
 				</li>
 			</ul>
 		</nav>

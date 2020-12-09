@@ -40,16 +40,9 @@
 	?>
 
 	<main class="mainBlog">
-		<section class="phone-for">
-			<ul class="phone-for-lists">
-				<a href="trang-chu.php" class="phone-for-lists--item">
-					<li>Trang Chủ</li>
-				</a>
-				<a href="tra-truoc-viettel" class="phone-for-lists--item ">
-					<li>Tin Khuyến Mãi</li>
-				</a>
-			</ul>
-		</section>
+		<?php
+			include "view/navigation-blog.php";
+		?>
 		<?php
 		// $get_new = $news->show_news();
 		// if($get_new){
@@ -64,11 +57,11 @@
 		?>
 		<section class="blogDetail">
 			<?php
-			if(isset($_GET['id'])){
+
 			$get_new = $news->show_news();
 			if($get_new){
 				while($result_new = $get_new->fetch_assoc()){
-					if( $_GET['id'] ==  $result_new['id']){
+					if(isset($_GET['id']) && $_GET['id'] ==  $result_new['id']){
 			?>  
 					<div class="blogDetail__heading">
 						<h1>Hello everybody</h1>
@@ -85,7 +78,7 @@
 							
 						</div>
 			<?php 
-						}
+
 					}
 				}
 			} 

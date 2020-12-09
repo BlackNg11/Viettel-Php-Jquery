@@ -38,16 +38,9 @@
 	?>
 
 	<main class="mainBlog">
-		<section class="phone-for">
-			<ul class="phone-for-lists">
-				<a href="trang-chu.php" class="phone-for-lists--item">
-					<li>Trang Chủ</li>
-				</a>
-				<a href="#" class="phone-for-lists--item ">
-					<li>Tin Khuyến Mãi</li>
-				</a>
-			</ul>
-		</section>
+		<?php
+			include "view/navigation-blog.php";
+		?>
 		<section class="mainBlog__news">
 			<div class="mainBlog__news__recent">
 				<div class="mainBlog__news__recent--h1">
