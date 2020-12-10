@@ -1,0 +1,48 @@
+.sim__header {
+	height: 90vh;
+	background-image: linear-gradient(
+		to right bottom,
+		rgba($color-primary-light,0.8),
+		rgba($color-primary-dark,0.8)),
+	url(../img/img-s/5g-spelled-out-with-sim-cards.jpg);
+	background-size: cover;
+	background-position: left;
+	border-bottom-left-radius: 50% 20%;
+ 	border-bottom-right-radius: 50% 20%;
+	position: relative;
+	
+	@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+		   only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+		   only screen and (min-width: 125em){
+		background-image: linear-gradient(
+			to right bottom,
+			rgba($color-primary-light,0.8),
+			rgba($color-primary-dark,0.8)),
+		url(../img/img-s/5g-spelled-out-with-sim-cards.jpg);
+	}
+	
+	
+
+	&__logo-box {
+		position: absolute;
+		top: 4rem;
+		left: 4rem;
+	}
+	
+	&__logo {
+		height: 3.5rem;
+	}
+
+	&__text-box {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+	}
+
+}
+
+.sim__buy {
+	height: 100vh;
+}

@@ -40,37 +40,46 @@
 	?>
 
 	<main class="mainBlog">
-		<section class="phone-for">
-			<ul class="phone-for-lists">
-				<a href="trang-chu.php" class="phone-for-lists--item">
-					<li>Trang Chủ</li>
-				</a>
-				<a href="tra-truoc-viettel" class="phone-for-lists--item ">
-					<li>Tin Khuyến Mãi</li>
-				</a>
-			</ul>
-		</section>
+		<?php
+			include "view/navigation-blog.php";
+		?>
+		<?php
+		// $get_new = $news->show_news();
+		// if($get_new){
+		// 	while($result_new = $get_new->fetch_assoc()){
+		// 		if(isset($_GET['id']) && $_GET['id'] ==  $result_new['id']){
+
+		// 		}
+		?>    
+		<?php 
+		// 	}
+		// }	
+		?>
 		<section class="blogDetail">
-			<div class="blogDetail__heading">
-				<h1>Hello everybody lalalaal</h1>
-				<p>NOVEMBER 24, 2020 BY ADMIN</p>
-			</div>
 			<?php
-			$get_new = $news->show_1news();
+
+			$get_new = $news->show_news();
 			if($get_new){
 				while($result_new = $get_new->fetch_assoc()){
+					if(isset($_GET['id']) && $_GET['id'] ==  $result_new['id']){
 			?>  
-				<div class="blogDetail__content">
-					<div class="blogDetail__content--img">
-						<img src="img/<?php echo $result_new['thumbnail'] ?>" alt="">
+					<div class="blogDetail__heading">
+						<h1>Hello everybody</h1>
+						<p>NOVEMBER 24, 2020 BY ADMIN</p>
 					</div>
-					<p><?php echo $result_new['descripsion'] ?></p>
-					<div class="blogDetail__content--ct">
-						<?php echo $result_new['content'] ?>
-					</div>
-					
-				</div>
+						<div class="blogDetail__content">
+							<div class="blogDetail__content--img">
+								<img src="admin/images/<?php echo $result_new['thumbnail'] ?>" alt="">
+							</div>
+							<p><?php echo $result_new['descripsion'] ?></p>
+							<div class="blogDetail__content--ct">
+								<?php echo $result_new['content'] ?>
+							</div>
+							
+						</div>
 			<?php 
+
+					}
 				}
 			} 
 			?>  
@@ -84,16 +93,36 @@
 
 				<div class="blogDetail__foot__list">
 				<?php
-				$get_news = $news->show_2news();
-				if($get_news){
-					while($result_news = $get_news->fetch_assoc()){
-				?> 
-					<div class="blogDetail__foot__list--card">
-						<a href="#"><img src="admin/images/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
-						<a href="#"><?php echo $result_news['title'] ?></a>
-						<?php echo $result_news['descripsion'] ?>
-					</div>
+				if(isset($_GET['status']) && $_GET['status'] == '1'){
+					$get_2khuyenmai = $news->show_2khuyenmai();
+					if($get_2khuyenmai){
+						while($result_2khuyenmai = $get_2khuyenmai->fetch_assoc()){
+							
+					?> 
+						<div class="blogDetail__foot__list--card">
+							<a href="blog-detail.php?id=<?php echo $result_2khuyenmai['id'] ?>&status=<?php echo $result_2khuyenmai['status'] ?>">
+								<img src="admin/images/<?php echo $result_2khuyenmai['thumbnail'] ?>" alt=""></a>
+							<a href="blog-detail.php?id=<?php echo $result_2khuyenmai['id'] ?>&status=<?php echo $result_2khuyenmai['status'] ?>">
+								<?php echo $result_2khuyenmai['title'] ?></a>
+							<?php echo $result_2khuyenmai['descripsion'] ?>
+						</div>
 				<?php 
+						}
+					}
+				}else{
+					$get_2tintuc = $news->show_2tintuc();
+					if($get_2tintuc){
+						while($result_2tintuc = $get_2tintuc->fetch_assoc()){
+					?>
+					<div class="blogDetail__foot__list--card">
+						<a href="blog-detail.php?id=<?php echo $result_2tintuc['id'] ?>&status=<?php echo $result_2tintuc['status'] ?>">
+							<img src="admin/images/<?php echo $result_2tintuc['thumbnail'] ?>" alt=""></a>
+						<a href="blog-detail.php?id=<?php echo $result_2tintuc['id'] ?>&status=<?php echo $result_2tintuc['status'] ?>">
+							<?php echo $result_2tintuc['title'] ?></a>
+						<?php echo $result_2tintuc['descripsion'] ?>
+					</div>
+				<?php
+						}
 					}
 				} 
 				?>

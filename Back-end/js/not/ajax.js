@@ -22,7 +22,7 @@ $('#test-form').submit(function(e) {
 				Swal.fire({
 					position: 'center',
 					icon: 'success',
-					title: 'Cảm Ơn Anh/Chị Đã Đăng Kí Dịch Vụ Viettel,Nhân Viên Viettel Sẽ Sớm Liên Hệ Quý Khách',
+					title: 'Cảm Ơn Quý Khách Đã Đăng Kí Dịch Vụ Viettel,Nhân Viên Viettel Sẽ Sớm Liên Hệ Quý Khách',
 					showConfirmButton: false,
 					timer: 3000
 				})

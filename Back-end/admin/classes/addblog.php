@@ -62,7 +62,8 @@ if (isset($_POST['save-post'])) {
 	$descripsion = mysqli_real_escape_string($db, $_POST['descripsion']);
 	$status = mysqli_real_escape_string($db, $_POST['status']);
 	$thumbnail = mysqli_real_escape_string($db, $fileName);
-	$content = htmlentities(mysqli_real_escape_string($db, $_POST['body']));
+	// $content = htmlentities(mysqli_real_escape_string($db, $_POST['body']));
+	$content = mysqli_real_escape_string($db, $_POST['body']);
 
 	$sql = "INSERT INTO news (title, descripsion, status, thumbnail, content) 
 			VALUES ('$title','$descripsion','$status','$thumbnail', '$content')";

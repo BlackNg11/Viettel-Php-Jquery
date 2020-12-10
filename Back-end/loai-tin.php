@@ -37,16 +37,9 @@
 	include "view/header.php";
 	?>
     <main class="mainBlog">
-		<section class="phone-for">
-			<ul class="phone-for-lists">
-				<a href="trang-chu.php" class="phone-for-lists--item">
-					<li>Trang Chủ</li>
-				</a>
-				<a href="#" class="phone-for-lists--item ">
-					<li>Tin Khuyến Mãi</li>
-				</a>
-			</ul>
-		</section>
+		<?php
+			include "view/navigation-blog.php";
+		?>
         <?php
         if(isset($_GET['status']) && $_GET['status'] == '0'){
         ?>
@@ -54,7 +47,7 @@
 		<section class="mainBlog__news">
 			<div class="mainBlog__news__recent">
 				<div class="mainBlog__news__recent--h1">
-					<a href="">Tin Tức Viettel
+					<a href="#">Tin Tức Viettel
 						<svg viewBox="0 0 185.343 185.343">
 							<path d="M51.707 185.343a10.692 10.692 0 01-7.593-3.149 10.724 10.724 0 010-15.175l74.352-74.347L44.114 18.32c-4.194-4.194-4.194-10.987 0-15.175 4.194-4.194 10.987-4.194 15.18 0l81.934 81.934c4.194 4.194 4.194 10.987 0 15.175l-81.934 81.939a10.678 10.678 0 01-7.587 3.15z" fill="#14AFB4"></path>
 						</svg>
@@ -62,15 +55,15 @@
 					
 				</div>
 				<?php
-				$get_new = $news->show_1news();
-				if($get_new){
-					while($result_new = $get_new->fetch_assoc()){
+				$get_1tintuc = $news->show_1tintuc();
+				if($get_1tintuc){
+					while($result_1tintuc = $get_1tintuc->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="img/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
+					<a href="blog-detail.php?id=<?php echo $result_1tintuc['id'] ?>&status=<?php echo $result_1tintuc['status'] ?>"><img src="img/<?php echo $result_1tintuc['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_new['title'] ?></a>
-						<p><?php echo $result_new['content'] ?></p>
+						<a href="#"><?php echo $result_1tintuc['title'] ?></a>
+						<p><?php echo $result_1tintuc['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -78,15 +71,15 @@
 				} 
 				?>
 				<?php
-				$get_news = $news->show_newsform2();
-				if($get_news){
-					while($result_news = $get_news->fetch_assoc()){
+				$get_tintucform2 = $news->show_tintucform2();
+				if($get_tintucform2){
+					while($result_tintucform2 = $get_tintucform2->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="img/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
+					<a href="blog-detail.php?id=<?php echo $result_tintucform2['id'] ?>&status=<?php echo $result_tintucform2['status'] ?>"><img src="img/<?php echo $result_tintucform2['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_news['title'] ?></a>
-						<p><?php echo $result_news['content'] ?></p>
+						<a href="#"><?php echo $result_tintucform2['title'] ?></a>
+						<p><?php echo $result_tintucform2	['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -101,7 +94,7 @@
         <section class="mainBlog__news">
 			<div class="mainBlog__news__recent">
 				<div class="mainBlog__news__recent--h1">
-					<a href="">Tin Khuyến Mãi
+					<a href="#">Tin Khuyến Mãi
 						<svg viewBox="0 0 185.343 185.343">
 							<path d="M51.707 185.343a10.692 10.692 0 01-7.593-3.149 10.724 10.724 0 010-15.175l74.352-74.347L44.114 18.32c-4.194-4.194-4.194-10.987 0-15.175 4.194-4.194 10.987-4.194 15.18 0l81.934 81.934c4.194 4.194 4.194 10.987 0 15.175l-81.934 81.939a10.678 10.678 0 01-7.587 3.15z" fill="#14AFB4"></path>
 						</svg>
@@ -109,15 +102,15 @@
 					
 				</div>
 				<?php
-				$get_new = $news->show_1news();
-				if($get_new){
-					while($result_new = $get_new->fetch_assoc()){
+				$get_1khuyenmai = $news->show_1khuyenmai();
+				if($get_1khuyenmai){
+					while($result_1khuyenmai = $get_1khuyenmai->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="img/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
+					<a href="blog-detail.php?id=<?php echo $result_1khuyenmai['id'] ?>&status=<?php echo $result_1khuyenmai['status'] ?>"><img src="img/<?php echo $result_1khuyenmai['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_new['title'] ?></a>
-						<p><?php echo $result_new['content'] ?></p>
+						<a href="#"><?php echo $result_1khuyenmai['title'] ?></a>
+						<p><?php echo $result_1khuyenmai['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -125,15 +118,15 @@
 				} 
 				?>
 				<?php
-				$get_news = $news->show_newsform2();
-				if($get_news){
-					while($result_news = $get_news->fetch_assoc()){
+				$get_khuyenmaiform2 = $news->show_khuyenmaiform2();
+				if($get_khuyenmaiform2){
+					while($result_khuyenmaiform2 = $get_khuyenmaiform2->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="img/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
+					<a href="blog-detail.php?id=<?php echo $result_khuyenmaiform2['id'] ?>&status=<?php echo $result_khuyenmaiform2['status'] ?>"><img src="img/<?php echo $result_khuyenmaiform2['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_news['title'] ?></a>
-						<p><?php echo $result_news['content'] ?></p>
+						<a href="#"><?php echo $result_khuyenmaiform2['title'] ?></a>
+						<p><?php echo $result_khuyenmaiform2['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -148,7 +141,7 @@
         <section class="mainBlog__news">
 			<div class="mainBlog__news__recent">
 				<div class="mainBlog__news__recent--h1">
-					<a href="">Tin Mới
+					<a href="#">Tin Mới
 						<svg viewBox="0 0 185.343 185.343">
 							<path d="M51.707 185.343a10.692 10.692 0 01-7.593-3.149 10.724 10.724 0 010-15.175l74.352-74.347L44.114 18.32c-4.194-4.194-4.194-10.987 0-15.175 4.194-4.194 10.987-4.194 15.18 0l81.934 81.934c4.194 4.194 4.194 10.987 0 15.175l-81.934 81.939a10.678 10.678 0 01-7.587 3.15z" fill="#14AFB4"></path>
 						</svg>
@@ -161,10 +154,10 @@
 					while($result_new = $get_new->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="#"><img src="img/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
+					<a href="blog-detail.php?id=<?php echo $result_new['id'] ?>&status=<?php echo $result_new['status'] ?>"><img src="img/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_new['title'] ?></a>
-						<p><?php echo $result_new['content'] ?></p>
+						<p><?php echo $result_new['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -177,10 +170,10 @@
 					while($result_news = $get_news->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="#"><img src="img/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
+					<a href="blog-detail.php?id=<?php echo $result_news['id'] ?>&status=<?php echo $result_news['status'] ?>"><img src="img/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_news['title'] ?></a>
-						<p><?php echo $result_news['content'] ?></p>
+						<p><?php echo $result_news['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 

@@ -8,3 +8,14 @@ RewriteRule ^trang-chu index.php
 <FilesMatch ".(jpg|jpeg|png|gif|swf)$">
 Header set Cache-Control "max-age=604800, public"
 </FilesMatch>
+
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+<files config.php>
+order allow,deny
+deny from all
+</files>
