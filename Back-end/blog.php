@@ -44,6 +44,9 @@
 					<li>Trang Chủ</li>
 				</a>
 				<a href="#" class="phone-for-lists--item ">
+					<li>Tin Tức</li>
+				</a>
+				<a href="#" class="phone-for-lists--item ">
 					<li>Tin Khuyến Mãi</li>
 				</a>
 			</ul>
@@ -151,7 +154,7 @@
 					<a href="#"><img src="admin/images/<?php echo $result_tintuc['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_tintuc['title'] ?></a>
-						<p><?php echo $result_tintuc['content'] ?></p>
+						<p><?php echo $result_tintuc['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 
@@ -167,7 +170,7 @@
 					<a href="#"><img src="admin/images/<?php echo $result_2tintuc['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
 						<a href="#"><?php echo $result_2tintuc['title'] ?></a>
-						<p><?php echo $result_2tintuc['content'] ?></p>
+						<p><?php echo $result_2tintuc['descripsion'] ?></p>
 					</div>
 				</div>
 				<?php 
