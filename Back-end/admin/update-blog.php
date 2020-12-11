@@ -39,7 +39,7 @@ include "view/header.php";
                                 while($result_new = $get_new->fetch_assoc()){
                                     if(isset($_GET['id']) && $_GET['id'] ==  $result_new['id']){
                         ?>
-                        <form action="blog.php" method="post" enctype="multipart/form-data" class="post-form">
+                        <form action="update-blog.php?id=<?php echo $result_new['id'] ?>" method="post" enctype="multipart/form-data" class="post-form">
                             <h1 class="text-center">Update Blog</h1>
                             <div class="form-group row">
                                 <label for="title" class="col-sm-2 col-form-label">Tiêu Đề :</label>
@@ -77,10 +77,10 @@ include "view/header.php";
                                 <!-- Input to browse your machine and select image to upload -->
                                 <input type="file" id="image-input" style="display: none;">
 
-							<textarea name="body" id="body" class="form-control" cols="30" rows="5" value="<?php echo $result_new['content'] ?>"></textarea>
+							<textarea name="body" id="body" class="form-control" cols="30" rows="5"><?php echo $result_new['content'] ?></textarea>
                             </div>
                             <div class="form-group">
-                                <button type="submit" name="save-post" class="btn btn-success pull-right">Cập Nhật</button>
+                                <button type="submit" name="update-blog" class="btn btn-success pull-right">Cập Nhật</button>
                             </div>
                         </form>
                         <?php
@@ -114,7 +114,12 @@ include "view/header.php";
                 </div>
             </div>
             <!-- /.container-fluid -->
-
+                <?php
+                    if (isset($_POST['update-blog'])) {
+                        $news->update_news($_POST['title'],$_POST['descripsion'],$_POST['status'],$_POST['file'],$_POST['body'],$_GET['id']);
+                        header("Location:quanly-blog.php");
+                    }
+                ?>    
         </div>
         <!-- End of Main Content -->
 

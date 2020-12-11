@@ -67,9 +67,10 @@ if (isset($_POST['save-post'])) {
 	$content = mysqli_real_escape_string($db, $_POST['body']);
 	$d=strtotime("+7 Hours");
 	$time=date("Y-m-d H:i:s", $d);
-	$sql = "INSERT INTO news (title, descripsion, status, thumbnail, content,modifieddate) 
+	$sql = "INSERT INTO news (title, descripsion, status, thumbnail, content,createddate) 
 			VALUES ('$title','$descripsion','$status','$thumbnail', '$content',timestamp '$time')";
 	mysqli_query($db, $sql);
 	header("location: blog.php");
 }
+
 ?>

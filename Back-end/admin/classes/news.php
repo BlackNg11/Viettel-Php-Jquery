@@ -99,7 +99,7 @@
             $result = $this->db->delete($query);
             return $result;
         }
-        public function update_news($id,$title,$descripsion,$status,$thumbnail,$content){
+        public function update_news($title,$descripsion,$status,$thumbnail,$content,$id){
             $query = "UPDATE news
             SET title='$title',descripsion='$descripsion',status ='$status',thumbnail='$thumbnail',content='$content' 
             WHERE id = $id";
