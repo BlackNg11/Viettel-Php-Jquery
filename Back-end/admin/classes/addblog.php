@@ -1,5 +1,6 @@
-<?php 
 
+<?php 
+	
 	// connect to database
 $db = mysqli_connect("localhost", "root", "", "dichvu");
 
@@ -64,9 +65,10 @@ if (isset($_POST['save-post'])) {
 	$thumbnail = mysqli_real_escape_string($db, $fileName);
 	// $content = htmlentities(mysqli_real_escape_string($db, $_POST['body']));
 	$content = mysqli_real_escape_string($db, $_POST['body']);
-
-	$sql = "INSERT INTO news (title, descripsion, status, thumbnail, content) 
-			VALUES ('$title','$descripsion','$status','$thumbnail', '$content')";
+	$d=strtotime("+7 Hours");
+	$time=date("Y-m-d H:i:s", $d);
+	$sql = "INSERT INTO news (title, descripsion, status, thumbnail, content,modifieddate) 
+			VALUES ('$title','$descripsion','$status','$thumbnail', '$content',timestamp '$time')";
 	mysqli_query($db, $sql);
 	header("location: blog.php");
 }

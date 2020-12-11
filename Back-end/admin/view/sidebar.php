@@ -68,17 +68,17 @@ Session::checkSession();
 	</li>
 	<li class="nav-item">
 		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages2"
-		aria-expanded="true" aria-controls="collapsePages">
-		<i class="fas fa-fw fa-image"></i>
-		<span>Blog</span>
-	</a>
+			aria-expanded="true" aria-controls="collapsePages">
+			<i class="fas fa-fw fa-image"></i>
+			<span>Blog</span>
+		</a>
 	<div id="collapsePages2" class="collapse" aria-labelledby="headingPages"
 	data-parent="#accordionSidebar">
 	<div class="bg-white py-2 collapse-inner rounded">
 		<!-- <h6 class="collapse-header">Web Edit:</h6> -->
 		<a class="collapse-item" href="quanly-blog.php">Quản Lý Blog</a>
 		<a class="collapse-item" href="blog.php">Nhập Blog</a>
-		<a class="collapse-item" href="#">Chỉnh Sửa Blog</a>
+		<a class="collapse-item" href="update-blog.php">Chỉnh Sửa Blog</a>
 				<!-- <div class="collapse-divider"></div>
 				<h6 class="collapse-header">Other Pages:</h6>
 				<a class="collapse-item" href="404.php">404 Page</a>

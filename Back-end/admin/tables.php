@@ -58,28 +58,27 @@
                                 <table class="table table-striped table-bordered table-sm" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            
-                                            <th>SĐT</th>
-                                            <th>Địa Chỉ</th>
-                                            <th>Dịch Vụ</th>
-                                            <th>Yêu Cầu</th>
-                                            <th>Đã Tiếp Xúc</th>
-                                            <th>Người Liên Hệ</th>
-                                            <th>Ngày Đăng Ký</th>
-                                            <th>Thao Tác</th>
+                                            <th class="text-md-center">SĐT</th>
+                                            <th class="text-md-center">Địa Chỉ</th>
+                                            <th class="text-md-center">Dịch Vụ</th>
+                                            <th class="text-md-center">Yêu Cầu</th>
+                                            <th class="text-md-center">Đã Tiếp Xúc</th>
+                                            <th class="text-md-center">Người Liên Hệ</th>
+                                            <th class="text-md-center">Ngày Đăng Ký</th>
+                                            <th class="text-md-center">Thao Tác</th>
                                             
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>SĐT</th>
-                                            <th>Địa Chỉ</th>
-                                            <th>Dịch Vụ</th>
-                                            <th>Yêu Cầu</th>
-                                            <th>Đã Tiếp Xúc</th>
-                                            <th>Người Liên Hệ</th>
-                                            <th>Ngày Đăng Ký</th>
-                                            <th>Thao Tác</th>
+                                            <th class="text-md-center">SĐT</th>
+                                            <th class="text-md-center">Địa Chỉ</th>
+                                            <th class="text-md-center">Dịch Vụ</th>
+                                            <th class="text-md-center">Yêu Cầu</th>
+                                            <th class="text-md-center">Đã Tiếp Xúc</th>
+                                            <th class="text-md-center">Người Liên Hệ</th>
+                                            <th class="text-md-center">Ngày Đăng Ký</th>
+                                            <th class="text-md-center">Thao Tác</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>

@@ -1,3 +1,10 @@
+<?php
+    ob_start();
+    include "classes/news.php";
+?>
+<?php
+    $news = new news();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,54 +36,62 @@
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-                <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-                    For more information about DataTables, please visit the <a target="_blank"
-                        href="https://datatables.net">official DataTables documentation</a>.</p>
+                <h1 class="h3 mb-2 text-gray-800">Quản Lý Blog</h1>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">BLOG</h6>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped table-bordered table-sm" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>Tiêu Đề</th>
-                                        <th>Giới Thiệu</th>
-                                        <th>Loại Tin</th>
-                                        <th>Hình Ảnh</th>
-                                        <th>Nội Dung</th>
-                                        <th>Người Thêm</th>
-                                        <th>Ngày Tạo</th>
-                                        <th>Thao Tác</th>
+                                        <th class="text-md-center">Tiêu Đề</th>
+                                        <th class="text-md-center">Giới Thiệu</th>
+                                        <th class="text-md-center">Loại Tin</th>
+                                        <th class="text-md-center">Hình Ảnh</th>
+                                        <th class="text-md-center">Nội Dung</th>
+                                        <th class="text-md-center">Người Thêm</th>
+                                        <th class="text-md-center">Ngày Tạo</th>
+                                        <th class="text-md-center">Thao Tác</th>
                                     </tr>
                                 </thead>
                                 <tfoot>
                                     <tr>
-                                        <th>Tiêu Đề</th>
-                                        <th>Giới Thiệu</th>
-                                        <th>Loại Tin</th>
-                                        <th>Hình Ảnh</th>
-                                        <th>Nội Dung</th>
-                                        <th>Người Thêm</th>
-                                        <th>Ngày Tạo</th>
-                                        <th>Thao Tác</th>
+                                    <th class="text-md-center">Tiêu Đề</th>
+                                        <th class="text-md-center">Giới Thiệu</th>
+                                        <th class="text-md-center">Loại Tin</th>
+                                        <th class="text-md-center">Hình Ảnh</th>
+                                        <th class="text-md-center">Nội Dung</th>
+                                        <th class="text-md-center">Người Thêm</th>
+                                        <th class="text-md-center">Ngày Tạo</th>
+                                        <th class="text-md-center">Thao Tác</th>
                                     </tr>
                                 </tfoot>
                                 <tbody>
+                                <?php
+                                    $getall_news = $news->show_news();
+                                    if($getall_news){
+                                        while($result_allnews = $getall_news->fetch_assoc()){
+                                            ?>
                                     <tr>
-                                        <td>Tiger Nixondsadasdasdas</td>
-                                        <td>System Architect ádasdhaskjdnasl</td>
-                                        <td>Edinburghdsadasdasdas</td>
-                                        <td>61đâsdsadsadsadasddddđasdas</td>
-                                        <td>61đââssadddddddddddddd</td>
-                                        <td>61dsadsadsadas</td>
-                                        <td>2011/04/25</td>
+                                        <td><?php echo $result_allnews['title'] ?></td>
+                                        <td><?php echo $result_allnews['descripsion'] ?></td>
+                                        <td><?php
+                                            if($result_allnews['status'] == '1' ){
+                                                echo"Khuyến Mãi";
+                                            }else{
+                                                echo"Tin Tức";
+                                            }
+                                        ?></td>
+                                        <td><?php echo $result_allnews['thumbnail'] ?></td>
+                                        <td><?php echo htmlentities($result_allnews['content']) ?></td>
+                                        <td><?php echo $result_allnews['createdby'] ?></td>
+                                        <td><?php echo $result_allnews['createddate'] ?></td>
                                         <td>
-                                            <form action = "tables.php" method="GET">
+                                            <a href="update-blog.php?id=<?php echo $result_allnews['id'] ?>">
                                                 <button type="submit" class="btn btn-primary" name= "update" value="">
                                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square"
                                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -86,8 +101,9 @@
                                                             d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
                                                     </svg>
                                                 </button>
-                                            
-                                                <button type="submit" class="btn btn-primary" name="delete" value="">
+                                            </a>    
+                                            <form action = "quanly-blog.php" method="GET">
+                                                <button type="submit" class="btn btn-primary" name="delete" value="<?php echo $result_allnews['id'] ?>">
                                                     <svg width="1em" height="1em" viewBox="0 0 16 16"
                                                         class="bi bi-x-circle-fill" fill="currentColor"
                                                         xmlns="http://www.w3.org/2000/svg">
@@ -96,9 +112,19 @@
 
                                                         </svg>
                                                 </button>
-                                            </form></td>
+                                            </form>
+                                            <?php
+                                                if (isset($_GET['delete']) && $_GET['delete'] == $result_allnews['id']){
+                                                    $news->delete_news($result_allnews['id']);
+                                                    header("Location:quanly-blog.php");
+                                                }
+                                            ?>
+                                        </td>
                                     </tr>
-                                
+                                    <?php 
+                                        }
+                                    } 
+                                    ?> 
                                 </tbody>
                             </table>
                         </div>
@@ -126,7 +152,7 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
+ 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
