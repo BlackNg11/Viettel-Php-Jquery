@@ -28,17 +28,17 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>Viettet - Lắp mạng cáp quang Viettel ở Kiên Giang</title>
-			<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155251028-1">
 	</script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-	  gtag('config', 'UA-155251028-1');
+		gtag('config', 'UA-155251028-1');
 	</script>
-	</head>
+</head>
 
 
 <?php
@@ -113,8 +113,14 @@ include "view/navigation.php";
 								</select>
 							</div>
 
-							<div class="form__group">
-								<button name="submit" class="form-btn btn btn--primary u-margin-top-medium">Đăng Ký</button>
+							<div class="form__group ">
+								<button name="submit"  class="button__fly">
+									<p>Đăng Kí</p>
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+										<path id="paper-plane-icon" d="M462,54.955L355.371,437.187l-135.92-128.842L353.388,167l-179.53,124.074L50,260.973L462,54.955z
+										M202.992,332.528v124.517l58.738-67.927L202.992,332.528z"></path> 
+									</svg>
+								</button>
 							</div>
 						</form>
 					</div>
@@ -333,12 +339,12 @@ include "view/navigation.php";
 		</section>
 	</main>
 	<?php
-		include "view/footer.php";
+	include "view/footer.php";
 	?>
-		<!-- javascript -->
-		<script src="ow_/vendors/jquery.min.js"></script>
-		<!-- Form Validation -->
-		<script>
+	<!-- javascript -->
+	<script src="ow_/vendors/jquery.min.js"></script>
+	<!-- Form Validation -->
+	<script>
 		// function myFunction() {
 		// 	let pattern = /((09|03|07|08|05)+([0-9]{8})\b)/g;
 		// 	let elements = document.getElementsByClassName("form__input");
@@ -382,31 +388,31 @@ include "view/navigation.php";
 	<script src="js/index.js"></script>
 	<script src="js/ajax.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-				<!-- Load Facebook SDK for JavaScript -->
-			<div id="fb-root"></div>
-			<script>
-				window.fbAsyncInit = function () {
-					FB.init({
-						xfbml: true,
-						version: 'v9.0'
-					});
-				};
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				xfbml: true,
+				version: 'v9.0'
+			});
+		};
 
-				(function (d, s, id) {
-					var js, fjs = d.getElementsByTagName(s)[0];
-					if (d.getElementById(id)) return;
-					js = d.createElement(s);
-					js.id = id;
-					js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-					fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));
-			</script>
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 
-			<!-- Your Chat Plugin code -->
-			<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
-			logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?"
-			logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?">
-		</div>
+	<!-- Your Chat Plugin code -->
+	<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
+	logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?"
+	logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?">
+</div>
 
 
 </body>

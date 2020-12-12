@@ -23,37 +23,37 @@
 		
 		&--item {
 			&:link,
-    		&:visited {
-    			padding: 1rem;
-    			font-size: 1.7rem;
+			&:visited {
+				padding: 1rem;
+				font-size: 1.7rem;
 				font-weight: 700;
 				line-height: 1.5rem;
 				color: $color-white;
-        		text-decoration: none;
+				text-decoration: none;
 				list-style: none;
 				transition: .25s ease;
 
 				@include respond(phone) {
-			       font-size: 2.8rem;
-			       line-height: 2.5rem;
-			    }
+					font-size: 2.8rem;
+					line-height: 2.5rem;
+				}
 
 				@include respond(smaill-phone) {
-			       font-size: 2.8rem;
-			       line-height: 2.5rem;
-			    }
-    		}
+					font-size: 2.8rem;
+					line-height: 2.5rem;
+				}
+			}
 
-    		&:hover {
+			&:hover {
 				color: $color-primary;
-    		}
+			}
 			
 		}
 	}
 }
 
 .wifi-contact {
-	width: 114rem;
+	width: 100rem;
 	margin: 0 auto;
 	margin-bottom: 5rem;
 
@@ -61,96 +61,96 @@
  //       width: 107rem !important;
  //    }
 
-	@include respond(tab-port) {
-       width: 100vw;
-       margin: 0;
-    }
+ @include respond(tab-port) {
+ 	width: 100vw;
+ 	margin: 0;
+ }
 
 
-    @include respond(phone) {
-       
-    }
+ @include respond(phone) {
+
+ }
 
 
 
 
-    &--head {
-    	display: flex;
-    	justify-content: center;
-    	align-items: center;
-    	margin: 2rem 0rem;
+ &--head {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	margin: 2rem 0rem;
 
-    	@include respond(phone) {
-			font-size: 5rem !important;
+ 	@include respond(phone) {
+ 		font-size: 5rem !important;
 
-		}
-    }
+ 	}
+ }
 
-    
-    &--wifi,&--tele,&--sport {
-    	color: $color-primary;
-    	font-size: 4rem;
-		line-height: 2.5rem;
-		margin: 5rem 0rem;
 
-		@include respond(tab-land) {
-	       font-size: 3rem;
-	     }
+ &--wifi,&--tele,&--sport {
+ 	color: $color-primary;
+ 	font-size: 4rem;
+ 	line-height: 2.5rem;
+ 	margin: 5rem 0rem;
 
-		@include respond(tab-port) {
-	       font-size: 3rem;
-	    }
+ 	@include respond(tab-land) {
+ 		font-size: 3rem;
+ 	}
 
-		@include respond(phone) {
+ 	@include respond(tab-port) {
+ 		font-size: 3rem;
+ 	}
+
+ 	@include respond(phone) {
+ 		font-size: 3rem;
+       		//width: 100%;
+       		margin: 3rem 0rem;
+       	}
+
+       	@include respond(smaill-phone) {
        		font-size: 3rem;
        		//width: 100%;
        		margin: 3rem 0rem;
-    	}
-
-		@include respond(smaill-phone) {
-       		font-size: 3rem;
-       		//width: 100%;
-       		margin: 3rem 0rem;
-    	}
-    }
+       	}
+       }
 
 
-	&__hotline {
-		font-size: 2rem;
-		line-height: 1rem;
-		
-		@include respond(phone) {
+       &__hotline {
+       	font-size: 2rem;
+       	line-height: 1rem;
+
+       	@include respond(phone) {
        		font-size: 4rem;
        		line-height: 4rem;
-    	}
+       	}
 
-		@include respond(smaill-phone) {
+       	@include respond(smaill-phone) {
        		font-size: 4rem;
        		line-height: 4rem;
-    	}
+       	}
 
-		&--blue {
-			color: blue;
-			text-decoration: none;
-		}
+       	&--blue {
+       		color: blue;
+       		text-decoration: none;
+       	}
 
-		&--red {
-			color: red;
-			margin: 2rem 0rem;
+       	&--red {
+       		color: red;
+       		margin: 2rem 0rem;
 
-			@include respond(phone) {
-				font-size: 4rem;
-				line-height: 5rem;
-			}
+       		@include respond(phone) {
+       			font-size: 4rem;
+       			line-height: 5rem;
+       		}
 
-			@include respond(smaill-phone) {
-				font-size: 4rem;
-				line-height: 5rem;
-			}
-		}
-	}
+       		@include respond(smaill-phone) {
+       			font-size: 4rem;
+       			line-height: 5rem;
+       		}
+       	}
+       }
 
-	&--carousel {
+       &--carousel {
 		// width: 100%;
 
 	}
@@ -160,16 +160,16 @@
 		margin-top: 1.5rem;
 		margin-bottom: 4rem;
 
-	 	&--list {
-	 		list-style:none;
-	 	}
+		&--list {
+			list-style:none;
+		}
 
-	 	@include respond(phone) {
+		@include respond(phone) {
 			font-size: 2.5rem;
 			line-height: 3.5rem;
 		}
 
-	 	@include respond(smaill-phone) {
+		@include respond(smaill-phone) {
 			font-size: 2.5rem;
 			line-height: 3.5rem;
 		}
@@ -216,38 +216,25 @@
 			}
 		}
 
-			
-		}
+
+	}
 	
 
 	&--infomation {
 		font-size: 1.6rem;
-		line-height: 2rem;
+		line-height: 3rem;
 
 		@include respond(phone) {
-				font-size: 4rem;
-				line-height: 5rem;
-			}
+			font-size: 4rem;
+			line-height: 5rem;
+		}
 
 		@include respond(smaill-phone) {
 			font-size: 2.5rem;
 			line-height: 4rem;
 		}
 
-		&--heading {
-			font-size: 2rem;
-			line-height: 2.5rem;
 
-			@include respond(phone) {
-				font-size: 3rem;
-				line-height: 5rem;
-			}
-
-			@include respond(smaill-phone) {
-				font-size: 3rem;
-				line-height: 5rem;
-			}
-		}
 
 		&--text {
 			margin: 2rem 0rem;

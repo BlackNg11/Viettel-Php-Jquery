@@ -570,7 +570,15 @@
 				</div>
 
 				<div class="wifi-contact--infomation">
-					<h3 class="wifi-contact--infomation--heading">Lắp đặt wifi cáp quang Viettel có gì đặc biệt?</h3>
+					<div class="line">
+						<h3>
+							<span>
+								Lắp đặt wifi cáp quang Viettel có gì đặc biệt?
+							</span>
+						
+						</h3>
+					</div>		
+					
 					<p class="wifi-contact--infomation--text">Internet là một phần không thể thiếu trong cuộc sống hiện đại ngày nay,với nhu cầu lắp đặt mạng ngày càng tăng Viettel hiểu điều đó và đã triển khai lắp đặt mạng,cung cấp nhu cầu sử dụng internet cho mọi khách hàng cần.</p>
 					<p class="wifi-contact--infomation--text">Với mong muốn mang lại chất lượng và dịch vụ tốt nhất dành cho
 						khách hàng.Viettel đã và đang cố gắng xây dựng mạng lưới hạ tầng rộng khắp tại tất cả các khu vực
@@ -596,9 +604,17 @@
 					<p class="wifi-contact--infomation--text">
 						Dịch vụ lắp đặt mạng Viettel hiện đại cùng phong cách làm việc chuyên nghiệp sẽ mang đến sự hài lòng tuyệt đối cho khách hàng. Liên hệ tới số hotline 0383.61.71.61 hoặc tổng đài Viettel 1800 8168 để được tư vấn miễn phí về dịch vụ cũng như để được nhận những ưu đãi lớn nhất.
 					</p>
-					<h3 class="wifi-contact--infomation--heading">Hãy dùng bộ thiết bị HomeWIFI Viettel</h3>
+				
+					
+					<div class="line">
+						<h3>
+							<span>
+								Hãy dùng bộ thiết bị HomeWIFI Viettel
+							</span>
+						</h3>
+					</div>	
 					<div class="wifi-contact__img-2">
-						<img src="img/home.png" alt="Wifi và truyền hình Viettel" class="wifi-contact__img-2"
+						<img src="img/home.png" alt="Wifi Viettel" class="wifi-contact__img-2"
 						style="width: 100%">
 					</div>		
 					<p class="wifi-contact--infomation--text">Homewifi của Viettel là bộ thiết bị khuếch đại tín hiệu wifi, được kết nối với nhau một cách thống nhất và có khả năng phủ sóng wifi đến toàn bộ góc trong căn nhà, quán cafe.</p>
@@ -618,8 +634,33 @@
 					<p class="wifi-contact--infomation--text">- Thiết lập một căn hộ thông minh trong thời đại 4.0 khi có thể giúp mọi người điều khiển âm thanh, ánh sáng, rèm cửa, camera, điều hòa,… dễ dàng và tiện lợi.</p>
 					<p class="wifi-contact--infomation--text">- Thiết bị Home Wifi Viettel thiết kế hiện đại, gọn nhẹ, không cần đi dây, lắp đặt dễ dàng nên hoàn toàn không làm ảnh hưởng đến thẩm mỹ của căn hộ.</p>
 					<p class="wifi-contact--infomation--text">- Giá gói cước Home Wifi khá đa dạng, với nhiều mức giá khác nhau nên hoàn toàn có thể đáp ứng mọi nhu cầu và tài chính của các hộ gia đình hoặc doanh nghiệp vừa và nhỏ.</p>
-					<p class="wifi-contact--infomation--text">- Thiết bị cung cấp tốc độ truyền tải dữ liệu khá cao, có thể lên tới 2000Mbps, cùng khả năng ưu tiên truy cập internet 5GHz để người dùng có thể tận hưởng mọi tiện ích không lo bị gián đoạn.</p>					
+					<p class="wifi-contact--infomation--text">- Thiết bị cung cấp tốc độ truyền tải dữ liệu khá cao, có thể lên tới 2000Mbps, cùng khả năng ưu tiên truy cập internet 5GHz để người dùng có thể tận hưởng mọi tiện ích không lo bị gián đoạn.</p>
+
+				
+					<div class="line">
+						<h3>
+							<span>
+								Truyền Hình Viettel(Viettel TV)
+							</span>
+						</h3>
+					</div>
+
+					<p class="wifi-contact--infomation--text">Truyền hình Viettel là dịch vụ giải trí xem tivi với chất lượng HD và full HD được tải trên đường cáp quang tốc độ cao do Viettel cung cấp. Gói dịch vụ này có nội dung hấp dẫn khác biệt so với gói xem tivi thông thường trong đó có hơn 100 kênh, ngoài ra truyền hình Viettel có kho phim hd phong phú cập nhật liên tục, ứng dụng nâng cao như gói mở rộng, thiếu nhi , âm nhạc vv.. mang lại trải nghiệm mới lạ.</p>
+					<div class="wifi-contact__img-2">
+						<img src="img/img-s/vietteltivibox.png" alt="Truyền hình Viettel" class="wifi-contact__img-2"
+						style="width: 100%">
+					</div>	
+					<p class="wifi-contact--infomation--text">
+						Có hơn 100 kênh tivi trực tuyến đủ các đài TV, VTC, HTV, THVL, VTVcab (BongDaTV, TheThaoTV), 63 kênh địa phương, VTV1, VTV3 và VTV6,… Bạn có thể xem các kênh này mọi lúc mọi nơi khi muốn.
+					</p>
+					<p class="wifi-contact--infomation--text">Nếu bạn quá bận rộn và không thể xem chương trình, bộ phim yêu thích vào khung giờ phát sóng. Bạn đừng tiếc nuối, với tính năng xem lại các chương trình đã phát sóng trong một tuần giúp bạn có thể xem lại các chương trình yêu thích lúc rảnh rỗi.</p>
+					<div class="wifi-contact__img-2">
+						<img src="img/img-s/tv.jpg" alt="Truyền hình Viettel" class="wifi-contact__img-2"
+						style="width: 100%">
+					</div>
+					<p class="wifi-contact--infomation--text">Bạn là một fan thể thao nói chung và bóng đá nói riêng,Viettel cung cấp cho bạn chùm kênh thể thao K+,cùng hòa nhịp với Ngoại Hạng Anh,Laliga,SeriaA,... vào dịp cuối tuần.Ngoài ra K+ còn những kênh phim điện ảnh bom tấn,âm nhạc, thể thao, thiếu nhi, Hài - TvShow. </p>				
 				</div>
+				
 			</section>
 
 			<section class="form-register">

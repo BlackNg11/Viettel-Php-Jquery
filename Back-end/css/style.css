@@ -688,6 +688,329 @@ body {
   position: relative;
   z-index: 1; }
 
+.button__fly {
+  font-size: 19px;
+  font-family: 'Pacifico';
+  overflow: visible;
+  border-radius: 5rem;
+  position: relative;
+  padding-right: 30px;
+  background-color: #ecfbff;
+  border: 2px solid #a6e0ee;
+  color: #2d7586;
+  display: block;
+  margin: 13% auto;
+  height: 6rem;
+  width: 15rem;
+  cursor: pointer;
+  transition: all 0.15s; }
+
+.button__fly:hover {
+  background-color: #ddf7ff; }
+
+.button__fly:hover svg {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+  -webkit-transition: -webkit-transform 0.15s;
+  -moz-transition: -moz-transform 0.15s;
+  -o-transition: -o-transform 0.15s;
+  -ms-transition: -ms-transform 0.15s;
+  transition: transform 0.15s; }
+
+.button__fly svg {
+  position: absolute;
+  top: 13px;
+  right: 25px;
+  height: 30px;
+  width: auto;
+  -webkit-transition: -webkit-transform 0.15s;
+  -moz-transition: -moz-transform 0.15s;
+  -o-transition: -o-transform 0.15s;
+  -ms-transition: -ms-transform 0.15s;
+  transition: transform 0.15s; }
+  @media only screen and (max-width: 37.5em) {
+    .button__fly svg {
+      top: 3px;
+      right: 4px; } }
+
+.button__fly svg path {
+  fill: #2d7586; }
+
+.button__fly.clicked {
+  background-color: #cff5b3;
+  border: 2px solid #cff5b3;
+  color: #6aaa3b;
+  padding-right: 6px;
+  -webkit-animation: bounce-in 0.3s;
+  -moz-animation: bounce-in 0.3s;
+  -o-animation: bounce-in 0.3s;
+  -ms-animation: bounce-in 0.3s;
+  animation: bounce-in 0.3s;
+  cursor: default; }
+
+.button__fly.clicked svg {
+  -webkit-animation: flyaway 1.3s linear;
+  -moz-animation: flyaway 1.3s linear;
+  -o-animation: flyaway 1.3s linear;
+  -ms-animation: flyaway 1.3s linear;
+  animation: flyaway 1.3s linear;
+  top: -80px;
+  right: -1000px; }
+
+.button__fly.clicked svg path {
+  fill: #6aaa3b; }
+
+@-moz-keyframes flyaway {
+  0% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    top: 13px;
+    right: 25px;
+    height: 30px; }
+  5% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    top: 13px;
+    right: 0px;
+    height: 30px; }
+  20% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    top: 13px;
+    right: -130px;
+    height: 45px; }
+  40% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    top: -40px;
+    right: -280px;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none; }
+  100% {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+    top: -200px;
+    right: -1000px;
+    height: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0); } }
+
+@-webkit-keyframes flyaway {
+  0% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    top: 13px;
+    right: 25px;
+    height: 30px; }
+  5% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    top: 13px;
+    right: 0px;
+    height: 30px; }
+  20% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    top: 13px;
+    right: -130px;
+    height: 45px; }
+  40% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    top: -40px;
+    right: -280px;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none; }
+  100% {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+    top: -200px;
+    right: -1000px;
+    height: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0); } }
+
+@-o-keyframes flyaway {
+  0% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    top: 13px;
+    right: 25px;
+    height: 30px; }
+  5% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    top: 13px;
+    right: 0px;
+    height: 30px; }
+  20% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    top: 13px;
+    right: -130px;
+    height: 45px; }
+  40% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    top: -40px;
+    right: -280px;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none; }
+  100% {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+    top: -200px;
+    right: -1000px;
+    height: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0); } }
+
+@keyframes flyaway {
+  0% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    top: 13px;
+    right: 25px;
+    height: 30px; }
+  5% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    top: 13px;
+    right: 0px;
+    height: 30px; }
+  20% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    top: 13px;
+    right: -130px;
+    height: 45px; }
+  40% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    top: -40px;
+    right: -280px;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none; }
+  100% {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+    top: -200px;
+    right: -1000px;
+    height: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0); } }
+
+@-moz-keyframes bounce-in {
+  0% {
+    padding-right: 30px; }
+  40% {
+    padding-right: 6px; }
+  50% {
+    padding-left: 30px; }
+  100% {
+    padding-left: 6px; } }
+
+@-webkit-keyframes bounce-in {
+  0% {
+    padding-right: 30px; }
+  40% {
+    padding-right: 6px; }
+  50% {
+    padding-left: 30px; }
+  100% {
+    padding-left: 6px; } }
+
+@-o-keyframes bounce-in {
+  0% {
+    padding-right: 30px; }
+  40% {
+    padding-right: 6px; }
+  50% {
+    padding-left: 30px; }
+  100% {
+    padding-left: 6px; } }
+
+@keyframes bounce-in {
+  0% {
+    padding-right: 30px; }
+  40% {
+    padding-right: 6px; }
+  50% {
+    padding-left: 30px; }
+  100% {
+    padding-left: 6px; } }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -2170,6 +2493,69 @@ body {
         .blogDetail__foot__list--card p {
           font-size: 1.6rem; }
 
+.line {
+  margin: 5rem 0;
+  text-align: center;
+  position: relative; }
+  .line h3 {
+    font-size: 2rem;
+    text-transform: uppercase; }
+    .line h3::before {
+      content: '';
+      background: #2CC2AF;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-170%); }
+    @media only screen and (max-width: 37.5em) {
+      .line h3 {
+        font-size: 3rem;
+        line-height: 5rem; } }
+    @media only screen and (max-width: 26em) {
+      .line h3 {
+        font-size: 3rem;
+        line-height: 5rem; } }
+  .line span {
+    background: -webkit-linear-gradient(0, #14AFB4 0, #298ACC 100%);
+    text-transform: uppercase;
+    z-index: 1;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    line-height: 40px; }
+    .line span::after {
+      content: "";
+      position: absolute;
+      left: -15px;
+      border-width: 0;
+      bottom: 1px;
+      border-style: solid;
+      border-color: #0e1c47 transparent;
+      display: block;
+      width: 0;
+      height: 5px;
+      border-top: 17px solid transparent;
+      border-bottom: 22px solid transparent;
+      border-right: 15px solid #14AFB4; }
+    .line span::before {
+      content: "";
+      position: absolute;
+      right: -15px;
+      border-width: 0;
+      bottom: 1px;
+      border-style: solid;
+      border-color: #0e1c47 transparent;
+      display: block;
+      width: 0;
+      height: 5px;
+      border-top: 17px solid transparent;
+      border-bottom: 22px solid transparent;
+      border-left: 15px solid #298ACC; }
+
 .header {
   height: 10vh;
   background-color: #14AFB4;
@@ -2572,7 +2958,7 @@ body {
       color: #14AFB4; }
 
 .wifi-contact {
-  width: 114rem;
+  width: 100rem;
   margin: 0 auto;
   margin-bottom: 5rem; }
   @media only screen and (max-width: 56.25em) {
@@ -2677,7 +3063,7 @@ body {
           margin-top: 2rem; } }
   .wifi-contact--infomation {
     font-size: 1.6rem;
-    line-height: 2rem; }
+    line-height: 3rem; }
     @media only screen and (max-width: 37.5em) {
       .wifi-contact--infomation {
         font-size: 4rem;
@@ -2686,17 +3072,6 @@ body {
       .wifi-contact--infomation {
         font-size: 2.5rem;
         line-height: 4rem; } }
-    .wifi-contact--infomation--heading {
-      font-size: 2rem;
-      line-height: 2.5rem; }
-      @media only screen and (max-width: 37.5em) {
-        .wifi-contact--infomation--heading {
-          font-size: 3rem;
-          line-height: 5rem; } }
-      @media only screen and (max-width: 26em) {
-        .wifi-contact--infomation--heading {
-          font-size: 3rem;
-          line-height: 5rem; } }
     .wifi-contact--infomation--text {
       margin: 2rem 0rem; }
     .wifi-contact--infomation--list {
@@ -2801,7 +3176,7 @@ body {
           line-height: 5rem; } }
   .phone-contact--infomation {
     font-size: 1.6rem;
-    line-height: 2rem; }
+    line-height: 3rem; }
     @media only screen and (max-width: 37.5em) {
       .phone-contact--infomation {
         font-size: 4rem;
@@ -2850,6 +3225,9 @@ body {
 .mainBlog__news {
   width: 100rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 56.25em) {
+    .mainBlog__news {
+      width: 100%; } }
   .mainBlog__news__recent--h1 {
     display: flex;
     align-items: center;
@@ -2881,6 +3259,10 @@ body {
       height: 33rem;
       width: 50rem;
       margin-right: 3.5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .mainBlog__news__recent--bigNew img {
+          height: 33rem;
+          width: 45rem; } }
     .mainBlog__news__recent--bigNew-layout {
       align-self: flex-start; }
       .mainBlog__news__recent--bigNew-layout a {
@@ -2905,6 +3287,9 @@ body {
       height: 18rem;
       width: 28rem;
       margin-right: 3.5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .mainBlog__news__recent--smaillNew img {
+          width: 24rem; } }
     .mainBlog__news__recent--smaillNew-layout {
       align-self: flex-start; }
       .mainBlog__news__recent--smaillNew-layout a {

@@ -198,7 +198,14 @@
 
 
 				<div class="wifi-contact--infomation">
-					<h3 class="wifi-contact--infomation--heading">Lắp đặt wifi cáp quang Viettel có gì đặc biệt?</h3>
+					<div class="line">
+						<h3>
+							<span>
+								Lắp đặt wifi cáp quang Viettel có gì đặc biệt?
+							</span>
+						
+						</h3>
+					</div>
 					<p class="wifi-contact--infomation--text">Internet là một phần không thể thiếu trong cuộc sống hiện đại ngày nay,với nhu cầu lắp đặt mạng ngày càng tăng Viettel hiểu điều đó và đã triển khai lắp đặt mạng,cung cấp nhu cầu sử dụng internet cho mọi khách hàng cần.</p>
 					<p class="wifi-contact--infomation--text">Với mong muốn mang lại chất lượng và dịch vụ tốt nhất dành cho
 						khách hàng.Viettel đã và đang cố gắng xây dựng mạng lưới hạ tầng rộng khắp tại tất cả các khu vực
@@ -224,7 +231,14 @@
 					<p class="wifi-contact--infomation--text">
 						Dịch vụ lắp đặt mạng Viettel hiện đại cùng phong cách làm việc chuyên nghiệp sẽ mang đến sự hài lòng tuyệt đối cho khách hàng. Liên hệ tới số hotline 0383.61.71.61 hoặc tổng đài Viettel 1800 8168 để được tư vấn miễn phí về dịch vụ cũng như để được nhận những ưu đãi lớn nhất.
 					</p>
-					<h3 class="wifi-contact--infomation--heading">Hãy dùng bộ thiết bị HomeWIFI Viettel</h3>
+					<div class="line">
+						<h3>
+							<span>
+								Hãy dùng bộ thiết bị HomeWIFI Viettel
+							</span>
+						
+						</h3>
+					</div>
 					<div class="wifi-contact__img-2">
 						<img src="img/home.png" alt="Wifi và truyền hình Viettel" class="wifi-contact__img-2"
 						style="width: 100%">
