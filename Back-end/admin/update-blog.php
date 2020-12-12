@@ -73,10 +73,8 @@ include "view/header.php";
                                 
                                 <!-- Upload image button -->
                                 <a href="#" class="btn btn-outline-primary upload-img-btn" data-toggle="modal" data-target="#myModal">upload image</a>
-
                                 <!-- Input to browse your machine and select image to upload -->
                                 <input type="file" id="image-input" style="display: none;">
-
 							<textarea name="body" id="body" class="form-control" cols="30" rows="5"><?php echo $result_new['content'] ?></textarea>
                             </div>
                             <div class="form-group">

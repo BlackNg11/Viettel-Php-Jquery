@@ -95,10 +95,10 @@ Session::checkSession();
 	<div id="collapsePages3" class="collapse" aria-labelledby="headingPages"
 	data-parent="#accordionSidebar">
 	<div class="bg-white py-2 collapse-inner rounded">
-<!--             	<h6 class="collapse-header">Web Edit:</h6> -->
-		<a class="collapse-item" href="blog.php">Quản Lý Sim</a>
-		<a class="collapse-item" href="blog.php">Nhập Sim</a>
-		<a class="collapse-item" href="#">Chỉnh Sửa Sim</a>
+		<!--   <h6 class="collapse-header">Web Edit:</h6> -->
+		<a class="collapse-item" href="sim.php">Quản Lý Sim</a>
+		<a class="collapse-item" href="khosim.php">Kho Sim</a>
+		<a class="collapse-item" href="loaisim.php">Loại Sim</a>
 				<!-- <div class="collapse-divider"></div>
 				<h6 class="collapse-header">Other Pages:</h6>
 				<a class="collapse-item" href="404.php">404 Page</a>
