@@ -10,6 +10,11 @@
         $kho->insert_kho($_POST['tenkho']);
         header("Location:khosim.php"); 
     }
+    if (isset($_GET['delete'])){
+        $kho->delete_kho($_GET['delete']);
+        header("Location:khosim.php");
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -92,7 +97,7 @@
                                 <td><?php echo $result_kho['tenkho'] ?></td>
                                 <td class="text-md-center">
                                     <a href="update-kho.php?update=<?php echo $result_kho['id'] ?>">
-                                        <button type="submit" class="btn btn-primary" name= "update" value="">
+                                        <button type="submit" class="btn btn-primary" name= "update" >
                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -112,12 +117,6 @@
                                                 </svg>
                                         </button>
                                     </a>
-                                    <?php
-                                        if (isset($_GET['delete']) && $_GET['delete'] == $result_kho['id']){
-                                            $kho->delete_kho($result_kho['id']);
-                                            header("Location:khosim.php");
-                                        }
-                                    ?>
                                 </td>
                             </tr>
                             <?php 

@@ -28,6 +28,11 @@
             $result = $this->db->select($query);
             return $result;
         }
+        public function show_loaisimExceptNamsinh(){
+            $query = "SELECT * FROM loaisim EXCEPT SELECT * FROM loaisim where tenloaisim='Sim Năm Sinh' order by id ";
+            $result = $this->db->select($query);
+            return $result;
+        }
         public function delete_loaisim($id){
             $query = "DELETE FROM loaisim WHERE id = '$id' ";
             $result = $this->db->delete($query);

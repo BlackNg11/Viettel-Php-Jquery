@@ -4,6 +4,10 @@
 ?>
 <?php
     $loaisim = new loaisim();
+    if (isset($_POST['update-blog'])) {
+        $loaisim->update_loaisim($_POST['tenloaisim'],$_GET['update']);
+        header("Location:loaisim.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,13 +67,7 @@
                     </div>
                 </div>
             </div>
-            <!-- /.container-fluid -->
-                <?php
-                    if (isset($_POST['update-blog'])) {
-                        $loaisim->update_loaisim($_POST['tenloaisim'],$_GET['update']);
-                        header("Location:loaisim.php");
-                    }
-                ?>    
+            <!-- /.container-fluid -->  
         </div>
         <!-- End of Main Content -->
 

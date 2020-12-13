@@ -55,6 +55,16 @@ create table loaisim (
 id bigint not null primary key auto_increment,
 tenloaisim varchar(150) not null
 );
+insert into loaisim(tenloaisim) values('Sim Thường');
+insert into loaisim(tenloaisim) values('Sim Hiếm');
+insert into loaisim(tenloaisim) values('Sim Tứ Quý');
+insert into loaisim(tenloaisim) values('Sim Thần Tài');
+insert into loaisim(tenloaisim) values('Sim Ông Địa');
+insert into loaisim(tenloaisim) values('Sim Đại Cát');
+insert into loaisim(tenloaisim) values('Sim Phong Thủy');
+insert into loaisim(tenloaisim) values('Sim Tiến Lên');
+insert into loaisim(tenloaisim) values('Sim Taxi');
+insert into loaisim(tenloaisim) values('Sim Năm Sinh');
 create table sim (
 id bigint not null primary key auto_increment,
 sdt varchar(20) not null,

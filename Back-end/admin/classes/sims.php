@@ -1,9 +1,4 @@
 <?php
-    include "lib/database.php";
-    include "helpers/format.php"
-?>
-
-<?php
 
     class sims
     {
@@ -27,17 +22,19 @@
             $giaban = mysqli_real_escape_string($this->db->link, $giaban);
             $idloaisim = mysqli_real_escape_string($this->db->link, $idloaisim);
             $idkho = mysqli_real_escape_string($this->db->link, $idkho);
-    
-            if(empty($tensim)){
-                $alert = "loai sim must be not empty";
+            $d=strtotime("+7 Hours");
+            $time=date("Y-m-d H:i:s", $d);
+            if(empty($sdt)){
+                $alert = "sdt must be not empty";
                 return $alert;
             }else{
-                $query = "INSERT INTO sim (sdt,gianhap,giaban,status,idloaisim,idkho) VALUES ('$sdt','$gianhap','$giaban',1,'$idloaisim','$idkho')";
+                $query = "INSERT INTO sim (sdt,gianhap,giaban,status,idloaisim,idkho,createddate) VALUES ('$sdt','$gianhap','$giaban',1,'$idloaisim','$idkho',timestamp '$time')";
                 $result = $this->db->select($query);
             }
         }
         public function show_sim(){
-            $query = "SELECT * FROM sim order by id ";
+            $query = "SELECT sim.id,sdt,gianhap,giaban,tenkho,tenloaisim,createddate FROM sim,loaisim,kho 
+            WHERE sim.idloaisim = loaisim.id AND sim.idkho = kho.id order by sim.id ";
             $result = $this->db->select($query);
             return $result;
         }

@@ -64,8 +64,8 @@
 					if(isset($_GET['id']) && $_GET['id'] ==  $result_new['id']){
 			?>  
 					<div class="blogDetail__heading">
-						<h1>Hello everybody</h1>
-						<p>NOVEMBER 24, 2020 BY ADMIN</p>
+						<h1><?php echo $result_new['title'] ?></h1>
+						<p><?php echo $result_new['createddate'] ?></p>
 					</div>
 						<div class="blogDetail__content">
 							<div class="blogDetail__content--img">

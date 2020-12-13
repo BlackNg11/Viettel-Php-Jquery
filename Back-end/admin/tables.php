@@ -4,18 +4,15 @@
 ?>
 <?php
     $khachhang = new khachhangthuong();
-    
-//     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-//         $id = $_POST['id'];
-//         $sdt = $_POST['sdt'];
-//         $diachi = $_POST['diachi'];
-//         $dichvudangky = $_POST['dichvudangky'];
-//         $content = $_POST['content'];
-//         $status = $_POST['status'];
 
-//         // $login_check = $class->login_admin($username,$password);
-// }
-                                                
+    if( isset($_GET['update'])){
+        $khachhang->update_khachhangthuong($_GET['update'],0,Session::get('username'));
+        header("Location:tables.php"); 
+    }
+    if (isset($_GET['delete'])){
+        $khachhang->delete_khachhangthuong($_GET['delete']);
+        header("Location:tables.php");
+    }                                      
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -128,33 +125,15 @@
                                                                 d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
                                                         </svg>
                                                     </button>
-                                                
                                                     <button type="submit" class="btn btn-primary" name="delete" value=<?php echo $result_allkhachhang['id'] ?>>
                                                         <svg width="1em" height="1em" viewBox="0 0 16 16"
                                                             class="bi bi-x-circle-fill" fill="currentColor"
                                                             xmlns="http://www.w3.org/2000/svg">
                                                             <path fill-rule="evenodd"
                                                                 d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
-
                                                             </svg>
                                                     </button>
                                                 </form>
-                                                <?php 
-                                                    
-                                                        if( isset($_GET['update']) && $_GET['update'] == $result_allkhachhang['id']){
-                                                            $khachhang->update_khachhangthuong($result_allkhachhang['id'],0,Session::get('username'));
-                                                            header("Location:tables.php"); 
-                                                        }
-                                                        
-                                                    if (isset($_GET['delete']) && $_GET['delete'] == $result_allkhachhang['id']){
-                                                        $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
-                                                        header("Location:tables.php");
-                                                    }
-                                                    // if(isset($_POST['delete']) && $_POST['delete'] == $result_allkhachhang['id']){
-                                                        // $khachhang->delete_khachhangthuong($result_allkhachhang['id']);
-                                                        // header("Location:tables.php");
-                                                    
-                                                ?>
                                             </td>
                                         </tr>
                                         <?php 

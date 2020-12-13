@@ -4,6 +4,10 @@
 ?>
 <?php
     $news = new news();
+    if (isset($_POST['update-blog'])) {
+        $news->update_news($_POST['title'],$_POST['descripsion'],$_POST['status'],$_POST['file'],$_POST['body'],$_GET['id']);
+        header("Location:quanly-blog.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -110,13 +114,7 @@ include "view/header.php";
                     </div>
                 </div>
             </div>
-            <!-- /.container-fluid -->
-                <?php
-                    if (isset($_POST['update-blog'])) {
-                        $news->update_news($_POST['title'],$_POST['descripsion'],$_POST['status'],$_POST['file'],$_POST['body'],$_GET['id']);
-                        header("Location:quanly-blog.php");
-                    }
-                ?>    
+            <!-- /.container-fluid -->    
         </div>
         <!-- End of Main Content -->
 
