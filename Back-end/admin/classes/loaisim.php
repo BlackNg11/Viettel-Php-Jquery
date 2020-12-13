@@ -1,9 +1,4 @@
 <?php
-    include "lib/database.php";
-    include "helpers/format.php"
-?>
-
-<?php
 
     class loaisim
     {
@@ -30,11 +25,6 @@
         }
         public function show_loaisim(){
             $query = "SELECT * FROM loaisim order by id ";
-            $result = $this->db->select($query);
-            return $result;
-        }
-        public function show_loaisimById($id){
-            $query = "SELECT * FROM loaisim where id=$id ";
             $result = $this->db->select($query);
             return $result;
         }

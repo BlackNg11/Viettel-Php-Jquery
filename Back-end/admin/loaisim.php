@@ -1,26 +1,14 @@
 <?php
     ob_start();
     include "classes/loaisim.php";
+    include "lib/database.php";
+    include "helpers/format.php"
 ?>
 <?php
     $loaisim = new loaisim();
     if( isset($_POST['add-loaisim'])){
         $loaisim->insert_loaisim($_POST['tenloaisim']);
         header("Location:loaisim.php"); 
-    }
-    $get_loaisim = $loaisim->show_loaisim();
-    if($get_loaisim){
-        while($result_loaisim = $get_loaisim->fetch_assoc()){
-            if(isset($_POST['update-loaisim'])){
-                if(isset($_GET['update']))
-                    echo $_GET['update'];
-                // if (isset($_GET['update']) && $_GET['update'] == $result_loaisim['id']){
-                //     echo $result_loaisim['id'];
-                // }
-                // $loaisim->delete_loaisim($result_loaisim['id']);
-                // header("Location:loaisim.php");
-            }
-        }
     }
 ?>
 <!DOCTYPE html>
@@ -66,9 +54,8 @@ include "view/header.php";
                                     >
                                 </div>
                             </div>
-                            <div class="form-group row-2 text-md-center">
+                            <div class="form-group text-md-center">
                                 <button type="submit" name="add-loaisim" class="btn btn-primary col-sm-2">Thêm Loại Sim</button>
-                                <button type="submit" name="update-loaisim" class="btn btn-primary col-sm-2">Cập Nhật Loại Sim</button>
                             </div>
                         </form>
                     </div>
@@ -112,7 +99,7 @@ include "view/header.php";
                                 <td class="text-md-center"><?php echo $stt ?></td>
                                 <td><?php echo $result_loaisim['tenloaisim'] ?></td>
                                 <td class="text-md-center">
-                                    <form action="loaisim.php" method="get">
+                                    <a href="update-loaisim.php?update=<?php echo $result_loaisim['id'] ?>">
                                         <button type="submit" class="btn btn-primary" name= "update" value="<?php echo $result_loaisim['id'] ?>">
                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -121,7 +108,9 @@ include "view/header.php";
                                                 <path fill-rule="evenodd"
                                                     d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
                                             </svg>
-                                        </button>  
+                                        </button>
+                                    </a>
+                                    <a href="loaisim.php?delete=<?php echo $result_loaisim['id'] ?>">
                                         <button type="submit" class="btn btn-primary" name="delete" value="<?php echo $result_loaisim['id'] ?>">
                                             <svg width="1em" height="1em" viewBox="0 0 16 16"
                                                 class="bi bi-x-circle-fill" fill="currentColor"
@@ -130,7 +119,7 @@ include "view/header.php";
                                                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
                                                 </svg>
                                         </button>
-                                    </form>
+                                    </a>
                                     <?php
                                         if (isset($_GET['delete']) && $_GET['delete'] == $result_loaisim['id']){
                                             $loaisim->delete_loaisim($result_loaisim['id']);
@@ -186,6 +175,5 @@ include "view/header.php";
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
 
-</body>
-
+    </body>
 </html>

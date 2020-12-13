@@ -78,7 +78,6 @@ Session::checkSession();
 		<!-- <h6 class="collapse-header">Web Edit:</h6> -->
 		<a class="collapse-item" href="quanly-blog.php">Quản Lý Blog</a>
 		<a class="collapse-item" href="blog.php">Nhập Blog</a>
-		<a class="collapse-item" href="update-blog.php">Chỉnh Sửa Blog</a>
 				<!-- <div class="collapse-divider"></div>
 				<h6 class="collapse-header">Other Pages:</h6>
 				<a class="collapse-item" href="404.php">404 Page</a>
