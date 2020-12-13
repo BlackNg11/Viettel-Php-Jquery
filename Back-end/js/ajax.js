@@ -4,15 +4,15 @@ if ($('#test-form')) {
 			e.preventDefault();
 
 			//data
-			var postData = $(this).serializeArray();
-			var formURL = $(this).attr("action");
+			let postData = $(this).serializeArray();
+			let formURL = $(this).attr("action");
 			$("form").trigger("reset");
 			// console.log(postData);
 			// console.log(formURL);
 
 
 			/* start ajax submission process */
-			var resquest = $.ajax({
+			let resquest = $.ajax({
 				url: formURL,
 				method: "post",
 				data: postData
@@ -37,9 +37,9 @@ if ($('#test-form')) {
 
 
 $('.change-color').click(function(){
-	var content = $(this).html();
-	var result =  $(this).text().trim();
-	var phoneNumber = result.slice(0,12);
+	let content = $(this).html();
+	let result =  $(this).text().trim();
+	let phoneNumber = result.slice(0,12);
 	
 	Swal.mixin({
 		input: 'text',
@@ -52,7 +52,7 @@ $('.change-color').click(function(){
 	}).queue([
 	{
 		title: `Số điện thoại bạn muốn mua là ${phoneNumber}`,
-		inputValue: phoneNumber,
+		inputValue: phoneNumber.replace(/\./g,""),
 	},
 	{
 		title: 'Địa Chỉ',
@@ -71,8 +71,10 @@ $('.change-color').click(function(){
 		
 	}
 	]).then((result) => {
+
 		if (result.value) {
-			const answers = JSON.stringify(result.value);
+			// const answers = JSON.stringify(result.value);
+			console.log(result);
 
 			Swal.fire({
 				position: 'center',

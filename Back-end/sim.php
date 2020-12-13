@@ -41,7 +41,9 @@
     				<span class="heading-primary--main">Viettel</span>
     				<span class="heading-primary--sub">Mua Sim Điện Thoại</span>
     			</h1>	
-    			<a href="#" class="btn btn--white btn--animated">Mua Sim</a>
+    			<div class="wrapper-shine">
+    				<a href="#" class="button-shine">Mua Sim!</a>
+    			</div>
     		</div>
     	</section>
     	<section class="sim__content">
