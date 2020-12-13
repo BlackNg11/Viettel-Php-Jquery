@@ -57,7 +57,7 @@ tenloaisim varchar(150) not null
 );
 create table sim (
 id bigint not null primary key auto_increment,
-sdt int not null,
+sdt varchar(20) not null,
 gianhap int not null,
 giaban int not null,
 status int not null,

@@ -1,7 +1,6 @@
 <?php 
     session_start();
     include "classes/news.php";
-    include "classes/addblog.php";
 ?>
 <?php
     $news = new news();

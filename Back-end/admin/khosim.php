@@ -1,6 +1,8 @@
 <?php
     ob_start();
     include "classes/kho.php";
+    include "lib/database.php";
+    include "helpers/format.php"
 ?>
 <?php
     $kho = new kho();
@@ -89,7 +91,7 @@
                                 <td class="text-md-center"><?php echo $stt ?></td>
                                 <td><?php echo $result_kho['tenkho'] ?></td>
                                 <td class="text-md-center">
-                                    <form  action="khosim.php" method="get">
+                                    <a href="update-kho.php?update=<?php echo $result_kho['id'] ?>">
                                         <button type="submit" class="btn btn-primary" name= "update" value="">
                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +101,9 @@
                                                     d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
                                             </svg>
                                         </button>
-                                        <button type="submit" class="btn btn-primary" name="delete" value="<?php echo $result_kho['id'] ?>">
+                                    </a>
+                                    <a href="khosim.php?delete=<?php echo $result_kho['id'] ?>">
+                                        <button type="submit" class="btn btn-primary" name="delete">
                                             <svg width="1em" height="1em" viewBox="0 0 16 16"
                                                 class="bi bi-x-circle-fill" fill="currentColor"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +111,7 @@
                                                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
                                                 </svg>
                                         </button>
-                                    </form>
+                                    </a>
                                     <?php
                                         if (isset($_GET['delete']) && $_GET['delete'] == $result_kho['id']){
                                             $kho->delete_kho($result_kho['id']);

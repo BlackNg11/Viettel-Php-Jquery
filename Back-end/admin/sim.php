@@ -1,10 +1,12 @@
 <?php 
-    session_start();
-    include "classes/news.php";
-    include "classes/addblog.php";
+    include "classes/loaisim.php";
+    include "classes/kho.php";
+    include "lib/database.php";
+    include "helpers/format.php"
 ?>
 <?php
-    $news = new news();
+    $loaisim = new loaisim();
+    $kho = new kho();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,8 +59,18 @@ include "view/header.php";
                             <label for="loaisim" class="col-sm-2 col-form-label">Loại Sim :</label>
                                 <div class="col-sm-10">
                                     <select class="form-control" id="loaisim" name="loaisim">
-                                        <option value = "0">Sim Thường</option>
-                                        <option value = "1">Sim Năm Sinh</option>
+                                    <?php
+                                    $get_loaisim = $loaisim->show_loaisim();
+                                    if($get_loaisim){
+                                        while($result_loasim = $get_loaisim->fetch_assoc()){
+                                    ?>
+                                        <option value = "<?php echo $result_loasim['id'] ?>">
+                                            <?php echo $result_loasim['tenloaisim'] ?>
+                                        </option>
+                                    <?php
+                                            }
+                                        }
+                                    ?>
                                     </select>
                                 </div>
                             </div>
@@ -66,8 +78,16 @@ include "view/header.php";
                             <label for="khosim" class="col-sm-2 col-form-label">Kho Sim :</label>
                                 <div class="col-sm-10">
                                     <select class="form-control" id="khosim" name="khosim">
-                                        <option value = "0">Kho 1</option>
-                                        <option value = "1">Kho 2</option>
+                                    <?php
+                                    $get_kho = $kho->show_kho();
+                                    if($get_kho){
+                                        while($result_kho = $get_kho->fetch_assoc()){
+                                    ?>
+                                        <option value = "<?php echo $result_kho['id'] ?>"><?php echo $result_kho['tenkho'] ?></option>
+                                        <?php
+                                            }
+                                        }
+                                    ?>
                                     </select>
                                 </div>
                             </div>
