@@ -1,8 +1,18 @@
+<?php
+    ob_start();
+    include "classes/kho.php";
+?>
+<?php
+    $kho = new kho();
+    if( isset($_POST['add-kho'])){
+        $kho->insert_kho($_POST['tenkho']);
+        header("Location:khosim.php"); 
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php
-include "view/header.php";
-
+    include "view/header.php";
 ?>
 <body id="page-top">
 
@@ -25,17 +35,17 @@ include "view/header.php";
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                        <form action="blog.php" method="post" enctype="multipart/form-data" class="post-form">
+                        <form action="khosim.php" method="post" enctype="multipart/form-data" class="post-form">
                             <h1 class="text-center">Quản Lý Kho Sim</h1>
                             <div class="form-group row">
-                                <label for="title" class="col-sm-2 col-form-label">Tên Kho :</label>
+                                <label for="tenkho" class="col-sm-2 col-form-label">Tên Kho :</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="title" name="title">
+                                <input type="text" class="form-control" id="tenkho" name="tenkho">
                                 </div>
                             </div>
                             <div class="form-group row-2 text-md-center">
-                                <button type="submit" name="save-post" class="btn btn-primary col-sm-2">Thêm Kho</button>
-                                <button type="submit" name="save-post" class="btn btn-primary col-sm-2">Cập Nhật Kho</button>
+                                <button type="submit" name="add-kho" class="btn btn-primary col-sm-2">Thêm Kho</button>
+                                <button type="submit" name="update-kho" class="btn btn-primary col-sm-2">Cập Nhật Kho</button>
                             </div>
                         </form>
                     </div>
@@ -67,11 +77,19 @@ include "view/header.php";
                             </tr>
                         </tfoot>
                         <tbody>
+                            <?php
+                                $getall_kho = $kho->show_kho();
+                                $stt=0;
+                                if($getall_kho){
+                                    while($result_kho = $getall_kho->fetch_assoc()){
+                                        $stt++;
+
+                            ?> 
                             <tr>
-                                <td class="text-md-center"></td>
-                                <td></td>
+                                <td class="text-md-center"><?php echo $stt ?></td>
+                                <td><?php echo $result_kho['tenkho'] ?></td>
                                 <td class="text-md-center">
-                                    <a href="update-blog.php?id=">
+                                    <form  action="khosim.php" method="get">
                                         <button type="submit" class="btn btn-primary" name= "update" value="">
                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square"
                                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -81,9 +99,7 @@ include "view/header.php";
                                                     d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
                                             </svg>
                                         </button>
-                                    </a>
-                                    <a href="quanly-blog.php?delete=">    
-                                        <button type="submit" class="btn btn-primary" name="delete" value="">
+                                        <button type="submit" class="btn btn-primary" name="delete" value="<?php echo $result_kho['id'] ?>">
                                             <svg width="1em" height="1em" viewBox="0 0 16 16"
                                                 class="bi bi-x-circle-fill" fill="currentColor"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -91,9 +107,19 @@ include "view/header.php";
                                                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
                                                 </svg>
                                         </button>
-                                    </a>    
+                                    </form>
+                                    <?php
+                                        if (isset($_GET['delete']) && $_GET['delete'] == $result_kho['id']){
+                                            $kho->delete_kho($result_kho['id']);
+                                            header("Location:khosim.php");
+                                        }
+                                    ?>
                                 </td>
                             </tr>
+                            <?php 
+                                }
+                            } 
+                            ?> 
                             </tbody>
                         </table>
                         </div>
@@ -105,10 +131,13 @@ include "view/header.php";
         </div>
         <!-- End of Main Content -->
         <?php
-        include "view/footer.php";
-        ?>
-        </div>
-        <!-- End of Content Wrapper -->
+            include "view/footer.php";
+    ?>
+    <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
     </div>
     <!-- End of Page Wrapper -->
 
@@ -116,7 +145,6 @@ include "view/header.php";
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -129,14 +157,12 @@ include "view/header.php";
     <script src="js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-    <script src="https://cdn.ckeditor.com/4.15.1/full/ckeditor.js"></script>
+    <script src="js/demo/datatables-demo.js"></script>
 
-<script src="js/scripts.js"></script>
 </body>
 
 </html>
