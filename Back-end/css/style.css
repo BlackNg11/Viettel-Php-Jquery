@@ -2873,7 +2873,7 @@ body {
     margin-right: 3rem; }
 
 .wifi {
-  height: 100vh;
+  height: 110vh;
   background-image: linear-gradient(to right bottom, rgba(50, 75, 76, 0.85), rgba(149, 176, 177, 0.85)), url(../img/img-s/viettel-tru-so-s.jpeg);
   background-size: cover;
   background-position: center; }
