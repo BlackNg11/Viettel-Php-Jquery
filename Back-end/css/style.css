@@ -703,7 +703,9 @@ body {
   height: 6rem;
   width: 15rem;
   cursor: pointer;
-  transition: all 0.15s; }
+  transition: all 0.15s;
+  outline: none;
+  overflow: hidden; }
 
 .button__fly:hover {
   background-color: #ddf7ff; }
@@ -3328,8 +3330,118 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
-.sim__buy {
-  height: 100vh; }
+.sim__content {
+  display: flex;
+  margin: 5rem; }
+  .sim__content__option {
+    padding: 4rem 3rem;
+    box-shadow: 0px 10px 40px rgba(39, 52, 125, 0.12);
+    border-radius: 1rem;
+    flex: 0 0 31.6%; }
+    .sim__content__option p {
+      display: block;
+      height: 2px;
+      opacity: 1;
+      background-color: #95B0B1;
+      margin: 3rem 0; }
+    .sim__content__option--select h2 {
+      font-weight: 700;
+      font-size: 2.2rem;
+      line-height: 2.3rem;
+      margin: 0 0 2rem;
+      color: #0C0033; }
+    .sim__content__option--select ul {
+      list-style: none; }
+      .sim__content__option--select ul a {
+        display: block;
+        text-decoration: none;
+        color: #474747;
+        font-size: 1.8rem;
+        line-height: 180%; }
+        .sim__content__option--select ul a:hover {
+          color: #14AFB4; }
+        .sim__content__option--select ul a:not(:last-child) {
+          margin-bottom: 2rem; }
+  .sim__content__selection {
+    flex: 0 0 65.7%;
+    margin-left: 1rem; }
+    .sim__content__selection ul {
+      margin-left: 3rem;
+      margin-top: 1rem; }
+      .sim__content__selection ul li {
+        font-size: 2rem;
+        line-height: 180%; }
+    .sim__content__selection p {
+      font-size: 2rem;
+      color: red;
+      margin-left: 3rem;
+      margin-top: .5rem; }
+    .sim__content__selection--search form input {
+      color: inherit;
+      background-color: #f7f7f7;
+      border: none;
+      padding: 2rem 2rem;
+      border-radius: 10rem;
+      width: 90%;
+      transition: all .3s;
+      margin-right: -3rem;
+      font-size: 1.6rem; }
+      .sim__content__selection--search form input:focus {
+        outline: none;
+        width: 100%;
+        background-color: #eee; }
+    .sim__content__selection--search-icon {
+      width: 2rem;
+      height: 2rem; }
+    .sim__content__selection--search-button {
+      border: none;
+      background-color: #f7f7f7; }
+      .sim__content__selection--search-button:focus {
+        outline: none; }
+      .sim__content__selection--search-button:active {
+        transform: translateY(2px); }
+    .sim__content__selection--search-input:focus + .sim__content__selection--search-button {
+      background-color: #eee; }
+    .sim__content__selection--choose {
+      margin-top: 3rem; }
+      .sim__content__selection--choose ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none; }
+        .sim__content__selection--choose ul li {
+          flex: 0 0 32%;
+          margin-bottom: 3rem;
+          margin-right: 1rem; }
+          .sim__content__selection--choose ul li:hover {
+            background: #14AFB4; }
+      .sim__content__selection--choose-viettel {
+        width: 6rem;
+        height: 5rem;
+        background-image: url(../img/sim.png);
+        background-position: -364px -12px;
+        background-repeat: no-repeat;
+        display: block;
+        border-left: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-radius: 50%;
+        align-self: center; }
+      .sim__content__selection--choose-imfomation-name {
+        color: #324B4C; }
+
+.change-color {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1.3rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
+  .change-color:hover {
+    border-color: #38fce3;
+    cursor: pointer; }
 
 .error {
   padding: 10rem;

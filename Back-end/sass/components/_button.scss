@@ -171,6 +171,8 @@
   width: 15rem;
   cursor: pointer;
   transition: all 0.15s;
+  outline: none;
+  overflow: hidden;
   
 }
 .button__fly:hover {
@@ -229,6 +231,8 @@
   animation: flyaway 1.3s linear;
   top: -80px;
   right: -1000px;
+
+
 }
 .button__fly.clicked svg path {
   fill: #6aaa3b;
@@ -243,6 +247,7 @@
     top: 13px;
     right: 25px;
     height: 30px;
+    
   }
   5% {
     -webkit-transform: rotate(10deg);
@@ -253,6 +258,7 @@
     top: 13px;
     right: 0px;
     height: 30px;
+    
   }
   20% {
     -webkit-transform: rotate(-20deg);
@@ -263,6 +269,7 @@
     top: 13px;
     right: -130px;
     height: 45px;
+    
   }
   40% {
     -webkit-transform: rotate(10deg);
@@ -275,6 +282,7 @@
     opacity: 1;
     -ms-filter: none;
     filter: none;
+    
   }
   100% {
     -webkit-transform: rotate(60deg);
@@ -288,6 +296,7 @@
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
+
   }
 }
 @-webkit-keyframes flyaway {

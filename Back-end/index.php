@@ -91,13 +91,13 @@ include "view/navigation.php";
 							</div>
 							<div class="form__group">
 								<label for="name" class="form__label">SĐT</label>
-								<input type="tel" name="sdt" class="form__input" autocomplete="off" placeholder="SĐT" id="name" required pattern="(09|01|03|08|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')">
+								<input type="tel"  name="sdt" class="form__input" autocomplete="off" placeholder="SĐT" id="name" required pattern="(09|01|03|08|[2|6|8|9])+([0-9]{8})\b" >
 
 							</div>
 
 							<div class="form__group">
 								<label for="contact" class="form__label">Địa Chỉ</label>
-								<input type="text" name="diachi" class="form__input" autocomplete="off" maxlength="80" placeholder="Địa Chỉ Liên Lạc" id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')">								
+								<input type="text" name="diachi" class="form__input" autocomplete="off" maxlength="80" placeholder="Địa Chỉ Liên Lạc" id="contact" required >								
 
 							</div>
 
@@ -212,7 +212,7 @@ include "view/navigation.php";
 							<img src="img/banner2-back.jpg" alt="Wifi Viettel" class="card__side--banner">
 						</div>	
 					</div> -->
-					<img src="img/img-s/wifi-router-s.png" alt="" class="wifi-detail__info--right-img">
+					<img src="img/img-s/wifi-router.png" alt="wifi router" class="wifi-detail__info--right-img">
 				</div>
 			</div>
 		</div>

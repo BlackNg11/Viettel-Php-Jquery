@@ -696,12 +696,12 @@
 						<form action="config/server" method="POST" id="test-form">
 							<h3 class="form-2__contact-form--title">Liên Hệ</h3>
 							<div class="form-2__contact-form--input-container">
-								<input type="tel" name="sdt"  autocomplete="nope" required pattern="(09|01|03|08|[2|6|8|9])+([0-9]{8})\b" oninvalid="this.setCustomValidity('Quý khách vui lòng nhập và có số 0 đầu tiên')" class="form-2__contact-form--input" />
+								<input type="tel" name="sdt"  autocomplete="nope" required pattern="(09|01|03|08|[2|6|8|9])+([0-9]{8})\b"  class="form-2__contact-form--input" />
 								<label for="">SĐT</label>
 								<span>SĐT</span>
 							</div>
 							<div class="form-2__contact-form--input-container">
-								<input type="text" name="diachi" autocomplete="nope" class="form-2__contact-form--input" maxlength="80"  id="contact" required oninvalid="this.setCustomValidity('Quý khách vui lòng nhập địa chỉ(số nhà,đường,phường)')"/>
+								<input type="text" name="diachi" autocomplete="nope" class="form-2__contact-form--input" maxlength="80"  id="contact" required />
 								<label for="">Địa Chỉ</label>
 								<span>Địa Chỉ</span>
 							</div>

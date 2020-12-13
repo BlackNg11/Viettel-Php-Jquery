@@ -8,12 +8,12 @@
 	background-size: cover;
 	background-position: left;
 	border-bottom-left-radius: 50% 20%;
- 	border-bottom-right-radius: 50% 20%;
+	border-bottom-right-radius: 50% 20%;
 	position: relative;
 	
 	@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-		   only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-		   only screen and (min-width: 125em){
+	only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+	only screen and (min-width: 125em){
 		background-image: linear-gradient(
 			to right bottom,
 			rgba($color-primary-light,0.8),
@@ -43,6 +43,199 @@
 
 }
 
-.sim__buy {
-	height: 100vh;
+.sim__content {
+	display: flex;
+	margin: 5rem ;
+
+	&__option {
+		padding: 4rem 3rem;
+		box-shadow: 0px 10px 40px rgba(39, 52, 125, 0.12);
+		border-radius: 1rem;
+		flex: 0 0 31.6%;
+
+		& p {
+			display: block;
+			height: 2px;
+			opacity: 1;
+			background-color: $color-secondary-dark;
+			margin: 3rem 0;
+		}
+
+		&--select {
+			
+			& h2 {
+				font-weight: 700;
+				font-size: 2.2rem;
+				line-height: 2.3rem;
+				margin: 0 0 2rem;
+				color: #0C0033;
+			}
+			& ul {
+				list-style: none;
+
+
+				& a {
+					display: block;
+					text-decoration: none;
+					color: #474747;
+					font-size: 1.8rem;
+					line-height: 180%;
+
+					&:hover {
+						color: $color-primary;
+					}
+
+					&:not(:last-child) {
+						margin-bottom: 2rem;
+					}
+				}
+			}
+		}
+	}
+
+	&__selection {
+		flex: 0 0 65.7%;
+		margin-left: 1rem;
+
+		& ul {
+			margin-left: 3rem;
+			margin-top: 1rem;
+
+			& li {
+				font-size: 2rem;
+				line-height: 180%;
+
+			}
+		}
+
+		& p {
+			font-size: 2rem;
+			color: red;
+			margin-left: 3rem;
+			margin-top: .5rem;
+		}
+
+		&--search {
+			& form {
+
+				& input {
+					// background: rgba(244, 248, 248, 0.788188);
+					// border-radius:10px;
+					// height: 52px;
+					// margin:auto;
+					// border-color: $color-primary;
+					// border-image: none;
+
+					color: inherit;
+					background-color: $color-grey-light-1;
+					border: none;
+					padding: 2rem 2rem;
+					border-radius: 10rem;
+					width: 90%;
+					transition: all .3s;
+					margin-right: -3rem;
+					font-size: 1.6rem;
+					
+
+
+					&:focus {
+						outline: none;
+						width: 100%;
+						background-color: $color-grey-light-2;
+
+
+					}
+				}
+			}
+
+			&-icon{
+				width: 2rem;
+				height: 2rem;
+			}
+
+			&-button {
+				border: none;	
+				background-color: $color-grey-light-1;
+
+				
+				
+				&:focus {
+					outline: none;
+				}
+				
+				&:active {
+					transform: translateY(2px);
+				}
+			}
+
+			&-input:focus + &-button {
+				background-color:  $color-grey-light-2;
+			}
+		}
+
+
+		&--choose {
+			
+			margin-top: 3rem;
+
+			& ul {
+				display: flex;
+				flex-wrap: wrap;
+				list-style: none;
+
+				& li {
+					flex: 0 0 32%;
+					margin-bottom: 3rem;
+					margin-right: 1rem;
+
+					&:hover {
+						background: $color-primary;
+					}
+				}
+			}
+
+
+
+			&-viettel {
+				width: 6rem;
+				height: 5rem;
+				background-image: url(../img/sim.png);
+				background-position: -364px -12px;
+				background-repeat:no-repeat;
+				display: block;
+				border-left:1px solid #ccc;
+				border-bottom: 1px solid #ccc;
+				border-radius: 50%;
+				align-self: center;
+
+			}
+
+			&-imfomation {
+				&-name {
+					color:$color-secondary-light;
+				}
+			}
+			
+		}
+		
+	}
+}
+
+.change-color {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding:1.3rem;
+	background: #fff;
+	border: 1px solid #ccc; 
+	position: relative;
+	border-radius: 5px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+	&:hover {
+		border-color: #38fce3;
+		cursor: pointer;
+	}
 }
