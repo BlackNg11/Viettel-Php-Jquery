@@ -13,7 +13,7 @@
 						class="navigation__link"><span>02</span>Internet + Truyền Hình</a></li>
 				<li class="navigation__item"><a href="tra-sau-viettel"
 						class="navigation__link"><span>03</span>Dịch Vụ Di Động</a></li>
-				<li class="navigation__item"><a href="404" class="navigation__link"><span>04</span>Mua Sim</a></li>
+				<li class="navigation__item"><a href="sim" class="navigation__link"><span>04</span>Mua Sim</a></li>
 <!-- 				<li class="navigation__item"><a href="404" class="navigation__link"><span>05</span>Mua Điện Thoại</a>
 				</li> -->
 				<li class="navigation__item"><a href="blog.php" class="navigation__link"><span>05</span>Tin Tức</a>

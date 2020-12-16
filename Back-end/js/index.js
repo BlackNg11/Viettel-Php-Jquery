@@ -190,8 +190,23 @@ if (btnClickToScrollWifi3) {
 
 //Hide And Show
 let itemHide = $(".navigation");
+let itemHideContentSim =  $(".sim__content__openContent");
+let isOpenSim = false;
 // let trangThai = "300px";
 itemHide.hide();
+itemHideContentSim.hide();
+
+
+$("#click-to-show-sim").click(e => {
+	if (!isOpenSim) {
+		itemHideContentSim.show("slow");
+		isOpenSim = true;
+	}else {
+		itemHideContentSim.hide("slow");
+		isOpenSim = false;
+	}
+	
+})
 
 window.addEventListener('scroll', () => {
 	if(window.pageYOffset > 50) {
@@ -202,9 +217,13 @@ window.addEventListener('scroll', () => {
 	}
 });
 
+
+
+// Click Button
 $('.button__fly').click(function() {
   $(this).toggleClass('clicked');
   $('.button__fly p').text(function(i, text) {
     return text === "Đăng Kí!!!" ? "Đăng Kí" : "Đăng Kí!!!";
   });
 });
+

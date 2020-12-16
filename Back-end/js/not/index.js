@@ -201,3 +201,10 @@ window.addEventListener('scroll', () => {
 		itemHide.hide("slow");
 	}
 });
+
+$('.button__fly').click(function() {
+  $(this).toggleClass('clicked');
+  $('.button__fly p').text(function(i, text) {
+    return text === "Đăng Kí!!!" ? "Đăng Kí" : "Đăng Kí!!!";
+  });
+});

@@ -3,7 +3,7 @@
 		<p class="footer__text">Viettel tự hào hỗ trợ dịch vụ wifi tốt nhất cho khách hàng.Lợi ích của khách hàng là trên hết và luôn hỗ trợ khách hàng mọi lúc mọi nơi</p>
 		<div class="footer__info">
 			<div class="footer__info__group footer__info--1">
-				<a class="footer-heading" href="trang-chu.php">Đăng Kí Dịch Vụ</a>
+				<a class="footer-heading" href="index">Đăng Kí Dịch Vụ</a>
 			</div>
 		<div class="footer__info__group footer__info--2">
 			<h3 class="footer-heading">Liên Hệ Qua Mạng Xã Hội</h3>

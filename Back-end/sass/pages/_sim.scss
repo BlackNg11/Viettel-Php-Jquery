@@ -11,17 +11,20 @@
 	border-bottom-right-radius: 50% 20%;
 	position: relative;
 	
-	@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-	only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-	only screen and (min-width: 125em){
-		background-image: linear-gradient(
-			to right bottom,
-			rgba($color-primary-light,0.8),
-			rgba($color-primary-dark,0.8)),
-		url(../img/img-s/5g-spelled-out-with-sim-cards.jpg);
+	// @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+	// only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+	// only screen and (min-width: 125em){
+	// 	background-image: linear-gradient(
+	// 		to right bottom,
+	// 		rgba($color-primary-light,0.8),
+	// 		rgba($color-primary-dark,0.8)),
+	// 	url(../img/img-s/5g-spelled-out-with-sim-cards.jpg);
+	// }
+	
+	@include respond(phone) {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
 	}
-	
-	
 
 	&__logo-box {
 		position: absolute;
@@ -46,12 +49,25 @@
 .sim__content {
 	display: flex;
 	margin: 5rem ;
+	justify-content: center;
+	// align-items: center;
+
+	@include respond(phone) {
+		margin: 0;
+		display: block;
+	}
 
 	&__option {
 		padding: 4rem 3rem;
 		box-shadow: 0px 10px 40px rgba(39, 52, 125, 0.12);
 		border-radius: 1rem;
 		flex: 0 0 31.6%;
+
+		@include respond(phone) {
+			opacity: 0;
+			visibility: hidden;
+			display: none;
+		}
 
 		& p {
 			display: block;
@@ -77,12 +93,12 @@
 				& a {
 					display: block;
 					text-decoration: none;
-					color: #474747;
+					color: $color-primary;
 					font-size: 1.8rem;
 					line-height: 180%;
 
 					&:hover {
-						color: $color-primary;
+						text-decoration: underline;
 					}
 
 					&:not(:last-child) {
@@ -96,6 +112,56 @@
 	&__selection {
 		flex: 0 0 65.7%;
 		margin-left: 1rem;
+
+		@include respond(phone) {
+			flex: 0 0 100%;
+			margin: 5rem 0;
+
+		}
+
+		&--openContent {
+			display: none;
+
+			@include respond(phone) {
+				display: flex;
+				flex-direction: column;
+
+
+
+
+			}
+
+			& p {
+				display: block;
+				color: #fff !important;
+				text-align: center;
+				margin: 0 !important;
+				cursor: pointer;
+				padding: .6rem 1.2rem;
+				border-radius: 6px;
+				border-width: 1px;
+				background-color: #14D6CF;
+				border-color: #14D6CF;
+				margin-left: 1rem;
+				margin-top: 1rem
+			}
+		}
+
+		&--heading {
+			margin-bottom: 3rem;
+
+			& h1 {
+				font-size: 5rem;
+				font-weight: 700;
+				text-align: center;
+				color: $color-primary;
+			}
+
+			& p {
+				color: $color-secondary-light !important;
+				font-size: 1.6rem;
+			}
+		}
 
 		& ul {
 			margin-left: 3rem;
@@ -137,6 +203,9 @@
 					font-size: 1.6rem;
 					
 
+					@include respond(phone) {
+						width: 100%;
+					}
 
 					&:focus {
 						outline: none;
@@ -175,7 +244,6 @@
 
 
 		&--choose {
-			
 			margin-top: 3rem;
 
 			& ul {
@@ -187,6 +255,11 @@
 					flex: 0 0 32%;
 					margin-bottom: 3rem;
 					margin-right: 1rem;
+
+					@include respond(phone) {
+						flex: 0 0 20%;
+						
+					}
 
 					&:hover {
 						background: $color-primary;
@@ -208,6 +281,11 @@
 				border-radius: 50%;
 				align-self: center;
 
+				@include respond(phone) {
+					display: none;
+
+				}
+
 			}
 
 			&-imfomation {
@@ -217,6 +295,8 @@
 			}
 			
 		}
+
+
 		
 	}
 }
@@ -231,11 +311,30 @@
 	position: relative;
 	border-radius: 5px;
 
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+
+	@include respond(phone) {
+		max-width: 14rem;		
+	}
 
 	&:hover {
 		border-color: #38fce3;
 		cursor: pointer;
+	}
+}
+
+.sim__content__openContent {
+	display: block;
+	background-color: #fff;
+	margin: 3rem 0;
+
+	& p {
+		display: block;
+		height: 2px;
+		opacity: 1;
+		background-color: $color-secondary-dark;
+		margin: 3rem 0 !important;
+		padding: 0 !important;
 	}
 }

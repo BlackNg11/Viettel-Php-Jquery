@@ -102,113 +102,162 @@
     					<li>Tìm sim có số 8888 hãy gõ: 8888</li>
     					<li>Tìm sim có đầu 09 đuôi có 8888 hãy gõ: 09<font size="5">*</font>8888</li>
     					<li>Tìm sim bắt đầu bằng 09 đuôi bất kỳ hãy gõ: 09<font size="5">*</font>
-    				</ul>
-    			</div>
-    			<div class="sim__content__selection--choose">
-    				<ul>
-    					<li>
-    						<div class="change-color"  style="">
-    							<div class="sim__content__selection--choose-viettel">	
-    							</div>
-    							<div class="sim__content__selection--choose-imfomation">
-    								<div class="sim__content__selection--choose-imfomation-name">038.362<span style="color: red">.7790</span></div>
-    								<div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
-    							</div>
-    						</div>
-    					</li>
+                        </ul>
+                    </div>
+                    <div class="sim__content__selection--openContent">
+                        <p style="margin-left: 0 !important" id="click-to-show-sim">Loại Sim</p>
+                        <div class="sim__content__openContent">
+                            <div class="sim__content__option--select">
+                                <h2>Sim Theo Giá</h2>
+                                <ul>
+                                    <a href="#"><li>Sim giá 100 Nghìn</li></a>
+                                    <a href="#"><li>Sim giá 500 Nghìn</li></a>
+                                    <a href="#"><li>Sim giá 1 Triệu</li></a>
+                                    <a href="#"><li>Sim giá 1 - 10 Triệu</li></a>
+                                    <a href="#"><li>Sim giá 10 - 50 Triệu</li></a>
+                                    <a href="#"><li>Sim giá 50 - 100 Triệu</li></a>
+                                </ul>
+                            </div>
+                            <p></p>
+                            <div class="sim__content__option--select">
+                                <h2>Sim Theo Loại</h2>
+                                <ul>
+                                    <a href="#"><li>Sim Thường</li></a>
+                                    <a href="#"><li>Sim Hiếm</li></a>
+                                    <a href="#"><li>Sim Tứ Qúy</li></a>
+                                    <a href="#"><li>Sim Thần Tài</li></a>
+                                    <a href="#"><li>Sim Ông Địa</li></a>
+                                    <a href="#"><li>Sim Đại Cát</li></a>
+                                    <a href="#"><li>Sim Phong Thủy</li></a>
+                                    <a href="#"><li>Sim Tiến Lên</li></a>
+                                    <a href="#"><li>Sim Taxi</li></a>
+                                </ul>
+                            </div>
+                            <p ></p>
+                            <div class="sim__content__option--select">
+                                <h2>Sim Năm Sinh</h2>
+                                <ul>
+                                    <a href="#"><li>Sim Năm Sinh 1995</li></a>
+                                    <a href="#"><li>Sim Năm Sinh 1996</li></a>
+                                    <a href="#"><li>Sim Năm Sinh 1997</li></a>
+                                    <a href="#"><li>Sim Năm Sinh 1998</li></a>
+                                    <a href="#"><li>Sim Năm Sinh 1999</li></a>
+                                    <a href="#"><li>Sim Năm Sinh 2000</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sim__content__selection--choose">
+                        <ul>
+                           <li>
+                              <div class="change-color"  style="">
+                                 <div class="sim__content__selection--choose-viettel">	
+                                 </div>
+                                 <div class="sim__content__selection--choose-imfomation">
+                                    <div class="sim__content__selection--choose-imfomation-name">038.362<span style="color: red">.7790</span></div>
+                                    <div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
+                                </div>
+                            </div>
+                        </li>
 
 
-    					<li>
-    						<div class="change-color"  style="">
-    							<div class="sim__content__selection--choose-viettel">	
-    							</div>
-    							<div class="sim__content__selection--choose-imfomation">
-    								<div class="sim__content__selection--choose-imfomation-name">0383<span style="color: red">.617161</span></div>
-    								<div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
-    							</div>
-    						</div>
-    					</li>
-    					<li>
-    						<div class="change-color"  style="">
-    							<div class="sim__content__selection--choose-viettel">	
-    							</div>
-    							<div class="sim__content__selection--choose-imfomation">
-    								<div class="sim__content__selection--choose-imfomation-name">038.3622<span style="color: red">.7790</span></div>
-    								<div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
-    							</div>
-    						</div>
-    					</li>
-    					<li>
-    						<div class="change-color"  style="">
-    							<div class="sim__content__selection--choose-viettel">	
-    							</div>
-    							<div class="sim__content__selection--choose-imfomation">
-    								<div class="sim__content__selection--choose-imfomation-name">038.3622<span style="color: red">.7790</span></div>
-    								<div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
-    							</div>
-    						</div>
-    					</li>
-    					<li>
-    						<div class="change-color"  style="">
-    							<div class="sim__content__selection--choose-viettel">	
-    							</div>
-    							<div class="sim__content__selection--choose-imfomation">
-    								<div class="sim__content__selection--choose-imfomation-name">038.3622<span style="color: red">.7790</span></div>
-    								<div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
-    							</div>
-    						</div>
-    					</li>
-    					<li>
-    						<div class="change-color"  style="">
-    							<div class="sim__content__selection--choose-viettel">	
-    							</div>
-    							<div class="sim__content__selection--choose-imfomation">
-    								<div class="sim__content__selection--choose-imfomation-name">038.3622<span style="color: red">.7790</span></div>
-    								<div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
-    							</div>
-    						</div>
-    					</li>
-    				</ul>
-    			</div>
-    		</div>
-    	</section>
-
-    </main>
-
-
-    <?php
-    include "view/footer.php";
-    ?>
-
-
-    <!-- javascript -->
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-    	window.fbAsyncInit = function () {
-    		FB.init({
-    			xfbml: true,
-    			version: 'v9.0'
-    		});
-    	};
-
-    	(function (d, s, id) {
-    		var js, fjs = d.getElementsByTagName(s)[0];
-    		if (d.getElementById(id)) return;
-    		js = d.createElement(s);
-    		js.id = id;
-    		js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-    		fjs.parentNode.insertBefore(js, fjs);
-    	}(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
-    logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
-    logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+                        <li>
+                          <div class="change-color"  style="">
+                             <div class="sim__content__selection--choose-viettel">	
+                             </div>
+                             <div class="sim__content__selection--choose-imfomation">
+                                <div class="sim__content__selection--choose-imfomation-name">0383<span style="color: red">.617161</span></div>
+                                <div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="change-color"  style="">
+                         <div class="sim__content__selection--choose-viettel">	
+                         </div>
+                         <div class="sim__content__selection--choose-imfomation">
+                            <div class="sim__content__selection--choose-imfomation-name">038.3622<span style="color: red">.7790</span></div>
+                            <div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                  <div class="change-color"  style="">
+                     <div class="sim__content__selection--choose-viettel">	
+                     </div>
+                     <div class="sim__content__selection--choose-imfomation">
+                        <div class="sim__content__selection--choose-imfomation-name">038.3622<span style="color: red">.7790</span></div>
+                        <div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+              <div class="change-color"  style="">
+                 <div class="sim__content__selection--choose-viettel">	
+                 </div>
+                 <div class="sim__content__selection--choose-imfomation">
+                    <div class="sim__content__selection--choose-imfomation-name">038.3622<span style="color: red">.7790</span></div>
+                    <div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
+                </div>
+            </div>
+        </li>
+        <li>
+          <div class="change-color"  style="">
+             <div class="sim__content__selection--choose-viettel">	
+             </div>
+             <div class="sim__content__selection--choose-imfomation">
+                <div class="sim__content__selection--choose-imfomation-name">038.3622<span style="color: red">.7790</span></div>
+                <div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
+            </div>
+        </div>
+    </li>
+</ul>
+<div class="mainBlog__navi mainBlog__navi__sim">
+    <a href="#">Sau</a>
+    <a href="#">Tiếp</a>
 </div>
-	<script src="ow_/vendors/jquery.min.js"></script>
-	<script src="js/ajax.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</div>
+</div>
+</section>
+
+</main>
+
+
+<?php
+include "view/footer.php";
+?>
+
+
+<!-- javascript -->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+   window.fbAsyncInit = function () {
+      FB.init({
+         xfbml: true,
+         version: 'v9.0'
+     });
+  };
+
+  (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat" attribution=setup_tool page_id="119868136598056" theme_color="#14AFB4"
+logged_in_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?."
+logged_out_greeting="Chào anh/chị !!! Anh chị muốn đăng kí dịch vụ Viettel nào ạ ?.">
+</div>
+
+<script src="ow_/vendors/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/ajax.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>
