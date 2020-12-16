@@ -1,5 +1,6 @@
 <?php 
-    session_start();
+    include "lib/database.php";
+    include "helpers/format.php";
     include "classes/kho.php";
 ?>
 <?php

@@ -53,7 +53,8 @@ tenkho varchar(150) not null
 );
 create table loaisim (
 id bigint not null primary key auto_increment,
-tenloaisim varchar(150) not null
+tenloaisim varchar(150) not null,
+content text null
 );
 insert into loaisim(tenloaisim) values('Sim Thường');
 insert into loaisim(tenloaisim) values('Sim Hiếm');

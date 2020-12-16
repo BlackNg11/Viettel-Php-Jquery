@@ -38,6 +38,12 @@
             $result = $this->db->select($query);
             return $result;
         }
+        public function show_simById($idloaisim){
+            $query = "SELECT sim.id,sdt,giaban FROM sim,loaisim 
+            WHERE sim.idloaisim = loaisim.id AND loaisim.id = $idloaisim order by sim.id ";
+            $result = $this->db->select($query);
+            return $result;
+        }
         public function delete_sim($id){
             $query = "DELETE FROM sim WHERE id = '$id' ";
             $result = $this->db->delete($query);

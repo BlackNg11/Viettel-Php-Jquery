@@ -1,13 +1,13 @@
 <?php
-    ob_start();
     include "classes/loaisim.php";
     include "lib/database.php";
-    include "helpers/format.php"
+    include "helpers/format.php";
 ?>
 <?php
     $loaisim = new loaisim();
+    
     if( isset($_POST['add-loaisim'])){
-        $loaisim->insert_loaisim($_POST['tenloaisim']);
+        $loaisim->insert_loaisim($_POST['tenloaisim'],$_POST['chitiet']);
         header("Location:loaisim.php"); 
     }
     if (isset($_GET['delete'])){
@@ -46,16 +46,13 @@ include "view/header.php";
                             <div class="form-group row">
                                 <label for="tenloaisim" class="col-sm-2 col-form-label">Tên Loại Sim :</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="tenloaisim" name="tenloaisim" <?php
-                                    $get_loaisim = $loaisim->show_loaisim();
-                                    if($get_loaisim){
-                                        while($result_loaisim = $get_loaisim->fetch_assoc()){
-                                            if(isset($_GET['update']) && $_GET['update'] == $result_loaisim['id']){
-                                                ?>value="<?php echo $result_loaisim['tenloaisim'];
-                                            }
-                                        }
-                                    }?>"
-                                    >
+                                <input type="text" class="form-control" id="tenloaisim" name="tenloaisim">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="chitiet" class="col-sm-2 col-form-label" >Chi Tiết :</label>
+                                <div class="col-sm-10">
+                                <textarea class="form-control" class="form-control" rows="5" id="chitiet" name="chitiet"> </textarea>
                                 </div>
                             </div>
                             <div class="form-group text-md-center">
@@ -80,6 +77,7 @@ include "view/header.php";
                             <tr>
                                 <th class="text-md-center">STT</th>
                                 <th class="text-md-center">Tên Loại Sim</th>
+                                <th class="text-md-center">Chi Tiết</th>
                                 <th class="text-md-center">Thao Tác</th>
                             </tr>
                         </thead>
@@ -87,6 +85,7 @@ include "view/header.php";
                             <tr>
                                 <th class="text-md-center">STT</th>
                                 <th class="text-md-center">Tên Loại Sim</th>
+                                <th class="text-md-center">Chi Tiết</th>
                                 <th class="text-md-center">Thao Tác</th>
                             </tr>
                         </tfoot>
@@ -102,6 +101,7 @@ include "view/header.php";
                             <tr>
                                 <td class="text-md-center"><?php echo $stt ?></td>
                                 <td><?php echo $result_loaisim['tenloaisim'] ?></td>
+                                <td><?php echo $result_loaisim['content'] ?></td>
                                 <td class="text-md-center">
                                     <a href="update-loaisim.php?update=<?php echo $result_loaisim['id'] ?>">
                                         <button type="submit" class="btn btn-primary" name= "update" value="<?php echo $result_loaisim['id'] ?>">

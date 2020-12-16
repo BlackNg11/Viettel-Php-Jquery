@@ -1,5 +1,6 @@
 <?php 
-    session_start();
+    include "lib/database.php";
+    include "helpers/format.php";
     include "classes/loaisim.php";
 ?>
 <?php
@@ -53,6 +54,12 @@
                                 <label for="tenloaisim" class="col-sm-2 col-form-label">Tên Loại Sim :</label>
                                 <div class="col-sm-10">
                                 <input type="text" class="form-control" id="tenloaisim" name="tenloaisim" value="<?php echo $result_loaisim['tenloaisim'] ?>">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="content" class="col-sm-2 col-form-label">Chi Tiết :</label>
+                                <div class="col-sm-10">
+                                <textarea class="form-control" rows="5" id="content" name="content"><?php echo $result_loaisim['content'] ?></textarea>
                                 </div>
                             </div>
                             <div class="form-group text-md-center">

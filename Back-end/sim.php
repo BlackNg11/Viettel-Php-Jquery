@@ -76,7 +76,9 @@
 					if($getall_loaisim){
 						while($result_loaisim = $getall_loaisim->fetch_assoc()){
 					?>
-						<a href="#"><li><?php echo $result_loaisim['tenloaisim'] ?></li></a>
+						<a href="sim-detail.php?id=<?php echo $result_loaisim['id'] ?>">
+							<li><?php echo $result_loaisim['tenloaisim'] ?></li>
+						</a>
 					<?php
 						}
 					}
