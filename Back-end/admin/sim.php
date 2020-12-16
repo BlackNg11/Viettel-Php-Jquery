@@ -1,12 +1,24 @@
 <?php 
     include "classes/loaisim.php";
     include "classes/kho.php";
+    include "classes/sims.php";
     include "lib/database.php";
     include "helpers/format.php"
 ?>
 <?php
     $loaisim = new loaisim();
     $kho = new kho();
+    $sim = new sims();
+?>
+<?php
+    if( isset($_POST['add-sim'])){
+        $sim->insert_sim($_POST['sdt'],$_POST['gianhap'],$_POST['giaban'],$_POST['loaisim'],$_POST['khosim']);
+        header("Location:sim.php"); 
+    }
+    if (isset($_GET['delete'])){
+        $sim->delete_sim($_GET['delete']);
+        header("Location:sim.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,24 +47,24 @@ include "view/header.php";
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                        <form action="blog.php" method="post" enctype="multipart/form-data" class="post-form">
+                        <form action="sim.php" method="post" enctype="multipart/form-data" class="post-form">
                             <h1 class="text-center">SIM</h1>
                             <div class="form-group row">
-                                <label for="title" class="col-sm-2 col-form-label" >Số Thuê Bao :</label>
+                                <label for="sdt" class="col-sm-2 col-form-label" >Số Thuê Bao :</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="title" name="title" placeholder="SĐT">
+                                <input type="text" class="form-control" id="sdt" name="sdt" placeholder="SĐT">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="title" class="col-sm-2 col-form-label" >Giá Nhập :</label>
+                                <label for="gianhap" class="col-sm-2 col-form-label" >Giá Nhập :</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" id="title" name="title">
+                                <input type="text" class="form-control" id="gianhap" name="gianhap">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="descripsion" class="col-sm-2 col-form-label">Giá Bán :</label>
+                                <label for="giaban" class="col-sm-2 col-form-label">Giá Bán :</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="descripsion" name="descripsion">
+                                    <input type="text" class="form-control" id="giaban" name="giaban">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -62,10 +74,10 @@ include "view/header.php";
                                     <?php
                                     $get_loaisim = $loaisim->show_loaisim();
                                     if($get_loaisim){
-                                        while($result_loasim = $get_loaisim->fetch_assoc()){
+                                        while($result_loaisim = $get_loaisim->fetch_assoc()){
                                     ?>
-                                        <option value = "<?php echo $result_loasim['id'] ?>">
-                                            <?php echo $result_loasim['tenloaisim'] ?>
+                                        <option value = "<?php echo $result_loaisim['id'] ?>">
+                                            <?php echo $result_loaisim['tenloaisim'] ?>
                                         </option>
                                     <?php
                                             }
@@ -91,9 +103,8 @@ include "view/header.php";
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-group row-2 text-md-center">
+                            <div class="form-group text-md-center">
                                 <button type="submit" name="add-sim" class="btn btn-primary col-sm-2">Thêm Sim</button>
-                                <button type="submit" name="update-sim" class="btn btn-primary col-sm-2">Cập Nhật Sim</button>
                             </div>
                         </form>
 
@@ -136,15 +147,20 @@ include "view/header.php";
                     </tr>
                 </tfoot>
                 <tbody>
+                <?php
+                    $getall_sim = $sim->show_sim();
+                    if($getall_sim){
+                        while($result_sim = $getall_sim->fetch_assoc()){
+                ?> 
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="text-md-center"><?php echo $result_sim['sdt'] ?></td>
+                        <td><?php echo $result_sim['gianhap'] ?></td>
+                        <td><?php echo $result_sim['giaban'] ?></td>
+                        <td><?php echo $result_sim['tenloaisim'] ?></td>
+                        <td><?php echo $result_sim['tenkho'] ?></td>
+                        <td class="text-md-center"><?php echo $result_sim['createddate'] ?></td>
                         <td class="text-md-center">
-                            <a href="update-blog.php?id=">
+                            <a href="update-sim.php?update=<?php echo $result_sim['id'] ?>">
                                 <button type="submit" class="btn btn-primary" name= "update" value="">
                                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square"
                                         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -155,8 +171,8 @@ include "view/header.php";
                                     </svg>
                                 </button>
                             </a>
-                            <a href="quanly-blog.php?delete=">    
-                                <button type="submit" class="btn btn-primary" name="delete" value="">
+                            <a href="sim.php?delete=<?php echo $result_sim['id'] ?>">
+                                <button type="submit" class="btn btn-primary" name="delete">
                                     <svg width="1em" height="1em" viewBox="0 0 16 16"
                                         class="bi bi-x-circle-fill" fill="currentColor"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -164,17 +180,18 @@ include "view/header.php";
                                             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
                                         </svg>
                                 </button>
-                            </a>    
-
+                            </a>
                         </td>
                     </tr>
-
+                    <?php 
+                        }
+                    } 
+                    ?>  
                     </tbody>
                 </table>
             </div>
         </div>
         </div>
-
     </div>
     <!-- /.container-fluid -->
     </div>

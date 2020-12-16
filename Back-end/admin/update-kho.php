@@ -4,6 +4,10 @@
 ?>
 <?php
     $kho = new kho();
+    if (isset($_POST['update-kho'])) {
+        $kho->update_kho($_POST['tenkho'],$_GET['update']);
+        header("Location:khosim.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +56,7 @@
                                 </div>
                             </div>
                             <div class="form-group text-md-center">
-                                <button type="submit" name="update-blog" class="btn btn-primary col-sm-2">Cập Nhật</button>
+                                <button type="submit" name="update-kho" class="btn btn-primary col-sm-2">Cập Nhật</button>
                             </div>
                         </form>
                         <?php
@@ -63,13 +67,7 @@
                     </div>
                 </div>
             </div>
-            <!-- /.container-fluid -->
-                <?php
-                    if (isset($_POST['update-blog'])) {
-                        $kho->update_kho($_POST['tenkho'],$_GET['update']);
-                        header("Location:khosim.php");
-                    }
-                ?>    
+            <!-- /.container-fluid -->   
         </div>
         <!-- End of Main Content -->
 

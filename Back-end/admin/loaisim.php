@@ -10,6 +10,10 @@
         $loaisim->insert_loaisim($_POST['tenloaisim']);
         header("Location:loaisim.php"); 
     }
+    if (isset($_GET['delete'])){
+        $loaisim->delete_loaisim($_GET['delete']);
+        header("Location:loaisim.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -120,12 +124,6 @@ include "view/header.php";
                                                 </svg>
                                         </button>
                                     </a>
-                                    <?php
-                                        if (isset($_GET['delete']) && $_GET['delete'] == $result_loaisim['id']){
-                                            $loaisim->delete_loaisim($result_loaisim['id']);
-                                            header("Location:loaisim.php");
-                                        }
-                                    ?>
                                 </td>
                             </tr>
                             <?php 

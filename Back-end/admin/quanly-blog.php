@@ -4,6 +4,10 @@
 ?>
 <?php
     $news = new news();
+    if (isset($_GET['delete'])){
+        $news->delete_news($_GET['delete']);
+        header("Location:quanly-blog.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,22 +15,17 @@
 <?php
     include "view/header.php";
 ?>
-
 <body id="page-top">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
-
     <?php
         include "view/sidebar.php"
     ?>
-
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
         <!-- Main Content -->
         <div id="content">
-
         <!-- Topbar -->
             <?php
                 include "view/topbar.php";
@@ -86,7 +85,7 @@
                                     <td><?php echo $result_allnews['createddate'] ?></td>
                                     <td>
                                         <a href="update-blog.php?id=<?php echo $result_allnews['id'] ?>">
-                                            <button type="submit" class="btn btn-primary" name= "update" value="">
+                                            <button type="submit" class="btn btn-primary" name= "update" >
                                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square"
                                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -97,7 +96,7 @@
                                             </button>
                                         </a>
                                         <a href="quanly-blog.php?delete=<?php echo $result_allnews['id'] ?>">    
-                                            <button type="submit" class="btn btn-primary" name="delete" value="<?php echo $result_allnews['id'] ?>">
+                                            <button type="submit" class="btn btn-primary" name="delete">
                                                 <svg width="1em" height="1em" viewBox="0 0 16 16"
                                                     class="bi bi-x-circle-fill" fill="currentColor"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -106,12 +105,6 @@
                                                     </svg>
                                             </button>
                                         </a>    
-                                        <?php
-                                            if (isset($_GET['delete']) && $_GET['delete'] == $result_allnews['id']){
-                                                $news->delete_news($result_allnews['id']);
-                                                header("Location:quanly-blog.php");
-                                            }
-                                        ?>
                                     </td>
                                 </tr>
                                 <?php 
