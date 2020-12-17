@@ -1,6 +1,12 @@
 // initialize ckeditor
 CKEDITOR.replace('body');
 CKEDITOR.config.autoParagraph = false;
+CKEDITOR.editorConfig = function( config )
+{
+config.enterMode = CKEDITOR.ENTER_BR;
+config.shiftEnterMode = CKEDITOR.ENTER_BR;
+};
+// CKEDITOR.config.autoParagraph = false;
 // CKEDITOR.config.enterMode = CKEDITOR.ENTER_BR;
 // CKEDITOR.config.enterMode = CKEDITOR.ENTER_P;
 // CKEDITOR.config.enterMode = CKEDITOR.ENTER_DIV;
