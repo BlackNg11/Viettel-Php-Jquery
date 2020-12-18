@@ -38,6 +38,12 @@
             $result = $this->db->select($query);
             return $result;
         }
+        public function show_simchuaban(){
+            $query = "SELECT * FROM sim 
+            WHERE status=1 order by sim.id ";
+            $result = $this->db->select($query);
+            return $result;
+        }
         public function show_simById($idloaisim){
             $query = "SELECT sim.id,sdt,giaban FROM sim,loaisim 
             WHERE sim.idloaisim = loaisim.id AND loaisim.id = $idloaisim order by sim.id ";

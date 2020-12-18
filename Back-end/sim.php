@@ -1,10 +1,12 @@
 <?php
-    include "admin/classes/loaisim.php";
+	include "admin/classes/loaisim.php";
+	include "admin/classes/sims.php";
     include "lib/database.php";
     include "helpers/format.php"
 ?>
 <?php
 	$loaisim = new loaisim();
+	$sim = new sims();
 ?>
 <!DOCTYPE html>
 <html>
@@ -117,68 +119,25 @@
 				</div>
 				<div class="sim__content__selection--choose">
 					<ul>
+					<?php
+					$getall_sim = $sim->show_simchuaban();
+					if($getall_sim){
+						while($result_sim = $getall_sim->fetch_assoc()){
+					?>
 						<li>
 							<div class="change-color"  style="">
 								<div class="sim__content__selection--choose-viettel">	
 								</div>
 								<div class="sim__content__selection--choose-imfomation">
-									<div class="sim__content__selection--choose-imfomation-name">038.362<span style="color: red">.7790</span></div>
-									<div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
+									<div class="sim__content__selection--choose-imfomation-name"><?php echo $result_sim['sdt'] ?></div>
+									<div class="sim__content__selection--choose-imfomation-price"><?php echo number_format($result_sim['giaban'])?>₫</div>
 								</div>
 							</div>
 						</li>
-
-
-						<li>
-							<div class="change-color"  style="">
-								<div class="sim__content__selection--choose-viettel">	
-								</div>
-								<div class="sim__content__selection--choose-imfomation">
-									<div class="sim__content__selection--choose-imfomation-name">0383<span style="color: red">.617161</span></div>
-									<div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="change-color"  style="">
-								<div class="sim__content__selection--choose-viettel">	
-								</div>
-								<div class="sim__content__selection--choose-imfomation">
-									<div class="sim__content__selection--choose-imfomation-name">038.3622<span style="color: red">.7790</span></div>
-									<div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="change-color"  style="">
-								<div class="sim__content__selection--choose-viettel">	
-								</div>
-								<div class="sim__content__selection--choose-imfomation">
-									<div class="sim__content__selection--choose-imfomation-name">038.3622<span style="color: red">.7790</span></div>
-									<div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="change-color"  style="">
-								<div class="sim__content__selection--choose-viettel">	
-								</div>
-								<div class="sim__content__selection--choose-imfomation">
-									<div class="sim__content__selection--choose-imfomation-name">038.3622<span style="color: red">.7790</span></div>
-									<div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="change-color"  style="">
-								<div class="sim__content__selection--choose-viettel">	
-								</div>
-								<div class="sim__content__selection--choose-imfomation">
-									<div class="sim__content__selection--choose-imfomation-name">038.3622<span style="color: red">.7790</span></div>
-									<div class="sim__content__selection--choose-imfomation-price">50.000₫</div>
-								</div>
-							</div>
-						</li>
+					<?php
+						}
+					}
+					?>
 					</ul>
 				</div>
 			</div>

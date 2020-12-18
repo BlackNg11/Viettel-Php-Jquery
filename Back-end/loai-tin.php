@@ -3,7 +3,21 @@
     include "admin/classes/news.php";
 ?>
 <?php
-    $news = new news();
+	$news = new news();
+	
+	function makeUrl($string){
+		$string = trim($string);
+		$string = str_replace(' ', '-', $string);
+		$string = strtolower($string);
+		$string = preg_replace('/(á|à|ả|ã|ạ|ă|ắ|ặ|ằ|ẳ|ẵ|â|ấ|ầ|ẩ|ẫ|ậ)/' ,'a',$string);
+		$string = preg_replace('/(đ)/','d',$string);
+		$string = preg_replace('/(é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ)/' ,'e',$string);
+		$string = preg_replace('/(í|ì|ỉ|ĩ|ị)/' ,'i',$string);
+		$string = preg_replace('/(ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ)/' ,'o',$string);
+		$string = preg_replace('/(ú|ù|ủ|ũ|ụ|ư|ứ|ừ|ử|ữ|ự)/' ,'u',$string);
+		$string = preg_replace('/(ý|ỳ|ỷ|ỹ|ỵ)/' ,'y',$string);
+		return $string;
+	}
 ?>
 
 <!DOCTYPE html>
@@ -60,9 +74,9 @@
 					while($result_1tintuc = $get_1tintuc->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="blog-detail.php?id=<?php echo $result_1tintuc['id'] ?>&status=<?php echo $result_1tintuc['status'] ?>"><img src="img/<?php echo $result_1tintuc['thumbnail'] ?>" alt=""></a>
+					<a href="<?php echo 'blog-detail/'.$result_1tintuc['id'].'/'.$result_1tintuc['status'].'/'.makeUrl($result_1tintuc['title']).'.html'?>"><img src="img/<?php echo $result_1tintuc['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_1tintuc['title'] ?></a>
+						<a href="<?php echo 'blog-detail/'.$result_1tintuc['id'].'/'.$result_1tintuc['status'].'/'.makeUrl($result_1tintuc['title']).'.html'?>"><?php echo $result_1tintuc['title'] ?></a>
 						<p><?php echo $result_1tintuc['descripsion'] ?></p>
 					</div>
 				</div>
@@ -76,9 +90,9 @@
 					while($result_tintucform2 = $get_tintucform2->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="blog-detail.php?id=<?php echo $result_tintucform2['id'] ?>&status=<?php echo $result_tintucform2['status'] ?>"><img src="img/<?php echo $result_tintucform2['thumbnail'] ?>" alt=""></a>
+					<a href="<?php echo 'blog-detail/'.$result_tintucform2['id'].'/'.$result_tintucform2['status'].'/'.makeUrl($result_tintucform2['title']).'.html'?>"><img src="img/<?php echo $result_tintucform2['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_tintucform2['title'] ?></a>
+						<a href="<?php echo 'blog-detail/'.$result_tintucform2['id'].'/'.$result_tintucform2['status'].'/'.makeUrl($result_tintucform2['title']).'.html'?>"><?php echo $result_tintucform2['title'] ?></a>
 						<p><?php echo $result_tintucform2	['descripsion'] ?></p>
 					</div>
 				</div>
@@ -111,9 +125,9 @@
 					while($result_1khuyenmai = $get_1khuyenmai->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="blog-detail.php?id=<?php echo $result_1khuyenmai['id'] ?>&status=<?php echo $result_1khuyenmai['status'] ?>"><img src="img/<?php echo $result_1khuyenmai['thumbnail'] ?>" alt=""></a>
+					<a href="<?php echo 'blog-detail/'.$result_1khuyenmai['id'].'/'.$result_1khuyenmai['status'].'/'.makeUrl($result_1khuyenmai['title']).'.html'?>"><img src="img/<?php echo $result_1khuyenmai['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_1khuyenmai['title'] ?></a>
+						<a href="<?php echo 'blog-detail/'.$result_1khuyenmai['id'].'/'.$result_1khuyenmai['status'].'/'.makeUrl($result_1khuyenmai['title']).'.html'?>"><?php echo $result_1khuyenmai['title'] ?></a>
 						<p><?php echo $result_1khuyenmai['descripsion'] ?></p>
 					</div>
 				</div>
@@ -127,9 +141,9 @@
 					while($result_khuyenmaiform2 = $get_khuyenmaiform2->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="blog-detail.php?id=<?php echo $result_khuyenmaiform2['id'] ?>&status=<?php echo $result_khuyenmaiform2['status'] ?>"><img src="img/<?php echo $result_khuyenmaiform2['thumbnail'] ?>" alt=""></a>
+					<a href="<?php echo 'blog-detail/'.$result_khuyenmaiform2['id'].'/'.$result_khuyenmaiform2['status'].'/'.makeUrl($result_khuyenmaiform2['title']).'.html'?>"><img src="img/<?php echo $result_khuyenmaiform2['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_khuyenmaiform2['title'] ?></a>
+						<a href="<?php echo 'blog-detail/'.$result_khuyenmaiform2['id'].'/'.$result_khuyenmaiform2['status'].'/'.makeUrl($result_khuyenmaiform2['title']).'.html'?>"><?php echo $result_khuyenmaiform2['title'] ?></a>
 						<p><?php echo $result_khuyenmaiform2['descripsion'] ?></p>
 					</div>
 				</div>
@@ -162,9 +176,9 @@
 					while($result_new = $get_new->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--bigNew">
-					<a href="blog-detail.php?id=<?php echo $result_new['id'] ?>&status=<?php echo $result_new['status'] ?>"><img src="img/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
+					<a href="<?php echo 'blog-detail/'.$result_new['id'].'/'.$result_new['status'].'/'.makeUrl($result_new['title']).'.html'?>"><img src="img/<?php echo $result_new['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_new['title'] ?></a>
+						<a href="<?php echo 'blog-detail/'.$result_new['id'].'/'.$result_new['status'].'/'.makeUrl($result_new['title']).'.html'?>"><?php echo $result_new['title'] ?></a>
 						<p><?php echo $result_new['descripsion'] ?></p>
 					</div>
 				</div>
@@ -178,9 +192,9 @@
 					while($result_news = $get_news->fetch_assoc()){
 				?> 
 				<div class="mainBlog__news__recent--smaillNew">
-					<a href="blog-detail.php?id=<?php echo $result_news['id'] ?>&status=<?php echo $result_news['status'] ?>"><img src="img/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
+					<a href="<?php echo 'blog-detail/'.$result_news['id'].'/'.$result_news['status'].'/'.makeUrl($result_news['title']).'.html'?>"><img src="img/<?php echo $result_news['thumbnail'] ?>" alt=""></a>
 					<div class="mainBlog__news__recent--bigNew-layout">
-						<a href="#"><?php echo $result_news['title'] ?></a>
+						<a href="<?php echo 'blog-detail/'.$result_news['id'].'/'.$result_news['status'].'/'.makeUrl($result_news['title']).'.html'?>"><?php echo $result_news['title'] ?></a>
 						<p><?php echo $result_news['descripsion'] ?></p>
 					</div>
 				</div>
