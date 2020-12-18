@@ -3,7 +3,21 @@
     include "admin/classes/news.php";
 ?>
 <?php
-    $news = new news();
+	$news = new news();
+
+	function makeUrl($string){
+		$string = trim($string);
+		$string = str_replace(' ', '-', $string);
+		$string = strtolower($string);
+		$string = preg_replace('/(á|à|ả|ã|ạ|ă|ắ|ặ|ằ|ẳ|ẵ|â|ấ|ầ|ẩ|ẫ|ậ)/' ,'a',$string);
+		$string = preg_replace('/(đ)/','d',$string);
+		$string = preg_replace('/(é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ)/' ,'e',$string);
+		$string = preg_replace('/(í|ì|ỉ|ĩ|ị)/' ,'i',$string);
+		$string = preg_replace('/(ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ)/' ,'o',$string);
+		$string = preg_replace('/(ú|ù|ủ|ũ|ụ|ư|ứ|ừ|ử|ữ|ự)/' ,'u',$string);
+		$string = preg_replace('/(ý|ỳ|ỷ|ỹ|ỵ)/' ,'y',$string);
+		return $string;
+	}
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +42,7 @@
 
 
 	<!--<link rel="stylesheet" href="css/icon-font.css">-->
-
+	<base href="http://localhost/Support-For-Job/Back-end/">
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>Tin Tức Viettel</title>
@@ -100,9 +114,9 @@
 							
 					?> 
 						<div class="blogDetail__foot__list--card">
-							<a href="blog-detail.php?id=<?php echo $result_2khuyenmai['id'] ?>&status=<?php echo $result_2khuyenmai['status'] ?>">
+							<a href="<?php echo 'blog-detail/'.$result_2khuyenmai['id'].'/'.$result_2khuyenmai['status'].'/'.makeUrl($result_2khuyenmai['title']).'.html'?>">
 								<img src="admin/images/<?php echo $result_2khuyenmai['thumbnail'] ?>" alt=""></a>
-							<a href="blog-detail.php?id=<?php echo $result_2khuyenmai['id'] ?>&status=<?php echo $result_2khuyenmai['status'] ?>">
+							<a href="<?php echo 'blog-detail/'.$result_2khuyenmai['id'].'/'.$result_2khuyenmai['status'].'/'.makeUrl($result_2khuyenmai['title']).'.html'?>">
 								<?php echo $result_2khuyenmai['title'] ?></a>
 							<?php echo $result_2khuyenmai['descripsion'] ?>
 						</div>
@@ -115,9 +129,9 @@
 						while($result_2tintuc = $get_2tintuc->fetch_assoc()){
 					?>
 					<div class="blogDetail__foot__list--card">
-						<a href="blog-detail.php?id=<?php echo $result_2tintuc['id'] ?>&status=<?php echo $result_2tintuc['status'] ?>">
+						<a href="<?php echo 'blog-detail/'.$result_2tintuc['id'].'/'.$result_2tintuc['status'].'/'.makeUrl($result_2tintuc['title']).'.html'?>">
 							<img src="admin/images/<?php echo $result_2tintuc['thumbnail'] ?>" alt=""></a>
-						<a href="blog-detail.php?id=<?php echo $result_2tintuc['id'] ?>&status=<?php echo $result_2tintuc['status'] ?>">
+						<a href="<?php echo 'blog-detail/'.$result_2tintuc['id'].'/'.$result_2tintuc['status'].'/'.makeUrl($result_2tintuc['title']).'.html'?>">
 							<?php echo $result_2tintuc['title'] ?></a>
 						<?php echo $result_2tintuc['descripsion'] ?>
 					</div>

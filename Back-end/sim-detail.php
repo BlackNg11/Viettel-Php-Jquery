@@ -100,7 +100,7 @@
 								</div>
 								<div class="sim__content__selection--choose-imfomation">
 									<div class="sim__content__selection--choose-imfomation-name"><?php echo $result_sim['sdt']?></div>
-									<div class="sim__content__selection--choose-imfomation-price"><?php echo $result_sim['giaban']?>₫</div>
+									<div class="sim__content__selection--choose-imfomation-price"><?php echo number_format($result_sim['giaban'])?>₫</div>
 								</div>
 							</div>
 						</li>

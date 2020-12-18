@@ -154,8 +154,8 @@ include "view/header.php";
                 ?> 
                     <tr>
                         <td class="text-md-center"><?php echo $result_sim['sdt'] ?></td>
-                        <td><?php echo $result_sim['gianhap'] ?></td>
-                        <td><?php echo $result_sim['giaban'] ?></td>
+                        <td><?php echo number_format($result_sim['gianhap']) ?></td>
+                        <td><?php echo number_format($result_sim['giaban']) ?></td>
                         <td><?php echo $result_sim['tenloaisim'] ?></td>
                         <td><?php echo $result_sim['tenkho'] ?></td>
                         <td class="text-md-center"><?php echo $result_sim['createddate'] ?></td>

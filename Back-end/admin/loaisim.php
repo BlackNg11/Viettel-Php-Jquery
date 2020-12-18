@@ -96,7 +96,6 @@ include "view/header.php";
                                 if($getall_loaisim){
                                     while($result_loaisim = $getall_loaisim->fetch_assoc()){
                                         $stt++;
-
                             ?> 
                             <tr>
                                 <td class="text-md-center"><?php echo $stt ?></td>
